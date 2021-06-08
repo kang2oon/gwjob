@@ -1,0 +1,43 @@
+*{font-family: 'Noto Sans KR', sans-serif;box-sizing:border-box;}
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;}
+.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+img{max-width:100%;line-height:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+.fleft{float:left;}
+.fright{float:right;}
+
+.container{position:realtive;width:1080px;margin:30px auto;}
+h1{position:relative;font-size:24px;margin:0 auto 20px;}
+	h1 .git{position:absolute;top:0;right:0;}
+	h1 .git a{display:inline-block;padding:5px 13px;background:#333;color:#fff;font-weight:400;font-size:13px;border-radius:8px;}
+.tbl_list{width:100%;border-collapse:collapse;}
+	.tbl_list th, .tbl_list td{padding:8px 5px;}
+	.tbl_list th{background:#e9e9e9;}
+	.tbl_list th, .tbl_list td{border:1px solid #ccc;}
+	.tbl_list tbody tr:nth-child(even){background:#f9f9f9;}
+	.tbl_list td:nth-child(1){text-align:center;width:50px;}
+	.tbl_list td:nth-child(2){text-align:center;width:100px;}
+	.tbl_list td:nth-child(3){padding:8px 13px;}
+	.tbl_list select{padding:3px 8px;}
+	
+/* 수신거부 */
+.dr_wrap{display:flex;justify-content:center;align-items:center;background:rgb(0,81,164) url(/images/bg_dont_receive.png) no-repeat 50% 50%;width:100%;height:100%;}
+.app_wrap{width:510px;}
+	.app_wrap h1{text-align:center;margin:15px auto;}
+	.app_wrap .site_nm{text-align:center;color:#fff;margin-bottom:25px;}
+	.app_wrap .form_box{width:434px;padding:30px;background:#fff;border:4px solid rgba(118,159,200,.5);border-radius:5px;margin:0 auto;box-shadow: 0 0 3px #ccc;text-align:center;font-size:13px;}
+	.app_wrap .form_box h2{font-size:20px;color:#0a3d72;margin:0 0 18px;}
+	.app_wrap .form_box strong{font-size:14px;color:#f62b43;box-shadow:inset 0 -1px 0 #f62b43;}
+	.app_wrap .form_box form{margin-top:25px;}
+	.app_wrap .form_box form input[type='text']{width:260px;border:1px solid #ececec;border-radius:5px;padding:13px 10px;margin-bottom:8px;}
+	.app_wrap .form_box form .btn_area{margin-top:25px;}
+	.app_wrap .form_box form input[type='submit']{width:178px;height:40px;background:#f62b43;color:#fff;border:none;border-radius:5px;}
+	.app_wrap .form_box form input[type='button']{width:178px;height:40px;background:#c0c0c0;color:#fff;border:none;border-radius:5px;}
+
+@media screen and (max-width : 510px){
+	.app_wrap{width:90%;}
+	.app_wrap .form_box{width:100%;}
+	.app_wrap .form_box form input[type='text']{width:80%;}
+	.app_wrap .form_box form input[type='submit'], .app_wrap .form_box form input[type='button']{width:40%;}
+}
