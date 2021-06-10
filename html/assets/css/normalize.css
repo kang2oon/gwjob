@@ -401,10 +401,12 @@ textarea {
  * Correct the text style of placeholders in Chrome, Edge, and Safari.
  */
 
+/*
 ::-webkit-input-placeholder {
   color: inherit;
-  opacity: 1;
+  opacity: 0.6;
 }
+*/
 
 /**
  * 1. Correct the inability to style clickable types in iOS and Safari.

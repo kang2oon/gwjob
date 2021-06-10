@@ -20,6 +20,7 @@ input,textarea,select { font-size:inherit; font-weight:inherit;-webkit-border-ra
 label {cursor:pointer;}
 
 
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
 blockquote, q {quotes:none;}
@@ -62,7 +63,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
 .container:after {content: '';display: block;clear: both;}
 
 /* 공통 */
-select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;border: 1px solid #c7cee1;background: url(../images/common/select_arrow.png) no-repeat right 10px center #fff;font-size: 15px;min-width: 80px;padding:7px  20px;box-sizing: border-box;border-radius: 8px}
+select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;border: 1px solid #c7cee1;background: url(../images/common/select_arrow.png) no-repeat right 10px center #fff;font-size: 15px;min-width: 90px;padding:7px  20px;padding-right: 35px;box-sizing: border-box;border-radius: 8px}
 select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
 *:hover,
 *:active,

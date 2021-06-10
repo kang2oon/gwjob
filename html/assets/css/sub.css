@@ -8,12 +8,14 @@
 .inline_list li{display: inline-block;margin-right: 15px}
 .inline_list li:last-child{margin-right: 0}
 .border_none{border: 0 !important;}
-.sub_wrap input[type="text"]::placeholder{color: #666;}
-.sub_wrap input[type="text"]:-ms-input-placeholder{color: #666;}
-.sub_wrap textarea::placeholder{color: #666;} 
-.sub_wrap textarea:-ms-input-placeholder{color: #666;}
+.sub_wrap input[type="text"]::placeholder{opacity: 0.7}
+.sub_wrap input[type="text"]::-ms-input-placeholder{opacity: 0.7}
+.sub_wrap input[type="text"]::-webkit-input-placeholder {opacity: 0.7}
+textarea::placeholder{opacity: 0.7}
+textarea::-ms-input-placeholder{opacity: 0.7}
+textarea::-webkit-input-placeholder {opacity: 0.7}
 
-.sub_wrap input[type="text"]{border: 1px solid #c7cee1;padding: 5px 10px;border-radius: 5px}    
+.sub_wrap input[type="text"]{border: 1px solid #c7cee1;padding: 5px 10px;border-radius: 5px;color: #666}    
 .flex_wrap{display: flex;}    
 
 .a_link:hover,
@@ -21,7 +23,7 @@
 .a_link:focus {text-decoration: underline}
 
 /* text area*/
-.textarea {border: 1px solid #c7cee1;width: 100%;border-radius: 8px;min-height: 300px;resize: none;padding: 3.0rem;font-size: 1.6rem}
+.textarea {border: 1px solid #c7cee1;width: 100%;border-radius: 8px;min-height: 300px;resize: none;padding: 3.0rem;font-size: 1.6rem;color: #666}
 
 /* 아이콘 */
 .ico_fix{display: block;width: 32px;height: 32px;background:#004897 url(../images/sub/fixing_ico.png) no-repeat center;border-radius: 50%;}
@@ -63,6 +65,7 @@
 .post_list .middle{border-bottom: 0;padding-bottom: 0}
 .post_list .tit .textCut1{width: calc(100% - 350px)}
 .post_list .post_article{position: relative;border-bottom: 1px solid #c7cee1;padding-bottom: 30px;margin-bottom: 30px}
+.post_list .post_article .hz_list{max-width: calc(100% - 350px)}
 .post_list .post_article:last-child{margin-bottom: 0}
 .post_list .more_btn{position: absolute;right: 0;bottom: 35px}
 
@@ -110,6 +113,7 @@
 .post_write .pw_tit{font-size: 1.8rem;font-weight: bold;margin-right: 15px;}
 .post_write select,
 .post_write textarea{color: #666}
+.post_write select {font-size: 1.8rem}
 .post_write .pw_txt{font-size: 1.8rem;color: #666666}
 .write_tit{font-size: 2.4rem;font-weight: bolder}
 .write_tit span.ico {margin-right: 10px;display: inline-block;vertical-align: middle}
@@ -132,7 +136,7 @@
 
 .write_tit_wrap{display: flex;align-items: center}
 .write_tit_wrap .write_tit{width: 120px}
-.write_tit_wrap .write_tit_area{width: calc(100% - 120px);font-size: 1.8rem}
+.write_tit_wrap .write_tit_area{width: calc(100% - 120px);font-size: 1.8rem;color: #666}
 .write_tit_wrap .write_tit_area input {font-size: 1.8rem}
 
 .text_filed{position: relative;}
@@ -182,6 +186,10 @@
     .nav_view{width: 35%}  
     .nav_view_cont{width: calc(100% - 35% - 30px);}
     
+    /* 자소서 작성 */
+    .post_write_table.pw_item_four th {margin-bottom: 10px;width: 100px;}
+    .post_write .pw_tit{padding-left: 10px;}
+    
 }
 
 
@@ -196,6 +204,7 @@
     
 /*  게시글 목록  */
     .post_list .tit .textCut1{width: calc(100% - 200px)}
+    .post_list .post_article .hz_list{max-width: calc(100% - 200px)}
     
 /*  자소서 작성  */
     .post_write_table.pw_item_four table,    
@@ -238,6 +247,7 @@
     .guide_book_list02{width: 100%;}
     .post_list .more_btn{position: static;margin-top: 3.0rem;}
     .post_list .tit .textCut1{width: 100%}
+    .post_list .post_article .hz_list{width: 100%;max-width: 100%}
     
     /* 자소서 상세*/
     .nav_view{display: none;}
