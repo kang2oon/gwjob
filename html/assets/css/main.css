@@ -135,7 +135,7 @@
     .self_intro_main .main_section01 .main_banner:after{display: none;}    
     .self_intro_main .main_section01 .main_banner{background-size: 650px}
     .self_intro_main .main_section02 .consult_result strong{font-size: 5.5rem}
-    .self_intro_main .main_section02 .consult_pass .container:before{background-size: 250px;width: 250px;height: 330px}
+    .self_intro_main .main_section02 .consult_pass .inner:before{background-size: 250px;width: 250px;height: 330px}
     .self_intro_main .main_section02 .consult_result{width: calc(100% - 250px)}
     .self_intro_main .main_section02 .consult_pass_txt i{width: 45px;background-size: 45px;height: 53px}
     .self_intro_main .main_section02 .star_bg {background-size: 80px}
@@ -197,7 +197,7 @@
 
 @media all and (max-width:768px){
     /*  자소서 start  */
-    .self_intro_main .main_section02 .consult_pass .container:before {width:130px;height: 170px;background-size: 130px;bottom:0}
+    .self_intro_main .main_section02 .consult_pass .inner:before {width:130px;height: 170px;background-size: 130px;bottom:0}
     .self_intro_main .main_section02 .consult_result{width: 100%}
     .self_intro_main .main_section02 .consult_pass_txt p{padding-bottom: 60px}
     .self_intro_main .main_section02 .link{padding: 15px 25px;}
@@ -227,7 +227,7 @@
     .self_intro_main .main_section02 .consult_result > div:nth-child(3),
     .self_intro_main .main_section02 .consult_result > div:nth-child(4){margin-bottom: 0}
     
-    .self_intro_main .main_section02 .consult_pass .container:before{display: none;}
+    .self_intro_main .main_section02 .consult_pass .inner:before{display: none;}
     .self_intro_main .main_section02 .consult_pass_txt i{background-size: 30px;width: 30px;height: 35px;display: block;margin: auto;}
     .self_intro_main .main_section02 .consult_pass_txt{text-align: center;}
     .self_intro_main .main_section02 .consult_pass_txt p{margin-top: 2.0rem;font-size: 1.8rem;padding-bottom: 20px}

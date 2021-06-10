@@ -268,7 +268,7 @@ textarea::-webkit-input-placeholder {opacity: 0.7}
     .sub_search .select_list.select_list_txt span:before{content: '';display: block;}
 
 
- 
+
 
     
 }
@@ -289,7 +289,7 @@ textarea::-webkit-input-placeholder {opacity: 0.7}
     .post_write_table tr,
     .post_write_table tbody,
     .post_write_table th,
-    .post_write_table. td {display: block;padding: 0 !important;}
+    .post_write_table td {display: block;padding: 0 !important;}
     
     .post_write_table tr{display:block !important;}
     .post_write_table th {margin-bottom: 10px;}
@@ -309,8 +309,8 @@ textarea::-webkit-input-placeholder {opacity: 0.7}
     /*컨설팅 별점*/
     .consulting_score {padding: 3.0rem}
     .score_select .selected_option{padding: 8px 15px}
-     .score_select {width: 100%}
-       /* 자소서 완료*/
+    .score_select {width: 100%}
+    /* 자소서 완료*/
     .post_write_table.pw_item_four.post_complete tr{display: flex !important}
     .post_write_table.pw_item_four.post_complete .pw_tit{width: 100px !important;margin-right: 10px; word-break: keep-all}
     .post_write_table.pw_item_four.post_complete .pw_txt {width: calc(100% - 110px) !important;}
@@ -333,12 +333,12 @@ textarea::-webkit-input-placeholder {opacity: 0.7}
     
     /*컨설팅 별점*/
     .consulting_score {padding: 2.0rem}
-   
+
     
     /*자소서 마이페이지*/
     .sub_search .select_list.select_list_txt li{margin-right: 0;padding-right: 0;}
     .sub_search .select_list.select_list_txt li p{font-size: 1.65rem}
     
     
- 
+
 }
