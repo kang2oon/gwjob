@@ -35,8 +35,8 @@
 
 .self_intro_main .main_section02 .star_bg {background: url(../images/main/star.png) no-repeat center;display: block;}
 .self_intro_main .main_section02 .consult_pass{background: #004897;;position: relative}
-.self_intro_main .main_section02 .consult_pass .container{position: relative;padding: 30px }
-.self_intro_main .main_section02 .consult_pass .container:before{content: '';display: block;background: url(../images/main/consult_main_section02.png) no-repeat;width: 308px;height: 410px;position: absolute;bottom: 0;left: 0;}
+.self_intro_main .main_section02 .consult_pass .inner{position: relative;padding: 30px }
+.self_intro_main .main_section02 .consult_pass .inner:before{content: '';display: block;background: url(../images/main/consult_main_section02.png) no-repeat;width: 308px;height: 410px;position: absolute;bottom: 0;left: 0;}
 .self_intro_main .main_section02 .consult_pass_txt{text-align: center}
 .self_intro_main .main_section02 .consult_pass_txt p{color: #fff;font-size: 2.4rem;display: inline-block;}
 .self_intro_main .main_section02 .consult_pass_txt i{background: url(../images/main/consult_pass.png) no-repeat;width: 66px;height: 77px;display: inline-block;vertical-align: middle;margin-right: 20px}
