@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/sub.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 50px">텍스트 색상</h3>
+        <p class="blue01">파란색 1</p>
+        <p class="blue02">파란색 2</p>
+        <p class="dark_blue">파란색 3</p>
+        <p class="yellow">노란색</p>
+        <p class="pink">분홍색</p>
+        <p class="gray01">회색 1</p>
+        <p class="gray02">회색 2</p>
+        <div style="margin-top: 30px">
+            <span class="state_tct st_gray_border">반려</span>
+            <span class="state_tct st_orange">컨설팅 완료</span>
+            <span class="state_tct st_gray">컨설팅 대기</span>
+            <span class="state_tct st_blue_border">임시저장</span>
+        </div>
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 30px"> hover</h3>
+
+        <a href="#" class="a_link">링크</a>
+
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">버튼스타일</h3>
+
+        <h4 style="margin-bottom: 10px">버튼 스타일 1</h4>
+        <div class="btn_wrap">
+            <a href="#" class="btn_style01 btn_blue btn">확인</a>
+            <a href="#" class="btn_style01 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style01 btn_pink more_btn btn"><span>더보기</span></a>
+            <a href="#" class="btn_style01 btn_gray btn">삭제</a>
+            <a href="#" class="btn_style01 btn_orange btn">보기</a>
+            <a href="#" class="btn_style01 btn_orange more_btn btn">보기</a>
+            <a href="#" class="btn_style01 btn_blue_line btn">확인</a>
+            <a href="#" class="btn_style01 btn_blue_line btn_prev btn"><span>이전화면</span></a>
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 스타일 2</h4>
+        <div class="btn_wrap">
+            <a href="#" class="btn_style02 btn_blue btn">확인</a>
+            <a href="#" class="btn_style02 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style02 btn_pink more_btn btn"><span>더보기</span></a>
+            <a href="#" class="btn_style02 btn_blue_line btn_prev btn"><span>이전화면</span></a>
+            <a href="#" class="btn_style02 btn_gray btn">삭제</a>
+            <a href="#" class="btn_style02 btn_orange btn">보기</a>
+            <a href="#" class="btn_style02 btn_orange more_btn btn">보기</a>
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 스타일 3</h4>
+        <div class="btn_wrap">
+            <a href="#" class="btn_line btn_pink_line btn">자세히 보기</a>
+            <a href="#" class="btn_line btn_orange_line btn">자세히 보기</a>
+            <a href="#" class="btn_line btn_pink_line btn">+ 항목 추가</a>
+            <a href="#" class="btn_line btn_orange_line btn">+ 항목 추가</a>
+        </div>
+
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 스타일 4</h4>
+        <div class="btn_wrap">
+            <a href="#" class="btn_style03 btn_blue btn">확인</a>
+            <a href="#" class="btn_style03 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style03 btn_gray btn">삭제</a>
+            <a href="#" class="btn_style03 btn_orange btn">보기</a>
+        </div>
+
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 배치1</h4>
+        <div class="btn_wrap tct">
+            <a href="#" class="btn_style02 btn_blue btn">확인</a>
+            <a href="#" class="btn_style02 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style02 btn_pink more_btn btn"><span>더보기</span></a>
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 배치2</h4>
+        <div class="btn_wrap trt">
+            <a href="#" class="btn_style02 btn_blue btn">확인</a>
+            <a href="#" class="btn_style02 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style02 btn_pink more_btn btn"><span>더보기</span></a>
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 배치3</h4>
+        <div class="btn_wrap tct">
+            <a href="#" class="btn_style02 btn_blue btn">확인</a>
+            <a href="#" class="btn_style02 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style02 btn_pink more_btn btn"> 더보기</a>
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 배치4</h4>
+        <div class="btn_wrap btn_wrap02 mt_50">
+            <div class="fl btn_one">
+                <a href="#" class="btn_style02 btn_blue_line wd180 btn_prev btn"><span>이전화면</span></a>
+            </div>
+            <div class="fr btn_three">
+                <a href="#" class="btn_style02 btn_blue wd180 btn">임시저장</a>
+                <a href="#" class="btn_style02 btn_gray wd180 btn">삭제</a>
+                <a href="#" class="btn_style02 btn_pink wd180 btn">컨설팅 신청</a>
+            </div>
+        </div>
+
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 배치5</h4>
+        <div class="btn_wrap btn_wrap03 mt_50 clear">
+            <div class="fl">
+                <a href="#" class="btn_style02 btn_blue_line wd180 btn_prev btn"><span>이전화면</span></a>
+            </div>
+            <div class="fr">
+                <a href="#" class="btn_style02 btn_blue wd180 btn">저장하기</a>
+            </div>
+        </div>
+        <hr class="dash_line" style="margin:50px 0;">
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">테이블 스타일</h3>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">테이블 스타일1</h4>
+        <table class="table_style table_style01">
+            <caption><strong>사이트 구성 목록</strong>
+                <p>사이트 구성 목록입니다. 대분류, 중분류, 소분류, 기능으로 구성되어 있습니다.</p>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="row">번호</th>
+                    <th scope="row">유형</th>
+                    <th scope="row">제목</th>
+                    <th scope="row">작성자</th>
+                    <th scope="row">등록일</th>
+                    <th scope="row">답변여부</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>45</p>
+                    </td>
+                    <td>
+                        유형
+                    </td>
+                    <td>
+                        ㅇㅇ
+                    </td>
+                    <td> 김**
+                    </td>
+                    <td>
+                        등록일:
+                    </td>
+                    <td>
+                        답변대기
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">테이블 스타일2</h4>
+        <table class="table_style table_style02">
+            <caption><strong>사이트 구성 목록</strong>
+                <p>사이트 구성 목록입니다. 대분류, 중분류, 소분류, 기능으로 구성되어 있습니다.</p>
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="row">번호</th>
+                    <th scope="row">유형</th>
+                    <th scope="row">제목</th>
+                    <th scope="row">작성자</th>
+                    <th scope="row">등록일</th>
+                    <th scope="row">답변여부</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <p>45</p>
+                    </td>
+                    <td>
+                        유형
+                    </td>
+                    <td>
+                        ㅇㅇ
+                    </td>
+                    <td> 김**
+                    </td>
+                    <td>
+                        등록일:
+                    </td>
+                    <td>
+                        답변대기
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">게시판 목록</h3>
+        <h4 style="margin-bottom: 10px;margin-top: 30px">게시판 목록 1</h4>
+        
+        
+        <div class="board_list">
+            <table class="table_style table_style01">
+                <caption>
+                    자기소개서 컨설팅 현황
+                </caption>
+                <colgroup class="col7">
+                    <col class="w10">
+                    <col class="w15">
+                    <col />
+                    <col class="w20">
+                    <col class="w10">
+                    <col class="w10">
+                    <col class="w15">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="row" class="hidden_s">번호</th>
+                        <th scope="row">직무</th>
+                        <th scope="row">제목</th>
+                        <th scope="row">상태</th>
+                        <th scope="row">별점</th>
+                        <th scope="row">신청자</th>
+                        <th scope="row">등록일</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            IT/디자인
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_orange">컨설팅 완료</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            광고/홍보
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">광고계를 뒤흔들 김**입니다.광고계를 뒤흔들 김**입니다.광고계를 뒤흔들 김**입니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray">컨설팅 대기</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:50%"></span>
+                                    <em>2.5점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            경영/기획
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">최고의 경영자가 되고자 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            IT/디자인
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_orange">컨설팅 완료</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            광고/홍보
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">광고계를 뒤흔들 김**입니다.광고계를 뒤흔들 김**입니다.광고계를 뒤흔들 김**입니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray">컨설팅 대기</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:50%"></span>
+                                    <em>2.5점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            경영/기획
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">최고의 경영자가 되고자 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            IT/디자인
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_orange">컨설팅 완료</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            광고/홍보
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">광고계를 뒤흔들 김**입니다.광고계를 뒤흔들 김**입니다.광고계를 뒤흔들 김**입니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray">컨설팅 대기</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:50%"></span>
+                                    <em>2.5점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            경영/기획
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">최고의 경영자가 되고자 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="type">
+                            경영/기획
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">최고의 경영자가 되고자 지원합니다.</a>
+                        </td>
+                        <td class="res_stat">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="star_rating">
+                            <div class="reviewer_area clear">
+                                <div class="star_area">
+                                    <span class="value" style="width:80%"></span>
+                                    <em>4점</em>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="name">
+                            김**
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">게시판 목록 2</h4>
+        <div class="board_list mh_60">
+            <table class="table_style table_style02">
+                <caption>
+                    자기소개서 컨설팅 현황
+                </caption>
+                <colgroup class="col7">
+                    <col class="w10">
+                    <col />
+                    <col class="w20">
+                    <col class="w10">
+                    <col class="w15">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="row" class="hidden_s">번호</th>
+                        <th scope="row">제목</th>
+                        <th scope="row">진행상태</th>
+                        <th scope="row">등록일</th>
+                        <th scope="row">자세히보기</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_orange">컨설팅 완료</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">컨설팅확인</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_gray">답변 대기</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            -
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">컨설팅확인</a>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_orange">컨설팅 완료</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">컨설팅확인</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_gray">답변 대기</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            -
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">컨설팅확인</a>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_orange">컨설팅 완료</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">컨설팅확인</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_gray">답변 대기</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            -
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_gray_border">반려</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">컨설팅확인</a>
+                        </td>
+                    </tr>
+
+
+                    <tr>
+                        <td class="hidden_s">
+                            <p>45</p>
+                        </td>
+                        <td class="title tlt">
+                            <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                        </td>
+                        <td class="res_stat tct">
+                            <span class="state_tct st_blue_border">임시저장</span>
+                        </td>
+                        <td class="date">
+                            2021-06-04
+                        </td>
+                        <td class="table_btn btn_wrap tct">
+                            <a href="#" class="a_link">수정하기</a>
+                        </td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;margin-top: 40px;font-weight: bold;font-size: 26px">페이징 </h3>
+        <!-- 페이징 -->
+        <div class="paginate mt_50">
+            <div class="mo_paging">
+                <button class="prev">이전</button>
+                <p class="active_txt"><span class="cut">1</span> / <span>43</span></p><button class="next">다음</button>
+            </div>
+            <div class="paginate_list">
+                <a href="javascript:vold" class="first_paging">첫번째 페이지로 이동</a>
+                <a href="javascript:vold" class="prev_paging">이전 페이지로 이동</a>
+                <a href="javascript:vold" class="list_paging active">1</a>
+                <a href="javascript:vold" class="list_paging">2</a>
+                <a href="javascript:vold" class="list_paging">3</a>
+                <a href="javascript:vold" class="list_paging">4</a>
+                <a href="javascript:vold" class="list_paging">5</a>
+                <a href="javascript:vold" class="list_paging">6</a>
+                <a href="javascript:vold" class="list_paging">7</a>
+                <a href="javascript:vold" class="list_paging">8</a>
+                <a href="javascript:vold" class="list_paging">9</a>
+                <a href="javascript:vold" class="list_paging">10</a>
+                <a href="javascript:vold" class="next_paging">다음 페이지로 이동</a>
+                <a href="javascript:vold" class="end_paging">다음 페이지로 이동</a>
+            </div>
+
+        </div> <!-- //페이징 -->
+
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;margin-top: 40px;font-weight: bold;font-size: 26px">스크롤바</h3>
+        <h4 style="margin-bottom: 10px;margin-top: 30px">스크롤바 스타일1</h4>
+        <div class="scrollbar" style="width:500px;height: 100px;border:1px solid #ccc">
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+        </div>
+        <h4 style="margin-bottom: 10px;margin-top: 30px">스크롤바 스타일2</h4>
+        <div class="scrollbar02" style="width:500px;height: 100px;border:1px solid #ccc;">
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+            스크롤바<br />
+        </div>
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;margin-top: 40px;font-weight: bold;font-size: 26px">아이콘</h3>
+
+        <div>
+            <span class="ico_person ico"></span>
+            <span class="ico_title ico"></span>
+            <span class="ico_file ico"></span>
+            <span class="ico_fix"></span>
+            <span class="ico_company"></span>
+        </div>
+
+    </div>
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/imgLiquid-min.js"></script>
+    <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+    <script src="./assets/js/run.js"></script>
+</body>
+
+</html>

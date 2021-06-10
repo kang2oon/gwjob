@@ -1,0 +1,917 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/sub.css">
+
+</head>
+
+<body>
+    <!--스킵네비게이션-->
+    <div id="skipNav">
+        <a href="#contents">본문 바로가기</a>
+    </div>
+    <!--//스킵네비게이션-->
+    <!--  메뉴  -->
+    <header id="header">
+        <div class="container clear">
+            <h1 class="logo">
+                <a href="javascript:vold">강원일자리정보망</a>
+            </h1>
+            <!-- tnb-->
+            <div id="tnb">
+                <ul class="join">
+                    <li>
+                        <a href="javascript:vold">회원가입</a>
+                    </li>
+                    <li>
+                        <a href="javascript:vold">로그인</a>
+                    </li>
+                </ul>
+                <ul class="sns_list">
+                    <li>
+                        <a href="javascript:vold" class="facekbook">페이스북</a>
+                    </li>
+                    <li>
+                        <a href="javascript:vold" class="instagram">인스타그램</a>
+                    </li>
+                    <li>
+                        <a href="javascript:vold" class="blog">네이버블로그</a>
+                    </li>
+                </ul>
+                <div class="kw_job">
+                    <a href="javascript:vold">강원도일자리재단</a>
+                </div>
+                <div class="search_wrap clear">
+                    <input type="text" placeholder="검색어를 입력해주세요." />
+                    <input type="submit" value="검색" />
+                </div>
+            </div>
+            <!--//tnb-->
+        </div>
+        <!--//container-->
+        <!--gnb-->
+        <div class="gnb_wrap container">
+            <ul id="gnb">
+                <li class="depth1">
+                    <a href="javascript:vold" class="on">구인구직</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="javascript:vold">채용정보</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">공공채용</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">전국공채</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">원스톱채용</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">일자리소식</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">강원기업현황</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">강원기업탐방</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="javascript:vold">지원정책</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="javascript:vold">지원사업신청</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">창업지원정책</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">기업성장지원정책</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">기업금융지원정책</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">기업인력지원정책</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">맞춤형일자리지원</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="javascript:vold">취창업진단</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="javascript:vold">사전진단</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">직업선호도진단</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">NCS직업역량진단</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">취업준비도진단</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">취업가능성진단</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">이전직준비도진단</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">창업적성검사</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">창업역량진단</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="javascript:vold">취업지원</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="javascript:vold">프로그램신청</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">직업상담신청</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">자소서컨설팅</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">취업준비Q&amp;A</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">AI모의면접</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="javascript:vold">교육지원</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="javascript:vold">이러닝학습</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">직업훈련(hrd-net)</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">교육훈련게시판</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="depth1">
+                    <a href="javascript:vold">커뮤니티</a>
+                    <ul class="depth2">
+                        <li>
+                            <a href="javascript:vold">자주하는질문</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">묻고답하기</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">이용후기</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">설문조사</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">문서자료실</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <a href="javascript:vold" class="hb_menu" tabindex="0">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </a>
+        </div>
+        <!--//gnb-->
+
+        <div class="menu_bg"></div>
+
+
+    </header>
+    <!-- 사이트맵 -->
+    <div id="site_map">
+        <div class="top">
+            <h3 class="logo">
+                강원일자리정보망
+            </h3>
+            <a href="javascript:vold" class="close">사이트맵 닫기</a>
+        </div>
+        <div class="mb_tnb">
+            <ul class="join">
+                <li>
+                    <a href="javascript:vold">회원가입</a>
+                </li>
+                <li>
+                    <a href="javascript:vold">로그인</a>
+                </li>
+            </ul>
+            <ul class="sns_list">
+                <li>
+                    <a href="javascript:vold" class="facekbook">페이스북</a>
+                </li>
+                <li>
+                    <a href="javascript:vold" class="instagram">인스타그램</a>
+                </li>
+                <li>
+                    <a href="javascript:vold" class="blog">네이버블로그</a>
+                </li>
+            </ul>
+        </div>
+        <!--site_map_inner-->
+        <div class="site_map_inner scrollbar02">
+            <!--구인구직-->
+            <div class="site_map_article">
+                <div class="tit on">
+                    <a href="#">구인구직</a>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li class="two_dept">
+                            <a href="#">채용정보</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">공공채용</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">전국공채</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">원스톱채용</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">온라인채용박람회</a>
+                                </li>
+                                <li>
+                                    <a href="#">강원채용행사</a>
+                                </li>
+                                <li>
+                                    <a href="#">전국채용행사</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">일자리소식</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">채용</a>
+                                </li>
+                                <li>
+                                    <a href="#">모집</a>
+                                </li>
+                                <li>
+                                    <a href="#">행사</a>
+                                </li>
+                                <li>
+                                    <a href="#">기타</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">강원기업현황</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">강원기업탐방</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//구인구직-->
+
+            <!--지원정책-->
+            <div class="site_map_article">
+                <div class="tit">
+                    <a href="#">지원정책</a>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li class="two_dept">
+                            <a href="#">지원사업신청</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">사회보험료지원</a>
+                                </li>
+                                <li>
+                                    <a href="#">청년구직활동지원
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">경력단절여성지원</a>
+                                </li>
+                                <li>
+                                    <a href="#">구직응원금</a>
+                                </li>
+                                <li>
+                                    <a href="#">면접정장대여</a>
+                                </li>
+                                <li>
+                                    <a href="#">면접활동비</a>
+                                </li>
+                                <li>
+                                    <a href="#">생활안정지원(실업급여)</a>
+                                </li>
+                                <li>
+                                    <a href="#">생활안정지원(청년수당)</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">창업지원정책</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">교육컨설팅</a>
+                                </li>
+                                <li>
+                                    <a href="#">사업화</a>
+                                </li>
+                                <li>
+                                    <a href="#">자금 및 시설</a>
+                                </li>
+                                <li>
+                                    <a href="#">재기 및 재창업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">기업성장지원정책</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">교육컨설팅</a>
+                                </li>
+                                <li>
+                                    <a href="#">육성</a>
+                                </li>
+                                <li>
+                                    <a href="#">연구 및 개발</a>
+                                </li>
+                                <li>
+                                    <a href="#">사회적기업</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">기업금융지원정책</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">자금 및 시설</a>
+                                </li>
+                                <li>
+                                    <a href="#">신용보증</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">기업인력지원정책</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">인력</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">맞춤형일자리지원</a>
+                            <ul class="three_dept">
+                                <li>
+                                    <a href="#">청년일자리</a>
+                                </li>
+                                <li>
+                                    <a href="#">여성일자리</a>
+                                </li>
+                                <li>
+                                    <a href="#">중장년일자리</a>
+                                </li>
+                                <li>
+                                    <a href="#">장애인일자리</a>
+                                </li>
+                                <li>
+                                    <a href="#">어르신일자리</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//지원정책-->
+
+            <!--취창업진단-->
+            <div class="site_map_article">
+                <div class="tit">
+                    <a href="#">취창업진단</a>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li class="two_dept">
+                            <a href="#">사전진단</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">직업선호도진단</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">NCS직업역량진단</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">취업준비도진단</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">취업가능성진단</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">이전직준비도진단</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">창업적성검사</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">창업역량진단</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//취창업진단-->
+
+            <!--취업지원-->
+            <div class="site_map_article">
+                <div class="tit">
+                    <a href="#">취업지원</a>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li class="two_dept">
+                            <a href="#">프로그램신청</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">직업상담신청</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">자소서컨설팅</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">취업준비Q&amp;A</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">AI모의면접</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--//취업지원-->
+
+            <!--교육훈련-->
+            <div class="site_map_article">
+                <div class="tit">
+                    <a href="#">교육훈련</a>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li class="two_dept">
+                            <a href="#">이러닝 학습</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">직업훈련</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">교육훈련게시판</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">자격시험정보</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <!--//교육훈련-->
+
+            <!--커뮤니티-->
+            <div class="site_map_article">
+                <div class="tit">
+                    <a href="#">커뮤니티</a>
+                </div>
+                <div class="sub">
+                    <ul>
+                        <li class="two_dept">
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">자주하는질문</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">묻고답하기</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">이용후기</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">설문조사</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">문서자료실</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">사진자료실</a>
+                        </li>
+                        <li class="two_dept">
+                            <a href="#">영상자료실</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!--//커뮤니티-->
+
+        </div>
+        <!--//site_map_inner-->
+    </div>
+    <!-- //사이트맵 -->
+    <div class="menu_shadow"></div>
+    <div class="shadow"></div>
+    <!--  //메뉴  -->
+
+
+
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap">
+        <div class="container">
+            <div>
+                <h2 class="sub_tit01">
+                    자기소개서 <span>마이페이지</span>
+                </h2>
+                <p class="f18 tct mt_15">강원도님의 자기소개서 컨설팅 내역
+                </p>
+
+                <!-- 검색 -->
+                <div class="sub_search section02 mt_50">
+                    <div class="left">
+                        <ul class="select_list select_list_txt">
+                            <li class="txt">
+                                <p class="bold01">임시저장 <span class="pink bold02">30</span>건</p>
+                            </li>
+                            <li class="txt">
+                                <p class="bold01">답변대기 <span class="pink bold02">30</span>건</p>
+                            </li>
+                            <li class="txt">
+                                <p class="bold01">컨설팅 완료 <span class="pink bold02">1,030</span>건</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //검색 -->
+
+                <!--자기소개서 마이페이지-->
+                <div class="white_round">
+
+                    <div class="board_list mh_60">
+                        <table class="table_style table_style02">
+                            <caption>
+                                자기소개서 컨설팅 현황
+                            </caption>
+                            <colgroup class="col7">
+                                <col class="w10">
+                                <col />
+                                <col class="w20">
+                                <col class="w10">
+                                <col class="w15">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="row" class="hidden_s">번호</th>
+                                    <th scope="row">제목</th>
+                                    <th scope="row">진행상태</th>
+                                    <th scope="row">등록일</th>
+                                    <th scope="row">자세히보기</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                        <span class="state_tct st_orange">컨설팅 완료</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                          <a href="#" class="a_link">컨설팅확인</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                        <span class="state_tct st_gray">답변 대기</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                        -
+                                    </td>
+                                </tr>
+                                
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                          <span class="state_tct st_gray_border">반려</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                    <a href="#" class="a_link">컨설팅확인</a>
+                                    </td>
+                                </tr>
+                                
+                                <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                        <span class="state_tct st_orange">컨설팅 완료</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                          <a href="#" class="a_link">컨설팅확인</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                        <span class="state_tct st_gray">답변 대기</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                        -
+                                    </td>
+                                </tr>
+                                
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                          <span class="state_tct st_gray_border">반려</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                    <a href="#" class="a_link">컨설팅확인</a>
+                                    </td>
+                                </tr>
+                                
+                                
+                                <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                        <span class="state_tct st_orange">컨설팅 완료</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                          <a href="#" class="a_link">컨설팅확인</a>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                        <span class="state_tct st_gray">답변 대기</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                        -
+                                    </td>
+                                </tr>
+                                
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                          <span class="state_tct st_gray_border">반려</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                    <a href="#" class="a_link">컨설팅확인</a>
+                                    </td>
+                                </tr>
+                                
+                                
+                                 <tr>
+                                    <td class="hidden_s">
+                                        <p>45</p>
+                                    </td>
+                                    <td class="title tlt">
+                                        <a href="javascript:vold" class="textCut1">편집디자인업무 지원합니다.</a>
+                                    </td>
+                                    <td class="res_stat tct">
+                                          <span class="state_tct st_blue_border">임시저장</span>
+                                    </td>
+                                    <td class="date">
+                                        2021-06-04
+                                    </td>
+                                    <td class="table_btn btn_wrap tct">
+                                    <a href="#" class="a_link">수정하기</a>
+                                    </td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+                    </div>
+                    <!-- 페이징 -->
+                    <div class="paginate mt_50">
+                        <div class="mo_paging">
+                            <button class="prev">이전</button>
+                            <p class="active_txt"><span class="cut">1</span> / <span>43</span></p><button class="next">다음</button>
+                        </div>
+                        <div class="paginate_list">
+                            <a href="javascript:vold" class="first_paging">첫번째 페이지로 이동</a>
+                            <a href="javascript:vold" class="prev_paging">이전 페이지로 이동</a>
+                            <a href="javascript:vold" class="list_paging active">1</a>
+                            <a href="javascript:vold" class="list_paging">2</a>
+                            <a href="javascript:vold" class="list_paging">3</a>
+                            <a href="javascript:vold" class="list_paging">4</a>
+                            <a href="javascript:vold" class="list_paging">5</a>
+                            <a href="javascript:vold" class="list_paging">6</a>
+                            <a href="javascript:vold" class="list_paging">7</a>
+                            <a href="javascript:vold" class="list_paging">8</a>
+                            <a href="javascript:vold" class="list_paging">9</a>
+                            <a href="javascript:vold" class="list_paging">10</a>
+                            <a href="javascript:vold" class="next_paging">다음 페이지로 이동</a>
+                            <a href="javascript:vold" class="end_paging">다음 페이지로 이동</a>
+                        </div>
+
+                    </div> <!-- //페이징 -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //콘텐츠 영역 -->
+
+
+    <!--footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer_top clear">
+                <div class="fnb_wrap">
+                    <ul class="fnb">
+                        <li>
+                            <a href="javascript:vold" class="blue01">개인정보처리방침</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">이용약관</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">이메일수집거부</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">Open API 신청</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">조직구성</a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold">오시는길</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="fm_site">
+                    <a href="javascript:vold" class="select_tit">유관사이트</a>
+                    <ul class="option">
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                강원도청
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                워크넷
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                강원형 일자리 안심공제
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                직업훈련포털 HRD-Net
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                강원고용노동지청
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                강원도 제대군인 정착지원센터
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" target="_blank">
+                                강원도 지역워크넷
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <p class="f14 gray01">
+                주소: [24272] 강원도 춘천시 금강로 45 IBK기업은행, 4층<br />
+                강원도일자리센터 전화: 033-249-2019 팩스: 033-256-3278 이메일: jobgw@gwjf.or.kr<br />
+                사회보험료 문의: 033-249-3933 / 033-249-3929<br />
+                청년구직활동 문의: 033-256-9575/9577/9579
+            </p>
+
+            <div class="footer_bt">
+                <p class="f14 thin02">COPYRIGHT(C) 2019 Gangwon-do. All rights reserved.</p>
+                <div class="logo_area">
+                    <div class="logo">
+                        <img src="./assets/images/common/footer_kwd.png" alt="강원도">
+                    </div>
+                    <div class="logo">
+                        <img src="./assets/images/common/footer_gwjob.png" alt="강원도일자리재단">
+                        <div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //logo_area -->
+            </div>
+            <!--//footer_bt-->
+        </div>
+        <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/imgLiquid-min.js"></script>
+    <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+    <script src="./assets/js/run.js"></script>
+
+</body></html>
