@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./assets/css/font.css">
+    <link rel="stylesheet" href="./assets/css/normalize.css">
+    <link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./assets/css/common.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/slick.css">
+    <link rel="stylesheet" href="./assets/css/sub.css">
+
+</head>
+
+<body>
+
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap">
+        <div class="inner">
+            <div>
+                <h2 class="sub_tit01">
+                    AI 면접 <span>신청페이지</span>
+                </h2>
+
+                <!-- 작성 -->
+                <div class="post_write">
+
+                    <!-- 기본정보 -->
+                    <div class="top white_round section02 mt_50">
+                        <div class="write_tit">
+                            <span class="ico_person ico"></span>
+                            <p>
+                                기본 <span class="blue02">정보</span>
+                            </p>
+                        </div>
+                        <div class="post_write_info clear">
+                            <div class="left">
+                                <p class="pw_tit">
+                                    신청자명
+                                </p>
+                                <p class="pw_txt">
+                                    이정은
+                                </p>
+                            </div>
+                            <div class="left">
+                                <p class="pw_tit">
+                                    ID
+                                </p>
+                                <p class="pw_txt">
+                                    1234@naver.com
+
+                                </p>
+                            </div>
+                        </div>
+                        <hr class="blue_line section02">
+
+                        <div class="post_write_info clear">
+                            <div class="left pw_slt">
+                                <p class="pw_tit">
+                                    <label for="area">가입유형</label>
+                                </p>
+                                <p class="pw_txt">
+                                    <select class="wd150" id="area" name="area">
+                                        <option>전체</option>
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="left pw_slt">
+                                <p class="pw_tit">
+                                    <label for="area">희망직종</label>
+                                </p>
+                                <p class="pw_txt">
+                                    <select class="wd150" id="area" name="area">
+                                        <option>전체</option>
+                                    </select>
+
+                                </p>
+                            </div>
+                        </div>
+
+                        <hr class="dotted_line section02">
+                        <div class="post_write_table pw_item_two mt_30">
+                            <table>
+                                <caption>취업희망 기업명</caption>
+                                <colgroup>
+                                    <col style="width: 15%">
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="pw_tit">
+                                            <label for="self_tit">취업희망 기업명</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <input type="text" placeholder="기업명을 입력해주세요." id="self_tit" name="self_tit" class="w100" />
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <hr class="dotted_line section02">
+                        <div class="post_write_table pw_item_two mt_30">
+                            <table>
+                                <caption>요청사항 작성</caption>
+                                <colgroup>
+                                    <col style="width: 15%">
+                                    <col />
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="pw_tit">
+                                            <label for="self_tit">요청사항</label>
+                                        </th>
+                                        <td class="pw_txt">
+                                            <textarea class="textarea" placeholder="요청사항을 입력해주세요."></textarea>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!-- //기본정보 -->
+                </div>
+
+                <div class="btn_wrap mt_50 tct">
+                    <a href="#" class="btn_style02 btn_orange btn">신청</a>
+                </div>
+                
+                    <!--로그인 팝업-->
+                    <div class="popup_area">
+                    <div class="shadow"></div>
+                    <div class="popup wd450">
+                        <div class="popup_inner">
+                            <p class="f17 tct bold01">신청이 완료되었습니다.
+                            </p>
+                            <hr class="dotted_line mt_15 mb_15">
+                            <div class="btn_wrap mt_20 tct">
+                                <a href="#" class="btn_style01 btn_blue btn"  onclick="close_pop();">확인</a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <!--//로그인 팝업-->
+
+
+            </div>
+        </div>
+        <!-- // 작성 -->
+    </div>
+    <!-- //콘텐츠 영역 -->
+
+    <script src="./assets/js/jquery-3.2.1.min.js"></script>
+    <script src="./assets/js/slick.min.js"></script>
+    <script src="./assets/js/imgLiquid-min.js"></script>
+    <script src="./assets/js/jquery.mCustomScrollbar.js"></script>
+    <script src="./assets/js/run.js"></script>
+
+</body></html>

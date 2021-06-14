@@ -59,7 +59,8 @@
 .consult_history{position: relative;overflow: hidden;}
 .consult_history_disabled{background: rgba(241, 243, 253, 0.87);position: absolute;width: 100%;height: 100%;top: 0;left: 0;;z-index: 555;padding: 30px;}
 .consult_history_disabled > div {position: absolute;left: 50%;top: 50%;transform: translate(-50%,-50%);}
-.self_intro_main .main_section03  .popup{position: absolute;z-index: 999;left: 50%;top: 50%;transform: translate(-50%,-50%);width:420px;}
+.self_intro_main .main_section03  .popup,
+.ai_main .main_section01  .popup{position: absolute;z-index: 999;left: 50%;top: 50%;transform: translate(-50%,-50%);width:420px;z-index: 999}
 
 /*자소서 컨설팅 내역*/
 .self_intro_main .main_section03 .consult_history {padding:40px 0;border-radius: 20px;overflow: hidden}
@@ -90,14 +91,16 @@
 /* 자소서 자기소개서 별책부록*/
 .self_intro_main .main_section05{background: #ebeeff;}
 .self_intro_main .main_section05 .ico_tab{}
-.self_intro_main .main_section05 .ico_tab li{float: left;margin-right: 30px;color: #adb1c9}
-.self_intro_main .main_section05 .ico_tab li a{font-size: 1.8rem;;font-weight: bold;}
-.self_intro_main .main_section05 .ico_tab li span{display: block;width: 32px;height: 32px;;border-radius: 50%;margin-right: 5px;display: inline-block;vertical-align: middle}
 .self_intro_main .main_section05 .ico_tab li .ico01{background: url(../images/main/consult_ico01.png) no-repeat center #adb1c9;}
 .self_intro_main .main_section05 .ico_tab li.active .ico01{background: url(../images/main/consult_ico01.png) no-repeat center #ff1b66;}
 .self_intro_main .main_section05 .ico_tab li.active {color: #ff1b66}
 .self_intro_main .main_section05 .ico_tab li .ico02{background: url(../images/main/consult_ico02.png) no-repeat center #adb1c9;}
 .self_intro_main .main_section05 .ico_tab li.active .ico02{background: url(../images/main/consult_ico02.png) no-repeat center #ff1b66;}
+
+.icon_tab_container .ico_tab li{float: left;margin-right: 30px;color: #adb1c9}
+.icon_tab_container .ico_tab li a{font-size: 1.8rem;font-weight: bold;}
+.icon_tab_container .ico_tab li span{display: block;width: 32px;height: 32px;;border-radius: 50%;margin-right: 5px;display: inline-block;vertical-align: middle}
+.icon_tab_container .ico_tab  li.active {color: #ff1b66}
 
 .self_intro_main .main_section05 .tab_content{margin-top: 30px;}
 .self_intro_main .main_section05 #tab2.tab_content .gray_border{padding: 29px 30px}
@@ -112,7 +115,8 @@
 
 /* 메인 공통 하단*/
 .self_intro_main .main_section05 .job_aricle {width:calc(100% - 350px );margin-left: 50px;display: flex;}
-.self_intro_main .main_section05  .job_aricle > div {flex: 1;margin-right: 40px;position: relative;overflow: hidden}
+.self_intro_main .main_section05  .job_aricle > div {flex: 1;margin-right: 40px;position: relative;overflow: hidden;min-height: 200px}
+.job_aricle > div{position: relative;overflow: hidden}
 .job_aricle > div > a{display: block;width: 100%;height: 100%;}
 .job_aricle > div:last-child{margin-right: 0}
 .job_aricle .tit{font-size: 1.8rem;font-weight: bold;}
@@ -128,7 +132,93 @@
 .job_aricle.job_aricle-two .middle {margin-top: 0}
 
 
+
+/* AI 면접 메인 시작*/
+.ai_main .main_section01{}
+.ai_main .main_section01 .banner{background: url(../images/main/ai_main_banner_bg.png) no-repeat left center #bae6ff;border-radius: 10px;;position: relative;z-index: 1;}
+.ai_main .main_section01 .banner:before{content: '';display: block;background: url(../images/main/ai_main_banner.png) no-repeat;width: 517px;height: 356px;position: absolute;left: 60px;bottom: 0;}
+.ai_main .main_section01 .txt{float: right;position: relative;z-index: 2;padding-right: 5.0rem}
+
+/*AI 면접 서비스 이용방법*/
+.ai_main  .main_section02 .consult_step{display: flex;justify-content: space-around}
+.ai_main  .main_section02 .consult_step  .txt {position: relative;}
+.ai_main  .main_section02 .consult_step  > div{}
+.ai_main  .main_section02 .consult_step  > div:last-child{margin-right: 0}
+.ai_main .main_section02 .consult_step .arrow{background: url(../images/common/step_arrow.png) no-repeat center ;width: 24px;height:48px; ;text-indent: -9999px;margin-top: 80px}
+
+
+.ai_main .main_section02 .consult_step .num{font-size: 4.0rem;position: relative;font-weight: bold;display: inline-block;}
+.ai_main .main_section02 .consult_step .num:before{content: '';display: block;width:20px;height: 20px;background: #bae6ff;border-radius: 50%;position: absolute;right: 0;top: 0; z-index: -1}
+.ai_main .main_section02  .consult_step .step_tit{font-size: 2.0rem;}
+
+/*AI면접 분석리포트*/
+.ai_main .main_section03 {background: #ffd2eb;}
+.ai_main .main_section03 .inner:before{content: '';display: block;background: url(../images/main/ai_main_img01.png) no-repeat;width: 488px;height: 326px;position: absolute;right: 30px;top: -165px;z-index: 1}
+.ai_main .main_section03 .white_round{position: relative;z-index: 2}
+.ai_main .main_section03 .ai_report_area01,
+.ai_main .main_section03 .ai_report_area02{display: flex;}
+.ai_main .main_section03 .ai_report_area01 .img{margin-right: 50px}
+.ai_main .main_section03 .ai_report_area01 .txt{width: calc(100% - 318px)}
+.ai_main .main_section03 dl{margin-bottom:3.0rem;padding-bottom: 3.0rem;border-bottom: 1px dotted #c7cee1;width: 100%;}
+.ai_main .main_section03 dl:last-child{border-bottom: 0}
+.ai_main .main_section03 dl dt{font-weight: bold;font-size: 1.8rem;margin-bottom: 10px;display: flex;align-items: center;}
+.ai_main .main_section03 dl dd{font-size: 1.6rem;color: #666;}
+.ai_main .main_section03 dl span{display:block;width: 30px;height: 30px;margin-right: 10px}
+.ai_main .main_section03 dl .ai_ico01{background: url(../images/main/ai_main_ico01.png) no-repeat center;}
+.ai_main .main_section03 dl .ai_ico02{background: url(../images/main/ai_main_ico02.png) no-repeat center;}
+.ai_main .main_section03 dl .ai_ico03{background: url(../images/main/ai_main_ico03.png) no-repeat center;}
+.ai_main .main_section03 dl .ai_ico04{background: url(../images/main/ai_main_ico04.png) no-repeat center;}
+.ai_main .main_section03 .ai_report_area02{align-items: flex-end}
+.ai_main .main_section03 .ai_report_area02 .img{margin-left: 20px;margin-bottom: -6px}
+
+
+/* AI 면접 대비 강의*/
+.ai_main .main_section05 {overflow: hidden;position: relative}
+.ai_main .main_section05 .inner{overflow: visible !important;display: flex}
+.ai_main .main_section05 .inner:after{content: '';display: block;clear: both}
+
+.ai_main .main_section05 .left{width:224px;position: relative;}
+.ai_main .main_section05 .right{width: calc(100% - 224px)}
+.ai_main .main_section05 .ai_slider_wrap{width: calc(100% +  ((100vw - 1420px) / 2));margin-left: auto;}
+ 
+
+.ai_main .main_section05 .ai_slider{}
+.ai_main .main_section05 a:hover .hover,
+.ai_main .main_section05 a:active .hover,
+.ai_main .main_section05 a:focus .hover{visibility: visible;opacity: 1}
+.ai_main .main_section05 .img_border{position: relative}
+.ai_main .main_section05 .hover{position: absolute;left: 0;top: 0;width: 100%;height: 100%;background: rgba(0, 0, 0, 0.7);visibility:hidden;opacity: 0; transition: visibility 0s, opacity 0.2s linear;}
+.ai_main .main_section05 .hover .txt{position: absolute;top: 50%;left: 50%;color: #fff;transform: translate(-50%,-50%)}
+.ai_main .main_section05 .hover .txt > span{display:block;background: url(../images/main/video_start.png) no-repeat;width: 34px;height: 45px !important;margin: auto;margin-bottom: 30px}
+
+.ai_main .main_section05 .controls_inner{position: absolute;bottom: 0;width: 95px}
+.ai_main .main_section05 .controls button{border: 1px solid #004897;width: 40px;height: 40px;border-radius: 50%;font-size: 20px;font-weight: bold;color: #004897;}
+.ai_main .main_section05 .controls button:hover,
+.ai_main .main_section05 .controls button:active,
+.ai_main .main_section05 .controls button:focus {background: #004897;color: #fff;}
+
+.ai_main .main_section05 .controls button:first-child{margin-right: 7px}
+.ai_main ul.main-news__items-wrapp li{width: 340px}
+.ai_main ul.main-news__items-wrapp li:first-child{margin-left: 0 !important;}
+.ai_main ul.main-news__items-wrapp .scrollbar_inner{width: 1400px}
+
+
+/* AI 모의면접 별책부록*/
+.ai_main .main_section06 {background: #daeeff;}
+.org_tab .active a{color: #ff4e4a}
+.ai_main .main_section06 .ico01{background: url(../images/main/ai_main_ico05.png) no-repeat #adb1c9 center;}
+.ai_main .main_section06 .ico02{background: url(../images/main/ai_main_ico06.png) no-repeat #adb1c9 center;}
+.ai_main .main_section06 .active .ico01{background: url(../images/main/ai_main_ico05.png) no-repeat #ff4e4a center;}
+.ai_main .main_section06 .active .ico02{background: url(../images/main/ai_main_ico06.png) no-repeat #ff4e4a center;}
+.ai_main .main_section06 .flex_four .job_aricle{display: flex;}
+.ai_main .main_section06 .flex_four .job_aricle > div{flex: 1;margin-right: 40px;min-height: 230px}
+.ai_main .main_section06 .flex_four .job_aricle > div:last-child{margin-right: 0}
+
+
+
 /* -------------------------- 반응형 start ------------------------*/
+
+
 @media all and (max-width:1400px){
 
 /*  자소서 start  */
@@ -150,8 +240,6 @@
     .self_intro_main  .main_section04 .table_style td {padding: 15px 5px}
     .self_intro_main  .reviewer_area > .star_area{width: 80px;background-size: 80px;}
     .self_intro_main  .reviewer_area > .star_area .value{width: 80px;background-size: 80px}
-    
-    
     .self_intro_main .main_section03 .consult_step .gray02 {font-size: 1.5rem}
     
     /*  자소서 start  */
@@ -163,6 +251,28 @@
     
     .self_intro_main .main_section03 .consult_step > div{margin-right: 50px;width:calc(25% - 38.999px)}
     .self_intro_main .main_section03 .consult_step .arrow{background-size: 12px;width: 12px;right: calc(-20px - 12px);}
+    
+    /* AI 면접 메인 시작*/
+    .ai_main .main_section01{}
+    .ai_main .main_section01 .banner{background-size: contain;padding: 4.0rem 0}
+    .ai_main .main_section01 .banner:before{width: 400px;background-size: 400px;height: 270px}
+    .ai_main .main_section01 .txt{float: right;padding-right: 2.0rem;width: calc(100% - 500px);word-break: keep-all}
+    
+    
+    /* Ai 면접 서비스 이용방법*/
+    .ai_main .main_section02 .consult_step{flex-wrap: wrap}
+    .ai_main .main_section02 .consult_step .arrow{width: 12px;background-size: 12px;height: 24px;margin-top: 90px}
+    .ai_main .main_section02 .consult_step > div:not(.arrow) {width: calc(20% - 60px);text-align: }
+    .ai_main .main_section02 .consult_step .txt{word-break: keep-all}
+    .ai_main .main_section02 .consult_step{}
+    .ai_main .main_section03 .inner:before{background-size:350px;height: 240px;width:350px;top: -74px;right:20px; }
+    
+   /* 면접 대비 강의*/
+    /* AI 면접 */
+    .ai_main .main_section05 .ai_slider_wrap{position: static;width: 100%}
+    
+    /* 별책부록 */
+    .ai_main .main_section06 .flex_four .job_aricle > div{margin-right: 20px}
 
 }
 
@@ -173,10 +283,10 @@
     .self_intro_main .main_section01 .review .list_wrap{width: 100%;margin-top: 2.0rem}
     .self_intro_main .main_section01 .review .list_area .list_txt{width: calc(100% - 250px)}
     
-    .self_intro_main .main_section03  .popup{max-width: 420px;width: 90%;}
+    .self_intro_main .main_section03  .popup,
+    .ai_main .main_section01 .popup{max-width: 420px;width: 90%;}
     
     /*  자기소개서 컨설팅 현황  */
-    
     .self_intro_main .main_section03 .consult_step > div{margin-right: 50px;width:calc(50% - 38.999px);margin-bottom: 4.0rem}
     .self_intro_main .main_section03 .consult_step > div:nth-child(2n){margin-right: 0;}
     .self_intro_main .main_section03 .consult_step .arrow{background-size: 12px;width: 12px;right: calc(-20px - 12px);}
@@ -192,6 +302,40 @@
     .self_intro_main .main_section02 .consult_pass_txt{text-align: right;}
     .self_intro_main .main_section02 .link{right: 0px;transform: none;}
     .self_intro_main .main_section02 .star_bg {background-size: 65px}
+    
+    
+     /* AI 면접 메인 시작*/
+    .ai_main .main_section01{}
+    .ai_main .main_section01 .banner{padding: 3.0rem 0}
+    .ai_main .main_section01 .banner:before{width: 250px;background-size: 250px;height: 170px;left: 20px;bottom: 50%;transform: translateY(50%)}
+    .ai_main .main_section01 .txt{padding-right: 2.0rem;width: calc(100% - 300px);}
+    
+     /* Ai 면접 서비스 이용방법*/
+    .ai_main .main_section02 .consult_step{}
+    .ai_main .main_section02 .consult_step .arrow{width: 12px;background-size: 12px;height: 24px;margin-top: 90px}
+    .ai_main .main_section02 .consult_step > div:not(.arrow) {width: calc(33.33% - 60px);text-align: center;margin-bottom:3.0rem}
+    .ai_main .main_section02 .consult_step > div:nth-child(7),
+    .ai_main .main_section02 .consult_step > div:nth-child(9){margin-bottom: 0}
+    .ai_main .main_section03 .inner:before{background-size:280px;height: 190px;width:280px;top: -43px;right:20px; }
+    
+     /*AI면접 분석리포트*/
+    .ai_main .main_section03 .ai_report_area01 .img{margin-right: 30px;width: 250px;}
+    .ai_main .main_section03 .ai_report_area01 .txt{width: calc(100% - 280px)}
+    .ai_main .main_section03 .ai_report_area02 .img {}
+    .ai_main .main_section03 .ai_report_area02 .img img {max-width: 638px;width:100%;display: block;margin: auto;}
+    
+    
+    /* AI 면접 */
+    .ai_main .main_section05 .left {width: 180px}
+    .ai_main .main_section05 .right{width: calc(100% - 180px)}
+    
+    
+    /* AI 모의면접 별책부록*/
+    .ai_main .main_section06 .flex_four .job_aricle{flex-wrap: wrap}
+    .ai_main .main_section06 .flex_four .job_aricle > div{width: calc(50% - 10px);flex:initial;margin-bottom: 20px}
+    .ai_main .main_section06 .flex_four .job_aricle > div:nth-child(2n){margin-right: 0}
+    .ai_main .main_section06 .flex_four .job_aricle > div:nth-child(3),
+    .ai_main .main_section06 .flex_four .job_aricle > div:nth-child(4){margin-bottom: 0}
 
 }
 
@@ -209,6 +353,25 @@
     
     .self_intro_main .main_section05 .job_aricle{display: block;}
     .self_intro_main .main_section05 .job_aricle > div{width: 100%;flex:none}
+    
+    
+    /* AI 면접 메인 시작*/
+    /* Ai 면접 서비스 이용방법*/
+    .ai_main .main_section02 .consult_step{}
+    .ai_main .main_section02 .consult_step > div:not(.arrow) {width: calc(50% - 60px);}
+    .ai_main .main_section02 .consult_step > div:nth-child(7){margin-bottom: 3.0rem}
+    .ai_main .main_section03 .inner:before{background-size:150px;height: 100px;width:150px;top: 13px;right:20px; }
+    
+    
+    /* AI 면접 */
+    .ai_main .main_section05 .inner{display: block}
+    .ai_main .main_section05 .left {padding-bottom: 2.0rem;width: 100%;padding-top: 2.0rem}
+    .ai_main .main_section05 .controls button{width: 32px;height: 32px;font-size: 2.0rem}
+    .ai_main .main_section05 .right{width:100%}
+    .ai_main ul.main-news__items-wrapp li{width:300px;}
+    .frame ul.main-news__items-wrapp li {margin: 0 5px !important}
+    .ai_main .main_section05 .controls_inner{position: absolute;right: 0;top: 10px;}
+    .ai_main .main_section05 .controls{padding: 0}
     
 }
 
@@ -258,5 +421,51 @@
     .self_intro_main .main_section05 .ico_tab li .ico02{background-size: 12px !important}
     .self_intro_main .main_section05 .tab_content{margin-top: 2.0rem}
     
+    /* AI 면접 메인 시작*/
+    .ai_main .main_section01{}
+    .ai_main .main_section01 .banner{background-size: cover}
+    .ai_main .main_section01 .banner:before{width: 200px;background-size: 200px;height: 130px;left: 20px;bottom: 0;transform: none;left: 50%;transform: translateX(-50%)}
+    .ai_main .main_section01 .txt{padding:0 2.0rem;width: 100%;float: none;margin-bottom: 140px;text-align: center}
+    .ai_main .main_section03 .inner:before{display: none}
+    
+        
+     /*AI면접 분석리포트*/
+    .ai_main .main_section03 .white_round{overflow: hidden}
+    .ai_main .main_section03 .ai_report_area01{display: block}
+    .ai_main .main_section03 .ai_report_area01 .img{margin:auto}
+    .ai_main .main_section03 .ai_report_area01 .txt{width: 100%;margin-top: 3.0rem}
+    
+    .ai_main .main_section03 .ai_report_area01 dl:last-child{margin-bottom: 0}
+    .ai_main .main_section03 .ai_report_area02 {display: block}
+    .ai_main .main_section03 .ai_report_area02 {display: block;border-top: 1px dotted #c7cee1;padding-top: 3.0rem}
+    .ai_main .main_section03 .ai_report_area02 .img {margin-bottom: -3.0rem}
+    
+    
+     /* AI 면접 */
+    .ai_main .main_section05 .inner{display: block}
+    .ai_main .main_section05 .left {padding-bottom: 2.0rem;width: 100%;padding-top: 2.0rem}
+    .ai_main .main_section05 .controls button{width: 32px;height: 32px;font-size: 2.0rem}
+    .ai_main .main_section05 .right{width:100%}
+    .ai_main ul.main-news__items-wrapp li{width:280px;}
+    .frame ul.main-news__items-wrapp li {margin: 0 5px !important}
+    
     
 }
+
+@media all and (max-width:480px){
+       /* AI 면접 메인 시작*/
+    /* Ai 면접 서비스 이용방법*/
+    .ai_main .main_section02 .consult_step{display: block;}
+    .ai_main .main_section02 .consult_step > div:not(.arrow) {width:100%;margin-bottom: 0}
+    .ai_main .main_section02 .consult_step .arrow{margin-top: 0;transform: rotate(90deg);margin: 2.0rem auto;}
+    .ai_main .main_section02 .consult_step > div:nth-child(7){margin-bottom: 3.0rem}
+    
+    
+    /* AI 모의면접 별책부록*/
+    .ai_main .main_section06 .flex_four .job_aricle > div{width:100%;margin-right: 0;}
+    .ai_main .main_section06 .flex_four .job_aricle > div:nth-child(3){margin-bottom: 20px}
+    .ai_main .main_section06 .flex_four .job_aricle .textCut2 {height: 2.8rem;-webkit-line-clamp:1;text-overflow:ellipsis}
+    
+}
+    
+    
