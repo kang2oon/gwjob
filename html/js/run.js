@@ -304,7 +304,7 @@ $(document).ready(function () {
                 ,
             showOn: "both" //button:버튼을 표시하고,버튼을 눌러야만 달력 표시 ^ both:버튼을 표시하고,버튼을 누르거나 input을 클릭하면 달력 표시  
                 ,
-            buttonImage: "/images/sub/calendar_ico.png" //버튼 이미지 경로
+            buttonImage: "./images/sub/calendar_ico.png" //버튼 이미지 경로
                 ,
             buttonImageOnly: true //버튼 이미지만 깔끔하게 보이게함
                 ,
