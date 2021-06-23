@@ -615,6 +615,7 @@
     
     /* 온라인채용박람회 시작 */
     .mng_list li{font-size: 1.5rem}
+    .online_main .main_section05 .service_list > div{margin-right: 0;}
     /* 온라인 잡페어 참가방법*/
     .online_main .main_section02 .tabs{display: block}
     .online_main .main_section02 .tabs ul {margin-top: 3.0rem}
