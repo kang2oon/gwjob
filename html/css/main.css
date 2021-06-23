@@ -389,7 +389,7 @@
 
     /* 온라인채용박람회 시작 */
     /*추천 서비스*/
-    .online_main .main_section05 .service_list .img{height:200px}
+    .online_main .main_section05 .service_list .img{height:200px;border-radius: 10px;}
     .online_main .main_section05 .service_list img{width: 95%;}
     .online_main .main_section05 .service_list > div{margin-right: 2.0rem;width: calc(25% - 15px)}
   

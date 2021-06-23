@@ -619,7 +619,10 @@ a:focus {transition: all 0.2s}
     .section_pd02{padding: 4.5rem 0}
     .f40{font-size: 3.0rem}
     .white_round,
-    .border_round{padding: 3.0rem}
+    .border_round,
+    .gray_border,
+    .blue_round,
+    .gray_round{padding: 3.0rem}
     
        /* 버튼 영역 2개일때*/
     .btn_wrap02{}
@@ -638,7 +641,11 @@ a:focus {transition: all 0.2s}
 }
 
 @media all and (max-width:480px){
-.white_round{padding: 2.0rem}
+.white_round,
+.gray_border,
+.border_round,
+.blue_round,
+.gray_round{padding: 2.0rem}
 /*  버튼  */
 .btn_wrap .btn_three .btn,    
 .btn_wrap .btn_one .btn,
