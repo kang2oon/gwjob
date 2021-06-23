@@ -773,7 +773,7 @@ width: calc(100% - 170px);
     .border_tabs li {padding: 10px 5px;font-size: 1.6rem}
     
     /* 전형절차 */
-    .hire_progress{zoom:0.6}
+    .hire_progress{zoom:0.5}
     
     .company_info .middle .right{padding: 3.0rem}
     
