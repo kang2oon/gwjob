@@ -633,6 +633,7 @@ width: calc(100% - 170px);
     .sub_wrap .sub_tit01{font-size: 3.0rem;}
     select{padding: 7px 40px 7px 15px;}
     .m_tct {text-align: center}
+    .ico{font-size: 2.0rem;}
         
         
      /*   서브 검색  */
@@ -670,6 +671,8 @@ width: calc(100% - 170px);
     /*온라인채용박람회_비대면온라인면접 녹화*/
     .sv_submit{display: block}
     .sv_submit .blue01.ml_20{margin-left: 0;margin-top: 1.0rem}
+    .support_view .sv_txt .tit{font-size: 2.0rem;}
+    .support_view .sv_txt .f18{font-size: 1.6rem;}
     
     /*입사지원서 작성*/
     .address_wrap input:nth-child(2){width: calc(100% - 122px)}
@@ -750,7 +753,7 @@ width: calc(100% - 170px);
     
     /*radio btn*/
     .check_style01 input[type=checkbox] + label:before{width: 22px;height: 22px;}
-    .check_style01 input[type=checkbox] + label{padding-left: 30px;font-size: 1.6rem}
+    .check_style01 input[type=checkbox] + label{padding-left: 30px;font-size: 1.6rem;padding-top:2px}
     .check_style01 input[type=checkbox]:checked + label:before{background-size: 15px}
     .file_wrap_inbtn > .btn_wrap a{width: 55px;padding: 7px;text-align: center}
     
