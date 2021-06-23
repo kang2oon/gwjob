@@ -626,7 +626,7 @@ a:focus {transition: all 0.2s}
     .btn_wrap02 > div:first-child{margin-bottom: 20px}
     .btn_wrap .wd180{width: 125px;padding: 7px 5px}
     .btn_wrap02 .btn_one {float: none;width: 100%;display: flex;}
-    .btn_wrap .btn_style02 {min-width: 80px;padding: 7px 10px;font-size: 1.5rem;width:auto;}
+    .btn_wrap .btn_style02:not(.more_btn) {min-width: 80px;padding: 7px 10px;font-size: 1.5rem;width:auto;}
     .btn_wrap02 .btn_one .btn{width: calc(33.333% - 5px)}
     .btn_wrap .btn_three {display: flex;width: 100%; }
     .btn_wrap .btn_three .btn{flex: 1}

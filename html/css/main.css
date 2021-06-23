@@ -522,6 +522,8 @@
     .ai_main .main_section05 .controls{padding: 0}
     
     /*온라인채용박람회*/
+    .controls button{width: 32px;height: 32px;font-size: 1.8rem}
+    .controls button:first-child{margin-right: 5px}
     /*나의 지원현황*/
     .online_table {}
     .online_table  td{position: absolute;}
@@ -534,7 +536,7 @@
     .online_table  .title .textCut1{width: 100%}
     .online_table .btn_wrap {text-align: right}
     .online_main .real_time_ico{width: 28px;height: 28px}
-    
+    .online_main .main_section07 .mng_list{font-size: 1.6rem}
 }
 
 @media all and (max-width:640px){
