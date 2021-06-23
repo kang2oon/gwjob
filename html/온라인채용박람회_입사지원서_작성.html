@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+
+
+</head>
+
+<body>
+
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap bg02">
+        <div class="inner">
+            <div>
+                <h2 class="sub_tit01">
+                    입사 <span>지원</span>
+                </h2>
+                <!--자기소개서 리스트-->
+                <div class="white_round section">
+                    <p class="ico"><span class="ico_hire"></span>
+                        지원 <span class="ml_5 blue02">채용공고</span>
+                    </p>
+                    <!--지원 채용공고 -->
+                    <div class="support_view mt_20">
+                        <div class="sv_img">
+                            <div class="img_border imgFll">
+                                <img src="./images/sub/online_img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="sv_txt">
+                            <p class="tit f22 bold01">[춘천시] **기업 구내식당 직원 모집</p>
+                            <ul class="lb_list mt_30 mb_15">
+                                <li>춘천시</li>
+                                <li>계약직</li>
+                                <li>회사내규에 따름</li>
+                                <li>학력무관</li>
+                                <li>경력무관</li>
+                            </ul>
+                            <p class="gray02 f18">2020.12.01~2021.12.14</p>
+                        </div>
+                    </div>
+                    <!--//지원 채용공고 -->
+                </div>
+
+                <!-- 작성 -->
+                <div class="tab_container">
+                    <div class="tabs">
+                        <ul class="border_tabs">
+                            <li>
+                                <a href="javascript:vold" data-tab="tab1">
+                                    직접 작성
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:vold" data-tab="tab2">
+                                    파일 첨부형
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:vold" data-tab="tab3">
+                                    NCS 이력서
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--tab1-->
+                    <div class="tab_content" id="tab1">
+
+
+                        <!--팝업-->
+                        <div class="popup_area" style="display: none">
+                            <div class="shadow"></div>
+                            <div class="popup wd350">
+                                <div class="popup_inner">
+                                    <p class="f17 bold01 pink02">작성중인 내용이 삭제됩니다.
+                                    </p>
+                                    <p class="f18 mt_5">정말 새로 작성하시겠습니까?</p>
+                                    <hr class="dotted_line mt_15 mb_15">
+                                    <div class="btn_wrap mt_20 tct btn_two">
+                                        <a href="#" class="btn_style01 btn_blue btn" onclick="#">예</a>
+                                        <a href="#" class="btn_style01 btn_gray btn" onclick="close_pop();">아니오</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 팝업-->
+
+                        <!--팝업-->
+                        <div class="popup_area" style="display: none">
+                            <div class="shadow"></div>
+                            <div class="popup wd450">
+                                <div class="popup_inner">
+                                    <p class="f17 bold01 blue01">등록된 구직정보가 없습니다.
+                                    </p>
+                                    <p class="f16mt_5">구직정보를 등록하시면 이력서 작성시 활용가능합니다.<br />
+                                        지금 구직정보를 등록하시겠습니까?</p>
+                                    <hr class="dotted_line mt_15 mb_15">
+                                    <div class="btn_wrap mt_20 tct btn_two">
+                                        <a href="#" class="btn_style01 btn_blue btn" onclick="#">예</a>
+                                        <a href="#" class="btn_style01 btn_gray btn" onclick="close_pop();">아니오</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--// 팝업-->
+                        <div class="post_write">
+
+                            <!-- 이력서 선택 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_resume ico"></span>
+                                    <p>
+                                        이력서 <span class="blue02">선택</span>
+                                    </p>
+                                </div>
+                                <div class="select_inBtn mt_30">
+                                    <select>
+                                        <option>작성된 이력서가 없습니다.</option>
+                                    </select>
+                                    <div class="btn_wrap">
+                                        <input type="button" value="+ 새로운 이력서 작성" class="btn_line btn_pink_line02 btn">
+                                    </div>
+
+                                </div>
+
+                                <hr class="dotted_line section02">
+
+                                <div class="post_write_table pw_item_two">
+                                    <table>
+                                        <caption>이력서 제목</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="resume_tit">이력서 제목</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <input type="text" class="w100" id="resume_tit" placeholder="신규 이력서 제목을 입력해주세요.">
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <!-- //이력서 선택 -->
+                            <div class="btn_wrap mt_20">
+                                <a href="#" class="btn_style02 btn_blue_line  btn"><span>내 구직정보 불러오기</span></a>
+                            </div>
+
+
+                            <!-- 기본정보 -->
+                            <div class="top white_round section">
+                                <div class="write_tit">
+                                    <span class="ico_person ico"></span>
+                                    <p>
+                                        기본 <span class="blue02">정보</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20">
+                                    <table>
+                                        <caption>이력서 제목</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody class="line_tr">
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="resume_name">이름</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <input type="text" class="w100" id="resume_name" placeholder="입력">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="birth">생년월일(성별)
+                                                    </label>
+                                                </th>
+                                                <td class="pw_txt pw_flex">
+                                                    <div class="datepicker-wrap">
+                                                        <input type="text" id="datepicker" placeholder="입력" id="birth">
+                                                    </div>
+                                                    <div class="inline_list">
+                                                        <ul>
+                                                            <li class="radio_style01">
+                                                                <input type="radio" id="man" name="sex">
+                                                                <label for="man">남</label>
+                                                            </li>
+                                                            <li class="radio_style01">
+                                                                <input type="radio" id="woman" name="sex"> <label for="woman">여</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="resume_tel">연락처</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="tel_wrap">
+                                                        <select id="resume_tel">
+                                                            <option>010</option>
+                                                        </select>
+                                                        <span>
+                                                            -
+                                                        </span>
+                                                        <input type="text" maxlength="4">
+                                                        <span>
+                                                            -
+                                                        </span>
+                                                        <input type="text" maxlength="4">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="resume_email">이메일</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="email_wrap">
+                                                        <div>
+                                                            <input type="text" id="resume_email">
+                                                        </div>
+                                                        <span class="tct">
+                                                            <img src="./images/sub/@.png" alt="@">
+                                                        </span>
+                                                        <div>
+                                                            <input type="text">
+                                                        </div>
+                                                        <div>
+                                                            <select>
+                                                                <option>직접입력하기</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="resume_address">주소</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="address_wrap">
+                                                        <div class="btn_wrap">
+                                                            <input type="button" value="주소찾기" class="btn_line btn_pink_line02 btn">
+                                                        </div>
+                                                        <input type="text" id="resume_address">
+                                                        <input type="text" placeholder="상세주소 입력">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- //기본정보 -->
+
+
+                            <!-- 경력사항 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_career ico"></span>
+                                    <p>
+                                        <span class="blue02">학력</span> 및 <span class="blue02">경력사항</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20">
+                                    <table>
+                                        <caption>학력 및 경력사항</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+                                            <col style="width:140px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody class="line_tr">
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="education">최종학력</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <select id="education">
+                                                        <option>
+                                                            입력
+                                                        </option>
+                                                        <option>
+                                                            학력무관
+                                                        </option>
+                                                        <option>
+                                                            중졸
+                                                        </option>
+                                                        <option>
+                                                            고졸
+                                                        </option>
+                                                        <option>
+                                                            대졸(2~3년)
+                                                        </option>
+                                                        <option>
+                                                            대졸(4년)
+                                                        </option>
+                                                        <option>
+                                                            석사
+                                                        </option>
+                                                        <option>
+                                                            박사
+                                                        </option>
+                                                    </select>
+                                                </td>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="school_name">학교명</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <input type="text" placeholder="입력" id="school_name">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="newcomer">경력</label>
+                                                </th>
+                                                <td class="pw_txt" colspan="3">
+                                                    <div class="inline_list">
+                                                        <ul class="career_list">
+                                                            <li class="radio_style01">
+                                                                <input type="radio" id="newcomer" name="work">
+                                                                <label for="newcomer">신입</label>
+                                                            </li>
+                                                            <li class="radio_style01">
+                                                                <input type="radio" id="career" name="work"> <label for="career">경력</label>
+                                                                <select class="ml_10">
+                                                                    <option>3년</option>
+                                                                </select>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!--//경력사항-->
+
+                            <!-- 희망 근무조건 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_place ico"></span>
+                                    <p>
+                                        희망 <span class="blue02">근무 조건</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20">
+                                    <table>
+                                        <caption>학력 및 경력사항</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+
+                                        </colgroup>
+                                        <tbody class="line_tr">
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="emtype01">희망고용형태</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="inline_list">
+                                                        <ul>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype01">
+                                                                <label for="emtype01">무관</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype02">
+                                                                <label for="emtype02">계약직</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype03">
+                                                                <label for="emtype03">정규직</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype04">
+                                                                <label for="emtype04">파견근로</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype05">
+                                                                <label for="emtype05">프리랜서</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype06">
+                                                                <label for="emtype06">아르바이트</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="emtype07">
+                                                                <label for="emtype07">기타</label>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">
+                                                    <label for="area_irrelevant">희망근무지역</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="inline_list">
+                                                        <ul>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="area_irrelevant">
+                                                                <label for="area_irrelevant">무관</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="chuncheon">
+                                                                <label for="chuncheon">춘천시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="wonju">
+                                                                <label for="wonju">원주시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="gangleung">
+                                                                <label for="gangleung">강릉시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="donghae">
+                                                                <label for="donghae">동해시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="taebaeg">
+                                                                <label for="taebaeg">태백시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="Sokcho">
+                                                                <label for="Sokcho">속초시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="samcheog">
+                                                                <label for="samcheog">삼척시</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="hongcheon">
+                                                                <label for="hongcheon">홍천군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="hoengseong">
+                                                                <label for="hoengseong">횡성군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="yeong-wol">
+                                                                <label for="yeong-wol">영월군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="pyeongchang">
+                                                                <label for="pyeongchang">평창군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="jeongseon">
+                                                                <label for="jeongseon">정선군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="cheol-won">
+                                                                <label for="cheol-won">철원군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="hwacheon">
+                                                                <label for="hwacheon">화천군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="yang-gu">
+                                                                <label for="yang-gu">양구군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="inje">
+                                                                <label for="inje">인제군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="goseong-gun">
+                                                                <label for="goseong-gun">인제군</label>
+                                                            </li>
+                                                            <li class="check_style01">
+                                                                <input type="checkbox" id="yang-yang">
+                                                                <label for="yang-yang">양양군</label>
+                                                            </li>
+
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- //희망 근무조건 -->
+
+
+                            <!-- 자격증 및 기타사항 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_certificate ico"></span>
+                                    <p>
+                                        <span class="blue02">자격증</span> 및 <span class="blue02">기타사항</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20">
+                                    <table>
+                                        <caption>자격증 및 기타사항</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody class="line_tr">
+                                            <tr>
+                                                <th scope="row" class="pw_tit vt">
+                                                    <label for="certificate">자격증</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="certi_wrap">
+                                                        <div>
+                                                            <input type="text" value="자격증 명칭을 입력하세요." id="certificate" class="tit">
+                                                            <select>
+                                                                <option>
+                                                                    자격증 발행기관
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div>
+                                                            <div class="datepicker-wrap">
+                                                                <input type="text" placeholder="입력">
+                                                            </div>
+
+                                                            <div class="btn_wrap">
+                                                                <input type="button" value="+ 자격증 추가" class="btn_line btn_pink_line02 btn certi_add">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit vt">
+                                                    <label for="etc">기타사항</label>
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <textarea placeholder="내용을 입력하세요." class="textarea" id="etc"></textarea>
+                                                    <p class="blue01 f16 mt_20 bold01">※ 기타사항 란에 공모전 수상 및 봉사활동 내용을 기술해주세요.
+                                                    </p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                            </div>
+                            <!--//자격증 및 기타사항-->
+
+                            <!-- 외국어 능력 수준 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_lang ico"></span>
+                                    <p>
+                                        외국어 <span class="blue02">능력 수준</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20 table_flex">
+                                    <div>
+                                        <table>
+                                            <caption>외국어 능력 수준</caption>
+                                            <colgroup>
+                                                <col style="width:140px">
+                                                <col />
+                                            </colgroup>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="pw_tit vt">
+                                                        <label for="english">영어</label>
+                                                    </th>
+                                                    <td class="pw_txt">
+                                                        <div class="lang_wrap">
+                                                            <select id="english">
+                                                                <option>선택</option>
+                                                                <option>상</option>
+                                                                <option>중</option>
+                                                                <option>하</option>
+                                                                <option>불가</option>
+                                                            </select>
+                                                            <input type="text" placeholder="상세 정보를 입력하세요.">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="pw_tit vt">
+                                                        <label for="chinese">중국어</label>
+                                                    </th>
+                                                    <td class="pw_txt">
+                                                        <div class="lang_wrap">
+                                                            <select id="chinese">
+                                                                <option>선택</option>
+                                                                <option>상</option>
+                                                                <option>중</option>
+                                                                <option>하</option>
+                                                                <option>불가</option>
+                                                            </select>
+                                                            <input type="text" placeholder="상세 정보를 입력하세요.">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="pw_tit vt">
+                                                        <label for="japanese">일어</label>
+                                                    </th>
+                                                    <td class="pw_txt">
+                                                        <div class="lang_wrap">
+                                                            <select id="japanese">
+                                                                <option>선택</option>
+                                                                <option>상</option>
+                                                                <option>중</option>
+                                                                <option>하</option>
+                                                                <option>불가</option>
+                                                            </select>
+                                                            <input type="text" placeholder="상세 정보를 입력하세요.">
+                                                        </div>
+                                                    </td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+
+                                    <div>
+                                        <table>
+                                            <caption>외국어 능력 수준, 기타외국어</caption>
+                                            <colgroup>
+                                                <col style="width:140px">
+                                                <col />
+                                            </colgroup>
+                                            <tbody>
+
+                                                <th scope="row" class="pw_tit vt">
+                                                    <label for="other_lang">기타 외국어</label>
+                                                </th>
+                                                <td class="pw_txt vt" rowspan="3">
+                                                    <textarea class="textarea mh_reset" id="other_lang" placeholder="EX) 러시아어 상"></textarea>
+                                                </td>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <!-- 자기소개서 항목 -->
+                            <div class="white_round section02">
+                                <div class="write_tit">
+                                    <span class="ico_file ico"></span>
+                                    <p>자기소개서 <span class="thin01">(항목 및 내용)</span></p>
+                                </div>
+                                <div class="text_filed">
+                                    <div class="text_filed_area">
+                                        <div class="post_write_table pw_item_two mt_30">
+                                            <table>
+                                                <caption>자기소개서 작성</caption>
+                                                <colgroup>
+                                                    <col style="width: 10%">
+                                                    <col />
+                                                </colgroup>
+                                                <tbody>
+                                                    <tr>
+                                                        <th scope="row" class="pw_tit">
+                                                            <label for="self_tit">항목(제목)</label>
+                                                        </th>
+                                                        <td class="pw_txt">
+                                                            <input type="text" placeholder="제목을 입력해주세요." id="self_tit" name="self_tit" class="w100" />
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="txt_area">
+                                            <textarea class="textarea"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn_wrap trt">
+                                    <input type="button" class="btnAdd btn_line btn_pink_line02" value="+ 항목 추가">
+                                </div>
+                            </div>
+
+                            <!-- 파일 첨부 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_file02 ico"></span>
+                                    <p>
+                                        파일 <span class="blue02">첨부</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20">
+                                    <table>
+                                        <caption>파일 첨부</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="pw_tit ">
+                                                    증명사진
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="file_wrap">
+                                                        <div class="filebox">
+                                                            <div class="btn_wrap">
+                                                                <label for="id_photo" class="btn_line btn_pink_line02">파일 찾아보기</label>
+                                                            </div>
+                                                            <input type="file" id="id_photo" class="upload-hidden">
+                                                            <input class="upload-name" disabled="disabled">
+                                                            <a href="#" class="file_reset">파일 지우기</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">첨부파일
+                                                </th>
+                                                <td class="pw_txt">
+                                                    <div class="file_wrap">
+                                                        <div class="filebox">
+                                                            <div class="btn_wrap">
+                                                                <label for="filename" class="btn_line btn_pink_line02">파일 찾아보기</label>
+                                                            </div>
+                                                            <input type="file" id="filename" class="upload-hidden">
+                                                            <input class="upload-name" disabled="disabled">
+                                                            <a href="#" class="file_reset">파일 지우기</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="blue01 f16 mt_20 bold01 tct">※ 포트폴리오, 자격증, 교육이수증 등 추가로 필요한 서류를 첨부해 주세요.(압축파일로 등록)
+                                </p>
+                            </div>
+                            <div class="btn_wrap mt_50 clear">
+                                <div class="fl btn_one">
+                                    <a href="#" class="btn_style02 btn_gray wd180 btn">취소</a>
+                                </div>
+                                <div class="fr btn_two">
+                                    <a href="#" class="btn_style02 btn_blue wd180 btn">이력서 저장</a>
+                                    <a href="#" class="btn_style02 btn_pink02 wd180 btn">입사지원하기
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--//tab1-->
+                    <!--tab2-->
+                    <div class="tab_content" id="tab2">
+                        <div class="post_write">
+
+                            <!-- 이력서 선택 -->
+                            <div class="top white_round section02 mt_50">
+                                <div class="write_tit">
+                                    <span class="ico_file02 ico"></span>
+                                    <p>
+                                        파일 <span class="blue02">첨부</span>
+                                    </p>
+                                </div>
+
+                                <div class="post_write_table pw_item_two mt_20">
+                                    <table>
+                                        <caption>파일 첨부</caption>
+                                        <colgroup>
+                                            <col style="width:140px">
+                                            <col />
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row" class="pw_tit ">
+                                                    자기소개서
+                                                </th>
+
+                                                <td class="pw_txt">
+                                                    <div class="file_wrap">
+                                                        <div class="filebox">
+                                                            <div class="btn_wrap">
+                                                                <label for="self_intro" class="btn_line btn_pink_line02">파일 찾아보기</label>
+                                                            </div>
+                                                            <input type="file" id="self_intro" class="upload-hidden">
+                                                            <input class="upload-name" disabled="disabled">
+                                                            <a href="#" class="file_reset">파일 지우기</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">증명사진
+                                                </th>
+
+                                                <td class="pw_txt">
+                                                    <div class="file_wrap">
+                                                        <div class="filebox">
+                                                            <div class="btn_wrap">
+                                                                <label for="id_photo02" class="btn_line btn_pink_line02">파일 찾아보기</label>
+                                                            </div>
+                                                            <input type="file" id="id_photo02" class="upload-hidden">
+                                                            <input class="upload-name" disabled="disabled">
+                                                            <a href="#" class="file_reset">파일 지우기</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit">이력서
+                                                </th>
+
+                                                <td class="pw_txt">
+                                                    <div class="file_wrap">
+                                                        <div class="filebox">
+                                                            <div class="btn_wrap">
+                                                                <label for="resume02" class="btn_line btn_pink_line02">파일 찾아보기</label>
+                                                            </div>
+                                                            <input type="file" id="resume02" class="upload-hidden">
+                                                            <input class="upload-name" disabled="disabled">
+                                                            <a href="#" class="file_reset">파일 지우기</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row" class="pw_tit vt">첨부파일
+                                                </th>
+                                                <td class="pw_txt input_fields_wrap">
+                                                    <div class="file_wrap_inbtn">
+                                                        <div class="file_wrap">
+                                                            <div class="filebox">
+                                                                <div class="btn_wrap">
+                                                                    <label for="filename02" class="btn_line btn_pink_line02">파일 찾아보기</label>
+                                                                </div>
+                                                                <input type="file" id="filename02" class="upload-hidden">
+                                                                <input class="upload-name" disabled="disabled">
+                                                                <a href="#" class="file_reset">파일 지우기</a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn_wrap">
+                                                            <a href="#" class="btn_line btn_pink_line02 add_field_button">+ 추가</a>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="blue01 f16 mt_20 bold01 tct">※ 포트폴리오, 자격증, 교육이수증 등 추가로 필요한 서류를 첨부해 주세요.(최대 10개까지 첨부가능합니다.)
+                                </p>
+                            </div>
+                        </div>
+                        <div class="btn_wrap mt_50 clear">
+                            <div class="fl">
+                                <a href="#" class="btn_style02 btn_gray wd180 btn">취소</a>
+                            </div>
+                            <div class="fr">
+                                <a href="#" class="btn_style02 btn_blue wd180 btn">이력서 저장</a>
+                                <a href="#" class="btn_style02 btn_pink02 wd180 btn">입사지원하기
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--//tab2-->
+
+
+                    <!--팝업-->
+                    <div class="popup_area" style="display: none">
+                        <div class="shadow"></div>
+                        <div class="popup wd350">
+                            <div class="popup_inner">
+                                <p class="f18 mt_5 tct">이력서 저장 완료</p>
+                                <hr class="dotted_line mt_15 mb_15">
+                                <div class="btn_wrap mt_20 tct">
+                                    <a href="#" class="btn_style01 btn_blue btn" onclick="close_pop();">확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 팝업-->
+
+                    <!--팝업-->
+                    <div class="popup_area">
+                        <div class="shadow"></div>
+                        <div class="popup wd350">
+                            <div class="popup_inner">
+                                <p class="f18 mt_5 tct">입사지원이 완료되었습니다.
+
+
+
+                                </p>
+                                <hr class="dotted_line mt_15 mb_15">
+                                <div class="btn_wrap mt_20 tct">
+                                    <a href="#" class="btn_style01 btn_blue btn" onclick="close_pop();">확인</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 팝업-->
+
+
+
+                </div>
+                <!--//tab_container-->
+            </div>
+        </div>
+        <!-- // 작성 -->
+    </div>
+    <!-- //콘텐츠 영역 -->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+
+
+</body></html>

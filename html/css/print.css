@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+@page {
+  size: auto; // 프린트 사이즈
+  margin: 10mm; // 프린트 여백
+}
+
+@media print, screen {
+    /* 취업활동 증명서 css*/
+  * {
+      margin: 0; 
+      padding: 0;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact; // 크롬 배경화면 프린트
+  }
+  .print_area {
+    display: block;
+  }
+
+  .print_area .prd-list-tr {
+	page-break-inside: avoid; // 해당 엘리먼트의 내부에서 페이지 넘김을 금지
+  }
+    
+    
+    
+}
