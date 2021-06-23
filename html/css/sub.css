@@ -501,6 +501,47 @@ width: calc(100% - 170px);
 .table_flex > div:last-child{margin-right: 0;padding-right: 0;border-right: 0}
 
 
+/* 온라인채용박람회 관리자 start */
+.sub_navi {display: flex;border-bottom: 1px solid #c7cee1;padding-bottom: 1.5rem;margin-bottom: 5.0rem}
+.sub_navi li{}
+.sub_navi li:after{content: '>';display: inline-flex;margin:0 5px;color: #666}
+.sub_navi li:last-child:after{display: none}
+.sub_navi li:last-child a{color:#000;}
+.sub_navi li a{color: #666;font-size: 1.6rem}
+
+.border_tabs02 {display: flex;position: relative;}
+.border_tabs02:after{content: '';width: 100%;height: 1px;position: absolute;background: #333;bottom: 0px;left: 0;}
+.border_tabs02 li{padding: 15px 75px;border-bottom: 0;border: 1px solid #b8bfd0;color: #858b9b;margin-right: -1px;margin-bottom: -1px;border-bottom: 0; font-size: 2.0rem;background: #fff}
+.border_tabs02 li.active{border: 1px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;}
+.border_tabs02 li a{display: block;width: 100%;height: 100%;}
+.border_tabs02 li:hover,
+.border_tabs02 li:active,
+.border_tabs02 li:focus {border: 1px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;transition: 0s}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.border_tabs02 li{margin-bottom: -2.1px}
+}
+.job_post_sch{background: #f4f5f9;border: 1px solid #c7cee1;padding: 3.0rem;display: flex;align-items: center;justify-content:space-around}
+.job_post_sch label{margin-right: 1.5rem;}
+.job_post_sch select{width: calc(100% - 268px);margin-right: 1.5rem;}
+.job_post_sch .btn{}
+
+.mng_result{display: flex;justify-content: space-between;align-items: center}
+.mng_result > ul {display: flex;}
+.mng_result > ul li{position: relative;padding-right: 10px;margin-right: 10px;}
+.mng_result > ul li:after{content: '';display: block;width: 1px;height: 13px;background: #c7cee1;position: absolute;right: 0;top: 50%;transform: translate(0,-50%)}
+.mng_result > ul li:last-child{margin-right: 0;padding-right: 0}
+.mng_result > ul li:last-child:after{display: none}
+.mng_result > ul li a {color: #666;}
+.mng_result > ul li.active a{color: #000;font-family: 's-core_dream5_medium';}
+.mng_result > ul li:hover a,
+.mng_result > ul li:active a,
+.mng_result > ul li:focus a{color: #000;font-family: 's-core_dream5_medium';}
+
+.mng_result .right {display: flex;}
+.mng_result .right *{margin-right: 10px}
+.mng_result .right *:last-child{margin-right:0}
+
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){

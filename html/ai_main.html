@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/sub.css">
     <link rel="stylesheet" href="./css/scroll_slider.css">
 
 </head>
@@ -129,6 +130,7 @@
 
         </div>
         <!--//inner-->
+        
 
         <!-- main_section03 -->
         <div class="main_section03 section">
@@ -195,11 +197,57 @@
                         <!-- //ai_report_area02 -->
                     </div>
                     <div class="btn_wrap mt_50 tct">
-                        <a href="#" class="btn_style02 btn_orange btn">결과 샘플지 보기
-                        </a>
+                        <a href="javascript:openModal('modal1');" class="btn_style02 btn_orange btn">결과 샘플지 보기</a>
                     </div>
                 </div>
             </div>
+            <!--popup-->
+            <div class="shadow"></div>
+             <div class="popup_area modal1">
+            <div class="popup fixed wd1000">
+                <div class="popup_top clear">
+                    <div class="txt fl">결과 샘플지</div>
+                    <input type="button" class="close fr" onclick="close_pop()">
+                </div>
+                <div class="popup_inner scrollbar">
+                
+            <div class="tab_container">
+                <div class="tabs">
+                    <ul class="border_tabs02">
+                        <li class="active">
+                            <a href="javascript:vold" data-tab="tab1">
+                                AI 면접 분석
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" data-tab="tab2">
+                            면접 동영상 분석
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--tab1-->
+                <div class="tab_content mt_50" id="tab1">
+                   <div class="img_wrap">
+                       <img src="./images/main/reports_sample1.png" alt="AI 면접분석 리포트">
+                   </div>
+                </div>
+                <!--//tab1-->
+                <div class="tab_content  mt_50" id="tab2">
+                     <div class="img_wrap">
+                       <img src="./images/main/reports_sample2.png" alt="면접 동영상 분석 리포트">
+                   </div>
+                </div>
+            </div>
+                </div>
+                 </div>
+            </div>
+             <!--//popup-->
+             
+             
+      
+                   
+                    
         </div>
         <!-- //main_section03 -->
 
@@ -713,5 +761,4 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
     <script src="./js/sly.js"></script>
     <script src="./js/run.js"></script>
-
 </body></html>

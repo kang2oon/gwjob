@@ -351,35 +351,27 @@ $(document).ready(function () {
     var x = 1; //initlal text box count
     $('.file_wrap_inbtn .add_field_button').click(function (e) {
         e.preventDefault();
-            x++;
-            $('.file_wrap_inbtn').parent().append('<div class="file_wrap_inbtn"><div class="file_wrap mt_10"><div class="filebox"><div class="btn_wrap"><label for="filenew' + x + '" class="btn_line btn_pink_line02 file_btn">파일 찾아보기</label></div><input type="file" id="filenew' + x + '" class="upload-hidden"><input class="upload-name" disabled="disabled"><a href="#" class="file_reset">파일 지우기</a></div></div><div class="btn_wrap"><a href="javascript:void(0)" class="btn_line btn_pink_line02 remove_field_button">- 삭제</a></div></div>');
-  
-        
+        x++;
+        $('.file_wrap_inbtn').parent().append('<div class="file_wrap_inbtn"><div class="file_wrap mt_10"><div class="filebox"><div class="btn_wrap"><label for="filenew' + x + '" class="btn_line btn_pink_line02 file_btn">파일 찾아보기</label></div><input type="file" id="filenew' + x + '" class="upload-hidden"><input class="upload-name" disabled="disabled"><a href="#" class="file_reset">파일 지우기</a></div></div><div class="btn_wrap"><a href="javascript:void(0)" class="btn_line btn_pink_line02 remove_field_button">- 삭제</a></div></div>');
+
+
         var fileTarget = $('.filebox .upload-hidden');
 
-    fileTarget.on('change', function () {
-        if (window.FileReader) {
-            var filename = $(this)[0].files[0].name;
-        } else {
-            var filename = $(this).val().split('/').pop().split('\\').pop();
-        }
+        fileTarget.on('change', function () {
+            if (window.FileReader) {
+                var filename = $(this)[0].files[0].name;
+            } else {
+                var filename = $(this).val().split('/').pop().split('\\').pop();
+            }
 
-        $(this).siblings('.upload-name').val(filename);
-    });
-        
-         $('.remove_field_button').on('click', function (e) {
+            $(this).siblings('.upload-name').val(filename);
+        });
+
+        $('.remove_field_button').on('click', function (e) {
             $(this).parent().parent().remove();
-            
-        })
 
-
-
-
-
+        });
     });
-
-
-
 
     //프린트 -> 취업활동증명서 출력
     $('#prt_btn').on("click", function () {
@@ -393,10 +385,23 @@ $(document).ready(function () {
     });
 
 
+    //온라인채용박람회>입사지원현황
+    $('.mng_result_list li a').click(function () {
+        $(this).parent().addClass('active')
+        $(this).parent().siblings().removeClass('active');
+    });
+
 
 });
+
+       function openModal(modalname) {
+            document.get
+            $("." + modalname).show();
+            $('.shadow').show();
+               }
 
 function close_pop(flag) {
     $('.popup_area').hide();
     $('body').removeClass('not_scroll');
+    $('.shadow').hide();
 };
