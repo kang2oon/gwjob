@@ -522,6 +522,7 @@
     .ai_main .main_section05 .controls{padding: 0}
     
     /*온라인채용박람회*/
+    .online_main .main_section02 .f24{font-size: 1.8rem;word-break: break-all;}
     .controls button{width: 32px;height: 32px;font-size: 1.8rem}
     .controls button:first-child{margin-right: 5px}
     /*나의 지원현황*/
