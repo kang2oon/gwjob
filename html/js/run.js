@@ -381,10 +381,11 @@ $(document).ready(function () {
 
 
 
-    //프린트
+    //프린트 -> 취업활동증명서 출력
     $('#prt_btn').on("click", function () {
         $('#print-layer').printThis({
             importCSS: true,
+            base: "https://gwjob.kgoon.pw/html/%EC%98%A8%EB%9D%BC%EC%9D%B8%EC%B1%84%EC%9A%A9%EB%B0%95%EB%9E%8C%ED%9A%8C_main_%ED%8C%9D%EC%97%85.html", //출력안되면 주소변경,
             importStyle: true,
             printContainer: true,
             debug: true
