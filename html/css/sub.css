@@ -17,7 +17,7 @@ textarea::placeholder{opacity: 0.7}
 textarea::-ms-input-placeholder{opacity: 0.7}
 textarea::-webkit-input-placeholder {opacity: 0.7}
 
-.sub_wrap input[type="text"]{border: 1px solid #c7cee1;padding: 5px 10px;border-radius: 5px;color: #666}    
+.sub_wrap input[type="text"]{border: 1px solid #c7cee1;padding: 7px 15px;border-radius: 5px;color: #666}    
 .flex_wrap{display: flex;}    
 
 /* 라디오 버튼 */
@@ -154,6 +154,7 @@ textarea::-webkit-input-placeholder {opacity: 0.7}
 	border: 1px solid #ebebeb;
 	border-bottom-color: #e2e2e2;
 	border-radius: .25em;
+    overflow: hidden
 
 }
 
@@ -174,9 +175,10 @@ width: calc(100% - 170px);
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+    overflow: hidden
 }
 
-.file_reset{background: url(../images/sub/reset_close.png) no-repeat center;display: block;width: 13px;height: 13px;text-indent: -9999px;position: absolute;right: 20px;top: 50%;transform: translateY(-50%)}
+.file_reset{background: url(../images/sub/reset_close.png) no-repeat center #fff;display: block;width: 33px;height: 32px;text-indent: -9999px;position: absolute;right: 2px;top: 50%;transform: translateY(-50%)}
 
 
 /* 팝업 */
@@ -599,13 +601,15 @@ width: calc(100% - 170px);
     .address_wrap input:nth-child(3){width: 100%;margin-top: 10px;margin-left: 0}
     
     .career_list{width: 100%;}
-    .certi_wrap{display: block;}
+    .certi_wrap{display: block;border-top: 1px dotted #c7cee1}
+    .certi_wrap:first-child{border-top: 0}
     .certi_wrap input.tit{width: calc(100% - 200px)}
+    .certi_wrap .btn {width: 100px;padding: 7px 0}
     .certi_wrap select{width: 200px}
     .certi_wrap > div:first-child{width: 100%;}
     .certi_wrap > div{justify-content: flex-start;margin-top: 1.5rem}
     .certi_wrap .datepicker-wrap{width: 170px}
-    
+    .textarea {padding: 2.0rem}
     .table_flex{display: block}
     .table_flex > div{border-right:0;margin-right:0;}
     
@@ -811,9 +815,8 @@ width: calc(100% - 170px);
       /* 온라인채용박람회_ 입사지원서 */
     .select_inBtn{display: block;}
     .select_inBtn select{width: 100%;margin-bottom: 10px}
-    .filebox .btn_line {padding: 7px;width: 94px}
+    .filebox .btn_line {padding: 7px;width: 120px;text-align: center}
     .filebox .upload-name{width: calc(100% - 104px)}
-    .file_reset{right: 10px}
     
     .certi_wrap > div:first-child{display: block;}
     .certi_wrap input.tit{width: 100%;margin-bottom: 10px}

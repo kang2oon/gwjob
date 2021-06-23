@@ -609,6 +609,8 @@ a:focus {transition: all 0.2s}
     .online_table tbody tr {height: 140px}
     .online_table .title {bottom: 70px}
     
+    .popup_inner{max-height: 50vh}
+    
 }
 
 
