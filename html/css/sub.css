@@ -178,7 +178,7 @@ width: calc(100% - 170px);
     overflow: hidden
 }
 
-.file_reset{background: url(../images/sub/reset_close.png) no-repeat center #fff;display: block;width: 33px;height: 32px;text-indent: -9999px;position: absolute;right: 2px;top: 50%;transform: translateY(-50%)}
+.file_reset{background: url(../images/sub/reset_close.png) no-repeat center #fff;display: block;width: 30px;height: 30px;text-indent: -9999px;position: absolute;right: 2px;top: 50%;transform: translateY(-50%)}
 
 
 /* 팝업 */
