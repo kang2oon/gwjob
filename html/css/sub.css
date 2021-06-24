@@ -962,6 +962,17 @@ width: calc(100% - 170px);
     .m_mb0{margin-bottom: 0 !important}
     
     .datepicker-wrap img{width: 15px}
+    
+        /*온라인채용박람회 _ 관리자 공고관리*/
+    .mng_result{display: block;}
+    .mng_result:after{content: '';display: block;clear: both;}
+    
+    .mng_result .right{float: right;margin-top: 2.0rem}
+     .mng_result .scroll_wrap{width: 100%;overflow-x: auto}
+    .mng_result .mng_result_list {display: table;table-layout: fixed}
+    .mng_result .mng_result_list li{display: table-cell;text-align: center;padding-left: 10px}
+    .mng_result .mng_result_list li a{white-space: nowrap}
+    .mng_result .mng_result_list li:first-child{padding-left: 0}
  
     
 }
@@ -1029,17 +1040,9 @@ width: calc(100% - 170px);
     .company_info .middle .logo img{width: 100%}
     .info_list strong{min-width: 80px}
     
-    /*온라인채용박람회 _ 관리자 공고관리*/
-    .mng_result{display: block;}
-    .mng_result:after{content: '';display: block;clear: both;}
+
     
-    .mng_result .right{float: right;margin-top: 2.0rem}
-    
-    .mng_result .scroll_wrap{width: 100%;overflow-x: auto}
-    .mng_result .mng_result_list {display: table;table-layout: fixed}
-    .mng_result .mng_result_list li{display: table-cell;text-align: center;padding-left: 10px}
-    .mng_result .mng_result_list li a{white-space: nowrap}
-    .mng_result .mng_result_list li:first-child{padding-left: 0}
+ 
     
     /* 온라인채용박람회 공고관리등록 */
     .address_wrap02 .aw_02 input[type="text"]:nth-child(1){width: 100%;margin-bottom: 1.0rem}
