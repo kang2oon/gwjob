@@ -37,6 +37,17 @@
         <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 30px"> hover</h3>
 
         <a href="#" class="a_link">링크</a>
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 30px"> input</h3>
+        <div class="radio_style01">
+            <input type="radio" id="direct"> <label for="direct">직접입력</label>
+        </div>
+        <div class="radio_style01 radio_style02 mt_20">
+            <input type="radio" id="direct02"> <label for="direct02">직접입력</label>
+        </div>
+
+        <div class="check_style01 mt_20">
+            <input type="checkbox" id="direct03"> <label for="direct03">직접입력</label>
+        </div>
 
 
         <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">버튼스타일</h3>
@@ -73,8 +84,9 @@
             <a href="#" class="btn_line btn_pink_line btn">+ 항목 추가</a>
             <a href="#" class="btn_line btn_pink_line02 btn">+ 항목 추가</a>
             <a href="#" class="btn_line btn_orange_line btn">+ 항목 추가</a>
-
+            <a href="#" class="btn_line btn_green_line btn">+ 항목 추가</a>
             <a href="#" class="btn_line02 btn_orange_line btn">항목 추가</a>
+            <a href="#" class="btn_line02 btn_blue_line btn">항목 추가</a>
         </div>
 
 
@@ -84,6 +96,25 @@
             <a href="#" class="btn_style03 btn_pink btn">로그인</a>
             <a href="#" class="btn_style03 btn_gray btn">삭제</a>
             <a href="#" class="btn_style03 btn_orange btn">보기</a>
+            <a href="#" class="btn_style03 btn_blue02 btn">다운로드</a>
+        </div>
+
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 스타일 5</h4>
+        <div class="btn_wrap">
+            <a href="#" class="btn_style04 btn_blue btn">확인</a>
+            <a href="#" class="btn_style04 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style04 btn_gray btn">삭제</a>
+            <a href="#" class="btn_style04 btn_orange btn">보기</a>
+        </div>
+
+        <h4 style="margin-bottom: 10px;margin-top: 30px">버튼 스타일 6</h4>
+        <div class="btn_wrap">
+            <a href="#" class="btn_style05 btn_blue btn">확인</a>
+            <a href="#" class="btn_style05 btn_pink btn">로그인</a>
+            <a href="#" class="btn_style05 btn_gray btn">삭제</a>
+            <a href="#" class="btn_style05 btn_orange btn">보기</a>
+            <a href="#" class="btn_style05 btn_blue02 btn">다운로드</a>
         </div>
 
 
@@ -192,12 +223,12 @@
             </caption>
             <thead>
                 <tr>
-                    <th scope="row">번호</th>
-                    <th scope="row">유형</th>
-                    <th scope="row">제목</th>
-                    <th scope="row">작성자</th>
-                    <th scope="row">등록일</th>
-                    <th scope="row">답변여부</th>
+                    <th scope="col">번호</th>
+                    <th scope="col">유형</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">등록일</th>
+                    <th scope="col">답변여부</th>
                 </tr>
             </thead>
             <tbody>
@@ -230,12 +261,12 @@
             </caption>
             <thead>
                 <tr>
-                    <th scope="row">번호</th>
-                    <th scope="row">유형</th>
-                    <th scope="row">제목</th>
-                    <th scope="row">작성자</th>
-                    <th scope="row">등록일</th>
-                    <th scope="row">답변여부</th>
+                    <th scope="col">번호</th>
+                    <th scope="col">유형</th>
+                    <th scope="col">제목</th>
+                    <th scope="col">작성자</th>
+                    <th scope="col">등록일</th>
+                    <th scope="col">답변여부</th>
                 </tr>
             </thead>
             <tbody>
@@ -337,9 +368,58 @@
             </tbody>
         </table>
 
+        <div class="table_style06" style="margin-top: 30px">
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">팝업</h3>
+        <div class="popup wd450" style="display: block">
+            <div class="popup_inner">
+                <p class="f17 tct bold01">해당 서비스는 로그인이 필요한 서비스 입니다.
+                </p>
+                <hr class="dotted_line mt_15 mb_15">
+                <div class="btn_wrap mt_20 tct">
+                    <a href="#" class="btn_style01 btn_blue btn">확인</a>
+                </div>
+            </div>
+        </div>
+        
+         <div class="popup popup_style02 wd450" style="display: block">
+           <div class="popup_head">
+               <p class="tit f20 bold01">공고 검색</p>
+               <a href="#" class="close" onclick="close_pop()">닫기</a>
+           </div>
+            <div class="popup_inner">
+                <p class="f17 tct bold01">해당 서비스는 로그인이 필요한 서비스 입니다.
+                </p>
+                <hr class="dotted_line mt_15 mb_15">
+                <div class="btn_wrap mt_20 tct">
+                    <a href="#" class="btn_style01 btn_blue btn">확인</a>
+                </div>
+            </div>
+        </div>
+
 
         <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">게시판 목록</h3>
         <h4 style="margin-bottom: 10px;margin-top: 30px">게시판 목록 1</h4>
+
 
 
         <div class="board_list">
@@ -919,10 +999,53 @@
             <span class="ico_company"></span>
         </div>
 
+
+        <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;margin-top: 40px;font-weight: bold;font-size: 26px">탭메뉴</h3>
+        <div class="tabs">
+            <ul class="border_tabs">
+                <li class="active">
+                    <a href="javascript:vold" data-tab="tab1">
+                        직접 작성
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:vold" data-tab="tab2">
+                        파일 첨부형
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:vold" data-tab="tab3">
+                        NCS 이력서
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="tabs mt_30">
+            <ul class="border_tabs02">
+                <li class="active">
+                    <a href="javascript:vold" data-tab="tab1">
+                        직접 작성
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:vold" data-tab="tab2">
+                        파일 첨부형
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:vold" data-tab="tab3">
+                        NCS 이력서
+                    </a>
+                </li>
+            </ul>
+        </div>
+
     </div>
     <script src="./js/jquery-3.2.1.min.js"></script>
     <script src="./js/slick.min.js"></script>
     <script src="./js/imgLiquid-min.js"></script>
     <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
     <script src="./js/run.js"></script>
 </body></html>

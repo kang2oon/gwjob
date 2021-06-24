@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/jquery.fileupload.css">
+
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap white_bg">
+        <div class="inner">
+            <ul class="sub_navi">
+                <li>
+                    <a href="#">온라인 채용박람회</a>
+                </li>
+                <li>
+                    <a href="#">공고관리</a>
+                </li>
+            </ul>
+
+            <!-- tab -->
+            <div class="tabs">
+                <ul class="border_tabs02">
+                    <li class="wd200">
+                        <a href="javascript:vold">
+                            입사지원 현황
+                        </a>
+                    </li>
+                    <li class="active wd200">
+                        <a href="javascript:vold">
+                            공고 관리
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--입사지원현황-->
+            <div class="mt_50">
+                <!--채용공고 검색-->
+                <div class="job_post_sch post_write">
+                    <div class="post_write_table pw_item_four">
+                        <table>
+                            <caption>기본정보 작성</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col />
+                                <col style="width:140px">
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">박람회</label>
+                                    </th>
+                                    <td class="pw_txt">
+                                        <select class="w100" id="" name="">
+                                            <option>중장년 온라인 잡페어</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">기업명</label>
+                                    </th>
+                                    <td class="pw_txt">
+                                        <select class="w100" id="" name="">
+                                            <option>전체</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">검색어</label>
+                                    </th>
+                                    <td class="pw_txt" colspan="3">
+                                        <input type="text" class="w100" placeholder="검색어를 입력해주세요.">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row" class="pw_tit">
+                                       <label for="">진행상태</label>
+                                    </th>
+                                    <td>
+                                        <select>
+                                            <option>전체</option>
+                                        </select>
+                                    </td>
+                                    <th scope="row" class="pw_tit">
+                                       <label for="">노출여부</label>
+                                    </th>
+                                    <td>
+                                        <select>
+                                            <option>전체</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        
+                    </div>
+                     <hr class="section02 dotted_line">
+                     <div class="btn_wrap btn_wrap03 mt_50 clear">
+            <div class="fl">
+                 <a href="#" class="btn_line btn_blue_line btn">신규 등록</a>
+            </div>
+            <div class="fr">
+                <input type="submit" class="btn_line btn_blue  btn" value="검색">
+            </div>
+        </div>
+                </div>
+                <!--//채용공고 검색-->
+
+                <!--table 상단 -->
+                <div class="mng_result mt_50">
+                   <div class="scroll_wrap">
+                    <ul class="left mng_result_list">
+                        <li class="active">
+                            <a href="#">전체<span class="num">(6)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">진행중<span class="num">(1)</span></a>
+                        </li>
+                        <li>
+                            <a href="#">종료<span class="num">(1)</span></a>
+                        </li>
+                    </ul>
+                    </div>
+                    <div class="right">
+                        <select>
+                            <option>10개</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- //table 상단 -->
+
+
+                <div class="table_style06 mt_30">
+                    <table class="manager_table">
+                        <caption>입사지원현황 </caption>
+                        <colgroup>
+                            <col style="width:10%">
+                            <col style="width:15%">
+                            <col />
+                            <col style="width:8%">
+                            <col style="width:15%">
+                            <col style="width:7%">
+                            <col style="width:10%">
+                            <col style="width:10%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">NO</th>
+                                <th scope="col">기업명</th>
+                                <th scope="col">공고명</th>
+                                <th scope="col">지원자</th>
+                                <th scope="col">접수기간</th>
+                                <th scope="col">상태</th>
+                                <th scope="col">미리보기</th>
+                                <th scope="col">노출여부</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hideen_s">10</td>
+                                <td class="mt_left_top">㈜아이디스
+                                </td>
+                                <td class="tlt mt_left tit"><a href="#" class="a_link textCut1">[경영ㆍ사무] 2020년 하반기 신입 및 경력사원 모집
+                                    </a></td>
+                                <td class="mt_right applicant">52명</td>
+                                <td  class="hideen_s">2020.10.13~2020.11.12</td>
+                                <td  class="hideen_s">진행 중
+                                </td>
+                                <td  class="hideen_s">
+                                    <div class="btn_wrap tct">
+                                        <a href="#" class="btn_style05 btn_blue02 btn">다운로드</a>
+                                    </div>
+                                </td>
+                                <td  class="hideen_s">
+                                    <select class="w100 br_none">
+                                        <option>노출</option>
+                                        <option>비노출</option>
+                                    </select>
+                                </td>
+                            </tr>
+                        
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 페이징 -->
+                <div class="paginate mt_50">
+                    <div class="paginate_list">
+                        <a href="#" class="pager-link pager-link-data-first">맨 처음 페이지 목록 보기</a>
+                        <a href="#" class="pager-link pager-link-data-prev">이전 페이지 목록 보기</a>
+                        <a href="#" class="pager-link active">1</a>
+                        <a href="#" class="pager-link">2</a>
+                        <a href="#" class="pager-link">3</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">4</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">5</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">6</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">7</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">8</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">9</a>
+                        <a href="#" class="pager-link">10</a>
+                        <a href="#" class="pager-link pager-link-data-next">다음 페이지 목록 보기</a>
+                        <a href="#" class="pager-link pager-link-data-last">마지막 페이지 목록 보기</a>
+                    </div>
+                </div> <!-- //페이징 -->
+
+
+            </div>
+            <!--//입사지원현황-->
+        </div>
+    </div>
+
+    <!-- //콘텐츠 영역 -->
+
+
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/jquery.fileupload.js"></script>
+    <script src="./js/run.js"></script>
+
+</body></html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap white_bg">
+        <div class="inner">
+            <ul class="sub_navi">
+                <li>
+                    <a href="#">온라인 채용박람회</a>
+                </li>
+                <li>
+                    <a href="#">채용공고관리</a>
+                </li>
+                <li>
+                    <a href="#">채용공고등록</a>
+                </li>
+            </ul>
+
+            <!-- tab -->
+            <div class="tabs">
+                <ul class="border_tabs02">
+                    <li class="wd200">
+                        <a href="javascript:vold">
+                            입사지원 현황
+                        </a>
+                    </li>
+                    <li class="active wd200">
+                        <a href="javascript:vold">
+                            공고 관리
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--입사지원현황-->
+            <div class="mt_50">
+                <div class="mt_50">
+                    <!--채용공고 검색-->
+                <div class="job_post_sch post_write">
+                    <div class="post_write_table pw_item_two">
+                        <table>
+                            <caption>기본정보 작성</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">박람회</label>
+                                    </th>
+                                    <td class="pw_txt">
+                                        <select class="w100" id="" name="">
+                                            <option>중장년 온라인 잡페어</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="m_mb0">
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">구인기업</label>
+                                    </th>
+                                    <td class="pw_txt m_mb0">
+                                        <div class="inp_btn">
+                                            <input type="text" class="w100" placeholder="검색어를 입력해주세요.">
+                                            <div class="btn_wrap btn_wrap03 clear">
+                                                <input type="submit" class="btn_line btn_blue  btn" value="기업 검색">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <!--//채용공고 검색-->
+
+
+
+                <div class="mt_20 p_flex">
+                    <div class="btn_wrap mr_30">
+                        <a href="#" class="btn_line btn_blue_line btn">공고불러오기</a>
+                    </div>
+                    <div class="radio_style01 radio_style02">
+                        <input type="radio" id="direct"> <label for="direct" class="f18">직접입력</label>
+                    </div>
+                </div>
+                <div class="table_style06 mt_30">
+                    <table class="manager_write">
+                        <caption>공고관리 직접입력 </caption>
+                        <colgroup>
+                            <col style="width:200px">
+                            <col />
+                            <col style="width:200px">
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">공고명</label>
+                                </th>
+                                <td class="tlt">
+                                   공고명
+                                </td>
+                                <th scope="row">
+                                    <label for="">고유번호</label>
+                                </th>
+                                <td class="tlt">
+                                 고유번호
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">기업형태</label>
+                                </th>
+                                <td class="tlt">
+                                    
+                                </td>
+                                <th scope="row">
+                                    <label for="">업종</label>
+                                </th>
+                                <td class="tlt">
+                                  
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">홈페이지</label>
+                                </th>
+                                <td class="tlt">
+                                  
+                                </td>
+                                <th scope="row">
+                                    <label for="">사업자등록번호</label>
+                                </th>
+                                <td class="tlt">
+                                  
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">근무지</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">모집직종</label>
+                                </th>
+                                <td class="tlt">
+                                  
+                                </td>
+                                <th scope="row">
+                                    <label for="">모집인원</label>
+                                </th>
+                                <td class="tlt">
+                                 
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">직무내용</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">경력조건</label>
+                                </th>
+                                <td class="tlt">
+                                   
+                                </td>
+                                <th scope="row">
+                                    <label for="">학력조건</label>
+                                </th>
+                                <td class="tlt">
+                                   
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">연령</label>
+                                </th>
+                                <td class="tlt">
+                                    </td>
+                                <th scope="row">
+                                    <label for="">성별</label>
+                                </th>
+                                <td class="tlt">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">임급수준</label>
+                                </th>
+                                <td class="tlt">
+                                   
+                                </td>
+                                <th scope="row">
+                                    <label for="">근무시간</label>
+                                </th>
+                                <td class="tlt">
+                               
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">고용/근무형태</label>
+                                </th>
+                                <td class="tlt">
+                                </td>
+                                <th scope="row">
+                                    <label for="">계약직 개월수</label>
+                                </th>
+                                <td class="tlt">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">근무기간</label>
+                                </th>
+                                <td class="tlt">
+                                </td>
+                                <th scope="row">
+                                    <label for="">접수방법</label>
+                                </th>
+                                <td class="tlt">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">우대조건</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">복리후생</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">지원서양식</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="form-group">
+                                        <label for="file" class="sr-only">파일찾아보기</label>
+                                        <input type="file" id="file">
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <label for="">채용담당자 연락처</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="tel_wrap">
+                                        <select id="resume_tel" class="br_none">
+                                            <option>010</option>
+                                        </select>
+                                        <span>
+                                            -
+                                        </span>
+                                        <input type="text" maxlength="4" class="br_none">
+                                        <span>
+                                            -
+                                        </span>
+                                        <input type="text" maxlength="4" class="br_none">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">접수기간</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="date_term">
+                                        <div class="datepicker-wrap wd200 br_none">
+                                            <input type="text" id="datepicker" placeholder="입력">
+
+                                        </div>
+                                        <span>~</span>
+                                        <div class="datepicker-wrap wd200 br_none">
+                                            <input type="text" id="datepicker" placeholder="입력">
+
+                                        </div>
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <label for="">채용 마감일</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="datepicker-wrap wd200 br_none">
+                                        <input type="text" id="datepicker" placeholder="입력">
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">면접방식</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <div class="inline_list">
+                                        <ul>
+                                            <li class="radio_style01 radio_style02">
+                                                <input type="radio" id="recording" name="interview">
+                                                <label for="recording">녹화방식</label>
+                                            </li>
+                                            <li class="radio_style01 radio_style02">
+                                                <input type="radio" id="live" name="interview"> <label for="live">LIVE방식</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="section02 dotted_line">
+
+                <div class="qusetion_wrap">
+                    <div class="qusetion_tit">
+                        <p class="bold02 f18">사전질문</p>
+                        <ul>
+                            <li class="btn_wrap">
+                                <a href="#" class="btn_line02 btn_blue_line btn q_add">+</a>
+                            </li>
+                            <li class="btn_wrap">
+                                <a href="#" class="btn_line02 btn_blue_line btn q_remove">-</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="qusetion_cont mt_20">
+                        <ul>
+                            <li><input type="text" placeholder="사전질문을 입력해주세요." class="w100 br_none"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//사전질문-->
+
+                <hr class="section02 dotted_line">
+                <div class="qusetion_tit">
+                    <p class="bold02 f18">공고 이미지</p>
+                    <ul>
+                        <li class="btn_wrap">
+                            <a href="#" class="btn_line02 btn_blue_line btn">파일추가</a>
+                        </li>
+                        <li class="btn_wrap">
+                            <a href="#" class="btn_line02 btn_blue_line btn">파일삭제</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gray_box mt_20">
+                    <ul class="upload_list">
+                        <li>
+                            <label><input type="checkbox" />
+                                파일.jpg</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <hr class="section02 dotted_line">
+                <p class="bold02 f18">상세요강</p>
+                <div class="gray_box mt_20" style="height: 150px">
+                </div>
+
+                <div class="exposure_wrap mt_30">
+                    <label for="exposure01" class="bold01">노출여부</label>
+                    <div class="inline_list">
+                        <ul>
+                            <li class="radio_style01 radio_style02">
+                                <input type="radio" id="exposure01" name="exposure">
+                                <label for="exposure01">노출</label>
+                            </li>
+
+                            <li class="radio_style01 radio_style02">
+                                <input type="radio" id="exposure02" name="exposure">
+                                <label for="exposure02">비노출</label>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="btn_wrap btn_wrap03 mt_50 clear">
+                    <div class="fl">
+                        <a href="#" class="btn_gray btn_style02 wd180  btn">목록</a>
+                    </div>
+                    <div class="fr">
+                        <a href="#" class="btn_style02 btn_blue wd180 btn">저장</a>
+                    </div>
+                </div>
+
+
+            </div>
+            <!--//입사지원현황-->
+        </div>
+    </div>
+
+    <!-- //콘텐츠 영역 -->
+
+
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+
+</body></html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap white_bg">
+        <div class="inner">
+            <ul class="sub_navi">
+                <li>
+                    <a href="#">온라인 채용박람회</a>
+                </li>
+                <li>
+                    <a href="#">입사지원현황</a>
+                </li>
+            </ul>
+
+            <!-- tab -->
+            <div class="tabs">
+                <ul class="border_tabs02">
+                    <li class="active wd200">
+                        <a href="javascript:vold">
+                            입사지원 현황
+                        </a>
+                    </li>
+                    <li class="wd200">
+                        <a href="javascript:vold">
+                            공고 관리
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--입사지원현황-->
+            <div class="mt_50">
+                <!--채용공고 검색-->
+                <div class="job_post_sch">
+                    <label for="" class="bold01 f18">채용공고</label>
+                    <select id="" name="">
+                        <option>
+                            [경영ㆍ사무] 2021년 하반기 신입 및 경력사원 모집
+
+                        </option>
+                    </select>
+                    <div class="btn_wrap">
+                        <input class="btn_style04 btn_gray btn" type="button" value="미리보기" />
+                        <input class="btn_style04 btn_blue btn" type="button" value="확인" />
+                    </div>
+                </div>
+                <!--//채용공고 검색-->
+
+                <!--table 상단 -->
+                <div class="mng_result mt_50">
+                    <div class="scroll_wrap">
+                        <ul class="left mng_result_list">
+                            <li class="active">
+                                <a href="#">전체<span class="num">(6)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">합격<span class="num">(1)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">불합격<span class="num">(3)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">보류<span class="num">(1)</span></a>
+                            </li>
+                            <li>
+                                <a href="#">미확인<span class="num">(1)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="right">
+                        <select>
+                            <option>10개</option>
+                        </select>
+                        <div class="btn_wrap">
+                            <a href="#" class="btn_line btn_green_line btn">합격자 엑셀저장</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //table 상단 -->
+
+
+                <div class="table_style06 mt_30">
+                    <table class="manager_table">
+                        <caption>입사지원현황</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">NO</th>
+                                <th scope="col">이력서 유형</th>
+                                <th scope="col">이름</th>
+                                <th scope="col">생년월일(성별)</th>
+                                <th scope="col">희망직종</th>
+                                <th scope="col">휴대폰번호</th>
+                                <th scope="col">이메일</th>
+                                <th scope="col">서류합격</th>
+                                <th scope="col">최종합격</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="hideen_s">10</td>
+                                <td class="hideen_s">직접작성</td>
+                                <td class="mt_left tit"><a href="#" class="a_link">홍길동</a></td>
+                                <td class="mt_left_top">900823(남)</td>
+                                <td class="mt_right">서비스직</td>
+                                <td class="hideen_s">010-1234-5678</td>
+                                <td class="hideen_s">a1a1a1a1@naver.com</td>
+                                <td class="hideen_s">통과</td>
+                                <td class="hideen_s">합격</td>
+                            </tr>
+                            <tr>
+                                <td class="hideen_s">10</td>
+                                <td class="hideen_s mt_left">직접작성</td>
+                                <td class="mt_left tit"><a href="#" class="a_link">홍길동</a></td>
+                                <td class="mt_left_top">900823(남)</td>
+                                <td class="mt_right">서비스직</td>
+                                <td class="hideen_s">010-1234-5678</td>
+                                <td class="hideen_s">a1a1a1a1@naver.com</td>
+                                <td class="hideen_s">통과</td>
+                                <td class="hideen_s">합격</td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- 페이징 -->
+                <div class="paginate mt_50">
+                    <div class="paginate_list">
+                        <a href="#" class="pager-link pager-link-data-first">맨 처음 페이지 목록 보기</a>
+                        <a href="#" class="pager-link pager-link-data-prev">이전 페이지 목록 보기</a>
+                        <a href="#" class="pager-link active">1</a>
+                        <a href="#" class="pager-link">2</a>
+                        <a href="#" class="pager-link">3</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">4</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">5</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">6</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">7</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">8</a>
+                        <a href="#" class="pager-link pager-link-data-ellipsis">9</a>
+                        <a href="#" class="pager-link">10</a>
+                        <a href="#" class="pager-link pager-link-data-next">다음 페이지 목록 보기</a>
+                        <a href="#" class="pager-link pager-link-data-last">마지막 페이지 목록 보기</a>
+                    </div>
+                </div> <!-- //페이징 -->
+
+
+            </div>
+            <!--//입사지원현황-->
+        </div>
+    </div>
+
+    <!-- //콘텐츠 영역 -->
+
+
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+
+</body></html>

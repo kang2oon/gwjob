@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/jquery-ui.min.css">
+    <link rel="stylesheet" href="./css/sub.css">
+
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap white_bg">
+        <div class="inner">
+            <ul class="sub_navi">
+                <li>
+                    <a href="#">온라인 채용박람회</a>
+                </li>
+                <li>
+                    <a href="#">채용공고관리</a>
+                </li>
+                <li>
+                    <a href="#">채용공고등록</a>
+                </li>
+            </ul>
+
+            <!-- tab -->
+            <div class="tabs">
+                <ul class="border_tabs02">
+                    <li class="wd200">
+                        <a href="javascript:vold">
+                            입사지원 현황
+                        </a>
+                    </li>
+                    <li class="active wd200">
+                        <a href="javascript:vold">
+                            공고 관리
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--입사지원현황-->
+            <div class="mt_50">
+                <!--채용공고 검색-->
+                <div class="job_post_sch post_write">
+                    <div class="post_write_table pw_item_two">
+                        <table>
+                            <caption>기본정보 작성</caption>
+                            <colgroup>
+                                <col style="width:140px">
+                                <col />
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">박람회</label>
+                                    </th>
+                                    <td class="pw_txt">
+                                        <select class="w100" id="" name="">
+                                            <option>중장년 온라인 잡페어</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr class="m_mb0">
+                                    <th scope="row" class="pw_tit">
+                                        <label for="">구인기업</label>
+                                    </th>
+                                    <td class="pw_txt m_mb0">
+                                        <div class="inp_btn">
+                                            <input type="text" class="w100" placeholder="검색어를 입력해주세요.">
+                                            <div class="btn_wrap btn_wrap03 clear">
+                                                <input type="submit" class="btn_line btn_blue  btn" value="기업 검색">
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                </div>
+                <!--//채용공고 검색-->
+
+
+                <div class="mt_20 p_flex">
+                    <div class="btn_wrap mr_30">
+                        <a href="#" class="btn_line btn_blue_line btn">공고불러오기</a>
+                    </div>
+                    <div class="radio_style01 radio_style02">
+                        <input type="radio" id="direct"> <label for="direct" class="f18">직접입력</label>
+                    </div>
+                </div>
+
+                <div class="table_style06 mt_30">
+                    <table class="manager_write">
+                        <caption>공고관리 직접입력 </caption>
+                        <colgroup>
+                            <col style="width:200px">
+                            <col />
+                            <col style="width:200px">
+                            <col />
+                        </colgroup>
+                        <tbody>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">공고명</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                                <th scope="row">
+                                    <label for="">고유번호</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">기업형태</label>
+                                </th>
+                                <td class="tlt">
+                                    <select class="br_none">
+                                        <option>
+                                            기업형태
+                                        </option>
+                                        <option>
+                                            자영업/소상공인
+                                        </option>
+                                        <option>
+                                            대기업/계열사
+                                        </option>
+                                        <option>
+                                            중견기업
+                                        </option>
+                                        <option>
+                                            벤처기업
+                                        </option>
+                                        <option>
+                                            공기업/공공기관
+                                        </option>
+                                        <option>
+                                            외국계기업
+                                        </option>
+                                        <option>
+                                            중소기업
+                                        </option>
+                                        <option>
+                                            단체/협회/재단
+                                        </option>
+                                        <option>
+                                            강소기업
+                                        </option>
+                                        <option>
+                                            청년친화 강소기업
+
+                                        </option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <label for="">업종</label>
+                                </th>
+                                <td class="tlt">
+                                    <select class="br_none w100">
+                                        <option>
+                                            업종
+                                        </option>
+                                        <option>
+                                            농업, 임업 및 어업
+
+                                        </option>
+                                        <option>
+                                            광업
+
+                                        </option>
+                                        <option>
+                                            제조업
+
+                                        </option>
+                                        <option>
+                                            전기, 가스, 증기 및 공기조절 공급업
+
+                                        </option>
+                                        <option>
+                                            수도, 하수 및 폐기물 처리, 원료 재생업
+
+                                        </option>
+                                        <option>
+                                            건설업
+
+                                        </option>
+                                        <option>
+                                            도매 및 소매업
+
+                                        </option>
+                                        <option>
+                                            운수 및 창고업
+
+                                        </option>
+                                        <option>
+                                            숙박 및 음식점업
+
+                                        </option>
+                                        <option>
+                                            정보통신업
+
+                                        </option>
+                                        <option>
+                                            금융 및 보험업
+
+                                        </option>
+                                        <option>
+                                            부동산업
+                                        </option>
+                                        <option>
+                                            전문, 과학 및 기술 서비스업
+                                        </option>
+                                        <option>
+                                            사업시설 관리, 사업 지원 및 임대 서비스업
+
+                                        </option>
+                                        <option>
+                                            공공행정, 국방 및 사회보장 행정
+                                        </option>
+                                        <option>
+                                            교육 서비스업
+                                        </option>
+                                        <option>
+                                            보건업 및 사회복지 서비스업
+                                        </option>
+                                        <option>
+                                            예술, 스포츠 및 여가관련 서비스업
+                                        </option>
+                                        <option>
+                                            협회 및 단체, 수리 및 기타 개인 서비스업
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">홈페이지</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                                <th scope="row">
+                                    <label for="">사업자등록번호</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">근무지</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <div class="address_wrap02">
+                                        <div class="aw_01">
+                                            <select class="br_none">
+                                                <option>근무지</option>
+                                            </select>
+                                            <div class="btn_wrap">
+                                                <input type="button" value="주소찾기" class="btn_style05 btn_blue02 btn">
+                                            </div>
+                                        </div>
+                                        <div class="aw_02">
+                                            <input type="text" id="" class="br_none">
+                                            <input type="text" id="" class="br_none" placeholder="상세주소 입력">
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">모집직종</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="btn_wrap">
+                                        <input type="button" value="직종선택 : 열기" class="btn_style05 btn_blue02 btn">
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <label for="">모집인원</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">직무내용</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">경력조건</label>
+                                </th>
+                                <td class="tlt">
+                                    <ul class="career_list02 inline_list">
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="irrelevant" name="work">
+                                            <label for="irrelevant">경력무관</label>
+                                        </li>
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="newcomer" name="work">
+                                            <label for="newcomer">신입</label>
+                                        </li>
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="career" name="work"> <label for="career">경력</label>
+                                            <select class="ml_10 br_none">
+                                                <option>1년 이상</option>
+                                                <option>3년 이상</option>
+                                                <option>7년 이상</option>
+                                            </select>
+                                        </li>
+                                    </ul>
+                                </td>
+                                <th scope="row">
+                                    <label for="">학력조건</label>
+                                </th>
+                                <td class="tlt">
+                                    <select class="br_none">
+                                        <option>학력조건</option>
+
+                                        <option>
+                                            학력무관
+                                        </option>
+                                        <option>중졸</option>
+                                        <option>고졸</option>
+                                        <option>대졸(2~3년)</option>
+                                        <option>대졸(4년)</option>
+                                        <option>석사</option>
+                                        <option>박사
+                                        </option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">연령</label>
+                                </th>
+                                <td class="tlt">
+                                    <ul class="age_list ">
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="age_irr" name="age">
+                                            <label for="age_irr">연령무관</label>
+                                        </li>
+                                        <li class="radio_style01 radio_style02 input_radio">
+                                            <input type="radio" id="age_select" name="age">
+                                            <label for="age_select">
+                                                <div class="date_term">
+                                                    <input type="text" class="br_none">
+                                                    <span>~</span>
+                                                    <input type="text" class="br_none">
+                                                </div>
+                                            </label>
+                                        </li>
+                                    </ul>
+
+                                </td>
+                                <th scope="row">
+                                    <label for="">성별</label>
+                                </th>
+                                <td class="tlt">
+                                    <ul class=" inline_list">
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="gender_irr" name="gender">
+                                            <label for="gender_irr">성별무관</label>
+                                        </li>
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="male" name="gender">
+                                            <label for="male">남성</label>
+                                        </li>
+                                        <li class="radio_style01 radio_style02">
+                                            <input type="radio" id="female" name="gender">
+                                            <label for="female">여성</label>
+                                        </li>
+                                    </ul>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">임급수준</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="wage_wrap">
+                                        <select class="br_none">
+                                            <option>임금수준</option>
+                                        </select>
+                                        <div> <input type="text" class="br_none">
+                                            원
+                                        </div>
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <label for="">근무시간</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100" placeholder="Ex) 평일 :HH시 MM분 ~ HH시 MM분 
+">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">고용/근무형태</label>
+                                </th>
+                                <td class="tlt">
+                                    <select class="br_none">
+                                        <option>고용형태</option>
+                                        <option>정규직</option>
+                                        <option>시간제</option>
+                                        <option>계약직</option>
+                                        <option>파견근로</option>
+                                        <option>프리랜서</option>
+                                        <option>아르바이트</option>
+                                        <option>기타</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <label for="">계약직 개월수</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100" placeholder="Ex) 2개월
+">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">근무기간</label>
+                                </th>
+                                <td class="tlt">
+                                    <select class="br_none">
+                                        <option>주 5일 근무</option>
+                                        <option>주 6일 근무</option>
+                                        <option>토요 격주 휴무</option>
+                                        <option>기타</option>
+                                    </select>
+                                </td>
+                                <th scope="row">
+                                    <label for="">접수방법</label>
+                                </th>
+                                <td class="tlt">
+                                    <input type="text" class="br_none w100" placeholder="Ex) 이메일, 방문(우편), 팩스 등
+">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">우대조건</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">복리후생</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <input type="text" class="br_none w100">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">지원서양식</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="form-group">
+                                        <label for="file" class="sr-only">파일찾아보기</label>
+                                        <input type="file" id="file">
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <label for="">채용담당자 연락처</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="tel_wrap">
+                                        <select id="resume_tel" class="br_none">
+                                            <option>010</option>
+                                        </select>
+                                        <span>
+                                            -
+                                        </span>
+                                        <input type="text" maxlength="4" class="br_none">
+                                        <span>
+                                            -
+                                        </span>
+                                        <input type="text" maxlength="4" class="br_none">
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">접수기간</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="date_term">
+                                        <div class="datepicker-wrap wd200 br_none">
+                                            <input type="text" id="datepicker" placeholder="입력">
+
+                                        </div>
+                                        <span>~</span>
+                                        <div class="datepicker-wrap wd200 br_none">
+                                            <input type="text" id="datepicker" placeholder="입력">
+
+                                        </div>
+                                    </div>
+                                </td>
+                                <th scope="row">
+                                    <label for="">채용 마감일</label>
+                                </th>
+                                <td class="tlt">
+                                    <div class="datepicker-wrap wd200 br_none">
+                                        <input type="text" id="datepicker" placeholder="입력">
+
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">
+                                    <label for="">면접방식</label>
+                                </th>
+                                <td class="tlt" colspan="3">
+                                    <div class="inline_list">
+                                        <ul>
+                                            <li class="radio_style01 radio_style02">
+                                                <input type="radio" id="recording" name="interview">
+                                                <label for="recording">녹화방식</label>
+                                            </li>
+                                            <li class="radio_style01 radio_style02">
+                                                <input type="radio" id="live" name="interview"> <label for="live">LIVE방식</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+                <hr class="section02 dotted_line">
+
+                <div class="qusetion_wrap">
+                    <div class="qusetion_tit">
+                        <p class="bold02 f18">사전질문</p>
+                        <ul>
+                            <li class="btn_wrap">
+                                <a href="#" class="btn_line02 btn_blue_line btn q_add">+</a>
+                            </li>
+                            <li class="btn_wrap">
+                                <a href="#" class="btn_line02 btn_blue_line btn q_remove">-</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="qusetion_cont mt_20">
+                        <ul>
+                            <li><input type="text" placeholder="사전질문을 입력해주세요." class="w100 br_none"></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--//사전질문-->
+
+                <hr class="section02 dotted_line">
+                <div class="qusetion_tit">
+                    <p class="bold02 f18">공고 이미지</p>
+                    <ul>
+                        <li class="btn_wrap">
+                            <a href="#" class="btn_line02 btn_blue_line btn">파일추가</a>
+                        </li>
+                        <li class="btn_wrap">
+                            <a href="#" class="btn_line02 btn_blue_line btn">파일삭제</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="gray_box mt_20">
+                    <ul class="upload_list">
+                        <li>
+                            <label><input type="checkbox" />
+                                파일.jpg</label>
+                        </li>
+
+                    </ul>
+                </div>
+
+                <hr class="section02 dotted_line">
+                <p class="bold02 f18">상세요강</p>
+                <div class="gray_box mt_20" style="height: 150px">
+                </div>
+
+                <div class="exposure_wrap mt_30">
+                    <label for="exposure01" class="bold01">노출여부</label>
+                    <div class="inline_list">
+                        <ul>
+                            <li class="radio_style01 radio_style02">
+                                <input type="radio" id="exposure01" name="exposure">
+                                <label for="exposure01">노출</label>
+                            </li>
+
+                            <li class="radio_style01 radio_style02">
+                                <input type="radio" id="exposure02" name="exposure">
+                                <label for="exposure02">비노출</label>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+
+                <div class="btn_wrap btn_wrap03 mt_50 clear">
+                    <div class="fl">
+                        <a href="#" class="btn_gray btn_style02 wd180  btn">목록</a>
+                    </div>
+                    <div class="fr">
+                        <a href="#" class="btn_style02 btn_blue wd180 btn">저장</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    <!--공고검색 팝업-->
+    <div class="popup popup_style02 wd600" style="display: none">
+           <div class="popup_head">
+               <p class="tit f20 bold01">공고 검색</p>
+               <a href="#" class="close" onclick="close_pop()">닫기</a>
+           </div>
+            <div class="popup_inner">
+                <div class="pop_sch">
+                    <select>
+                        <option>공고명</option>
+                        <input type="text" placeholder="공고명">
+                        <div class="btn_wrap">
+                        <input type="submit" value="검색" class="btn_style04 btn_blue btn">
+                        </div>
+                    </select>
+                </div>
+                <hr class="dotted_line mt_15 mb_15">
+                
+                  <table class="table_style table_style05">
+            <caption><strong>공고검색 목록</strong>
+                <p>공고검색 목록입니다. 기업명, 공고명, 선택으로 구성되어 있습니다.</p>
+            </caption>
+            <colgroup>
+                <col>
+                <col>
+                <col style="width: 80px">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" class="f15">기업명</th>
+                    <th scope="col" class="f15">공고명</th>
+                    <th scope="col" class="f15">선택</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <div class="btn_wrap">
+                      <a href="#" class="btn_style03 btn_blue02 btn">선택</a>
+                      </div>
+                    </td>
+                </tr>
+                </table>
+                
+                <div class="btn_wrap mt_30 tct">
+                     <a href="#" class="btn_style01 btn_blue_line btn" onclick="close_pop()">닫기</a>
+                </div>
+            </div>
+        </div>
+    <!--//공고검색 팝업-->
+    
+    
+    <!--참여기업 팝업-->
+    <div class="popup popup_style02 wd600" style="display: none">
+           <div class="popup_head">
+               <p class="tit f20 bold01">참여기업 검색</p>
+               <a href="#" class="close" onclick="close_pop()">닫기</a>
+           </div>
+            <div class="popup_inner">
+                <div class="pop_sch">
+                    <select>
+                        <option>기업명</option>
+                        <input type="text" placeholder="기업">
+                        <div class="btn_wrap">
+                        <input type="submit" value="검색" class="btn_style04 btn_blue btn">
+                        </div>
+                    </select>
+                </div>
+                <hr class="dotted_line mt_15 mb_15">
+                
+                  <table class="table_style table_style05">
+            <caption><strong>공고검색 목록</strong>
+                <p>공고검색 목록입니다. 기업명, 공고명, 선택으로 구성되어 있습니다.</p>
+            </caption>
+            <colgroup>
+                <col>
+                <col>
+                <col style="width: 80px">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col" class="f15">기업명</th>
+                    <th scope="col" class="f15">사업자등록번호</th>
+                    <th scope="col" class="f15">선택</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                     <div class="btn_wrap">
+                      <a href="#" class="btn_style03 btn_blue02 btn">선택</a>
+                      </div>
+                    </td>
+                </tr>
+                </table>
+                
+                <div class="btn_wrap mt_30 tct">
+                     <a href="#" class="btn_style01 btn_blue_line btn" onclick="close_pop()">닫기</a>
+                </div>
+            </div>
+        </div>
+    <!--//참여기업 팝업-->
+    
+    
+    </div>
+
+
+
+    <!-- //콘텐츠 영역 -->
+
+
+
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+
+</body></html>

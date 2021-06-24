@@ -390,11 +390,57 @@ $(document).ready(function () {
         $(this).parent().addClass('active')
         $(this).parent().siblings().removeClass('active');
     });
+    
+    
+    // 파일찾아보기 2
+    $('.form-group input[type="file"]').each(function() {
+    // get label text
+    var label = $(this).parents('.form-group').find('label').text();
+    label = (label) ? label : 'Upload File';
+
+    // wrap the file input
+    $(this).wrap('<div class="input-file"></div>');
+    // display label
+    $(this).before('<span class="btn">'+label+'</span>');
+    // we will display selected file here
+    $(this).before('<span class="file-selected"></span>');
+
+    // file input change listener 
+    $(this).change(function(e){
+        // Get this file input value
+        var val = $(this).val();
+        
+        // Let's only show filename.
+        // By default file input value is a fullpath, something like 
+        // C:\fakepath\Nuriootpa1.jpg depending on your browser.
+        var filename = val.replace(/^.*[\\\/]/, '');
+
+        // Display the filename
+        $(this).siblings('.file-selected').text(filename);
+    });
+});
+
+// Open the file browser when our custom button is clicked.
+$('.input-file .btn').click(function() {
+    $(this).siblings('input[type="file"]').trigger('click');
+});
+    
+        // 사전질문 추가
+        $('.qusetion_tit .q_add').on('click', function () {
+        $('.qusetion_wrap').children('.qusetion_cont').children().append('<li><input type="text" placeholder="사전질문을 입력해주세요." class="w100 br_none"></li>')
+    });
+    
+    // 사전질문 삭제
+     $('.qusetion_tit .q_remove').on('click', function () {
+         $(this).parent().parent().parent().parent().find('.qusetion_cont').find('ul li:last-child').remove();
+     });
+                                  
+    
 
 
 });
 
-       function openModal(modalname) {
+function openModal(modalname) {
             document.get
             $("." + modalname).show();
             $('.shadow').show();

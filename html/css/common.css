@@ -65,7 +65,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
 .inner:after {content: '';display: block;clear: both;}
 
 /* 공통 */
-select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;border: 1px solid #c7cee1;background: url(../images/common/select_arrow.png) no-repeat right 10px center #fff;font-size: 15px;min-width: 90px;padding:7px  15px;padding-right: 35px;box-sizing: border-box;border-radius: 8px}
+select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;border: 1px solid #c7cee1;background: url(../images/common/select_arrow.png) no-repeat right 10px center #fff;font-size: 1.6rem;min-width: 90px;padding:7px  15px;padding-right: 35px;box-sizing: border-box;border-radius: 8px}
 select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
 *:hover,
 *:active,
@@ -113,6 +113,7 @@ a:focus {transition: all 0.2s}
 
 /*border*/
 .gray_border{border:1px solid #c7cee1;border-radius: 20px;padding: 30px 30px}
+.gray_border02{border:1px solid #c7cee1;padding: 30px 30px}
 
 
 
@@ -169,6 +170,7 @@ a:focus {transition: all 0.2s}
 .btn_wrap .btn_style03{font-size: 1.4rem;border-radius: 3px;padding: 2px 10px;display: inline-block}
 .btn_wrap .btn_style04{font-size: 1.6rem;border-radius: 3px;padding: 7px 10px;display: inline-block;min-width: 75px}
 .btn_wrap .btn_line{font-size: 1.6rem;border-radius: 5px;padding: 7px 30px;font-family: 's-core_dream5_medium',sans-serif;display: inline-block;}
+.btn_wrap .btn_style05{font-size: 1.6rem;padding: 8px 20px;}
 
 .btn_wrap .btn_line02 {font-size: 1.4rem;border-radius: 5px;padding: 6px 15px;font-family: 's-core_dream5_medium',sans-serif;display: inline-block;}
 
@@ -191,6 +193,7 @@ a:focus {transition: all 0.2s}
 .btn_wrap02 > div{display: inline-block}
 
 .btn_wrap .btn_orange_line{border: 1px solid #ff4e4a;color: #ff1b66;background: #fff;font-family: 's-core_dream5_medium',sans-serif}
+.btn_wrap .btn_blue02{background: #9baad4;color: #fff}
 .btn_wrap .btn_orange_line:hover,
 .btn_wrap .btn_orange_line:active,
 .btn_wrap .btn_orange_line:focus {background: #ff4e4a;color: #fff;}
@@ -270,10 +273,10 @@ a:focus {transition: all 0.2s}
 .table_wrap{}
 .table_style {width: 100%;}
 .table_style tbody tr{border-bottom: 1px solid #c7cee1;}
-.table_style th{padding: 20px;font-size: 1.8rem;text-align: center;}
+.table_style th{padding:10px 20px ;font-size: 1.8rem;text-align: center;}
 .table_style th:first-child{border-radius: 20px 0 0 20px}
 .table_style th:last-child{border-radius: 0 20px 20px  0}
-.table_style td{padding: 15px;font-size: 1.7rem;text-align: center;}
+.table_style td{padding: 10px;font-size: 1.7rem;text-align: center;}
 .table_style01 thead{background: #5461a1;color: #fff;}
 .table_style02 thead{background: #004897;color: #fff;}
 .table_style03 thead{background: #3d638e;color: #fff;}
@@ -286,10 +289,11 @@ a:focus {transition: all 0.2s}
 .table_style05 th{background: #f4f5f9;border-radius: 0 !important}
 .table_style05 th,
 .table_style05 td {border: 1px solid #c7cee1;}
-.table_style06 table{width: 100%;}
+.table_style06 table{width: 100%;table-layout: fixed}
 .table_style06 th,
-.table_style06 td{border: 1px solid #c7cee1;}
-.table_style06 th{bak}
+.table_style06 td{border: 1px solid #c7cee1;padding: 10px;word-break: break-all}
+.table_style06 th{background: #dbebff;font-size: 1.6rem;}
+.table_style06 td{text-align: center;font-size: 1.6rem}
 
 /*말줄임*/
 .textCut1{display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -311,7 +315,7 @@ a:focus {transition: all 0.2s}
 /*font size*/
 .f13 {font-size:1.3rem;}
 .f14 {font-size:1.4rem;}
-.f15 {font-size:1.5rem; }
+.f15 {font-size:1.5rem !important; }
 .f16 {font-size:1.5rem;}
 .f17 {font-size:1.7rem;}
 .f18 {font-size:1.8rem;}
@@ -633,7 +637,8 @@ a:focus {transition: all 0.2s}
     .border_round,
     .gray_border,
     .blue_round,
-    .gray_round{padding: 3.0rem}
+    .gray_round,
+    .gray_border02{padding: 3.0rem}
     
        /* 버튼 영역 2개일때*/
     .btn_wrap02{}
@@ -656,7 +661,8 @@ a:focus {transition: all 0.2s}
 .gray_border,
 .border_round,
 .blue_round,
-.gray_round{padding: 2.0rem}
+.gray_round,
+    .gray_border02{padding: 2.0rem}
 /*  버튼  */
 .btn_wrap .btn_three .btn,    
 .btn_wrap .btn_one .btn,
