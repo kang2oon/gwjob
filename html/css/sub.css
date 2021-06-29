@@ -3,6 +3,7 @@
 
 /* 서브 공통 */
 .sub_wrap{background: #d0e5ff;padding: 6.0rem 0;position: relative;}
+.sub_wrap.full_sw{background-color: transparent;padding: 0;}
 .sub_wrap.bg02{background: #e5ecff}
 .sub_wrap.white_bg{background: #fff;padding: 6.0rem 0;position: relative;}
 .sub_wrap .sub_tit01{font-size: 4.0rem;text-align: center;font-family: 's-core_dream5_medium',sans-serif}
@@ -644,12 +645,14 @@ width: calc(100% - 170px);
 /* 사전진단서비스 */
 .diag_wrap{}
 .diag_wrap .diag_top {background: url(../images/sub/diag_bg.png) no-repeat top -25px center;background-size: cover;padding: 60px 0;}
-.diag_wrap .diag_top .inner{display: flex;justify-content: space-between}
+.diag_wrap .diag_top .inner{display: flex;}
+.diag_wrap .diag_top .inner .img{margin-left: auto}
 .diag_wrap .diag_top .tit p {border-bottom: 1px solid #333;display: inline-block;margin-bottom: 2.0rem;padding-bottom: 0.5rem}
 .diag_wrap .diag_top .tit h3 {font-size: 4.5rem;margin-bottom: 3.0rem}
 .diag_wrap .diag_top .tit h3 span{background: #ff5dc6;padding: 0 10px;color: #fff}
 .diag_wrap .diag_top .txt  {display: flex;}
 .diag_wrap .diag_top .txt .ico{background: url(../images/sub/check_ico.png) no-repeat;width: 49px;height: 39px;margin-right: 20px}
+.diag_wrap .diag_top .txt  p{width: calc(100% - 69px)}
 
 /*.diag_section02  */
 .diag_wrap .diag_section01 .tit {}
@@ -669,7 +672,73 @@ width: calc(100% - 170px);
 .diag_wrap .diag_section02 .select_style01{padding-top: 10px;padding-bottom: 10px;width: 100%;font-weight: bold}
 
 /*diag_list*/
-.highLight{}
+.diag_wrap .diag_list .diag_list_area{display: flex;margin-bottom: 3.0rem;padding-bottom: 3.0rem;border-bottom: 1px dotted #c7cee1}
+.diag_wrap .diag_list .diag_list_area:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.diag_wrap .diag_list .diag_list_area .tit {width: 280px;padding-top: 10px}
+.diag_wrap .diag_list .diag_list_area .cont_wrap {width: calc(100% - 280px);display: flex;flex-wrap: wrap;flex-direction:column;}
+.diag_wrap .diag_list .diag_list_area .cont {display: flex;align-items: center;margin-bottom: 2.0rem}
+.diag_wrap .diag_list .diag_list_area .cont:last-child{margin-bottom: 0}
+.diag_wrap .diag_list .diag_list_area .txt {width: calc(100% - 280px)}
+.diag_wrap .diag_list .diag_list_area .btn_wrap {width: 280px;}
+.diag_wrap .diag_list .highLight{box-shadow: 0 -8px 0 0 #fffeb1 inset;font-weight: bold;display: inline}
+.diag_wrap .diag_list .btn_wrap ul{display: flex;}
+.diag_wrap .diag_list .btn_wrap ul li:first-child{margin-right: 10px}
+.diag_wrap .diag_list .btn_radio{position: relative;width: calc(50% - 5px);}
+.diag_wrap .diag_list .btn_radio input{height: 35px;width: 100%; opacity: 0;cursor: pointer}
+.diag_wrap .diag_list .btn_radio label{position: absolute;top: 0; left: 0;color: #949494;width: 100%;height: 100%;background: #f1f1f1;display: flex;align-items: center;justify-content: center;pointer-events: none;border-radius:10px;cursor: pointer}
+.diag_wrap .diag_list .btn_radio input:checked + label {background: #0d92f8;font-weight: bold;color: #fff;}
+
+
+.diag_wrap .diag_result {background: #225bda;}
+.diag_wrap .diag_result .inner{display: flex;justify-content: space-between;align-items: center}
+.diag_wrap .diag_result a{margin-left: auto;display: flex;align-items: center;position: relative;}
+.diag_wrap .diag_result a:after{content: '';display: block;width: 0;height: 1px;background: #fff;position: absolute;left: 0;bottom: -5px;;transition:0.5s all;}
+.diag_wrap .diag_result a span{margin-left: 5.0rem;font-size: 22px}
+.diag_wrap .diag_result a:hover:after,
+.diag_wrap .diag_result a:active:after,
+.diag_wrap .diag_result a:focus:after{width: 100%;height: 1px;}
+
+
+
+/* 사전진단 결과 */
+.diag_result_wrap .diag_result_top{background: url(../images/sub/diag_result_bg.png) no-repeat center;}
+.diag_result_wrap .diag_result_top .tit h3 {font-size: 4.5rem;}
+.diag_result_wrap .diag_result_top .tit h3 span{background: #ff5dc6;padding: 0 10px;color: #fff}
+.diag_result_wrap .diag_result_area > .txt{display: flex;align-items: center} 
+.diag_result_wrap .diag_result_area > .txt .ico{background: url(../images/sub/check_ico02.png) no-repeat;width: 48px;height: 38px;margin-right: 10px}
+.diag_result_wrap .diag_result_area > .txt p{width: calc(100% - 58px)}
+
+
+
+/* 사전진단 결과 리스트*/
+.diag_result_wrap  .dr_list{padding-top: 3.0rem;margin-top: 2.0rem;border-top: 1px solid #000;border-bottom: 1px solid #000;padding-bottom: 3.0rem}
+.diag_result_wrap  .dr_list_area {display: flex;align-items:flex-start;margin-bottom: 3.0rem;padding-bottom: 3.0rem;border-bottom: 1px dotted #c7cee1}
+.diag_result_wrap  .dr_list_area:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.diag_result_wrap  .dr_list_area .tit {width: 280px;}
+.diag_result_wrap  .dr_list_area .cont_wrap{width: calc(100% - 280px)}
+.diag_result_wrap  .dr_list_area .dr_btn{width: 100px;margin: auto;padding: 7px 0;border-radius: 7px;cursor: default;font-size: 1.4rem;;font-weight: bold}
+.diag_result_wrap  .dr_list_area .dr_btn_blue{background: #0d92f8;color: #fff;}
+.diag_result_wrap  .dr_list_area .dr_btn_black{background: #000;color: #fff;}
+.diag_result_wrap  .dr_list_area .dr_btn_gray{background: #999;color: #fff;}
+.diag_result_wrap  .dr_list_area .recom_link{border: 1px solid #d2d2d2;border-radius: 8px;padding: 7px 10px;font-size: 1.4rem;transition:all 0s;box-sizing: border-box;display: block;word-break: keep-all}
+.diag_result_wrap  .dr_list_area  .recom_link_list{display: flex;justify-content:center;}
+.diag_result_wrap  .dr_list_area  .recom_link_list li{margin-right: 10px}
+.diag_result_wrap  .dr_list_area  .recom_link_list li:last-child{margin-right: 0}
+.diag_result_wrap  .dr_list_area  .recom_link_list li a:hover,
+.diag_result_wrap  .dr_list_area  .recom_link_list li a:active,
+.diag_result_wrap  .dr_list_area  .recom_link_list li a:focus {border: 2px solid #ff5dc6;padding: 6px 9px}
+
+.diag_result_wrap .dr_home span{margin-left: 5.0rem;font-size: 22px}
+.diag_result_wrap .dr_home{position: relative;}
+.diag_result_wrap .dr_home:after{content: '';display: block;width: 0;height: 1px;background: #000;position: absolute;left: 0;bottom: -5px;transition:0.5s all;}
+.diag_result_wrap .dr_home:hover:after,
+.diag_result_wrap .dr_home:active:after,
+.diag_result_wrap .dr_home:focus:after{width: 100%;height: 1px;}
+
+
+
+
+
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -706,6 +775,19 @@ width: calc(100% - 170px);
     
     .table_wrap{width: 100%;overflow-X: auto;white-space: nowrap}
     .table_wrap table{width: auto;min-width: 100%}
+    
+    
+    /* 사전진단 start */
+    .diag_wrap .diag_top {background-position: top }
+    .diag_wrap .diag_top .img{width: 35%;}
+    .diag_wrap .diag_top .img img{width: 100%;}
+    .diag_wrap .diag_list .diag_list_area .tit{width: 180px}
+    .diag_wrap .diag_list .diag_list_area .cont_wrap{width: calc(100% - 200px);margin-right: 20px}
+    .diag_wrap .diag_list .diag_list_area .btn_wrap{width: 200px;margin-left: auto}
+    
+    /*사전진단 진단결과 start*/
+    .diag_result_wrap .dr_list_area .tit{width: 180px}
+    .diag_result_wrap .dr_list_area .cont_wrap{width: calc(100% - 180px)}
 }
 
 
@@ -814,6 +896,17 @@ width: calc(100% - 170px);
     .address_wrap02 .aw_01{width: 100%;margin-bottom: 1.0rem}
     .address_wrap02 .aw_02{width: 100%;}
     
+       /* 사전진단 start */
+    .diag_wrap .diag_section02 .wd750{max-width: 750px;width: 100%;}
+    .diag_wrap .diag_list .diag_list_area{display: block;}
+    .diag_wrap .diag_list .diag_list_area .cont_wrap{width: 100%;margin-top: 2.0rem}
+    .diag_wrap .diag_list .btn_radio input{height: 30px;}
+    
+       /*사전진단 진단결과 start*/
+    .diag_result_wrap .dr_list_area {display: block;}
+    .diag_result_wrap .dr_list_area .tit{width: 180px;}
+    .diag_result_wrap .dr_list_area .cont_wrap{width:100%;margin-top: 2.0rem}
+    
     
     
 }
@@ -903,6 +996,31 @@ width: calc(100% - 170px);
     .job_post_sch{display: block;padding: 2.0rem}
     .job_post_sch select{width: 100%;margin: 1.0rem 0;}
     
+     /* 사전진단 start */
+    .diag_wrap .diag_top .inner .img{display: none}
+    .diag_wrap .diag_section01 .diag_flex > div{margin-right: 20px}
+    .diag_wrap .diag_section01 .diag_flex .img {width: 130px;margin: auto}
+    .diag_wrap .diag_section01 .diag_flex .img img{width: 100%}
+    .diag_wrap .diag_top .txt .ico{width: 29px;background-size: 29px;margin-right: 10px;height: 30px}
+    .diag_wrap .diag_top .txt p{width: calc(100% - 39px)}
+    
+      /*사전진단 진단결과 start*/
+    
+    .diag_result_wrap .dr_list_area thead{display: none}
+    .diag_result_wrap .dr_list_area table,
+    .diag_result_wrap .dr_list_area tbody,
+    .diag_result_wrap .dr_list_area tr,
+    .diag_result_wrap .dr_list_area td,
+    .diag_result_wrap .dr_list_area th{display: block;}
+    .diag_result_wrap .dr_list_area  td{border-top:0;border-bottom: 0; text-align: left;padding: 0 0px 10px 0}
+	.diag_result_wrap .dr_list_area td > div{margin: 0 10px}
+    .diag_result_wrap .dr_list_area .dr_btn{margin: 0;text-align: center;}
+    .diag_result_wrap .dr_list_area .recom_link_list{justify-content: flex-start;flex-wrap: wrap;}
+    .diag_result_wrap .dr_list_area .dr_area01:before{content: '진단 목적';font-size: 1.6rem;font-weight: bold;margin-bottom: 10px;display: block;border:1px solid #c7cee1;background: #f4f5f9;padding: 10px;border-left: 0;border-right: 0;}
+    .diag_result_wrap .dr_list_area .dr_area02:before{content: '진단 결과';font-size: 1.6rem;font-weight: bold;margin-bottom: 10px;display: block;border:1px solid #c7cee1;background: #f4f5f9;padding: 10px;border-left: 0;border-right: 0;}
+    .diag_result_wrap .dr_list_area .dr_area03:before{content: '추천서비스';font-size: 1.6rem;font-weight: bold;margin-bottom: 10px;display: block;border:1px solid #c7cee1;background: #f4f5f9;padding: 10px;border-left: 0;border-right: 0;}
+	.diag_result_wrap .diag_result_area > .txt .ico{width: 29px;background-size: 29px;margin-right: 10px;height: 30px}
+    .diag_result_wrap .diag_result_area > .txt  p{width: calc(100% - 39px)}
    
 }
 
@@ -1008,6 +1126,24 @@ width: calc(100% - 170px);
     .mng_result .mng_result_list li a{white-space: nowrap}
     .mng_result .mng_result_list li:first-child{padding-left: 0}
  
+        /* 사전진단 start */
+    .diag_wrap .diag_top .tit h3,
+	.diag_result_wrap .diag_result_top .tit h3{font-size: 3.5rem}
+    .diag_wrap .diag_section01 .diag_flex{display: block;}
+    .diag_wrap .diag_section01 .diag_flex > div{margin-right: 0;margin-bottom: 20px;}
+    .diag_wrap .diag_section02 .select_wrap{display: block;}
+    .diag_wrap .diag_section02 .select_wrap li{margin-right: 0;width: 100%;margin-bottom: 1.5rem}
+    .diag_wrap .diag_section02 .select_wrap li:last-child{margin-bottom: 0}
+    
+    .diag_wrap .diag_list .diag_list_area .btn_wrap{width: 100px;}
+    .diag_wrap .diag_list .diag_list_area .txt{width: calc(100% - 120px)}
+    .diag_wrap .diag_list .btn_radio label{border-radius: 5px;height: 25px;font-size: 1.5rem}
+    .diag_wrap .diag_result .inner{display: block;}
+    .diag_wrap .diag_result .inner a{float: right;margin-top: 2.0rem}
+	.diag_wrap .diag_result a span{margin-left: 3.0rem}
+	.diag_result_wrap .dr_home span{margin-left: 3.0rem}
+	
+    
     
 }
 
