@@ -67,6 +67,10 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
 /* 공통 */
 select { border-radius:0; /* 아이폰 사파리 보더 없애기 */ -webkit-appearance:none; /* 화살표 없애기 for chrome*/ -moz-appearance:none; /* 화살표 없애기 for firefox*/ appearance:none /* 화살표 없애기 공통*/ ;border: 1px solid #c7cee1;background: url(../images/common/select_arrow.png) no-repeat right 10px center #fff;font-size: 1.6rem;min-width: 90px;padding:7px  15px;padding-right: 35px;box-sizing: border-box;border-radius: 8px}
 select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
+
+select.select_style01{border: 0;background: url(../images/sub/select_arrow.png) no-repeat right 15px center #fff;}
+
+
 *:hover,
 *:active,
 *:focus {transition: all 0.2s}
@@ -80,6 +84,10 @@ a:focus {transition: all 0.2s}
 .line_tr tr:last-child{border-bottom: 0}
 .dotted_line_left {border-left:1px dotted #c7cee1; }
 .blue_line{border-top: 1px solid #c7cee1;display: block;}
+
+/* input */
+
+input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;border-radius: 5px;color: #666}    
 
 .a_link:hover,
 .a_link:active,
@@ -108,6 +116,7 @@ a:focus {transition: all 0.2s}
 /*bg*/
 .white_round{background: #fff;border-radius: 15px;overflow: hidden;padding: 4.0rem 5.0rem;}
 .blue_round{background: #004897;border-radius: 15px;overflow: hidden;padding: 4.0rem 5.0rem;}
+.blue_round02{background: #e8f6ff;border-radius: 15px;overflow: hidden;padding: 4.0rem 5.0rem;}
 .border_round{padding: 4.0rem 5.0rem;border-radius: 15px;border:2px solid #000 }
 .gray_round{padding: 4.0rem 5.0rem;border-radius: 15px;background: #f6f8ff }
 
@@ -151,6 +160,7 @@ a:focus {transition: all 0.2s}
 .yellow{color: #ffea00}
 .pink{color: #ff1b66}
 .pink02{color: #ff00e4}
+.pink03{color: #ff5dc6}
 .gray01{color: #444444}
 .gray02{color: #666}
 .orange{color: #ff4e4a}
@@ -636,7 +646,8 @@ a:focus {transition: all 0.2s}
     .white_round,
     .border_round,
     .gray_border,
-    .blue_round,
+    .blue_round
+    .blue_round02,
     .gray_round,
     .gray_border02{padding: 3.0rem}
     
@@ -660,9 +671,10 @@ a:focus {transition: all 0.2s}
 .white_round,
 .gray_border,
 .border_round,
-.blue_round,
+.blue_round
+.blue_round02,
 .gray_round,
-    .gray_border02{padding: 2.0rem}
+.gray_border02{padding: 2.0rem}
 /*  버튼  */
 .btn_wrap .btn_three .btn,    
 .btn_wrap .btn_one .btn,

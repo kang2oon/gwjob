@@ -12,12 +12,13 @@
 
 
 /*자소서 메인 서비스 한줄평 */
-.self_intro_main .main_section01 .review {display: flex;}
+.self_intro_main .main_section01 .review {display: flex;align-items: center}
 .self_intro_main .main_section01 .review .main_tit{width: 150px;margin-right: 50px;margin-top: -4px}
+.self_intro_main .main_section01 .list_area {display: flex;align-items: center}
 .self_intro_main .main_section01 .review .list_wrap{width: calc(100% - 200px);}
-.self_intro_main .main_section01 .review .list_area .list_txt {float: left;width:calc(100% - 400px)}
-.self_intro_main .main_section01 .list_area .reviewer_area{float: right;}
-.self_intro_main .main_section01 .list_area .reviewer_area > *{float: left;margin-left: 20px}
+.self_intro_main .main_section01 .review .list_area .list_txt {width:calc(100% - 400px)}
+.self_intro_main .main_section01 .list_area .reviewer_area{display: flex;margin-left: auto}
+.self_intro_main .main_section01 .list_area .reviewer_area > *{margin-left: 20px}
 
 /* 리뷰 별점 영역*/
 .reviewer_area > .item{color: #666;}

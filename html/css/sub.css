@@ -542,7 +542,7 @@ width: calc(100% - 170px);
 .sub_navi li a{color: #666;font-size: 1.6rem}
 
 .border_tabs02 {display: flex;position: relative;}
-.border_tabs02:after{content: '';width: 100%;height: 1px;position: absolute;background: #333;bottom: -0.5px;left: 0;}
+.border_tabs02:after{content: '';width: 100%;height: 1px;position: absolute;background: #333;bottom: -1px;left: 0;}
 .border_tabs02 li{padding: 15px;text-align: center;border-bottom: 0;border: 1px solid #b8bfd0;color: #858b9b;margin-right: -1px;margin-bottom: -1px;border-bottom: 0; font-size: 2.0rem;background: #fff}
 .border_tabs02 li.active{border: 1px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;}
 .border_tabs02 li a{display: block;width: 100%;height: 100%;}
@@ -639,6 +639,37 @@ width: calc(100% - 170px);
 .pop_sch{display: flex;justify-content: space-around}
 .pop_sch input{width: calc(100% - 250px)}
 .pop_sch select{width: 150px}
+
+
+/* 사전진단서비스 */
+.diag_wrap{}
+.diag_wrap .diag_top {background: url(../images/sub/diag_bg.png) no-repeat top -25px center;background-size: cover;padding: 60px 0;}
+.diag_wrap .diag_top .inner{display: flex;justify-content: space-between}
+.diag_wrap .diag_top .tit p {border-bottom: 1px solid #333;display: inline-block;margin-bottom: 2.0rem;padding-bottom: 0.5rem}
+.diag_wrap .diag_top .tit h3 {font-size: 4.5rem;margin-bottom: 3.0rem}
+.diag_wrap .diag_top .tit h3 span{background: #ff5dc6;padding: 0 10px;color: #fff}
+.diag_wrap .diag_top .txt  {display: flex;}
+.diag_wrap .diag_top .txt .ico{background: url(../images/sub/check_ico.png) no-repeat;width: 49px;height: 39px;margin-right: 20px}
+
+/*.diag_section02  */
+.diag_wrap .diag_section01 .tit {}
+.diag_wrap .diag_section01 .tit p{display: inline-block;box-shadow: 0 -15px 0 0 #ffe8f7 inset;padding:0 7px}
+.diag_wrap .diag_section01 .diag_flex{display: flex;justify-content: center;}
+.diag_wrap .diag_section01 .diag_flex > div {margin-right: 8.0rem}
+.diag_wrap .diag_section01 .diag_flex > div:last-child{margin-right: 0}
+.diag_wrap .diag_section01 .diag_flex .txt{margin-top: 2.0rem;line-height: 1.8}
+.diag_wrap .diag_section01 .diag_flex .img{text-align: center}
+
+
+/*diag_section02*/
+.diag_wrap .diag_section02{}
+.diag_wrap .diag_section02 .select_wrap{display: flex;}
+.diag_wrap .diag_section02 .select_wrap li{margin-right: 15px;width: calc(33.333% - 10px)}
+.diag_wrap .diag_section02 .wd750{width: 750px;margin: auto;}
+.diag_wrap .diag_section02 .select_style01{padding-top: 10px;padding-bottom: 10px;width: 100%;font-weight: bold}
+
+/*diag_list*/
+.highLight{}
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
