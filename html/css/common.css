@@ -153,6 +153,15 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .popup .popup_top{margin-bottom: 2.0rem;padding-bottom: 2.0rem;border-bottom: 1px solid #f5f5f5}
 .popup .popup_top .close{background: url(../images/common/close_btn.png) no-repeat;width: 28px;height: 28px;display: block;text-indent: -999px;}
 .popup .popup_top .txt{font-size: 2.0rem;font-weight: bold}
+
+.pop_style02{padding: 0;overflow: hidden;border: 0}
+.pop_style02 .popup_top02 {background: #daebff;padding: 2.0rem 4.0rem;display: flex;align-items: center}
+.pop_style02 .popup_top02 .close{background: url(../images/common/close_btn03.png) no-repeat;width: 15px;height: 15px;text-indent: -9999px;margin-left: auto;}
+.pop_style02 .popup_inner{padding: 2.0rem 4.0rem}
+
+.shadow{position: fixed;width: 100vw;height: 100vh;background: rgba(0, 0, 0, 0.3);z-index: 9998;top: 0;left: 0;overflow: hidden;display: none}
+.not_scroll{width: 100%;height: 100%;overflow: hidden}
+
 /*font color*/
 .blue01{color: #2f47ec}
 .blue02{color: #004898}
@@ -163,9 +172,11 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .pink03{color: #ff5dc6}
 .gray01{color: #444444}
 .gray02{color: #666}
+.gray03{color: #8c8c8c}
 .orange{color: #ff4e4a}
 .red{color: #ff0000}
 .white{color: #fff}
+.purple{color: #4f3c9f}
 
 /* font style */
 .line_thr{text-decoration:line-through}
@@ -304,6 +315,22 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .table_style06 td{border: 1px solid #c7cee1;padding: 10px;word-break: break-all}
 .table_style06 th{background: #dbebff;font-size: 1.6rem;}
 .table_style06 td{text-align: center;font-size: 1.6rem}
+.table_style07 table{width: 100%;}
+.table_style07 th,
+.table_style07 td{}
+.table_style07 th{background: #004897;color: #fff;padding: 15px 20px;font-size: 1.8rem;}
+.table_style07 th:last-child{border-right: 0}
+.table_style07 .br{border-right: 1px solid #c7cee1}
+.table_style07 td{padding: 15px 20px;font-size: 1.7rem;border: 1px solid #c7cee1}
+.table_style07 td:first-child{border-left: 0}
+.table_style07 td:last-child{border-right: 0}
+.table_style07 tbody tr:nth-child(even){background: #f1f4fd}
+
+.table_style08 table{width: 100%;border-collapse: collapse;border-top: 1px solid #c7cee1;border-bottom: 1px solid #c7cee1;table-layout: fixed}
+.table_style08 th,
+.table_style08 td {padding: 10px;text-align: center;color: #666}
+.table_style08 th {font-size: 1.6rem;color: #666;background: #f1f4fd;} 
+.table_style08 tr{border-bottom: 1px solid #c7cee1}
 
 /*말줄임*/
 .textCut1{display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -430,6 +457,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .mt_50{margin-top:5.0rem}
 .mt_60{margin-top:6.0rem}
 .mt_80{margin-top:8.0rem}
+.mt_100{margin-top:10.0rem}
 
 .mb_5{margin-bottom:0.5rem}
 .mb_10{margin-bottom:1.0rem}
@@ -533,6 +561,30 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 #skipNav a:focus, 
 #skipNav a:active{top: 0;}
 
+/* 직업선호도 진단 서비스 팝업*/
+.job_type_wrap{}
+.job_type_wrap .job_type_area {display: flex;margin-bottom: 2.0rem;padding-bottom: 2.0rem;border-bottom: 1px solid #c7cee1}
+.job_type_wrap .job_type_area:last-child{border-bottom: 0}
+.job_type_wrap .job_type_area .tit{width: 110px;height: 110px;border-radius: 20px;;text-align: center;position: relative;font-weight: bold}
+.job_type_wrap .job_type_area .tit p{position: absolute; width: 100%;top: 50%;transform: translate(0,-50%);font-size: 2.4rem}
+.job_type_wrap .job_type_area:nth-child(1) .tit{background: #9ecea8;color: #fff}
+.job_type_wrap  .job_type_area:nth-child(2) .tit{background: #7494b7;color: #fff}
+.job_type_wrap  .job_type_area:nth-child(3) .tit{background: #60e6e8;color: #fff}
+.job_type_wrap .job_type_area:nth-child(4) .tit{background: #289ad0;color: #fff}
+.job_type_wrap .job_type_area:nth-child(5) .tit{background: #e06daa;color: #fff}
+.job_type_wrap .job_type_area:nth-child(6) .tit{background: #c25291;color: #fff}
+
+.job_type_wrap .job_type_area .cont {width: calc(100% - 140px);margin-left: 30px}
+.job_type_wrap .job_type_area .exp{display: flex;align-items: flex-end;}
+.job_type_wrap .job_type_area .exp .btn_wrap{margin-left: auto}
+.job_type_wrap .job_type_area .exp  .txt {width: calc(100% - 200px)}
+.job_type_wrap .job_type_area .cont_hide{margin-top: 6.0rem;display: none}
+.job_type_wrap .job_type_area .cont_hide li{display: flex;align-items: center;margin-bottom: 1.0rem}
+.job_type_wrap .job_type_area .cont_hide  li.vt{align-items:flex-start}
+.job_type_wrap .job_type_area .cont_hide li:last-child{margin-bottom: 0}
+.job_type_wrap .job_type_area .cont_hide li strong{width: 100px;text-align: center;border: 1px solid #c7cee1;color: #004898;padding: 7px ;border-radius: 20px;margin-right: 20px}
+.job_type_wrap .job_type_area .cont_hide li p {width: calc(100% - 120px);line-height: 1.8}
+
 
 
 
@@ -633,6 +685,16 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
     .online_table .title {bottom: 70px}
     
     .popup_inner{max-height: 50vh}
+	
+	/*취업진단서비스 유형안내*/
+	.job_type_wrap .job_type_area .tit {width:80px;height: 80px;font-size: 1.6rem}
+	.job_type_wrap .job_type_area .tit p{font-size:1.8rem }
+	.job_type_wrap .job_type_area .exp .txt{width: 100%;margin-bottom: 2.0rem;}
+	.job_type_wrap .job_type_area .exp{display: block;}
+	.job_type_wrap .job_type_area .cont_hide{margin-top: 3.0rem;}
+	.job_type_wrap .job_type_area .cont_hide li{display: block;}
+	.job_type_wrap .job_type_area .cont_hide li strong{padding: 5px 10px;width:80px;display: block}
+	.job_type_wrap .job_type_area .cont_hide li p{width: 100%;margin-top: 1.0rem;margin-bottom: 2.0rem}
     
 }
 
@@ -656,7 +718,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
     .btn_wrap02 > div:first-child{margin-bottom: 20px}
     .btn_wrap .wd180{width: 125px;padding: 7px 5px}
     .btn_wrap02 .btn_one {float: none;width: 100%;display: flex;}
-    .btn_wrap .btn_style02:not(.more_btn) {min-width: 80px;padding: 7px 10px;font-size: 1.5rem;width:auto;}
+    .btn_wrap .btn_style02:not(.more_btn) {min-width: 80px;padding: 7px 15px;font-size: 1.5rem;width:auto;}
     .btn_wrap02 .btn_one .btn{width: calc(33.333% - 5px)}
     .btn_wrap .btn_three {display: flex;width: 100%; }
     .btn_wrap .btn_three .btn{flex: 1}
@@ -668,6 +730,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 }
 
 @media all and (max-width:480px){
+	 .f40{font-size: 2.3rem}
 .white_round,
 .gray_border,
 .border_round,
@@ -682,4 +745,9 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .btn_wrap .btn_one .btn{font-size: 1.5rem !important}
     .btn_wrap .btn_three .btn.wd180{min-width: inherit}
     .btn_wrap .btn_one .btn_prev span:before{left: -15px}
+	
+	
+	/* 직업선호도 진단서비스 진단결과 */
+	.job_type_wrap .job_type_area{display: block;}
+	.job_type_wrap .job_type_area .cont{width: 100%;margin-left: 0;margin-top: 10px;}
 }

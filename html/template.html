@@ -14,8 +14,8 @@
     <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
 </head>
 
-<body>
-    <div class="container">
+<body style="overflow: visible !important">
+    <div class="inner">
         <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 50px">텍스트 색상</h3>
         <p class="blue01">파란색 1</p>
         <p class="blue02">파란색 2</p>
@@ -387,6 +387,57 @@
                 </tbody>
             </table>
         </div>
+        
+        <div class="table_style07" style="margin-top: 30px">
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th class="br">1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+        
+        <div class="table_style08" style="margin-top: 30px">
+            <table>
+                <caption></caption>
+                <thead>
+                    <tr>
+                        <th class="br">1</th>
+                        <th>2</th>
+                        <th>3</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
 
 
         <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">팝업</h3>
@@ -401,11 +452,12 @@
             </div>
         </div>
         
-         <div class="popup popup_style02 wd450" style="display: block">
-           <div class="popup_head">
-               <p class="tit f20 bold01">공고 검색</p>
-               <a href="#" class="close" onclick="close_pop()">닫기</a>
-           </div>
+        <div class="popup_area" style="display: block">
+            <div class="popup wd450">
+                <div class="popup_top clear">
+                    <div class="txt fl">취업활동증명서 출력</div>
+                    <a href="#" class="close fr" onclick="close_pop()">닫기</a>
+                </div>
             <div class="popup_inner">
                 <p class="f17 tct bold01">해당 서비스는 로그인이 필요한 서비스 입니다.
                 </p>
@@ -415,6 +467,24 @@
                 </div>
             </div>
         </div>
+		</div>
+		
+		<div class="popup_area" style="display: block">
+            <div class="popup pop_style02 wd450">
+                <div class="popup_top02 clear">
+                    <div class="txt fl">취업활동증명서 출력</div>
+                    <a href="#" class="close fr" onclick="close_pop()">닫기</a>
+                </div>
+            <div class="popup_inner">
+                <p class="f17 tct bold01">해당 서비스는 로그인이 필요한 서비스 입니다.
+                </p>
+                <hr class="dotted_line mt_15 mb_15">
+                <div class="btn_wrap mt_20 tct">
+                    <a href="#" class="btn_style01 btn_blue btn">확인</a>
+                </div>
+            </div>
+        </div>
+		</div>
 
 
         <h3 style="border-bottom: 3px solid #333;padding-bottom: 20px;margin-bottom: 20px;font-size: 26px;margin-top: 40px">게시판 목록</h3>
