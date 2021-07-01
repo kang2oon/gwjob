@@ -1359,6 +1359,9 @@ width: calc(100% - 170px);
     .down_wrap{display: block}
     .down_wrap .textCut1{width: 100%;margin-bottom: 1.0rem;}
 	
+	/* 직업선호도 진단 진단하기*/
+	.job_check_list .no_label span{font-size: 1.4rem}
+	
 	/* 직업선호도 진단 차트*/
 	.job_code .right{width: 230px;margin: auto;}
 	.job_code .right svg{transform: scale(1) translateX(0);zoom:0.5;}
