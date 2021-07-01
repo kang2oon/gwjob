@@ -639,7 +639,8 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
     .pt_40{margin-top:3.5rem}
     .mt_50{margin-top:3.0rem}
     .mt_40{margin-top:3.5rem}
-    .popup{padding: 3.0rem;}
+    .popup:not(.pop_style02){padding: 3.0rem;}
+	.pop_style02 .popup_inner{padding: 2.0rem}
     .popup .popup_top .close {background-size: 20px;width: 20px;height: 20px;}
     /*  게시판 list  */
     .board_list table{display: block;}

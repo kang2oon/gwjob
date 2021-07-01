@@ -847,9 +847,8 @@ width: calc(100% - 170px);
     .certi_wrap .datepicker-wrap{width: 170px}
     
     .table_wrap{width: 100%;overflow-X: auto;}
-    .table_wrap table{width: auto;min-width: 100%}
-    
-	{background: rgba(255, 15, 10, 0.3)}
+  
+	
     /* 사전진단 start */
     .diag_wrap .diag_top {background-position: top }
     .diag_wrap .diag_top .img{width: 35%;}
@@ -1224,7 +1223,7 @@ width: calc(100% - 170px);
     
     .inline_list li{margin-right: 10px}
     
-    
+    .table_wrap table{width: auto;min-width: 640px}
     
     /* tabs */
     .border_tabs li {padding: 10px 5px;font-size: 1.6rem}
