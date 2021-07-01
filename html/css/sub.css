@@ -1121,8 +1121,8 @@ width: calc(100% - 170px);
 	.job_check_list tbody {display: block;border: 0;padding: 10px 0}
 	.job_check_list tr{background: #fff !important;margin-bottom: 20px}
 	.job_check_list tr:last-child{margin-bottom: 0}
-	.job_check_list .tct {border: 0;display: inline-block;margin-top: 50px;width: 19%;}
-	.job_check_list .no_label span{display: block;width: 100%;height: 100%;display: block;font-size: 1.6rem}
+	.job_check_list .tct {border: 0;float: left;margin-top: 50px;width: 20%;;margin-bottom: 3.0rem;}
+	.job_check_list .no_label span{display: block;width: 100%;height: 100%;display: block;font-size: 1.4rem}
 	.radio_style01 input[type="radio"] + label:before{top:-40px;left: 50%;transform: translateX(-50%);width: 30px;height: 30px;}
 	.radio_style02 input[type="radio"]:checked + label:after{top: -33px;left: 50%; transform: translateX(-50%);width: 20px;height: 20px;}
 	.radio_style01 input[type="radio"] + label{display: block;padding-left: 0;word-break: keep-all}
@@ -1360,8 +1360,7 @@ width: calc(100% - 170px);
     .down_wrap .textCut1{width: 100%;margin-bottom: 1.0rem;}
 	
 	/* 직업선호도 진단 진단하기*/
-	.job_check_list .no_label span{font-size: 1.4rem}
-	
+
 	/* 직업선호도 진단 차트*/
 	.job_code .right{width: 230px;margin: auto;}
 	.job_code .right svg{transform: scale(1) translateX(0);zoom:0.5;}
