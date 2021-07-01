@@ -467,6 +467,7 @@ $(document).ready(function () {
 function openModal(modalname) {
 	document.get
 	$("." + modalname).show();
+	$('body').addClass('not_scroll');
 	$('.shadow').show();
 }
 
