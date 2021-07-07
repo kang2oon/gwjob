@@ -13,11 +13,16 @@
 
 /*자소서 메인 서비스 한줄평 */
 .self_intro_main .main_section01 .review {display: flex;align-items: center}
-.self_intro_main .main_section01 .review .main_tit{width: 150px;margin-right: 50px;margin-top: -4px}
-.self_intro_main .main_section01 .list_area {display: flex;align-items: center}
+.self_intro_main .main_section01 .review .main_tit{width: 150px;margin-right: 50px;}
+.self_intro_main .main_section01 .list_area {}
 .self_intro_main .main_section01 .review .list_wrap{width: calc(100% - 200px);}
-.self_intro_main .main_section01 .review .list_area .list_txt {width:calc(100% - 400px)}
-.self_intro_main .main_section01 .list_area .reviewer_area{display: flex;margin-left: auto}
+.self_intro_main .main_section01 .list_area {position:relative;}
+.self_intro_main .main_section01 .review .list_area .list_txt {width:calc(100% - 400px);position:absolute;left:0;top:50%;transform:translate(0,-50%)}
+.self_intro_main .main_section01 .review .list_area .list_txt a{cursor:default;line-height:20px}
+.self_intro_main .main_section01 .review .list_area .list_txt a:hover,
+.self_intro_main .main_section01 .review .list_area .list_txt a:active,
+.self_intro_main .main_section01 .review .list_area .list_txt a:active{text-decoration:none;cursor:default}
+.self_intro_main .main_section01 .list_area .reviewer_area{display: flex;float: right;}
 .self_intro_main .main_section01 .list_area .reviewer_area > *{margin-left: 20px}
 
 /* 리뷰 별점 영역*/
@@ -361,6 +366,23 @@
 .job_diag_main .main_section03 .job_selct_wrap  a:focus p{color: #004897;font-weight: bold}
 
 
+/* 직업역량 진단 서비스 */
+.job_ability_main .ja_banner{background: #039fa0;padding: 10.0rem 4.0rem;border-radius: 20px;display: flex;position: relative;overflow: hidden}
+.job_ability_main .ja_banner:after{content: '';display: block;background: url(../images/main/ja_banner_bg.png) no-repeat;width: 590px;height: 400px;position: absolute;right: 0;bottom: 0;}
+.job_ability_main .ja_banner .txt{width: calc(100% - 580px);}
+
+.job_ability_main .main_section03{background: #f3f3f3;}
+.job_ability_main .main_section03 .inner{position: relative;}
+.job_ability_main .main_section03 .inner:after{content: '';display: block;background: url(../images/main/ja_img02.png) no-repeat;width: 439px;height: 323px;position: absolute;right: 0;bottom: -60px;}
+
+
+/* 취업가능성 진단 서비스 */
+.emab_main{}
+.emab_main .main_section01{}
+.em_banner{border-radius: 20px;background: url(../images/main/emab_main_banner.png) no-repeat right center;overflow: hidden;word-break: keep-all;}
+.em_banner .txt{background: rgba(10, 122, 163, 0.8);padding: 9.0rem 4.0rem;width:700px;height: 100%;}
+
+.emab_main .img_wrap{margin:  150px auto}
 
 
 /* -------------------------- 반응형 start ------------------------*/
@@ -436,6 +458,14 @@
 	.job_diag_main .main_section02 .txt{width: calc(100% - 280px)}
 	.job_diag_main .main_section02 .img{width: 250px}
 	.job_diag_main .main_section02 .img img{width:100%}
+	
+	/* 직업역량진단서비스 */
+	.job_ability_main .ja_banner .txt{width: calc(100% - 400px)}
+	.job_ability_main .ja_banner{padding: 6.0rem 4.0rem}
+	.job_ability_main .ja_banner:after{width: 400px;background-size: 400px;height: 260px}
+	
+	/* 취업가능성진단 start */
+	.em_banner .txt {width: 500px;padding: 7.0rem 4.0rem}
     
 }
 
@@ -537,7 +567,20 @@
 	
 	/* 직업선호도진단 생애주기*/
 	.job_diag_main .main_section03 .job_selct_wrap > div:first-child{margin-right: 50px}
-    
+	
+	
+		/* 직업역량진단서비스 */
+	.job_ability_main .ja_banner .txt{width: calc(100% - 250px)}
+	.job_ability_main .ja_banner{padding: 6.0rem 4.0rem}
+	.job_ability_main .ja_banner:after{background-size: 300px;width: 300px;height: 195px}
+	.job_ability_main .main_section03  {overflow: hidden}
+	.job_ability_main .main_section03 .inner:after{width: 300px;background-size: 300px;height: 180px;bottom: -50px;}
+	.job_ability_main .main_section03 .txt{width: calc(100% - 300px)}
+	
+	/* 취업가능성진단 start */
+	.em_banner{background-size: cover}
+	.em_banner .txt {max-width: 500px;width: 70%; padding: 6.0rem 4.0rem}
+	.emab_main .img_wrap{margin: 8.0rem auto}
     }
 
 @media all and (max-width:768px){
@@ -603,6 +646,13 @@
 	.job_diag_main .main_section03 .job_selct_wrap > div:first-child{margin-right: 30px}
 	.job_diag_main .main_section03 .job_selct_wrap > div{width: calc(50% - 30px)}
 	.job_diag_main .main_section03 .job_selct_wrap .img_border{width: 100%;height: 230px}
+	
+		/* 직업역량진단서비스 */
+	.job_ability_main .ja_banner .txt{width: 100%;margin-bottom: 80px}
+	.job_ability_main .ja_banner{padding: 6.0rem 4.0rem}
+	.job_ability_main .ja_banner:after{background-size: 200px;width: 200px;height: 130px}
+	.job_ability_main .main_section03 .inner:after{display: none}
+	.job_ability_main .main_section03 .txt{width:100%;}
 	
 }
 
@@ -711,7 +761,7 @@
 	
 	
 	/* 직업선호도진단서비스 시작 */
-	.jd_main_section01 .txt{width:100%;word-break: keep-all;margin-bottom: 50px}
+	.jd_main_section01 .txt{width:100%;word-break: keep-all;}
 	.jd_main_section01 .txt .f30 {font-size: 2.2rem}
 	.jd_main_section01 .jd_banner:after{width: 200px;background-size: 200px;height: 100px}
 	
@@ -760,6 +810,12 @@
 	.job_diag_main .main_section02 .txt ul li p{width: 100%;}
 	.job_diag_main .main_section02 .txt ul li strong{margin-bottom: 5px;display: block;width: 100%;}
 	.job_diag_main .main_section02 .txt ul li strong:after{display: none}
+	
+	
+	/* 취업가능성진단 start */
+	.em_banner{background-size: cover}
+	.em_banner .txt {width: 100%; padding: 4.0rem 3.0rem}
+	.em_banner .txt p {font-size: 1.8rem}
     
 }
     

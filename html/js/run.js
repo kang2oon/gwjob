@@ -452,12 +452,68 @@ $(document).ready(function () {
 	});
 
 
-	//직접선호도 진단 서비스 팝업
+	//직업선호도 진단 서비스 팝업
 	$('.job_type_area .exp .btn').click(function () {
 		$(this).toggleClass('on');
-		$(this).text( $(this).text() == '간단히 보기 -' ? "자세히 보기 + " : "간단히 보기 -");
+		$(this).text($(this).text() == '간단히 보기 -' ? "자세히 보기 + " : "간단히 보기 -");
 		$(this).parent().parent().next().slideToggle(200);
 	});
+
+	//직업역량진단서비스 직종선택
+	$('.ja_select > div > a').click(function () {
+		$(this).parent().find('input').prop("checked", "checked");
+		$(this).parent().addClass('active');
+		$(this).parent().siblings().removeClass('active');
+		$(this).parent().siblings().find('input').removeProp("checked", "");
+	})
+
+	//직업역량진단 더보기
+	$('.ja_diag .more_btn').click(function () {
+		$(this).parent().toggleClass('active');
+	});
+
+	//진단 결과 더보기
+	$('.bar_area .more_btn').click(function () {
+		$(this).parent().toggleClass('active');
+	});
+
+	// 희망직업선택 아코디언
+	$('.emab_hope_cont .eh_tit').click(function () {
+		$(this).next().slideToggle();
+		$(this).toggleClass('active')
+	});
+	$('.emab_hope_wrap .btn_wrap a').click(function () {
+		var text = '- 전체닫기';
+		var $this = $('#activate');
+		if ($this.text() === text) {
+			$(this).text('+ 전체펼침');$(this).parent().parent().parent().find('.eh_text').slideUp();$(this).parent().parent().next().children().find('.eh_tit').removeClass('active')
+		} else {
+			$(this).text(text)
+			$(this).parent().parent().parent().find('.eh_text').slideDown();
+			$(this).parent().parent().next().children().find('.eh_tit').addClass('active')
+		}
+
+
+	});
+	
+	//진단결과 차트 
+	$('.oj_table_wrap .sblue01').click(function(){
+		$('.bar-blue02').addClass('off')
+		$('.bar-blue01').removeClass('off');
+	});
+	
+	$('.oj_table_wrap .sblue02').click(function(){
+		$('.bar-blue02').removeClass('off')
+		$('.bar-blue01').addClass('off');
+	});
+
+	$(document).mouseup(function (e){
+  var movewrap = $(".oj_table_wrap");
+  var moveinner = $(".oj_table_wrap .bar > div");
+  if(movewrap.has(e.target).length === 0){
+    moveinner.removeClass("off");
+  }
+});
 
 
 

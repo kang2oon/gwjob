@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 /* CSS Document */
-html{font-family: 's-core_dream4_regular',sans-serif;font-size:10px}
+html{font-family: 's-core_dream4_regular',sans-serif !important;font-size:10px}
 body {font-size: 1.6rem;color: #222}
-
+#sub.ty2 > #sub_container > .inner{max-width:100% !important;padding:0 !important}
 /* css reset */
 * {margin:0;padding:0;border:0;box-sizing:border-box;}
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, button, cite, code,del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {background:none;}
@@ -40,6 +40,7 @@ blockquote:before, blockquote:after,q:before, q:after {content:'';content:none;}
 .vab {vertical-align:bottom;}
 .fl {float:left;}
 .fr {float:right;}
+.vt {vertical-align: top}
 .ulfl > li {float:left;}
 .ulfr > li {float:right;}
 .ib {display:inline-block;}
@@ -71,12 +72,6 @@ select::-ms-expand{ display:none /* 화살표 없애기 for IE10, 11*/ }
 select.select_style01{border: 0;background: url(../images/sub/select_arrow.png) no-repeat right 15px center #fff;}
 
 
-*:hover,
-*:active,
-*:focus {transition: all 0.2s}
-a:hover,
-a:active,
-a:focus {transition: all 0.2s}
 
 /* line */
 .dotted_line{border-top: 1px dotted #ccc;display: block;}
@@ -130,6 +125,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .bar_list li{position: relative;font-size: 1.6rem;padding-left: 13px;margin-bottom: 5px}
 .bar_list li:last-child{margin-bottom: 0}
 .bar_list li:before{content: '-';position: absolute;left: 0;top: 0}
+.bar_list.bar_bold li:before {font-weight: bold;}
 
 /* img */
 .imgFill {object-fit: fill;}
@@ -163,20 +159,23 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .not_scroll{width: 100%;height: 100%;overflow: hidden}
 
 /*font color*/
-.blue01{color: #2f47ec}
-.blue02{color: #004898}
-.dark_blue{color: #07366a}
-.yellow{color: #ffea00}
-.pink{color: #ff1b66}
-.pink02{color: #ff00e4}
-.pink03{color: #ff5dc6}
-.gray01{color: #444444}
-.gray02{color: #666}
-.gray03{color: #8c8c8c}
-.orange{color: #ff4e4a}
-.red{color: #ff0000}
-.white{color: #fff}
-.purple{color: #4f3c9f}
+.blue01{color: #2f47ec !important}
+.blue02{color: #004898 !important}
+.blue03{color: #065e87 !important}
+.dark_blue{color: #07366a !important}
+.yellow{color: #ffea00 !important}
+.pink{color: #ff1b66 !important}
+.pink02{color: #ff00e4 !important}
+.pink03{color: #ff5dc6 !important}
+.gray01{color: #444444 !important}
+.gray02{color: #666 !important}
+.gray03{color: #8c8c8c !important}
+.orange{color: #ff4e4a !important}
+.red{color: #ff0000 !important}
+.white{color: #fff !important}
+.purple{color: #4f3c9f !important}
+.cyon{color: #009899 !important}
+.black {color: #000 !important}
 
 /* font style */
 .line_thr{text-decoration:line-through}
@@ -232,6 +231,10 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .btn_black_line:active,
 .btn_black_line:focus {background: #333;color: #fff}
 
+.btn_wrap .btn_white{background: #fff}
+.btn_wrap .btn_white.btn_blue_line:hover,
+.btn_wrap .btn_white.btn_blue_line:active,
+.btn_wrap .btn_white.btn_blue_line:focus {color: #004898}
 .btn_wrap .btn_blue{background: #004897;color: #fff;}
 .btn_wrap .btn_pink{background: #ff1b66;color: #fff;}
 .btn_wrap .btn_pink02{background: #ff00e4;color: #fff;}
@@ -246,6 +249,8 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 
 .btn_wrap .btn_prev span{position: relative}
 .btn_wrap .btn_prev span:before{content: '←';display: block;position: absolute;left: -25px;top: 50%;transform: translateY(-50%);}
+.btn_wrap .btn_next span{position: relative}
+.btn_wrap .btn_next span:before{content: '→';display: block;position: absolute;right: -25px;top: 50%;transform: translateY(-50%);}
 
 /* 이미지 wrap */
 .round_img{border-radius: 20px;overflow: hidden;}
@@ -258,7 +263,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .paginate .mo_paging button {padding:4px 10px 4px 10px; background:#fff; border:1px solid #ddd; font-size:13px;}
 .paginate .mo_paging p {padding:0 15px 0 15px;font-size: 1.4rem;margin-right: 2px}
 .paginate .mo_paging .cut {font-weight:700; color:#004898;}
-.paginate  a{display: inline-block; vertical-align: middle;position: relative;padding: 3px;width: 30px;text-align: center}
+.paginate  a{cursor:pointer;display: inline-block; vertical-align: middle;position: relative;padding: 3px;width: 30px;text-align: center}
 .paginate  .pager-link-data-first {background: url(../images/common/first_paging.png) no-repeat center;border:0;text-indent: -9999px}
 .paginate .pager-link-data-first:hover,
 .paginate  .pager-link-data-first:active,
@@ -326,11 +331,14 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .table_style07 td:last-child{border-right: 0}
 .table_style07 tbody tr:nth-child(even){background: #f1f4fd}
 
-.table_style08 table{width: 100%;border-collapse: collapse;border-top: 1px solid #c7cee1;border-bottom: 1px solid #c7cee1;table-layout: fixed}
+.table_style08 table{width: 100%;border-collapse: collapse;table-layout: fixed}
 .table_style08 th,
-.table_style08 td {padding: 10px;text-align: center;color: #666}
+.table_style08 td {padding: 10px;text-align: center;color: #666;border: 1px solid #c7cee1}
+.table_style08 th:first-child{border-left: 0}
+.table_style08 th:last-child{border-right: 0}
+.table_style08 td:first-child{border-left: 0}
+.table_style08 td:last-child{border-right: 0}
 .table_style08 th {font-size: 1.6rem;color: #666;background: #f1f4fd;} 
-.table_style08 tr{border-bottom: 1px solid #c7cee1}
 
 /*말줄임*/
 .textCut1{display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -584,7 +592,6 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .job_type_wrap .job_type_area .cont_hide li:last-child{margin-bottom: 0}
 .job_type_wrap .job_type_area .cont_hide li strong{width: 100px;text-align: center;border: 1px solid #c7cee1;color: #004898;padding: 7px ;border-radius: 20px;margin-right: 20px}
 .job_type_wrap .job_type_area .cont_hide li p {width: calc(100% - 120px);line-height: 1.8}
-
 
 
 
