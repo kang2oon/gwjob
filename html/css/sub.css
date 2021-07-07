@@ -824,12 +824,16 @@ width: calc(100% - 170px);
 
 /*추천직업 */
 .tag_tab {display: flex;flex-wrap: wrap}
-.tag_tab li{font-size: 1.4rem;color: #666;border: 1px solid #c7cee1;border-radius: 20px;padding: 5px 15px;margin-right: 5px;margin-bottom: 5px;}
+.tag_tab li{font-size: 1.4rem;border: 1px solid #c7cee1;border-radius: 20px;padding: 5px 15px;margin-right: 5px;margin-bottom: 5px;}
+.tag_tab li a{color: #666;}
 .tag_tab li:hover,
 .tag_tab li:active,
-.tag_tab li:focus {background: #064c99;color: #fff}
-.tag_tab li.active{background: #064c99;color: #fff}
-
+.tag_tab li:focus{background: #064c99;}
+.tag_tab li.active a{background: #064c99;}
+.tag_tab li:hover,
+.tag_tab li:active,
+.tag_tab li:focus a{color: #fff}
+.tag_tab li.active a {color: #fff}
 
 /* 직업역량진단서비스 strat */
 .ja_step{display: flex;margin-top: 6.0rem;justify-content: center}
@@ -850,7 +854,7 @@ width: calc(100% - 170px);
 
 /* 직업역량진단step01*/
 .ja_select{display: flex;flex-wrap: wrap}
-.ja_select > .ja_select_area{text-align: center;margin-right: 60px;width: calc(25% - 45px);margin-top: 4.5rem;}
+.ja_select > .ja_select_area{text-align: center;margin-right: 60px;width: calc(25% - 45px);margin-top: 4.5rem;cursor: pointer}
 .ja_select > .ja_select_area:nth-child(4n){margin-right: 0}
 .ja_select .img{border-radius: 20px;overflow: hidden;margin-bottom: 1.5rem;height: 200px;width: 100%;border:2px solid transparent;box-sizing: border-box}
 .ja_select .radio_style01 label{font-size: 1.8rem;}
@@ -861,14 +865,18 @@ width: calc(100% - 170px);
 .ja_select02{}
 .ja_select02 ul{display: flex;flex-wrap: wrap;}
 .ja_select02 ul li{display: flex;align-items: center;margin-right: 5.0rem;margin-top: 2.0rem;}
+
 .ja_select02 .ja_more{margin-left: 1.5rem;text-indent: -9999px;background: url(../images/sub/ja_more.png) no-repeat center;;width: 16px;height: 16px;}
 
 /* 직업역량진단 진단하기 */
 .ja_diag {}
 .ja_diag .tit{background: #3d638e;padding: 2.0rem 3.0rem;color: #fff;font-size: 2.0rem;border-radius: 20px;display: flex;align-items: center;}
+.ja_diag  .jt_inner{ display: flex}
+.ja_diag  .jt_inner > p{position: relative;padding-left: 20px}
+.ja_diag  .jt_inner > p:before{content: 'Q.';position: absolute;left: 0;}
 .ja_diag .tit .more{display: flex;background: #fff;border-radius: 20px;color: #666;font-size:1.4rem; align-items: center;margin-left: 2.0rem;width: 30px;height: 30px;}
 .ja_diag .tit .more_btn{background: url(../images/sub/ja_more.png) no-repeat;width: 16px;height: 16px;text-indent: -9999px;display: inline-block;margin: auto}
-.ja_diag .tit .more p{display: none;margin-left: 10px}
+.ja_diag .tit .more p{display: none;margin-left: 10px;width: calc(100% - 26px)}
 .ja_diag .tit .more.active{padding: 5.5px 7px;width: auto;height: auto;text-align: left;}
 .ja_diag .tit .active .more_btn {margin: 0}
 .ja_diag .tit .more.active p {display: block;}
@@ -882,7 +890,7 @@ width: calc(100% - 170px);
 
 /* 직업역량진단 결과 */
 .ja_chart{}
-.ja_chart .graph{position: relative;width: 700px;margin: auto;height: auto;}
+.ja_chart .graph{position: relative;width: 910px;margin: auto;transform: translateX(120px);height: auto;}
 .ja_chart .bar_area {margin-bottom: 30px}
 .ja_chart  .x-axis {position: absolute;bottom: -20px; display: flex;width: 100%;}
 .ja_chart  .x-axis li{width: 25%;font-size: 1.4rem;color: #666666;}
@@ -904,6 +912,7 @@ width: calc(100% - 170px);
 .ja_chart .bars .bar-group .more_btn {background: url(../images/sub/ja_more.png) no-repeat;width: 16px;height: 16px;text-indent: -9999px;display: block;position: absolute;}
 .ja_chart .bars .bar{width:calc(100% - 16.5%)}
 .ja_chart .bars .bar > div{height: 10px;margin-bottom: 5px;text-indent: -999px;animation:chart 1s;}
+.ja_chart .bars .bar .off {opacity: 0.3}
 @keyframes chart {
 	0%{width: 0}
 
@@ -911,11 +920,11 @@ width: calc(100% - 170px);
 }
 .ja_chart .axis_wrap{position: absolute;left: 0;bottom: 0;width: 100%;z-index: 0}
 .ja_chart .legend{display: flex;align-items: center;justify-content: center;margin-bottom: 3.0rem}
-.ja_chart .legend li{margin-right: 30px;display: flex;align-items: center;font-size: 1.6rem;color: #666666}
+.ja_chart .legend li{margin-right: 30px;display: flex;align-items: center;font-size: 1.6rem;color: #666666;cursor: pointer}
 .ja_chart .legend li span{width: 10px;height: 10px;margin-right: 10px}
 .ja_chart .legend li:last-child{margin-right: 0}
-.ja_chart .legend li .lg_blue{background: #00a2ff}
-.ja_chart .legend li .lg_pink{background: #f505dc}
+.ja_chart .legend .lg_blue span{background: #00a2ff}
+.ja_chart .legend .lg_pink span{background: #f505dc}
 .ja_chart .bars .bar .bar-blue{background: #00a2ff}
 .ja_chart .bars .bar .bar-pink{background: #f505dc}
 
@@ -923,13 +932,13 @@ width: calc(100% - 170px);
 
 /* 직업역량진단결과 _ ncs */
 .ncs_result_wrap{margin-top: 5.0rem;}
-.ncs_result_wrap .ncs_result{display: flex;margin-bottom: 3.0rem;padding-bottom: 3.0rem;border-bottom: 1px dotted #c7cee1}
+.ncs_result_wrap .ncs_result{display: flex;margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px dotted #c7cee1}
 .ncs_result_wrap .ncs_result:last-child{margin-bottom: 0px;padding-bottom: 0;border-bottom: 0;}
 .ncs_result_wrap .ncs_result .nr_tit{width: 275px}
 .ncs_result_wrap .ncs_result .nr_cont{width: calc(100% - 275px)}
 
 
-.sub_link_wrap{display: flex;justify-content:flex-end;align-items: center;}
+.sub_link_wrap{display: flex;justify-content:flex-end;}
 .sub_link_wrap > div{background: #ddd;border-radius: 20px;padding: 5.0rem 2.0rem;width: calc(50% - 30px);position: relative;margin-right: 60px;}
 .sub_link_wrap > div:last-child{margin-right: 0}
 .sub_link_wrap > div > a:after{content: '';display: block;clear: both}
@@ -937,7 +946,6 @@ width: calc(100% - 170px);
 .sub_link_wrap .job_rd {background: #00afcd;}
 .sub_link_wrap .job_rd:after{content: '';display: block;background: url(../images/sub/job_rd.png) no-repeat;width: 238px;height: 215px;position: absolute;bottom: 0;right: 3.0rem;}
 .sub_link_wrap .txt{width: calc(100% - 265px)}
-
 
 .sub_link_wrap > .intro_slink{background: #ffea00}
 .sub_link_wrap > .intro_slink:after{content: '';display: block;background: url(../images/sub/intro_slink.png) no-repeat;width: 235px;height: 231px;position: absolute;left: 32px;bottom: 0;}
@@ -1166,12 +1174,22 @@ width: calc(100% - 170px);
 	.job_code .right svg{transform: scale(0.9) translateX(-10%);}
 	
 	/* 직업역량진단서비스 시작 */
-	.ja_step > div{margin-right: 50px;padding-right: 50px;}
-	.ja_step .cont{}
-	.ja_step > div .ico{}
+	.ja_step > div{margin-right: 30px;padding-right: 30px;width: calc(33.333% - 30px)}
+	.ja_step .cont{width: calc(100% - 130px)}
+	.ja_step > div .ico{background-size: contain;width: 100px;height: 100px;margin-right: 30px;background-position: center;}
 	
-	/* 취업가능성 진단서비스 */
-	
+	/* 직업역량진단 결과 */
+	.ja_chart .graph {width: 100%;margin-left: 30px}
+	.sub_link_wrap > .intro_slink:after{width: 180px;background-size: 180px;height: 175px;}
+	.sub_link_wrap .txt{}
+	.sub_link_wrap > .intro_slink .txt{width: calc(100% - 200px)}
+	.sub_link_wrap > .ai_slink:after{width: 220px;background-size: 220px;height: 150px;}
+	.sub_link_wrap .text_right .txt{width: calc(100% - 200px); text-align: right !important;}
+	.sub_link_wrap .job_rd:after{width: 180px;background-size: 180px;height: 163px}
+	.sub_link_wrap .txt {width: calc(100% - 220px);}
+	.sub_link_wrap .btn_wrap a {padding: 7px 10px;}
+	.sub_link_wrap  .f20{font-size: 1.8rem;}
+	.sub_link_wrap > div{margin-right: 15px;width: calc(50% - 7.5px)}
 }
 
 
@@ -1298,6 +1316,33 @@ width: calc(100% - 170px);
 	.job_code .right svg{transform: scale(0.75) translateX(-20%);}
     
     
+	
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{margin-right: 30px;width: calc(25% - 22.5px)}
+	.ja_select .img{height: 160px}
+	
+	
+	.ja_diag .tit{position: relative;}
+	.ja_diag .tit .more{position: absolute;right: 20px;top: 50%;transform: translateY(-50%);flex-direction:row-reverse}
+	.ja_diag .tit .more p{margin-left: 0;padding-right: 10px;}
+	
+	/* 직업역량진단 결과 */
+	.sub_link_wrap > .intro_slink:after{width: 100px;background-size: 100px;height: 95px;}
+	.sub_link_wrap > .intro_slink .txt{width:100%;margin-bottom: 30px}
+	.sub_link_wrap > .ai_slink:after{width: 100px;background-size: 100px;height: 65px;}
+	.sub_link_wrap .txt{width: 100% !important;margin-bottom: 80px}
+	.sub_link_wrap .text_right{text-align: right !important}
+	.sub_link_wrap .text_left .txt{text-align: left !important}
+	
+	.sub_link_wrap .job_rd:after{width: 120px;background-size: 120px;height: 105px;}
+	.sub_link_wrap .btn_wrap a {padding: 7px 10px;position: relative;z-index: 9}
+	.sub_link_wrap  .f20{font-size: 1.8rem;}
+	.sub_link_wrap > div{margin-right: 15px;width: calc(50% - 7.5px)}
+	
+	.ncs_result_wrap .ncs_result{display: block;}
+	.ncs_result_wrap .ncs_result .nr_tit{width: 100%;}
+	.ncs_result_wrap .ncs_result .nr_tit br{display: none}
+	.ncs_result_wrap .ncs_result .nr_cont{width: 100%;margin-top: 2.0rem;}
     
 }
 
@@ -1484,7 +1529,25 @@ width: calc(100% - 170px);
 	.oj_chart02 text{font-size: 1.4rem}
 	.oj_table_wrap  .bg_gray{border-top: 0}
 	
-
+	/* 직업역량진단서비스 시작 */
+	.ja_step > div{margin-right: 30px;padding-right: 30px;width: 33%;}
+	.ja_step .cont{width: calc(100% - 100px)}
+	.ja_step > div .ico{background-size: contain;width: 60px;height: 60px;margin-right: 30px;background-position: center;}
+	.ja_step .num{font-size: 3.0rem;}
+	.ja_step .arrow{background-size: 13px;width: 13px;height: 26px;}
+	
+	
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{margin-right: 20px;width: calc(33.333% - 13.333px);margin-top: 3.0rem}
+	.ja_select > .ja_select_area:nth-child(4n){margin-right: auto}
+	.ja_select > .ja_select_area:nth-child(3n){margin-right: 0}
+	.ja_select .img{height: 130px}
+	
+	
+	/* 직업역량진단 결과 */
+	.ja_chart .graph {width: calc(100% - 85px);margin-left: 30px;}
+	.ja_chart .legend {justify-content: flex-end}
+	
 }
 
 @media all and (max-width:640px){
@@ -1644,7 +1707,41 @@ width: calc(100% - 170px);
 	.radio_style01 input[type="radio"] + label{margin-right: 2.0rem;font-size: 1.4rem}
 	.radio_style01 input[type="radio"] + label:before{top: -2px}
 	.radio_style01 input[type="radio"]:checked + label:after{top: 3px}
+	
+	/* 직업역량진단서비스 시작 */
+	.ja_step > div{text-align: center;flex: 1;margin-right: 0;padding-right: 0;}
+	.ja_step .cont{width:100%;margin-right: 0}
+	.ja_step > div .ico{display: none}
+	.ja_step .num{font-size: 2.4rem;}
+	.ja_step .f20{font-size: 1.6rem}
+	.ja_step .arrow{background-size: 10px;width: 10px;height: 20px;}
+	
+		
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{width: calc(50% - 10px);margin-top: 2.0rem}
+	.ja_select > .ja_select_area:nth-child(2n){margin-right: 0}
+	.ja_select > .ja_select_area:nth-child(3n){margin-right: auto}
+	.ja_select .img{height: 130px;}
+	.ja_select02 ul .radio_style01 input[type="radio"] + label{margin-right: 0}
+	.ja_select02 ul {margin-top: 0rem;}
+	.ja_diag {position: relative;}
+	.ja_diag .tit .more{}
+	.ja_diag .tit .more.active{width: 100%;border-radius: 10px;right: 0;top: 75px;box-shadow:  0 1px 5px 1px rgba(0, 0, 0, 0.15)}
+	.ja_diag .tit .more.active .more_btn{background: url(../images/common/close_btn.png) no-repeat;background-size: 12px;}
+	.ja_diag .tit .more.active:before{border-top:0px solid transparent; 
+	 border-left: 10px solid transparent; 
+	 border-right: 10px solid transparent; 
+ 	border-bottom: 10px solid #fff; 
+ 	content:""; 
+ 	position:absolute;
+ 	top: -9px;left: 25px;;z-index: 999;}
+	.ja_diag .tit{font-size: 1.8rem}
+	.ja_diag .cont_wrap .cont_tit p {font-size: 1.6rem}
+	.ja_diag .cont_wrap{margin-top: 2.0rem;}
+	.ja_diag .cont_wrap .cont{margin-bottom: 3.0rem;padding-bottom: 3.0rem;}
+	
 }
+
 
 
 @media all and (max-width:480px){
@@ -1747,8 +1844,22 @@ width: calc(100% - 170px);
 	.optionalJob .text ul li{display: block;margin-bottom: 1.5rem;}
 	.optionalJob .text ul li:last-child{margin-bottom: 0}
 	.optionalJob .text ul li strong{display: block;margin-bottom: .5rem}
-	.optionalJob .text ul li strong span{display: none}
-	.optionalJob p{width: 100%;}
+	
+			
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{width: calc(50% - 5px);margin-right: 10px;}
+	.ja_select .img{height: 80px}
+	
+		/* 직업역량진단 결과 */
+	.ja_chart .graph {width: calc(100% - 50px);margin-left:0;transform: translateX(90px)}
+	.ja_chart .bars .bar-group .txt{width: 70px;left: -100px;word-break: keep-all}
+	.ja_chart .legend {justify-content: flex-end}
+	
+	
+	.sub_link_wrap{display: block;}
+	.sub_link_wrap > div{width: 100%;margin-bottom: 2.0rem;;margin-right: 0}
+	.sub_link_wrap > div:last-child{margin-bottom: 0;}
+	.sub_link_wrap .txt{margin-bottom: 80px;}
 
 }
 

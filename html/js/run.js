@@ -460,22 +460,52 @@ $(document).ready(function () {
 	});
 
 	//직업역량진단서비스 직종선택
-	$('.ja_select > div > a').click(function () {
-		$(this).parent().find('input').prop("checked", "checked");
-		$(this).parent().addClass('active');
-		$(this).parent().siblings().removeClass('active');
-		$(this).parent().siblings().find('input').removeProp("checked", "");
+	$('.ja_select > div').click(function () {
+		$(this).find('input').prop("checked", "checked");
+		$(this).addClass('active');
+		$(this).siblings().removeClass('active');
+		$(this).siblings().find('input').removeProp("checked", "");
 	})
 
 	//직업역량진단 더보기
 	$('.ja_diag .more_btn').click(function () {
 		$(this).parent().toggleClass('active');
+		$(this).parent().parent().parent().parent().parent().siblings().find('.more').removeClass('active')
 	});
 
 	//진단 결과 더보기
 	$('.bar_area .more_btn').click(function () {
 		$(this).parent().toggleClass('active');
+		$(this).parent().parent().siblings().find('.more').removeClass('active')
 	});
+	$(document).mouseup(function (e) {
+		var movewrap03 = $(".bar_area .more");
+		var moveinner03 = $(".bar_area .more_btn");
+		if (moveinner03.has(e.target).length === 0) {
+			movewrap03.removeClass("active");
+		}
+	});
+
+	//진단결과 차트 
+	$('.ja_chart  .lg_blue').click(function () {
+		$('.bar-blue').removeClass('off')
+		$('.bar-pink').addClass('off');
+	});
+
+	$('.ja_chart  .lg_pink').click(function () {
+		$('.bar-blue').addClass('off');
+		$('.bar-pink').removeClass('off');
+	});
+
+	$(document).mouseup(function (e) {
+		var movewrap04 = $(".ja_chart");
+		var moveinner04 = $(".ja_chart .bars .bar > div");
+		if (movewrap04.has(e.target).length === 0) {
+			moveinner04.removeClass("off");
+		}
+	});
+
+
 
 	// 희망직업선택 아코디언
 	$('.emab_hope_cont .eh_tit').click(function () {
@@ -486,7 +516,9 @@ $(document).ready(function () {
 		var text = '- 전체닫기';
 		var $this = $('#activate');
 		if ($this.text() === text) {
-			$(this).text('+ 전체펼침');$(this).parent().parent().parent().find('.eh_text').slideUp();$(this).parent().parent().next().children().find('.eh_tit').removeClass('active')
+			$(this).text('+ 전체펼침');
+			$(this).parent().parent().parent().find('.eh_text').slideUp();
+			$(this).parent().parent().next().children().find('.eh_tit').removeClass('active')
 		} else {
 			$(this).text(text)
 			$(this).parent().parent().parent().find('.eh_text').slideDown();
@@ -495,25 +527,35 @@ $(document).ready(function () {
 
 
 	});
-	
+
 	//진단결과 차트 
-	$('.oj_table_wrap .sblue01').click(function(){
+	$('.oj_table_wrap .sblue01').click(function () {
 		$('.bar-blue02').addClass('off')
 		$('.bar-blue01').removeClass('off');
 	});
-	
-	$('.oj_table_wrap .sblue02').click(function(){
+
+	$('.oj_table_wrap .sblue02').click(function () {
 		$('.bar-blue02').removeClass('off')
 		$('.bar-blue01').addClass('off');
 	});
 
-	$(document).mouseup(function (e){
-  var movewrap = $(".oj_table_wrap");
-  var moveinner = $(".oj_table_wrap .bar > div");
-  if(movewrap.has(e.target).length === 0){
-    moveinner.removeClass("off");
-  }
-});
+	$(document).mouseup(function (e) {
+		var movewrap = $(".oj_table_wrap");
+		var moveinner = $(".oj_table_wrap .bar > div");
+		if (movewrap.has(e.target).length === 0) {
+			moveinner.removeClass("off");
+		}
+	});
+
+	$(document).mouseup(function (e) {
+		var movewrap02 = $(".ja_diag");
+		var moveinner02 = $(".jt_inner .more");
+		if (movewrap02.has(e.target).length === 0) {
+			moveinner02.removeClass("active");
+		}
+	});
+
+
 
 
 

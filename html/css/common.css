@@ -20,7 +20,6 @@ input,textarea,select { font-size:inherit; font-weight:inherit;-webkit-border-ra
 label {cursor:pointer;}
 input[type="button"]{cursor: pointer}
 
-
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;}
 blockquote, q {quotes:none;}
@@ -221,10 +220,10 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .btn_green_line:hover,
 .btn_green_line:active,
 .btn_green_line:focus{background: #0f9d58;color: #fff}
-.btn_blue_line{border:1px solid #004898;color: #004898;font-family: 's-core_dream5_medium',sans-serif}
+.btn_blue_line{border:1px solid #004898;color: #004898 !important;font-family: 's-core_dream5_medium',sans-serif}
 .btn_blue_line:hover,
 .btn_blue_line:active,
-.btn_blue_line:focus {background: #004898;color: #fff}
+.btn_blue_line:focus {background: #004898;color: #fff !important}
 
 .btn_black_line{border:1px solid #333;color: #333;font-family: 's-core_dream5_medium',sans-serif}
 .btn_black_line:hover,
@@ -520,7 +519,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .pt_45{padding-top:45px}
 .pt_50{padding-top:50px}
 
-.pb_0{padding-bottom:0px}
+.pb_0{padding-bottom:0px !important}
 .pb_5{padding-bottom:5px}
 .pb_10{padding-bottom:10px}
 .pb_15{padding-bottom:15px}
@@ -642,6 +641,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 @media all and (max-width:768px){
     html {font-size: 8px}
     .pt_50{padding-top:3.0rem}
+	.f24{font-size: 2.0rem}
     
     .pt_40{margin-top:3.5rem}
     .mt_50{margin-top:3.0rem}
