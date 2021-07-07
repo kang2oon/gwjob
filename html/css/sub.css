@@ -1623,7 +1623,7 @@ width: calc(100% - 170px);
 	.em_diag_wrap .em_diag_tit {padding: 2.0rem;}
 	.em_diag_wrap .em_diag_aritcle{padding: 2.0rem 1.0rem;}
 	.em_diag_wrap .cont{margin-top: 2.0rem;}
-	.em_diag_wrap .cont .radio_style01 label{font-size: 1.4rem !important;}
+	.em_diag_wrap .cont .radio_style01 label{font-size: 1.4rem !important;margin-right: 0;}
     
 	.border_tabs03{width: 100%;overflow-x: auto}
 	.border_tabs03 ul{table-layout: fixed;min-width: 100%;width:auto}
