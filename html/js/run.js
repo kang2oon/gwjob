@@ -539,6 +539,28 @@ $(document).ready(function () {
 		$('.bar-blue01').addClass('off');
 	});
 
+		//진단결과 차트 
+	$('.jr_table_wrap .sblue01').click(function () {
+		$('.bar-blue02').addClass('off')
+		$('.bar-blue01').removeClass('off');
+	});
+
+	$('.jr_table_wrap .sblue02').click(function () {
+		$('.bar-blue02').removeClass('off')
+		$('.bar-blue01').addClass('off');
+	});
+	
+	
+	$(document).mouseup(function (e) {
+		var movewrap05 = $(".jr_table_wrap");
+		var moveinner05 = $(".jr_table_wrap .bar > div");
+		if (movewrap05.has(e.target).length === 0) {
+			moveinner05.removeClass("off");
+		}
+	});
+
+	
+	
 	$(document).mouseup(function (e) {
 		var movewrap = $(".oj_table_wrap");
 		var moveinner = $(".oj_table_wrap .bar > div");
