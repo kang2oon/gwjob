@@ -1,0 +1,1962 @@
+@charset "utf-8";
+
+
+/* 서브 공통 */
+.sub_wrap{background: #d0e5ff;padding: 6.0rem 0;position: relative;}
+.sub_wrap.full_sw{background-color: transparent;padding: 0;margin-top:-40px}
+.sub_wrap.bg02{background: #e5ecff}
+.sub_wrap.bg03{background: #daeeff}
+.sub_wrap.white_bg{background: #fff;padding: 6.0rem 0;position: relative;}
+.sub_wrap .sub_tit01{font-size: 4.0rem;text-align: center;font-family: 's-core_dream5_medium',sans-serif}
+.sub_wrap .sub_tit01 span{color: #004897;}
+.inline_list li{display: inline-block;margin-right:3.0rem;margin-top: 1.0rem}
+.inline_list li:last-child{margin-right: 0}
+.border_none{border: 0 !important;}
+.sub_wrap input[type="text"]::placeholder{opacity: 0.7}
+.sub_wrap input[type="text"]::-ms-input-placeholder{opacity: 0.7}
+.sub_wrap input[type="text"]::-webkit-input-placeholder {opacity: 0.7}
+textarea::placeholder{opacity: 0.7}
+textarea::-ms-input-placeholder{opacity: 0.7}
+textarea::-webkit-input-placeholder {opacity: 0.7}
+
+.no_label span{width: 1px;height: 1px;display: none}
+.no_label label{height: 21px;}
+
+.sub_wrap input[type="text"]{border: 1px solid #c7cee1;padding: 7px 15px;border-radius: 5px;color: #666}    
+.flex_wrap{display: flex;}    
+
+/* 라디오 버튼 */
+.radio_style01 {position: relative;}
+.radio_style01 input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+.radio_style01 input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+.radio_style01 input[type="radio"] + label:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0px;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #c7cee1;
+  border-radius: 100%;
+}
+.radio_style01 input[type="radio"] + label:active:before,
+.radio_style01 input[type="radio"]:checked + label:active:before  {
+}
+.radio_style01 input[type="radio"]:checked + label:before {
+}
+.radio_style01 input[type="radio"]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 13px;
+  height: 13px;
+  background: #f505dc;
+  border-radius: 100%;
+}
+.radio_style02 input[type="radio"]:checked + label:after {
+  content: '';
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 13px;
+  height: 13px;
+  background: #004897 !important;
+  border-radius: 100%;
+}
+
+.check_style01{
+    position:relative;
+    margin:15px 0;
+}
+.check_style01 input[type=checkbox]::-ms-check{
+    border:solid 1px #fff;
+     /* IE 8 */
+        -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+        /* IE 5-7 */
+        filter: alpha(opacity=0);
+        /* Good browsers :) */
+        opacity:0;
+}
+.check_style01 input[type=checkbox]{
+    -webkit-appearance: none;
+    position:absolute;
+    top:0px;
+    left:-1px;
+    width:22px;
+    height:22px;
+    vertical-align:middle;
+}
+.check_style01 input[type=checkbox] + label{
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 40px;
+    font-size: 1.8rem;
+    vertical-align: middle;
+}
+.check_style01 input[type=checkbox] + label:before{
+    content:"";
+    display:inline-block;
+    width:28px;
+    height:28px;
+    margin-right:10px;
+    position:absolute;
+    top:-1px;
+    left:0;
+    bottom:1px;
+    background-color:#fff;
+    border-radius: 5px;
+    border: 1px solid #c7cee1
+    /* border-radius:2px; */
+}
+.check_style01 input[type=checkbox]:checked + label:before{
+    content:"";
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
+    font-size:18px;
+    font-weight:800;
+    background:url(../images/sub/check_box.png) no-repeat center;
+    text-align:center;
+    line-height:18px;
+}
+.check_style01 input[type=checkbox]:checked + label{
+    color: #000;font-weight: bold
+}
+
+/* 파일 업로드 */
+.file_wrap{position: relative;}
+.file_wrap:after{content: '';display: block;clear: both}
+.filebox input[type="file"] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+.filebox  > div {float: left}
+
+.filebox label {
+	display: inline-block;
+	padding: 7px 10px;
+	color: #999;
+	font-size: 1.4rem;
+	line-height: normal;
+	vertical-align: middle;
+	cursor: pointer;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+    overflow: hidden
+
+}
+
+/* named upload */
+.filebox .upload-name {
+	display: inline-block;
+	padding: 6px 10px;
+    margin-left: 10px;
+	font-size: inherit;
+	font-family: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #fff;
+  border: 1px solid #c7cee1;
+width: calc(100% - 170px);
+  border-bottom-color: #c7cee1;
+  border-radius: .25em;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+    overflow: hidden
+}
+
+.file_reset{background: url(../images/sub/reset_close.png) no-repeat center #fff;display: block;width: 30px;height: 28px;text-indent: -9999px;position: absolute;right: 3px;top: 50%;transform: translateY(-50%)}
+
+/* 파일 업로드 2*/
+.input-file input[type="file"] {
+	 visibility: hidden;
+	 width: 1px;
+	 height: 1px;
+    position: absolute;left: -9999px;
+}
+ .input-file .btn {
+	 background-color: #9baad4;
+	 border-color: #9baad4;
+	 color: #fff;
+     font-size: 1.6rem;
+     padding: 8px 20px;
+}
+ .input-file .file-selected {
+	 font-size: 1.6rem;
+	 width: 100%;
+     display: block;
+     color: #666;line-height: 2
+}
+
+ .form-group .sr-only{width: 1px;height: 1px;overflow: hidden;position: absolute;left: -9999px}
+
+
+/* 팝업 */
+.sub_wrap .popup{top: 50%;left: 50%;position: fixed;transform: translate(-50%,-50%);z-index: 9999}
+.popup_area{position: relative;display: none}
+.popup .btn_two > *{min-width: 120px}
+
+
+/* 리스트 스타일*/
+.list_style01{}
+.list_style01 li{margin-bottom: 10px}
+.list_style01 li:last-child{margin-bottom: 0}
+.list_style02 {}
+.list_style02 li{position: relative;padding-left: 10px;margin-bottom: 10px}
+.list_style02 li:before{content: '-';position: absolute;left: 0;top: 3px}
+
+
+/* text area*/
+.textarea {border: 1px solid #c7cee1;width: 100%;border-radius: 8px;min-height: 200px;resize: none;padding: 3.0rem;font-size: 1.6rem;color: #666;vertical-align: top}
+.mh_reset{min-height: 180px}
+
+/* 아이콘 */
+.ico{font-size: 2.4rem;display: flex;align-items: center;font-weight: bold}
+.ico span {margin-right: 10px}
+.ico_fix{display: block;width: 32px;height: 32px;background:#004897 url(../images/sub/fixing_ico.png) no-repeat center;border-radius: 50%;}
+.ico_person{display: block;width: 32px;height: 32px;border-radius: 50%;background:url(../images/sub/person_ico.png) no-repeat center #004897;}
+.ico_title{display: block;width: 32px;height: 32px;border-radius: 50%;background:url(../images/sub/tit_ico.png) no-repeat center #004897;}
+.ico_file{display: block;width: 32px;height: 32px;border-radius: 50%;background:url(../images/sub/file_ico.png) no-repeat center #004897;}
+.ico_company {background: url(../images/sub/company_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_archive {background: url(../images/sub/archive_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_sense {background: url(../images/sub/sense_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_hire {background: url(../images/sub/hire_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_sv01 {background: url(../images/sub/online_ico01.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_sv02 {background: url(../images/sub/online_ico02.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.key_ico{background: url(../images/sub/key_ico.png) no-repeat center #ff1b66;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_resume{background: url(../images/sub/resum_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_career{background: url(../images/sub/career_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_certificate{background: url(../images/sub/certificate_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_place{background: url(../images/sub/place_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_lang{background: url(../images/sub/lang_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_file02{background: url(../images/sub/file_ico02.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_jt{background: url(../images/sub/job_type_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_jr{background: url(../images/sub/recom_job_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_sch{background: url(../images/main/ico_sch.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_ja{background: url(../images/sub/ja_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+.ico_ncs{background: url(../images/sub/ncs_ico.png) no-repeat center #004897;display: block;width: 32px;height: 32px;border-radius: 50%;}
+
+/* 서브 레이아웃 */
+.nav_view_wrap{position: relative;margin-top: 4.0rem;}
+.nav_view{width:380px;margin-right: 30px;position: absolute;top: 0;left: 0;}
+.nav_view_cont > div:first-child {margin-top: 0}
+.nav_view_cont {float: right;width: calc(100% - 410px)}
+.nav_view.fixed{top: 5px;z-index: 100;position: fixed;}
+
+/* 서브 검색 */
+.sub_search{background: #fff;padding: 4.0rem;border-radius: 20px;display: flex;align-items: center}
+.sub_search::after{content: '';display: block;clear: both;}
+.sub_search .left{}
+.sub_search .select_list {display: flex;align-items: center}
+.sub_search .select_list li{position: relative;padding-right: 20px;margin-right: 20px}
+.sub_search .select_list.select_list_txt li{margin-right: 3.0rem;padding-right: 3.0rem}
+.sub_search .select_list.select_list_txt li p{font-size: 1.8rem;}
+.sub_search .select_list li:last-child:after{display: none}
+.sub_search .select_list li:after{content: '';display: block;width: 1px;height: 18px;background: #c7cee1;position: absolute;right: 0;top: 50%;transform: translate(0,-50%);}
+.sub_search .select_list li select{border: 0;font-size: 1.8rem;}
+.sub_search .select_list li:last-child{margin-right: 0;padding-right: 0}
+.sub_search .right{margin-left: auto}
+.sub_search_wrap{display: flex;width: 250px;}
+.sub_search_wrap input[type="text"]{font-size: 1.6rem;display: block;width: calc(100% - 40px);margin-right: 8px;border: 0}
+.sub_search_wrap input[type="submit"]{background:url(../images/sub/sub_search.png) no-repeat center #ff1b66;display: block;width: 32px;height: 32px;border-radius: 50%;text-indent: -9999px;cursor: pointer}
+
+.sub_search_wrap input.orange_search{background:url(../images/sub/sub_search.png) no-repeat center #ff4e4a;}
+
+/* 게시글 목록 */
+.hz_list{display: flex;flex-wrap: wrap}
+.hz_list li{margin-right: 15px}
+.hz_list li:last-child{margin-right: 0}
+.post_list .middle{border-bottom: 0 !important;padding-bottom: 0 !important}
+.post_list .tit .textCut1{width: calc(100% - 350px)}
+.post_list .post_article{position: relative;border-bottom: 1px solid #c7cee1;padding-bottom: 30px;margin-bottom: 30px}
+.post_list .post_article .top{margin-bottom:1.0rem}
+.post_list .post_article .top .blue_bg_text{margin-right:5px}
+.post_list .job_aricle .tit{font-size: 1.8rem;font-weight: bold;}
+.post_list .post_article .hz_list{max-width: calc(100% - 350px)}
+.post_list .post_article:last-child{margin-bottom: 0}
+.post_list .more_btn{position: absolute;right: 0;bottom: 35px}
+
+/* 가이드북 목록 */
+.company_name{display: flex;align-items: center}
+.company_name span{margin-right: 1.0rem}
+.company_name p{font-size: 1.8rem;font-weight: bold;}
+.guide_book_list {color: #666}
+.guide_book_list01 {display: flex;}
+.guide_book_list01 li {margin-right: 20px}
+.guide_book_list01 li:last-child {margin-right: 0}
+.guide_book_list02 {width: calc(100% - 200px)}
+.guide_book_list02 span {display: block;margin-bottom: 5px}
+
+/* 가이드북 상세 */
+.nav_view  ul {margin-top: 3.0rem}
+.nav_view  ul li{border-bottom: 1px dashed #c7cee1;padding-bottom: 15px;margin-bottom: 15px}
+.nav_view  ul li a{font-size: 1.8rem;color: #666;display: block;width: calc(100% - 20px);word-break: keep-all}
+.nav_view  ul li:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.nav_view  ul li.active {}
+.nav_view  ul li.active a {color: #333;font-weight: bold;position: relative;}
+.nav_view  ul li.active a:after{content: '';display: block;background: url(../images/sub/active_arrow.png) no-repeat;width: 7px;height: 9px;position: absolute;right: 0;top: 50%;transform: translate(0,-50%)}
+
+.nav_view  ul li:hover a,
+.nav_view  ul li:active a,
+.nav_view  ul li:focus a{color: #333;font-weight: bold;position: relative;}
+.nav_view  ul li:hover a:after,
+.nav_view  ul li:active a:after,
+.nav_view  ul li:focus a:after{content: '';display: block;background: url(../images/sub/active_arrow.png) no-repeat;width: 7px;height: 9px;position: absolute;right: 0;top: 50%;transform: translate(0,-50%)}
+
+/*게시글 상세*/
+.post_view .tit{font-size: 1.8rem;font-weight: bold;}
+.post_view .cont_tit{font-weight: bold;margin-bottom: 10px}
+.post_view .cont_txt {color: #666;min-height: 200px;}
+.post_view_article{border-bottom: 1px solid #c7cee1;margin-bottom: 30px;padding-bottom: 30px}
+.post_view_article:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0}
+
+/* 게시글 작성 */
+.post_write{}
+.post_write .top{}
+.post_write input[type="text"]::placeholder {color: #333 !important}
+.post_write input[type="text"]:-ms-input-placeholder{color: #333 !important}
+.post_write .pw_tit{font-size: 1.8rem;font-weight: bold;margin-right: 20px;}
+.post_write select,
+.post_write textarea{color: #666}
+.post_write select {font-size: 1.8rem}
+.post_write .pw_txt{font-size: 1.8rem;color: #666666}
+.write_tit{font-size: 2.4rem;font-weight: bolder}
+.write_tit span.ico {margin-right: 10px;display: inline-block;vertical-align: middle}
+.write_tit p {display: inline-block;vertical-align: middle}
+.write_tit .block{display:block}
+
+.post_write_info{margin-top: 3.0rem}
+.post_write_info > div {display: flex;align-items: center;}
+.post_write_info .left {float: left;margin-right: 50px}
+.post_write_info .left:last-child{margin-right: 0}
+.post_write_info .right {float: right;}
+
+
+.post_write_table table {width: 100%;}
+.post_write_table td{padding: 15px 5px}
+.post_write_table th {text-align: left;padding:15px ;}
+.post_write_table th:first-child{padding-left: 0}
+.post_write_table .select_wrap {display: flex}
+.post_write_table .select_wrap select {margin-right: 10px;width: calc(50% - 5px);color: #666}
+.post_write_table .select_wrap select:last-child{margin-right: 0}
+.post_write_table .vt{vertical-align: top !important}
+
+.write_tit_wrap{display: flex;align-items: center}
+.write_tit_wrap .write_tit{width: 120px}
+.write_tit_wrap .write_tit_area{width: calc(100% - 120px);font-size: 1.8rem;color: #666}
+.write_tit_wrap .write_tit_area input {font-size: 1.8rem}
+
+.text_filed{position: relative;}
+.text_filed .text_filed_area{border-bottom: 1px dotted #c7cee1;padding-bottom: 4.0rem;margin-bottom: 4.0rem}
+.text_filed .text_filed_area:last-child{border-bottom: 0;padding-bottom: 0;}
+
+
+/* 자소서_ 컨설팅완료*/
+.post_write_table.pw_item_four table{table-layout: fixed}
+.post_write_table.post_complete table tr{border-bottom: 1px dotted #c7cee1}
+.post_write_table.post_complete table tr:last-child{border-bottom: 0}
+.post_write_table.post_complete table th {padding-left: 0}
+
+.txt_area{font-size: 1.6rem;color: #666}
+
+/* 컨설팅 별점 */
+.consulting_score{background: #ffea00;border-radius: 15px;padding: 4.0rem 5.0rem;}
+.consulting_score input[type="text"]{padding: 10px 15px;font-size: 1.8rem}
+.score_select{width:240px;position: relative;z-index: 55}
+.score_select .selected_option{background: url(../images/common/select_arrow.png) no-repeat right 20px center #fff;display: block;padding: 10px 15px;border-radius: 8px;border: 2px solid #fff;box-sizing: border-box;}
+.score_select .selected_option a{display: block;width: 100%;height: 100%;}
+.score_select ul{background: #fff;position: absolute;top: 35px;left: 0; border-radius: 0 0 8px 8px;width: 100%;display: none;padding-top: 5px;border: 2px solid #fff;box-sizing: border-box}
+.score_select ul li {padding: 8px 15px}
+.score_select *:hover,
+.score_select *:active,
+.score_select *:focus {transition: all 0s !important}
+.score_select ul li:hover,
+.score_select ul li:active,
+.score_select ul li:focus{background: rgba(199, 206, 225, 0.22)}
+.score_select ul li:last-child{margin-bottom: 0}
+.score_select ul li a{display: block;width: 100%;height: 100%;}
+.score_select .star_area{background: url(../images/main/star_bg.png) no-repeat left center;width: 115px;height: 23px;position: relative;}
+.score_select .star_area .value{background: url(../images/main/star_area.png) no-repeat left center;height: 100%;position: absolute;left: 0;top: 0;}
+.score_select .star_area em {text-indent: -99999px;display: inline-block;}
+
+.score_select .selected_option.show{border: 2px solid #000;border-bottom: 2px solid #fff;border-radius: 8px 8px 0 0;}
+.score_select ul.show {display: block;border: 2px solid #000;border-top: 0}
+.score_select .hide {display: none !important;border: 0;}
+
+
+/* 면접자료실 필터 */
+.notice_filter{display: flex;align-items: center;}
+.notice_filter .notice_count{position: relative;padding-right: 30px;margin-right: 30px;width: 125px}
+.notice_filter .notice_count:after{content: '';display:block;background: #c7cee1;height: 18px;width: 1px;position: absolute;right: 0;top: 50%;transform: translateY(-50%)}
+.sub_wrap .filter_wrap {display: flex;flex-wrap: wrap;}
+.sub_wrap .filter_wrap  .ft_tit{display: flex;align-items: center;margin-right: 30px;}
+.sub_wrap .filter_wrap  .ft_tit span{background:#ff4e4a;color: #fff;display: block;width: 32px;height: 32px;text-align: center;line-height: 32px;border-radius: 50%;font-size: 1.8rem;margin-right: 10px;}
+.sub_wrap .filter_wrap .ft_tit p{color: #ff4e4a;font-weight: bold;font-size: 1.8rem;}
+.sub_wrap .filter_wrap ul{display: flex;}
+.sub_wrap .filter_wrap ul li{margin-right: 15px}
+.sub_wrap .filter_wrap ul li a{display: block;color: #666;font-size: 1.6rem;padding: 5px 25px;width: 100%;height: 100%;background: #f6f7fc;border: 1px solid #f6f7fc;border-radius: 20px;}
+.sub_wrap .filter_wrap ul li a:hover{background: #fff;color: #ff4e4a;border: 1px solid #ff4e4a;box-sizing: border-box;font-weight: bold}
+.sub_wrap .filter_wrap ul li a.on{background: #fff;color: #ff4e4a;border: 1px solid #ff4e4a;box-sizing: border-box;font-weight: bold}
+
+/*온라인 채용박람회 시작*/
+/* 비대면 온라인 면접*/
+.support_view{display: flex;}
+.support_view .sv_img{width: 390px;margin-right: 40px}
+.support_view .sv_txt{width: calc(100% - 430px);display: flex;flex-direction: column} 
+.support_view .bottom{margin-top: auto}
+.lb_list{display: flex;align-items: center}
+.lb_list li{font-size: 1.8rem;color: #666;position: relative;margin-right: 15px;padding-right: 15px}
+.lb_list li:after {content: '';display: block;width: 1px;height: 15px;background: #c7c7c7;position: absolute;right: 0;top: 50%;transform: translate(0,-50%)}
+.lb_list li:last-child{margin-right: 0;padding-right: 0}
+.lb_list li:last-child:after{display: none}
+.sv_submit{display: flex}
+
+/* 온라인채용박람회 기업정보 */
+.company_info .ci_top{background: url(../images/sub/sub_bg.png) no-repeat bottom -50px center #e5ecff;}
+.company_info .ci_top .tit {font-size: 4.0rem;font-weight: bold;}
+.company_info .ci_top .tit > p{width: calc(100% - 100px);word-break: keep-all}
+.company_info .middle .tit {border-bottom: 1px solid #c7cee1;padding-bottom: 20px;margin-bottom: 20px;display: flex;justify-content: space-between;align-items: center}
+.company_info .middle{display: flex;justify-content:space-between}
+.company_info .middle .left{width: calc(100% - 450px)}
+.company_info .middle .left dl{display: flex;padding-bottom: 20px;margin-bottom: 20px;border-bottom: 1px dotted #c7cee1}
+.company_info .middle .left dl:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0}
+.company_info .middle .left dt{width: 150px;}
+.company_info .middle .left dd{width: calc(100% - 150px)}
+.company_info .middle .right{background: #f3f3f3;border-radius: 20px;padding: 4.0rem;width: 400px;display: flex;flex-direction:column}
+.company_info .middle .logo {text-align: center;margin: 3.0rem auto }
+.company_info .middle .right .info_list{margin-bottom: 3.0rem}
+.company_info .middle .right .trt{margin-top: auto}
+.info_list{}
+.info_list strong{min-width: 100px;font-weight: normal;color: #000}
+.info_list li{margin-bottom: 10px;color: #666;display: flex}
+.info_list li:last-child{margin-bottom: 0}
+.tag{display: flex;}
+.tag li{margin-right: 10px}
+.tag li:last-child{margin-right: 0}
+.tag li a{display: block;font-size: 1.5rem;border: 1px solid #c7cee1;border-radius: 20px;padding:4px 10px}
+.tag li a:hover,
+.tag li a:active,
+.tag li a:focus{background: #c7cee1}
+
+.ci_detail{}
+.ci_detail h4{font-size: 2.0rem;color: #004898;margin-bottom: 2.0rem}
+
+.hire_progress{display: flex;justify-content: space-between}
+.hire_progress > .stop_area{border-radius: 15px;padding: 30px;color: #fff;align-items: center;width: 180px;text-align: center}
+.hire_progress > .stop_area span{display: block;margin: auto;margin-bottom: 10px;height: 30px;width: 30px}
+.hire_progress > .step01{background: #6fd0f4;}
+.hire_progress > .step01 span{background: url(../images/sub/hire_progress01.png) no-repeat center;}
+.hire_progress > .step02{background: #00a2ff;}
+.hire_progress > .step02 span{background: url(../images/sub/hire_progress02.png) no-repeat center;}
+.hire_progress > .step03{background: #3082dc;}
+.hire_progress > .step03 span{background: url(../images/sub/hire_progress03.png) no-repeat center;}
+.hire_progress > .step04{background: #004897;}
+.hire_progress > .step04 span{background: url(../images/sub/hire_progress04.png) no-repeat center;}
+.hire_progress .arrow{background: url(../images/sub/hire_arrow.png) no-repeat center;text-indent: -9999px;width: 23px}
+
+/* 입사지원서 작성 */
+.border_tabs {display: flex;position: relative;}
+.border_tabs:after{content: '';width: 100%;height: 2px;position: absolute;background: #333;bottom: -2px;left: 0;}
+.border_tabs li{border-radius: 10px 10px 0 0;padding: 15px 75px;border-bottom: 0;border: 2px solid #b8bfd0;color: #858b9b;margin-right: -2px;margin-bottom: -2px;border-bottom: 0; font-size: 2.0rem;background: #e5ecff}
+.border_tabs li.active{border: 2px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;}
+.border_tabs li a{display: block;width: 100%;height: 100%;}
+.border_tabs li:hover,
+.border_tabs li:active,
+.border_tabs li:focus {border: 2px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;transition: 0s}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.border_tabs li{margin-bottom: -2.1px}
+}
+
+/* 이력서 선택 */
+.select_inBtn{display: flex;justify-content:space-between}
+.select_inBtn select{width: calc(100% - 220px)}
+.datepicker-wrap{border: 1px solid #c7cee1;border-radius: 5px;width: 230px;display: flex;align-items: center;justify-content:space-between;padding-right: 10px}
+.datepicker-wrap input[type="text"]{border: 0;width:calc(100% - 50px) }
+.datepicker-wrap img{}
+
+.pw_flex{display: flex;align-items: center;}
+.pw_flex > div {margin-right: 5.0rem}
+.pw_flex > div:last-child{margin-right: 0}
+.tel_wrap{display: flex;align-items: center;}
+.tel_wrap select{width: 100px}
+.tel_wrap input{width: 100px}
+.tel_wrap span {width: 20px;text-align: center;}
+.email_wrap {display: flex;align-items: center;}
+.email_wrap > div{margin-right: 10px;}
+.email_wrap span{margin-right: 10px}
+.address_wrap{display: flex;}
+.address_wrap input{margin-left: 10px}
+.address_wrap input:first-child{margin-left: 0}
+.address_wrap input:nth-child(2){width: calc(50%)}
+.address_wrap input:nth-child(3){width: calc(50% - 117px)}
+.certi_wrap{display: flex;margin-bottom: 10px}
+.certi_wrap:last-child{margin-bottom: 0}
+.certi_wrap > div {display: flex;justify-content: space-around;}
+.certi_wrap > div:first-child{width: calc(100% - 360px)}
+.certi_wrap > div:last-child{;}
+.certi_wrap > * {margin-right: 10px}
+.certi_wrap input.tit{width: calc(100% - 270px);margin-right: 10px}
+.certi_wrap  select{width: 250px;}
+.certi_wrap  .datepicker-wrap{width: 200px;margin-right: 10px}
+.certi_wrap > *:last-child{margin-right: 0}
+
+.ui-datepicker .ui-datepicker-title select {min-width:inherit !important;padding:2px 5px;border-radius: 0;padding-right: 0 !important}
+
+.lang_wrap{display: flex;}
+.lang_wrap > *{margin-right: 10px}
+.lang_wrap > *:last-child{margin-right: 0}
+.lang_wrap input{width: calc(100% - 100px)}
+
+.file_wrap_inbtn{display: flex;justify-content:space-between;align-items: flex-end;}
+.file_wrap_inbtn  .file_wrap{width: calc(100% - 90px)}
+.file_wrap_inbtn > .btn_wrap a{padding: 7px 15px;width: 80px}
+
+.table_flex{display: flex;}
+.table_flex > div{border-right: 1px dotted #c7cee1;margin-right: 15px;flex-grow: 1}
+.table_flex > div:last-child{margin-right: 0;padding-right: 0;border-right: 0}
+
+
+/* 온라인채용박람회 관리자 start */
+.sub_navi {display: flex;border-bottom: 1px solid #c7cee1;padding-bottom: 1.5rem;margin-bottom: 5.0rem}
+.sub_navi li{}
+.sub_navi li:after{content: '>';display: inline-flex;margin:0 5px;color: #666}
+.sub_navi li:last-child:after{display: none}
+.sub_navi li:last-child a{color:#000;}
+.sub_navi li a{color: #666;font-size: 1.6rem}
+
+.border_tabs02 {display: flex;position: relative;}
+.border_tabs02:after{content: '';width: 100%;height: 1px;position: absolute;background: #333;bottom: -1px;left: 0;}
+.border_tabs02 li{padding: 15px;text-align: center;border-bottom: 0;border: 1px solid #b8bfd0;color: #858b9b;margin-right: -1px;margin-bottom: -1px;border-bottom: 0; font-size: 2.0rem;background: #fff}
+.border_tabs02 li.active{border: 1px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;}
+.border_tabs02 li a{display: block;width: 100%;height: 100%;}
+.border_tabs02 li:hover,
+.border_tabs02 li:active,
+.border_tabs02 li:focus {border: 1px solid #000;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;transition: 0s}
+
+.border_tabs03 ul{display: flex;position: relative;}
+.border_tabs03 ul:after{content: '';width: 100%;height: 1px;position: absolute;background: #004898;bottom: -1px;left: 0;}
+.border_tabs03 ul li{padding: 15px;text-align: center;border-bottom: 0;border: 1px solid #b8bfd0;color: #858b9b;margin-right: -1px;margin-bottom: -1px;border-bottom: 0; font-size: 2.0rem;background: #fff;min-width: 220px}
+.border_tabs03 ul li.active{border: 1px solid #004898;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;}
+.border_tabs03 ul li a{display: block;width: 100%;height: 100%;}
+.border_tabs03 ul li:hover,
+.border_tabs03 ul li:active,
+.border_tabs03 ul li:focus {border: 1px solid #004898;border-bottom: 0;color: #000;position: relative;z-index: 55;font-weight: bold;transition: 0s}
+
+
+
+
+
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+.border_tabs02 li{margin-bottom: -2.1px}
+}
+.job_post_sch{background: #f4f5f9;border: 1px solid #c7cee1;padding: 3.0rem;display: flex;align-items: center;justify-content:space-around}
+.job_post_sch label{margin-right: 1.5rem;}
+.job_post_sch select{width: calc(100% - 268px);margin-right: 1.5rem;}
+.job_post_sch .btn{}
+
+.mng_result{display: flex;justify-content: space-between;align-items: center}
+.mng_result  .mng_result_list {display: flex;}
+.mng_result .mng_result_list li{position: relative;padding-right: 10px;margin-right: 10px;}
+.mng_result .mng_result_list li:after{content: '';display: block;width: 1px;height: 13px;background: #c7cee1;position: absolute;right: 0;top: 50%;transform: translate(0,-50%)}
+.mng_result .mng_result_list li:last-child{margin-right: 0;padding-right: 0}
+.mng_result .mng_result_list li:last-child:after{display: none}
+.mng_result .mng_result_listli a {color: #666;}
+.mng_result .mng_result_list li.active a{color: #000;font-family: 's-core_dream5_medium';}
+.mng_result .mng_result_list li:hover a,
+.mng_result .mng_result_list li:active a,
+.mng_result .mng_result_list li:focus a{color: #000;font-family: 's-core_dream5_medium';}
+
+.mng_result .right {display: flex;}
+.mng_result .right *{margin-right: 10px}
+.mng_result .right *:last-child{margin-right:0}
+.gray_border02 .post_view_article{min-height: 150px}
+.gray_border02 .post_view_article .cont_tit {font-weight: bold;margin-bottom: 1.5rem}
+.id_img{width: 100px;height: 140px;border: 1px solid #c7cee1}
+.id_img img{width: 100%;}
+
+/*온라인채용박람회_관리자_공고관리*/
+.post_write.job_post_sch{display: block;}
+.post_write.job_post_sch select{width: auto}
+
+.inp_btn {display: flex;align-items: center}
+.inp_btn .btn_wrap {margin-left: 1.0rem}
+
+.p_flex{display: flex;align-items: center;}
+
+.date_term {display: flex;align-items: center}
+.date_term > span {width: 20px;text-align: center;}
+.br_none {border-radius: 0 !important}
+.address_wrap02 {display: flex}
+.address_wrap02  * {margin-right: 10px;}
+.address_wrap02  *:last-child{margin-right: 0}
+.address_wrap02 .aw_01{display: flex;}
+.address_wrap02 .aw_02 {width: calc(100% - 210px)}
+.address_wrap02 .aw_02 input[type="text"]:nth-child(1){width: calc(55% - 15px)}
+.address_wrap02 .aw_02 input[type="text"]:nth-child(2){width: 45%}
+
+.age_list {}
+.age_list {display: flex;align-items: center}
+.age_list li {margin-right: 3.0rem}
+.age_list li:last-child{margin-right: 0}
+.age_list  .input_radio input[type="radio"] + label:before{top: 8px}
+.age_list  .input_radio input[type="radio"] + label:after{top: 13px}
+.age_list .date_term input{width:100px}
+
+.wage_wrap{display: flex;}
+.wage_wrap > * {margin-right: 10px}
+.wage_wrap > *:last-child{margin-right: 0}
+
+.down_wrap{display: flex;align-items: center;}
+.down_wrap .textCut1 {width: calc(100% - 250px);}
+.down_wrap .btn_wrap{margin-left: auto}
+
+.qusetion_tit{display: flex;align-items: center}
+.qusetion_tit  ul {display: flex;margin-left: auto}
+.qusetion_tit li:first-child .btn{margin-right: 5px;}
+.qusetion_cont li {margin-bottom: 10px}
+.qusetion_cont li:last-child{margin-bottom: 0}
+
+.gray_box{background: #f5f5f5;border: 1px solid #c7cee1;padding: 3.0rem;}
+.upload_list  {min-height: 70px}
+.upload_list li{margin-bottom: 7px}
+.upload_list li:last-child{margin-bottom: 0}
+
+.exposure_wrap{display: flex;}
+.exposure_wrap label:first-child {position: relative;margin-right: 20px;padding-right: 20px}
+.exposure_wrap label:first-child:after{content: '';display: block;width: 1px;height: 10px;background: #c7cee1;position: absolute;right: 0;top: 50%;transform: translate(0,-50%)}
+
+/*관리자 팝업*/
+.popup.popup_style02{padding: 0;overflow: hidden}
+.popup.popup_style02 .popup_head{background: #dbebff;padding: 15px 20px;display: flex;align-items: center}
+.popup.popup_style02 .close{margin-left: auto;background: url(../images/common/close_btn02.jpg) no-repeat;width: 13px;height: 13px;text-indent: -9999px;}
+.popup.popup_style02 .popup_inner{padding: 20px}
+
+/* 팝언안에 검색*/
+.pop_sch{display: flex;justify-content: space-around}
+.pop_sch input{width: calc(100% - 250px)}
+.pop_sch select{width: 150px}
+
+
+/* 사전진단서비스 */
+.diag_wrap{}
+.diag_wrap .diag_top {background: url(../images/sub/diag_bg.png) no-repeat top -25px center;background-size: cover;padding: 60px 0;}
+.diag_wrap .diag_top .inner{display: flex;}
+.diag_wrap .diag_top .inner .img{margin-left: auto}
+.diag_wrap .diag_top .tit p {border-bottom: 1px solid #333;display: inline-block;margin-bottom: 2.0rem;padding-bottom: 0.5rem}
+.diag_wrap .diag_top .tit h3 {font-size: 4.5rem;margin-bottom: 3.0rem}
+.diag_wrap .diag_top .tit h3 span{background: #ff5dc6;padding: 0 10px;color: #fff}
+.diag_wrap .diag_top .txt  {display: flex;}
+.diag_wrap .diag_top .txt .ico{background: url(../images/sub/check_ico.png) no-repeat;width: 49px;height: 39px;margin-right: 20px}
+.diag_wrap .diag_top .txt  p{width: calc(100% - 69px)}
+
+/*.diag_section02  */
+.diag_wrap .diag_section01 .tit {}
+.diag_wrap .diag_section01 .tit p{display: inline-block;box-shadow: 0 -15px 0 0 #ffe8f7 inset;padding:0 7px}
+.diag_wrap .diag_section01 .diag_flex{display: flex;justify-content: center;}
+.diag_wrap .diag_section01 .diag_flex > div {margin-right: 8.0rem}
+.diag_wrap .diag_section01 .diag_flex > div:last-child{margin-right: 0}
+.diag_wrap .diag_section01 .diag_flex .txt{margin-top: 2.0rem;line-height: 1.8}
+.diag_wrap .diag_section01 .diag_flex .img{text-align: center}
+
+
+/*diag_section02*/
+.diag_wrap .diag_section02{}
+.diag_wrap .diag_section02 .select_wrap{display: flex;}
+.diag_wrap .diag_section02 .select_wrap li{margin-right: 15px;width: calc(33.333% - 10px)}
+.diag_wrap .diag_section02 .wd750{width: 750px;margin: auto;}
+.diag_wrap .diag_section02 .select_style01{padding-top: 10px;padding-bottom: 10px;width: 100%;font-weight: bold}
+
+/*diag_list*/
+.diag_wrap .diag_list .diag_list_area{display: flex;margin-bottom: 3.0rem;padding-bottom: 3.0rem;border-bottom: 1px dotted #c7cee1}
+.diag_wrap .diag_list .diag_list_area:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.diag_wrap .diag_list .diag_list_area .tit {width: 280px;padding-top: 10px}
+.diag_wrap .diag_list .diag_list_area .cont_wrap {width: calc(100% - 280px);display: flex;flex-wrap: wrap;flex-direction:column;}
+.diag_wrap .diag_list .diag_list_area .cont {display: flex;align-items: center;margin-bottom: 2.0rem}
+.diag_wrap .diag_list .diag_list_area .cont:last-child{margin-bottom: 0}
+.diag_wrap .diag_list .diag_list_area .txt {width: calc(100% - 280px)}
+.diag_wrap .diag_list .diag_list_area .btn_wrap {width: 280px;}
+.diag_wrap .diag_list .highLight{box-shadow: 0 -8px 0 0 #fffeb1 inset;font-weight: bold;display: inline}
+.diag_wrap .diag_list .btn_wrap ul{display: flex;}
+.diag_wrap .diag_list .btn_wrap ul li:first-child{margin-right: 10px}
+.diag_wrap .diag_list .btn_radio{position: relative;width: calc(50% - 5px);}
+.diag_wrap .diag_list .btn_radio input{height: 35px;width: 100%; opacity: 0;cursor: pointer}
+.diag_wrap .diag_list .btn_radio label{position: absolute;top: 0; left: 0;color: #949494;width: 100%;height: 100%;background: #f1f1f1;display: flex;align-items: center;justify-content: center;border-radius:10px;cursor: pointer}
+.diag_wrap .btn_wrap ul .btn_radio input:checked +  label {background: #0d92f8;font-weight: bold;color: #fff;}
+
+
+.diag_wrap .diag_result {background: #225bda;}
+.diag_wrap .diag_result .inner{display: flex;justify-content: space-between;align-items: center}
+.diag_wrap .diag_result a{margin-left: auto;display: flex;align-items: center;position: relative;}
+.diag_wrap .diag_result a:after{content: '';display: block;width: 0;height: 1px;background: #fff;position: absolute;left: 0;bottom: -5px;;transition:0.5s all;}
+.diag_wrap .diag_result a span{margin-left: 5.0rem;font-size: 22px}
+.diag_wrap .diag_result a:hover:after,
+.diag_wrap .diag_result a:active:after,
+.diag_wrap .diag_result a:focus:after{width: 100%;height: 1px;}
+
+
+
+/* 사전진단 결과 */
+.diag_result_wrap .diag_result_top{background: url(../images/sub/diag_result_bg.png) no-repeat center;}
+.diag_result_wrap .diag_result_top .tit h3 {font-size: 4.5rem;}
+.diag_result_wrap .diag_result_top .tit h3 span{background: #ff5dc6;padding: 0 10px;color: #fff}
+.diag_result_wrap .diag_result_area > .txt{display: flex;align-items: center} 
+.diag_result_wrap .diag_result_area > .txt .ico{background: url(../images/sub/check_ico02.png) no-repeat;width: 48px;height: 38px;margin-right: 10px}
+.diag_result_wrap .diag_result_area > .txt p{width: calc(100% - 58px)}
+
+
+
+/* 사전진단 결과 리스트*/
+.diag_result_wrap  .dr_list{padding-top: 3.0rem;margin-top: 2.0rem;border-top: 1px solid #000;border-bottom: 1px solid #000;padding-bottom: 3.0rem}
+.diag_result_wrap  .dr_list_area {display: flex;align-items:flex-start;margin-bottom: 3.0rem;padding-bottom: 3.0rem;border-bottom: 1px dotted #c7cee1}
+.diag_result_wrap  .dr_list_area:last-child{margin-bottom: 0;padding-bottom: 0;border-bottom: 0;}
+.diag_result_wrap  .dr_list_area .tit {width: 280px;}
+.diag_result_wrap  .dr_list_area .cont_wrap{width: calc(100% - 280px)}
+.diag_result_wrap  .dr_list_area .dr_btn{width: 100px;margin: auto;padding: 7px 0;border-radius: 7px;cursor: default;font-size: 1.4rem;;font-weight: bold}
+.diag_result_wrap  .dr_list_area .dr_btn_blue{background: #0d92f8;color: #fff;}
+.diag_result_wrap  .dr_list_area .dr_btn_black{background: #000;color: #fff;}
+.diag_result_wrap  .dr_list_area .dr_btn_gray{background: #999;color: #fff;}
+.diag_result_wrap  .dr_list_area .recom_link{border: 1px solid #d2d2d2;border-radius: 8px;padding: 7px 10px;font-size: 1.4rem;transition:all 0s;box-sizing: border-box;display: block;word-break: keep-all}
+.diag_result_wrap  .dr_list_area  .recom_link_list{display: flex;justify-content:center;}
+.diag_result_wrap  .dr_list_area  .recom_link_list li{margin-right: 10px}
+.diag_result_wrap  .dr_list_area  .recom_link_list li:last-child{margin-right: 0}
+.diag_result_wrap  .dr_list_area  .recom_link_list li a:hover,
+.diag_result_wrap  .dr_list_area  .recom_link_list li a:active,
+.diag_result_wrap  .dr_list_area  .recom_link_list li a:focus {border: 2px solid #ff5dc6;padding: 6px 9px}
+
+.diag_result_wrap .dr_home span{margin-left: 5.0rem;font-size: 22px}
+.diag_result_wrap .dr_home{position: relative;}
+.diag_result_wrap .dr_home:after{content: '';display: block;width: 0;height: 1px;background: #000;position: absolute;left: 0;bottom: -5px;transition:0.5s all;}
+.diag_result_wrap .dr_home:hover:after,
+.diag_result_wrap .dr_home:active:after,
+.diag_result_wrap .dr_home:focus:after{width: 100%;height: 1px;}
+
+/*직업선호도 진단_진단하기*/
+.job_diag_sub{}
+.job_diag_sub .table_style07{}
+
+/*직업선호도 진단_진단결과*/
+.jd_privacy{display: flex;justify-content:space-around}
+.jd_privacy li{display: flex;}
+.jd_privacy li strong{width: 100px;}
+.jd_privacy li p{color: #666}
+
+/*직업선호도 진단 흥미코드*/
+.job_code{display: flex;justify-content:space-around;margin-top: 7.0rem}
+.job_code .txt{width: 260px;}
+.job_code .code_name{font-size: 7.0rem;margin-right: 7px;text-transform: uppercase}
+.job_code .code_name:last-child{margin-right: 0}
+.job_code .code_name.code_r{color: #9ecea8}
+.job_code .code_name.code_i{color: #7494b7}
+.job_code .code_name.code_a{color: #60e6e8}
+.job_code .code_name.code_s{color: #289ad0}
+.job_code .code_name.code_e{color: #e06daa}
+.job_code .code_name.code_c{color: #c25291}
+
+/*차트*/
+.job_code  .right {position: relative;width: 550px}
+.job_code  .right .btn_wrap{position: absolute;right: 0;bottom: 0}
+.job_code .job_chart{width: 550px;height:430px}
+.job_code .job_chart svg{}
+.job_code .bb-chart-radars .bb-axis text { font-family: 's-core_dream4_regular' !important;fill: #666;font-size: 1.6rem;}
+.job_code .job_chart svg{overflow: visible !important;}
+.job_code .bb-chart-radars .bb-levels polygon {stroke:#dcdcdc;stroke-width:1}
+.job_code .bb-chart-radars .bb-level-2 polygon{stroke-width:2 !important}
+.job_code .bb-chart-radars .bb-axis line{stroke:#dcdcdc;}
+
+/*추천직업 */
+.tag_tab {display: flex;flex-wrap: wrap}
+.tag_tab li{font-size: 1.4rem;border: 1px solid #c7cee1;border-radius: 20px;padding: 5px 15px;margin-right: 5px;margin-bottom: 5px;}
+.tag_tab li a{color: #666;}
+.tag_tab li:hover,
+.tag_tab li:active,
+.tag_tab li:focus{background: #064c99;}
+.tag_tab li.active {background: #064c99;}
+.tag_tab li:hover a,
+.tag_tab li:active a,
+.tag_tab li:focus a{color: #fff !important}
+.tag_tab li.active a {color: #fff !important}
+
+/* 직업역량진단서비스 strat */
+.ja_step{display: flex;margin-top: 6.0rem;justify-content: center}
+.ja_step > div {display: flex;position: relative;;margin-right: 80px;padding-right: 80px;align-items: center;width: calc(33.333% - 80px);justify-content: space-around}
+.ja_step > div:last-child{margin-right: 0;padding-right: 0}
+.ja_step > div .cont{opacity: 0.7;}
+.ja_step > div .ico{opacity: 0.3;margin-top: auto;}
+.ja_step .num {font-size: 4.0rem;font-weight: bold;position: relative;display: inline-block;z-index: 1}
+.ja_step .num:before{content: '';display: block;width: 20px;height: 20px;border-radius: 50%;background: #87d2e8;position: absolute;right: -6px;top: -2px;z-index:-1}
+.ja_step .arrow{text-indent: -9999px;background: url(../images/sub/arrow.png) no-repeat;width: 26px;height: 45px;position: absolute;top: 50%;right: 0;transform: translateY(-50%);}
+.ja_step .cont{width: calc(100% - 200px);margin-right: 30px;}
+.ja_step .ico01{background: url(../images/sub/ja_step01.png) no-repeat;width: 137px;height: 128px;}
+.ja_step .ico02{background: url(../images/sub/ja_step02.png) no-repeat;width: 135px;height: 108px;}
+.ja_step .ico03{background: url(../images/sub/ja_step03.png) no-repeat;width: 120px;height: 111px}
+.ja_step .active .cont{opacity: 1 !important}
+.ja_step .active .ico{opacity: 1 !important}
+
+
+/* 직업역량진단step01*/
+.ja_select{display: flex;flex-wrap: wrap}
+.ja_select > .ja_select_area{text-align: center;margin-right: 60px;width: calc(25% - 45px);margin-top: 4.5rem;cursor: pointer}
+.ja_select > .ja_select_area:nth-child(4n){margin-right: 0}
+.ja_select .img{border-radius: 20px;overflow: hidden;margin-bottom: 1.5rem;height: 200px;width: 100%;border:2px solid transparent;box-sizing: border-box}
+.ja_select .radio_style01 label{font-size: 1.8rem;}
+.ja_select .ja_select_area.active .img{border: 2px solid #004897}
+
+
+/* 직업역량진단 step02 */
+.ja_select02{}
+.ja_select02 ul{display: flex;flex-wrap: wrap;}
+.ja_select02 ul li{display: flex;align-items: center;margin-right: 5.0rem;margin-top: 2.0rem;}
+
+.ja_select02 .ja_more{margin-left: 1.5rem;text-indent: -9999px;background: url(../images/sub/ja_more.png) no-repeat center;;width: 16px;height: 16px;}
+
+/* 직업역량진단 진단하기 */
+.ja_diag {}
+.ja_diag .tit{background: #3d638e;padding: 2.0rem 3.0rem;color: #fff;font-size: 2.0rem;border-radius: 20px;display: flex;align-items: center;}
+.ja_diag  .jt_inner{ display: flex}
+.ja_diag  .jt_inner > p{position: relative;padding-left: 20px}
+.ja_diag  .jt_inner > p:before{content: 'Q.';position: absolute;left: 0;}
+.ja_diag .tit .more{display: flex;background: #fff;border-radius: 20px;color: #666;font-size:1.4rem; align-items: center;margin-left: 2.0rem;width: 30px;height: 30px;}
+.ja_diag .tit .more_btn{background: url(../images/sub/ja_more.png) no-repeat;width: 16px;height: 16px;text-indent: -9999px;display: inline-block;margin: auto}
+.ja_diag .tit .more p{display: none;margin-left: 10px;width: calc(100% - 26px)}
+.ja_diag .tit .more.active{padding: 5.5px 7px;width: auto;height: auto;text-align: left;}
+.ja_diag .tit .active .more_btn {margin: 0}
+.ja_diag .tit .more.active p {display: block;}
+.mb_br{display: none}
+
+/* 직업역량진단 진단하기 영역*/
+.ja_diag .cont_wrap{margin-top: 3.0rem}
+.ja_diag .cont_wrap .cont{margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px dotted #c7cee1}
+.ja_diag .cont_wrap .cont:last-child{margin-bottom: 0;border-bottom: 0}
+.ja_diag .cont_wrap .cont_tit{margin-bottom: 2.5rem}
+
+/* 직업역량진단 결과 */
+.ja_chart{}
+.ja_chart .graph{position: relative;width: 910px;margin: auto;transform: translateX(120px);height: auto;}
+.ja_chart .bar_area {margin-bottom: 30px}
+.ja_chart  .x-axis {position: absolute;bottom: -20px; display: flex;width: 100%;}
+.ja_chart  .x-axis li{width: 25%;font-size: 1.4rem;color: #666666;}
+.ja_chart  .x-axis li:after{content: '';display: block;width: 1px;height: 100%;}
+.ja_chart .x-axis-line{display: flex;height: 100%;}
+.ja_chart .x-axis-line li{width: 25%;position: relative;height: 100%;}
+.ja_chart .x-axis-line li:after{content: '';display: block; width: 1px;height: 100%;background: #e3e6f0;position: absolute;border: 0;top: 0;left: 3px}
+
+.ja_chart .bars {width: 100%;margin-left: 3px}
+.ja_chart .axis_wrap{position: relative;}
+.ja_chart .bars .bar-group .bar_area{align-items: baseline;position: relative;height: 30px;z-index: 5;;}
+.ja_chart .bars .bar-group .txt{position: absolute;left: -210px;text-align: right;width: 180px}
+.ja_chart .bars .bar-group .more{position: absolute;right: 35px;top: -20px; width:100%;padding: 5px 10px;z-index: 999999;}
+.ja_chart .bars .bar-group .more.active{}
+.ja_chart .bars .bar-group .more:after{content: '';background: #daeeff;display: block;width: 100%;height: 100%; border-radius: 20px;position: absolute;top: 0;left: 0;z-index: -1;opacity: 0;width: 0;}
+.ja_chart .bars .bar-group .more.active:after{opacity: 1;width: 100%;}
+.ja_chart .bars .bar-group .more_txt{display: none;margin-left: 20px;font-size: 1.4rem;opacity: 0;position: relative;z-index: 999}
+.ja_chart .bars .bar-group .active .more_txt{display: block;opacity: 1}
+.ja_chart .bars .bar-group .more_btn {background: url(../images/sub/ja_more.png) no-repeat;width: 16px;height: 16px;text-indent: -9999px;display: block;position: absolute;}
+.ja_chart .bars .bar{width:calc(100% - 16.5%)}
+.ja_chart .bars .bar > div{height: 10px;margin-bottom: 5px;text-indent: -999px;animation:chart 1s;}
+.ja_chart .bars .bar .off {opacity: 0.3}
+@keyframes chart {
+	0%{width: 0}
+
+
+}
+.ja_chart .axis_wrap{position: absolute;left: 0;bottom: 0;width: 100%;z-index: 0}
+.ja_chart .legend{display: flex;align-items: center;justify-content: center;margin-bottom: 3.0rem}
+.ja_chart .legend li{margin-right: 30px;display: flex;align-items: center;font-size: 1.6rem;color: #666666;cursor: pointer}
+.ja_chart .legend li span{width: 10px;height: 10px;margin-right: 10px}
+.ja_chart .legend li:last-child{margin-right: 0}
+.ja_chart .legend .lg_blue span{background: #00a2ff}
+.ja_chart .legend .lg_pink span{background: #f505dc}
+.ja_chart .bars .bar .bar-blue{background: #00a2ff}
+.ja_chart .bars .bar .bar-pink{background: #f505dc}
+
+
+
+/* 직업역량진단결과 _ ncs */
+.ncs_result_wrap{margin-top: 5.0rem;}
+.ncs_result_wrap .ncs_result{display: flex;margin-bottom: 4.0rem;padding-bottom: 4.0rem;border-bottom: 1px dotted #c7cee1}
+.ncs_result_wrap .ncs_result:last-child{margin-bottom: 0px;padding-bottom: 0;border-bottom: 0;}
+.ncs_result_wrap .ncs_result .nr_tit{width: 275px}
+.ncs_result_wrap .ncs_result .nr_cont{width: calc(100% - 275px)}
+
+
+.sub_link_wrap{display: flex;justify-content:flex-end;}
+.sub_link_wrap > div{background: #ddd;border-radius: 20px;padding: 5.0rem 2.0rem;width: calc(50% - 30px);position: relative;margin-right: 60px;}
+.sub_link_wrap > div:last-child{margin-right: 0}
+.sub_link_wrap > div > a:after{content: '';display: block;clear: both}
+.sub_link_wrap .text_left .txt{}
+.sub_link_wrap .job_rd {background: #00afcd;}
+.sub_link_wrap .job_rd:after{content: '';display: block;background: url(../images/sub/job_rd.png) no-repeat;width: 238px;height: 194px;position: absolute;bottom: 0;right: 3.0rem;}
+.sub_link_wrap .txt{width: calc(100% - 265px)}
+
+.sub_link_wrap > .intro_slink{background: #ffea00}
+.sub_link_wrap > .intro_slink:after{content: '';display: block;background: url(../images/sub/intro_slink.png) no-repeat;width: 235px;height: 231px;position: absolute;left: 32px;bottom: 0;}
+.sub_link_wrap  .text_right{display: flex;justify-content: flex-end;}
+.sub_link_wrap  .text_right .txt{width:calc(100% - 320px)}
+.sub_link_wrap > .intro_slink .txt{width: calc(100% - 270px)}
+.sub_link_wrap > .ai_slink{background: #ff88a4}
+.sub_link_wrap > .ai_slink:after{content: '';display: block;background: url(../images/sub/ai_slink.png) no-repeat;width: 311px;height: 214px;position: absolute;left: 20px;bottom: 0;}
+
+
+/* 취업가능성 진단 서비스 */
+.emab_select {text-align: center;}
+.emab_select span.ea_career{background: url(../images/sub/emab_ico_career.png) no-repeat;width: 89px;height: 78px;display: block;margin: auto;}
+.emab_select span.ea_age{background: url(../images/sub/emab_ico_age.png) no-repeat;width: 88px;height: 82px;display: block;margin: auto;}
+.emab_select span.ea_hope{background: url(../images/sub/emab_ico_hopejob.png) no-repeat;width: 81px;height: 81px;display: block;margin: auto;}
+.emab_select span.ea_edu{background: url(../images/sub/emab_ico_edu.png) no-repeat;width: 82px;height: 79px;display: block;margin: auto;}
+.emab_select_wrap  .em_select_area{margin-right: 60px;}
+.emab_select_wrap  .em_select_area:last-child{margin-right: 0;}
+.emab_select  p{margin-top: 2.5rem;}
+.emab_select_wrap {background: #eff8ff;}
+.emab_select_wrap  .em_select_inner {display: flex;justify-content: center;}
+.emab_select_wrap .em_select_inner > div{margin-right: 60px;text-align: center;position: relative;}
+.emab_select_wrap .em_select_inner > div:last-child{margin-right: 0;}
+.emab_select_wrap .img{width: 300px;height: 238px;border-radius: 10px;overflow: hidden;border: 1px solid #c7cee1;box-sizing: border-box;display: block;}
+.emab_select_wrap > div .text {color: #8c8c8c;font-size: 1.6rem;margin: 10px 0;display: block;}
+.radio_style01 {position: relative;}
+.em_select_area  input[type="radio"] {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip:rect(0,0,0,0);
+  border: 0;
+}
+.em_select_area input[type="radio"] + label {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none
+}
+.em_select_area input[type="radio"] + label:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -20px;
+  width: 21px;
+  height: 21px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #c7cee1;
+  border-radius: 100%;
+}
+.em_select_area input[type="radio"]:checked + label:after {
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 13px;
+  height: 13px;
+  background: #004897 !important;
+  border-radius: 100%;
+}
+
+/* 취업가능성 진단 영역*/
+.em_diag_wrap{}
+.em_diag_wrap .em_diag_tit{background: #dbebff;padding: 3.0rem;} 
+.em_diag_wrap .em_diag_area:first-child  .em_diag_tit{border-top: 1px solid #c7cee1;} 
+.em_diag_wrap .em_diag_tit dl{position: relative;padding-left: 23px}
+.em_diag_wrap .em_diag_tit dl:before{content: 'Q.';display: block;font-size: 1.8rem;font-weight: bold;position: absolute;left: 0;top: 0;}
+.em_diag_wrap .em_diag_tit dt {font-size: 1.8rem;font-weight: bold;margin-bottom: 1.0rem;}
+.em_diag_wrap .em_diag_tit dd{font-size: 1.7rem;}
+.em_diag_wrap .em_diag_aritcle:nth-child(even){background: #f4f5f9;}
+.em_diag_wrap .em_diag_aritcle .tit {font-size: 1.8rem;font-weight: bold;}
+.em_diag_wrap .em_diag_aritcle{padding:  3.0rem;border-top: 1px solid #c7cee1;}
+.em_diag_wrap .em_diag_aritcle:last-child{border-bottom: 1px solid #c7cee1;}
+.em_diag_wrap .em_diag_aritcle label{color: #666;}
+.em_diag_wrap  .cont {margin-top: 2.5rem;}
+
+
+/* 희망직업 선택 */
+.emab_hope_wrap{}
+.emab_hope_wrap .top{display: flex;align-items: center;margin-bottom: 2.0rem;}
+.emab_hope_wrap  .btn_wrap {margin-left: auto}
+.emab_hope_cont .eh_tit{background: url(../images/sub/arrow02.png) no-repeat right 30px center #3d638e;padding: 2.0rem 3.0rem;color: #fff;border-radius: 15px;font-size: 1.8rem;cursor: pointer;}
+.emab_hope_cont .eh_tit.active{background: url(../images/sub/arrow02_acive.png) no-repeat right 30px center #3d638e}
+.emab_hope_cont > div {margin-bottom: 2.0rem;}
+.emab_hope_cont .eh_text{padding: 3.0rem;margin-bottom: 3.0rem;display: none}
+.emab_hope_cont .eh_text label{color: #666;}
+.emab_hope_cont .eh_text > ul {border-bottom: 1px dotted #c7cee1;padding-bottom: 3.0rem;margin-bottom: 3.0rem;}
+.emab_hope_cont .eh_text > ul:last-child{border-bottom: 0;margin-bottom: 0;padding-bottom: 0}
+.emab_hope_cont .eh_text .bold01 {font-size: 1.7rem;margin-bottom: 2.0rem;}
+
+/* 취업가능성진단서비스 결과보기*/
+.optionalJob{display: flex;justify-content:space-between}
+.optionalJob .text{width: calc(100% - 180px)} 
+.optionalJob .text ul li {display: flex;} 
+.optionalJob .text ul li strong{margin-right: 5px}
+
+/*취업가능성진단서비스 차트*/
+.oj_table_wrap  {margin-top: 3.0rem}
+.oj_table_wrap .oj_header {text-align: center;height: 50px;line-height: 50px;background: #f4f5f9;font-size: 1.6rem;font-weight:600;border: 1px solid #c7cee1;}
+.oj_table_wrap .oj_header:first-child{border-left: 0;}
+.oj_table_wrap .oj_header:last-child{border-right: 0;}
+.oj_table_wrap table {width: 100%;table-layout: fixed;border-collapse: collapse;}
+.oj_table_wrap .oj-row {position: relative;width: 100%;height: 90px}
+.oj_table_wrap .oj-bg  {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 0}
+.oj_table_wrap .oj-bg td{border: 1px dotted #c7cee1;height: 90px;border-top: 0}
+.oj_table_wrap .oj-bg tr{border-bottom: 1px solid #c7cee1}
+.oj_table_wrap .oj-bg tr:first-child td{border-top: 0;}
+.oj_table_wrap .oj-bg td:first-child{border: 1px solid #c7cee1;border-left: 0;}
+.oj_table_wrap .oj-bg td:last-child{border-right: 0}
+.oj_table_wrap .oj_chart {height: 100%;}
+.oj_table_wrap .oj_chart table{height: 100%;}
+.oj_table_wrap .oj_chart .bar > div {height: 12px;width: 50px;margin-bottom: 5px;position: relative;animation: 1s chart}
+.oj_table_wrap .oj_chart .bar > div:last-child{margin-bottom: 0;}
+.oj_table_wrap .oj_chart .bar > div.bar-blue01 {background: #388be3}
+.oj_table_wrap .oj_chart .bar > div.bar-blue02 {background: #38e8d6}
+.oj_table_wrap .oj_chart .bar > div .name{text-indent: -9999px;display: block;}
+.oj_table_wrap .oj_chart .bar > div .num{position: absolute;right: -30px;top: 50%;transform: translateY(-50%);color: #666}
+.oj_table_wrap  .bg_gray{background: #f4f5f9;border-top: 1px solid 
+	#c7cee1}
+
+.oj_table_wrap .oj_lagend{display: flex;justify-content: flex-end;margin-bottom: 1.5rem}
+.oj_table_wrap .oj_lagend li{display: flex;align-items: center;margin-right: 3.0rem;color: #666;cursor: pointer}
+.oj_table_wrap .oj_lagend li:last-child{margin-right: 0;}
+.oj_table_wrap .oj_lagend li span{width: 10px;height: 10px;margin-right: 1.0rem}
+.oj_table_wrap .oj_lagend .sblue01 span{background: #388be3}
+.oj_table_wrap .oj_lagend .sblue02 span{background: #38e8d6;}
+.oj_table_wrap .oj_chart .bar > div.off{opacity: 0.3}
+
+/* chart */
+.oj_chart02 {position: relative;}
+.oj_chart02 text{font-size: 1.6rem;font-family: 's-core_dream4_regular';fill:#666;}
+.oj_chart02 svg{overflow: visible !important}
+.oj_chart02 .c3 line {stroke:#c7cee1;}
+.oj_chart02 .c3 path {stroke:#c7cee1;}
+.oj_chart02 .c3 .c3-grid line {stroke: #ebeef2;stroke-dasharray: 0;}
+.oj_chart02 .c3-legend-background{stroke:transparent;fill:transparent}
+.oj_chart02 .c3-legend-item{transform: translateY(-20px);position: relative}
+.oj_chart02 .c3-legend-item-tile{shape-rendering: auto;
+  stroke-linecap: round;
+  stroke-dasharray: 0.1 10;
+  stroke-width: 8;
+  transform: translate(6px, 1px);
+	position: relative;
+}
+.oj_chart02 .legend span {
+    text-align: center;
+    cursor: pointer;
+	font-size: 1.4rem;
+	color: #666;
+	margin-right: 4.0rem;
+	background-color: transparent !important;
+	position: relative;
+	display: inline-block;
+}
+.oj_chart02 .legend span:before{content: '';display: block;width: 10px;height: 10px;border-radius: 50%;;position: absolute;left: -20px;top: 50%;transform: translateY(-50%)}
+.oj_chart02 .legend span:after{content: '';display: block;width: 18px;height: 1px;position: absolute;left: -24px;top: 50%;transform: translateY(-50%);}
+.oj_chart02 .legend span:first-child:before{background: #388be3}
+.oj_chart02 .legend span:first-child:after{background: #388be3}
+.oj_chart02 .legend span:last-child:before{background: #38e8d6}
+.oj_chart02 .legend span:last-child:after{background: #38e8d6}
+.oj_chart02  .legend span:last-child{margin-right: 0}
+.oj_chart02 .legend {position: absolute; top: 0;right: 0;}
+
+
+/* 취업준비도 진단 결과*/
+.jr_result_top{overflow: hidden;border-radius: 20px;display: flex;}
+.jr_result_top .tit{width:180px;position: relative;text-align: center;}
+.jr_result_top .tit p {position: absolute;left: 50%;top: 50%; transform: 50%;transform: translate(-50%,-50%)}
+.jr_result_top .tit.jr_blue{background: #388be3;color: #fff;}
+.jr_result_top .tit.jr_orange{background: #ff5a46;color: #fff;}
+.jr_result_top .cont{background: #fff;padding: 5.0rem;width: calc(100% - 180px)}
+
+
+/*취업가능성진단서비스 차트*/
+.jr_table_wrap  {margin-top: 3.0rem}
+.jr_table_wrap .jr_header {text-align: center;height: 50px;line-height: 50px;background: #f4f5f9;font-size: 1.6rem;font-weight:600;border: 1px solid #c7cee1;}
+.jr_table_wrap .jr_header:first-child{border-left: 0;}
+.jr_table_wrap .jr_header:last-child{border-right: 0;}
+.jr_table_wrap table {width: 100%;table-layout: fixed;border-collapse: collapse;}
+.jr_table_wrap .jr-row {position: relative;width: 100%;}
+.jr_table_wrap .jr-bg  {position: absolute;top: 0;left: 0;width: 100%;height: 100%;z-index: 0}
+.jr_table_wrap .jr-bg td{border: 1px dotted #c7cee1;border-top: 0}
+
+/* chart height */
+.jr_table_wrap .jr-row.line2 {height: 120px}
+.jr_table_wrap .jr-row.line2 .jr-bg td{height: 120px}
+.jr_table_wrap .jr-row.line1 {height: 60px}
+.jr_table_wrap .jr-row.line1 .jr-bg td {height: 60px;}
+
+.jr_table_wrap .jr-bg tr{border-bottom: 1px solid #c7cee1}
+.jr_table_wrap .jr-bg tr:first-child td{border-top: 0;}
+.jr_table_wrap .jr-bg td:first-child{border: 1px solid #c7cee1;border-left: 0;}
+.jr_table_wrap .jr-bg td:last-child{border-right: 0}
+.jr_table_wrap .jr_chart {height: 100%;}
+.jr_table_wrap .jr_chart table{height: 100%;}
+.jr_table_wrap .jr_chart .bar > div {height: 12px;width: 50px;margin-bottom: 5px;position: relative;animation: 1s chart}
+.jr_table_wrap .jr_chart .bar > div:last-child{margin-bottom: 0;}
+.jr_table_wrap .jr_chart .bar > div.bar-blue01 {background: #388be3}
+.jr_table_wrap .jr_chart .bar > div.bar-blue02 {background: #38e8d6}
+.jr_table_wrap .jr_chart .bar > div .name{text-indent: -9999px;display: block;}
+.jr_table_wrap .jr_chart .bar > div .num{position: absolute;right: -30px;top: 50%;transform: translateY(-50%);color: #666}
+.jr_table_wrap  .bg_gray{background: #f4f5f9;}
+.jr_table_wrap .dotted_b{border-bottom: 1px dotted #c7cee1}
+.jr_table_wrap .pd{padding: 10px }
+
+.jr_table_wrap .jr_lagend{display: flex;justify-content: flex-end;margin-bottom: 1.5rem}
+.jr_table_wrap .jr_lagend li{display: flex;align-items: center;margin-right: 3.0rem;color: #666;cursor: pointer}
+.jr_table_wrap .jr_lagend li:last-child{margin-right: 0;}
+.jr_table_wrap .jr_lagend li span{width: 10px;height: 10px;margin-right: 1.0rem}
+.jr_table_wrap .jr_lagend .sblue01 span{background: #388be3}
+.jr_table_wrap .jr_lagend .sblue02 span{background: #38e8d6;}
+.jr_table_wrap .jr_chart .bar > div.off{opacity: 0.3}
+.ico_smile {background: url(../images/sub/smile_ico.png) no-repeat ;display: inline-block;width: 23px;height: 23px;text-indent: -9999px;}
+
+.job_recom_link{display: flex;margin-top: 3.5rem}
+.job_recom_link > div{border-radius: 15px;padding: 20px;position: relative;width: calc(33.333% - 10px);margin-right: 10px;}
+.job_recom_link > div:last-child{margin-right: 0}
+.job_recom_link .jr_01{background: url(../images/sub/jr_01_bg.png) no-repeat top right;background-size: cover;}
+.job_recom_link > div .btn_wrap{margin-top: 50px;position: relative;z-index: 99}
+.job_recom_link .jr_01:after{content: '';display: block;background: url(../images/sub/jr_01_img.png) no-repeat;width: 279px;height: 148px;position: absolute;left: 20px;bottom: 0;}
+.job_recom_link .jr_02{background: #ff9600;}
+.job_recom_link .jr_02:after{content: '';display: block;background: url(../images/sub/jr_02_img.png) no-repeat;width: 246px;height: 147px;position: absolute;left: 20px;bottom: 0;}
+.job_recom_link .jr_03{background: url(../images/sub/jr_03_bg.png) #40b3b3 no-repeat;}
+.job_recom_link .jr_03:after{content: '';display: block;background: url(../images/sub/jr_03_img.png) no-repeat;width: 170px;height: 132px;position: absolute;right: 20px;bottom: 0;}
+.job_recom_link .jr_04 {background: #004897;}
+.job_recom_link .jr_04:after{content: '';display: block;background: url(../images/sub/jr_04_img.png) no-repeat;width: 189px;height: 143px;position: absolute;left: 80px;bottom: 0;}
+.job_recom_link .jr_05 {background: #ffea00;}
+.job_recom_link .jr_05:after{content: '';display: block;background: url(../images/sub/jr_05_img.png) no-repeat;width: 155px;height: 140px;position: absolute;left: 80px;bottom: 0;}
+.job_recom_link .jr_06 {background: #ff88a4;}
+.job_recom_link .jr_06:after{content: '';display: block;background: url(../images/sub/jr_06_img.png) no-repeat;width: 204px;height: 141px;position: absolute;left: 80px;bottom: 0;}
+
+.job_recom_link .jr_07 {background: #004897;}
+.job_recom_link .jr_07:after{content: '';display: block;background: url(../images/sub/jr_07_img.png) no-repeat;width: 276px;height: 139px;position: absolute;left: 0px;bottom: 0;}
+.job_recom_link .jr_08 {background: #26a375;}
+.job_recom_link .jr_08:after{content: '';display: block;background: url(../images/sub/jr_08_img.png) no-repeat;width: 176px;height: 135px;position: absolute;left: 80px;bottom: 0;}
+.job_recom_link .jr_09 {background: #1b87ae;}
+.job_recom_link .jr_09:after{content: '';display: block;background: url(../images/sub/jr_09_img.png) no-repeat;width: 355px;height: 131px;position: absolute;left: 40px;bottom: 0;}
+
+
+
+
+.job_recom_link  .btn_wrap .btn_style02{padding: 7px 15px;font-size: 1.4rem}
+
+/* -------------------------- 반응형 start ------------------------*/
+@media all and (max-width:1400px){
+    
+    .sub_wrap .popup{max-width: 1400px;width: 90% !important}
+
+/*  자소서  */
+/*  자소서 가이드북 상세  */
+    .nav_view{width: 35%}  
+    .nav_view_cont{width: calc(100% - 35% - 30px);}
+    
+    /* 자소서 작성 */
+    .post_write_table.pw_item_four th {margin-bottom: 10px;width: 100px;}
+    .post_write .pw_tit{padding-left: 10px;}
+    
+    /* 면접자료실 필터 */
+    .notice_filter .notice_count{width: 150px}
+    .sub_wrap .filter_wrap {display: block;}
+    .sub_wrap .filter_wrap ul{flex-wrap: wrap}
+    .sub_wrap .filter_wrap ul li a{padding: 5px 10px}
+    .sub_wrap .filter_wrap ul li{margin-top: 1.5rem}
+    
+    /*온라인채용박람회_비대면온라인면접*/
+    .support_view {}
+    .support_view .sv_img{width: 300px}
+    .support_view .sv_txt{width: calc(100% - 340px);}
+    .support_view .red{margin-top: 1.0rem}
+    
+    .certi_wrap{}
+    .certi_wrap input.tit{width: calc(100% - 200px)}
+    .certi_wrap select{width: 200px}
+    .certi_wrap > div:first-child{width: calc(100% - 320px)}
+    .certi_wrap .datepicker-wrap{width: 170px}
+    
+    .table_wrap02{width: 100%;overflow-X: auto;}
+  
+	
+    /* 사전진단 start */
+    .diag_wrap .diag_top {background-position: top }
+    .diag_wrap .diag_top .img{width: 35%;}
+    .diag_wrap .diag_top .img img{width: 100%;}
+    .diag_wrap .diag_list .diag_list_area .tit{width: 180px}
+    .diag_wrap .diag_list .diag_list_area .cont_wrap{width: calc(100% - 200px);margin-right: 20px}
+    .diag_wrap .diag_list .diag_list_area .btn_wrap{width: 200px;margin-left: auto}
+    
+    /*사전진단 진단결과 start*/
+    .diag_result_wrap .dr_list_area .tit{width: 180px}
+    .diag_result_wrap .dr_list_area .cont_wrap{width: calc(100% - 180px)}
+	
+	
+	
+	/* 직업역량진단서비스 시작 */
+	.ja_step > div{margin-right: 30px;padding-right: 30px;width: calc(33.333% - 30px)}
+	.ja_step .cont{width: calc(100% - 130px)}
+	.ja_step > div .ico{background-size: contain;width: 100px;height: 100px;margin-right: 30px;background-position: center;}
+	
+	/* 직업역량진단 결과 */
+	.ja_chart .graph {width: 100%;margin-left: 30px}
+	.sub_link_wrap > .intro_slink:after{width: 180px;background-size: 180px;height: 175px;}
+	.sub_link_wrap .txt{}
+	.sub_link_wrap > .intro_slink .txt{width: calc(100% - 200px)}
+	.sub_link_wrap > .ai_slink:after{width: 220px;background-size: 220px;height: 150px;}
+	.sub_link_wrap .text_right .txt{width: calc(100% - 200px); text-align: right !important;}
+	.sub_link_wrap .job_rd:after{width: 180px;background-size: 180px;height: 147px}
+	.sub_link_wrap .txt {width: calc(100% - 220px);}
+	.sub_link_wrap .btn_wrap a {padding: 7px 10px;}
+	.sub_link_wrap  .f20{font-size: 1.8rem;}
+	.sub_link_wrap > div{margin-right: 15px;width: calc(50% - 7.5px)}
+	
+	
+	/*취업준비도진단 서비스 결과보기*/
+	.job_recom_link .jr_09:after{background-size: 260px;width: 260px;height: 93px;left: 10px}
+	
+	
+}
+
+
+@media all and (max-width:1024px){
+    
+
+    /*   서브 검색  */
+    .sub_search .select_list li{margin-right: 10px;padding-right: 10px}
+    .sub_search_wrap{width: 200px}
+    .sub_search .select_list li select {font-size: 1.6rem;padding-right: 35px}
+    
+    
+/*  게시글 목록  */
+    .post_list .tit .textCut1{width: calc(100% - 200px)}
+    .post_list .post_article .hz_list{max-width: calc(100% - 200px)}
+    
+/*  자소서 작성  */
+    .post_write_table.pw_item_four table,    
+    .post_write_table.pw_item_four tbody,    
+    .post_write_table.pw_item_four tr,    
+    .post_write_table.pw_item_four td,    
+    .post_write_table.pw_item_four th {display: block;padding: 0}    
+    
+    .post_write_table.pw_item_four tr{display: flex;flex-wrap: wrap;}
+    .post_write_table.pw_item_four th {margin-bottom: 10px;width: 110px;}
+    .post_write_table.pw_item_four td{margin-bottom: 20px;width:calc(50% - 110px);padding-right: 15px}
+    .post_write_table.pw_item_four td:nth-child(4n){padding-right: 0}
+    .post_write_table.pw_item_four td.colspan3{width:calc(100% - 110px)}
+    .post_write_table.pw_item_four td.colspan3 {padding-right: 0 }
+    .post_write_table.pw_item_four .pw_tit{margin-right: 0;}
+    
+    
+    .post_write_table.pw_item_two th{min-width: 100px;}
+    .post_write_table.pw_item_two td {min-width: calc(100% - 100px);padding-right: 0}
+    
+    /* 자소서_ 컨설팅완료*/
+    .post_write_table.post_complete table tr{border-bottom: 0}
+    
+      /* 면접자료실 필터 */
+    .notice_filter{display: block;}
+    .sub_wrap .filter_wrap .ft_tit{margin-right: 0}
+    .notice_filter .notice_count{margin-bottom: 2.0rem;}
+    .notice_filter .notice_count:after{display: none;}
+    
+    
+    /*온라인채용박람회_비대면온라인면접*/
+    .support_view {display: block;}
+    .support_view .sv_img{margin-bottom: 20px;}
+    .support_view .sv_txt{width: 100%;}
+    .lb_list li{font-size: 1.6rem}
+    .support_view .red{margin-top: 1.0rem}
+    
+    
+    /*입사지원서 작성*/
+    .border_tabs li {padding: 15px;flex-grow: 1 ;text-align: center;}
+    
+    .select_inBtn select{width: calc(100% - 190px)}
+    .select_inBtn .btn_wrap{width: 178px}
+    
+    .tel_wrap input[type="text"] {width: calc(55%)}
+    .email_wrap > div > input[type="text"]{width: 100%}
+    
+    .address_wrap{flex-wrap: wrap}
+    .address_wrap input:nth-child(2){width: calc(100% - 128px)}
+    .address_wrap input:nth-child(3){width: 100%;margin-top: 10px;margin-left: 0}
+    
+    .career_list{width: 100%;}
+    .certi_wrap{display: block;border-top: 1px dotted #c7cee1}
+    .certi_wrap:first-child{border-top: 0}
+    .certi_wrap input.tit{width: calc(100% - 200px)}
+    .certi_wrap .btn {width: 100px;padding: 7px 0}
+    .certi_wrap select{width: 200px}
+    .certi_wrap > div:first-child{width: 100%;}
+    .certi_wrap > div{justify-content: flex-start;margin-top: 1.5rem}
+    .certi_wrap .datepicker-wrap{width: 170px}
+    .textarea {padding: 2.0rem}
+    .table_flex{display: block}
+    .table_flex > div{border-right:0;margin-right:0;}
+    
+    
+    /*  온라인채용박람회_기업정보  */
+    .company_info .ci_top .top  .fl{float: none;margin-bottom: 2.0rem}
+    .company_info .middle{display: block;}
+    .company_info .middle .left{width: 100%;margin-bottom: 5.0rem}
+    .company_info .middle .right{width: 100%;}
+    .company_info .middle .left dt{width: 120px}
+    .company_info .middle .left dd {width: calc(100% - 120px)}
+    .hire_progress > .stop_area{width: 135px}
+    .hire_progress .arrow{background-size: 15px;width: 15px;}
+
+     /* 온라인채용박람회 공고관리 */
+    .post_write.job_post_sch select{width: 100%;}
+    
+    /*온라인채용박람회_관리자 쓰기*/
+    .manager_write{}
+    .manager_write,
+    .manager_write tr,
+    .manager_write th,
+    .manager_write td,
+    .manager_write tbody,
+    .manager_write thead{display: block}
+    .manager_write  th{text-align: left;padding: 10px;background-color: transparent;border: 0}
+    .manager_write  td {border: 0;margin-bottom: 2.0rem;padding: 5px 10px}
+    
+    .address_wrap02{flex-wrap: wrap;}
+    .address_wrap02 .aw_01{width: 100%;margin-bottom: 1.0rem}
+    .address_wrap02 .aw_02{width: 100%;}
+    
+       /* 사전진단 start */
+    .diag_wrap .diag_section02 .wd750{max-width: 750px;width: 100%;}
+    .diag_wrap .diag_list .diag_list_area{display: block;}
+    .diag_wrap .diag_list .diag_list_area .cont_wrap{width: 100%;margin-top: 2.0rem}
+    .diag_wrap .diag_list .btn_radio input{height: 30px;}
+    
+       /*사전진단 진단결과 start*/
+    .diag_result_wrap .dr_list_area {display: block;}
+    .diag_result_wrap .dr_list_area .tit{width: 180px;}
+    .diag_result_wrap .dr_list_area .cont_wrap{width:100%;margin-top: 2.0rem}
+	
+	
+	/* 직업선호도진단_진단결과 */
+	.job_code .right{width: 450px}
+	.job_code .job_chart{width: 450px;height:300px}
+	
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{margin-right: 30px;width: calc(25% - 22.5px)}
+	.ja_select .img{height: 160px}
+	
+	
+	.ja_diag .tit{position: relative;}
+	.ja_diag .tit .more{position: absolute;right: 20px;top: 50%;transform: translateY(-50%);flex-direction:row-reverse}
+	.ja_diag .tit .more p{margin-left: 0;padding-right: 10px;}
+	
+	/* 직업역량진단 결과 */
+	.sub_link_wrap > .intro_slink:after{width: 100px;background-size: 100px;height: 95px;}
+	.sub_link_wrap > .intro_slink .txt{width:100%;margin-bottom: 30px}
+	.sub_link_wrap > .ai_slink:after{width: 150px;background-size: 150px;height: 95px;}
+	.sub_link_wrap .txt{width: 100% !important;margin-bottom: 80px}
+	.sub_link_wrap .text_right{text-align: right !important}
+	.sub_link_wrap .text_left .txt{text-align: left !important}
+	
+	.sub_link_wrap .job_rd:after{width: 135px;background-size: 135px;height: 110px;}
+	.sub_link_wrap .btn_wrap a {padding: 7px 10px;position: relative;z-index: 9}
+	.sub_link_wrap  .f20{font-size: 1.8rem;}
+	.sub_link_wrap > div{margin-right: 15px;width: calc(50% - 7.5px)}
+	
+	.ncs_result_wrap .ncs_result{display: block;}
+	.ncs_result_wrap .ncs_result .nr_tit{width: 100%;}
+	.ncs_result_wrap .ncs_result .nr_tit br{display: none}
+	.ncs_result_wrap .ncs_result .nr_cont{width: 100%;margin-top: 2.0rem;}
+	
+		
+	/*취업준비도진단 서비스 결과보기*/
+	.jr_result_top .tit {width: 150px;}
+	.jr_result_top .tit > p {font-size: 2.5rem;}
+	.jr_result_top .cont{width: calc(100% - 150px);padding: 3.0rem}
+	.job_recom_link{flex-wrap: wrap}
+	.job_recom_link > div{width: calc(50% - 5px);margin-bottom: 30px}
+	.job_recom_link > div:nth-child(2n){margin-right: 0}
+	.job_recom_link > div:last-child{margin-bottom: 0}
+	
+    
+}
+
+@media all and (max-width:768px){
+    /* 서브 공통 */
+    .sub_wrap .sub_tit01{font-size: 3.0rem;}
+    select{padding: 7px 40px 7px 15px;}
+    .m_tct {text-align: center}
+    .ico{font-size: 2.0rem;}
+        
+        
+     /*   서브 검색  */
+    .sub_search .select_list li{margin-right:5px;padding-right: 5px;}
+    .sub_search {display: block}
+    .sub_search_wrap input[type="text"]{padding-left: 0}
+    .sub_search .select_list li {flex: 1;text-align: center;}
+    .sub_search_wrap{width: 100%;margin-top: 3.0rem}
+    
+    /*  게시글 목록  */
+    .guide_book_list02{width: 100%;}
+    .post_list .more_btn{position: static;margin-top: 3.0rem;}
+    .post_list .tit .textCut1{width: 100%}
+    .post_list .post_article .hz_list{width: 100%;max-width: 100%}
+    
+    /* 자소서 상세*/
+    .nav_view{display: none;}
+    .nav_view_cont{width: 100%}
+    .post_view .cont_txt{min-height: 100px}
+    
+    /* 게시글 작성*/
+     .write_tit{font-size: 2.0rem}
+    .text_filed .text_filed_area{padding-bottom: 2.0rem;margin-bottom: 2.0rem}
+    
+    /* 아이콘 */
+    .ico_fix{display: block;width: 26px;height: 26px;background-size: 13px}
+    .ico_person{display: block;width: 26px;height: 26px;background-size: 10px;}
+    .ico_title{display: block;width: 26px;height: 26px;background-size: 10px;}
+    .ico_file{display: block;width: 26px;height: 26px;background-size: 13px;}
+    
+    /* 자소서 마이페이지*/
+    .sub_search .select_list.select_list_txt span:before{content: '';display: block;}
+
+    
+    /*온라인채용박람회_비대면온라인면접 녹화*/
+    .sv_submit{display: block}
+    .sv_submit .blue01.ml_20{margin-left: 0;margin-top: 1.0rem}
+    .support_view .sv_txt .tit{font-size: 2.0rem;}
+    .support_view .sv_txt .f18{font-size: 1.6rem;}
+    
+    /*입사지원서 작성*/
+    .address_wrap input:nth-child(2){width: calc(100% - 122px)}
+    
+    .email_wrap {justify-content: space-around}
+    .email_wrap > div{width: calc(33.333% - 5px);margin-right: 5px}
+    .email_wrap span{width: 15px;margin-right: 5px;}
+    .email_wrap span img{width: 15px}
+    .email_wrap input[type="text"] {width: 100%}
+    .email_wrap select {width: 100%}
+ 
+       
+    /*기업정보*/
+    .company_info .middle .tit{flex-direction:column-reverse;justify-content: flex-start;align-items: flex-start}
+    .company_info .ci_top .tit > p{width: 100%;}
+    .company_info .ci_top .state_tct02{margin-bottom: 1.5rem}
+
+    /*온라인채용박람회_관리자 table */
+    .manager_table thead{display: none}
+    .manager_table,
+    .manager_table tbody,
+    .manager_table th,
+    .manager_table tr,
+    .manager_table td {display: block;padding: 0;}
+    .manager_table td{border: 0;}
+    .manager_table tr{position: relative;border-bottom: 1px solid #c7cee1;min-height: 75px}
+    .manager_table tr:first-child{border-top: 1px solid #c7cee1}
+    .manager_table .hideen_s{display: none}
+
+    .manager_table  td{position: absolute;}
+    .manager_table .mt_left{left: 0;top:35px}
+    .manager_table .mt_right{right: 0;top: 35px}
+    .manager_table  .mt_left_top{top: 15px;color: #666}
+    .manager_table  .tit{width: 100%;text-align: left}
+    .manager_table  .tit a{width: calc(100% - 100px);display: block;}
+    .manager_table  .applicant:before{content: '지원자 : '}
+    
+    .job_post_sch{display: block;padding: 2.0rem}
+    .job_post_sch select{width: 100%;margin: 1.0rem 0;}
+	
+	   .table_wrap02{width: 100%;overflow-X: auto;}
+    .table_wrap02 table{width: auto;min-width: 768px}
+    
+     /* 사전진단 start */
+    .diag_wrap .diag_top .inner .img{display: none}
+    .diag_wrap .diag_section01 .diag_flex > div{margin-right: 20px}
+    .diag_wrap .diag_section01 .diag_flex .img {width: 130px;margin: auto}
+    .diag_wrap .diag_section01 .diag_flex .img img{width: 100%}
+    .diag_wrap .diag_top .txt .ico{width: 29px;background-size: 29px;margin-right: 10px;height: 30px}
+    .diag_wrap .diag_top .txt p{width: calc(100% - 39px)}
+    
+      /*사전진단 진단결과 start*/
+    .diag_result_wrap .dr_list_area thead{display: none}
+    .diag_result_wrap .dr_list_area table,
+    .diag_result_wrap .dr_list_area tbody,
+    .diag_result_wrap .dr_list_area tr,
+    .diag_result_wrap .dr_list_area td,
+    .diag_result_wrap .dr_list_area th{display: block;}
+    .diag_result_wrap .dr_list_area  td{border-top:0;border-bottom: 0; text-align: left;padding: 0 0px 10px 0}
+	.diag_result_wrap .dr_list_area td > div{margin: 0 10px}
+    .diag_result_wrap .dr_list_area .dr_btn{margin: 0;text-align: center;}
+    .diag_result_wrap .dr_list_area .recom_link_list{justify-content: flex-start;flex-wrap: wrap;}
+    .diag_result_wrap .dr_list_area .dr_area01:before{content: '진단 목적';font-size: 1.6rem;font-weight: bold;margin-bottom: 10px;display: block;border:1px solid #c7cee1;background: #f4f5f9;padding: 10px;border-left: 0;border-right: 0;}
+    .diag_result_wrap .dr_list_area .dr_area02:before{content: '진단 결과';font-size: 1.6rem;font-weight: bold;margin-bottom: 10px;display: block;border:1px solid #c7cee1;background: #f4f5f9;padding: 10px;border-left: 0;border-right: 0;}
+    .diag_result_wrap .dr_list_area .dr_area03:before{content: '추천서비스';font-size: 1.6rem;font-weight: bold;margin-bottom: 10px;display: block;border:1px solid #c7cee1;background: #f4f5f9;padding: 10px;border-left: 0;border-right: 0;}
+	.diag_result_wrap .diag_result_area > .txt .ico{width: 29px;background-size: 29px;margin-right: 10px;height: 30px}
+    .diag_result_wrap .diag_result_area > .txt  p{width: calc(100% - 39px)}
+	
+	
+	/* 직업 선호도 진단서비스 시작*/
+	.job_check_list thead{display: none}
+	.job_check_list,
+	.job_check_list tr,
+	.job_check_list th,
+	.job_check_list td,
+	.job_check_list tbody {display: block;border: 0;padding: 10px 0}
+	.job_check_list tr{background: #fff !important;margin-bottom: 20px}
+	.job_check_list tr:last-child{margin-bottom: 0}
+	.job_check_list .tct {border: 0;float: left;margin-top: 50px;width: 20%;;margin-bottom: 3.0rem;}
+	.job_check_list .no_label span{display: block;width: 100%;height: 100%;display: block;font-size: 1.4rem}
+	.job_check_list  .radio_style01 input[type="radio"] + label:before{top:-40px;left: 50%;transform: translateX(-50%);width: 30px;height: 30px;}
+	.job_check_list  .radio_style02 input[type="radio"]:checked + label:after{top: -33px;left: 50%; transform: translateX(-50%);width: 20px;height: 20px;}
+	.job_check_list  .radio_style01 input[type="radio"] + label{display: block;padding-left: 0;word-break: keep-all}
+	.job_check_list{zoom:0.9}
+	.mb_bold{font-weight: bold}
+	
+	
+		/* 직업선호도진단_진단결과 */
+	.jd_privacy{display: block;}
+	.jd_privacy li{margin-bottom: 1.5rem}
+	.jd_privacy li:last-child{margin-bottom: 0;}
+	.jd_privacy li p{width: calc(100% - 100px)}
+	.job_code .code_name{font-size: 5.0rem}
+	.job_code .gray_round{ margin: auto;padding: 4.0rem}
+	.job_code .txt{max-width: 220px;width: 100%;}
+	.job_code_wrap .f33{text-align: center;word-break: keep-all;margin-top: 2.0rem;font-size: 2.4rem}
+	.job_code_wrap .f33 span:nth-child(2):before{content: '';display: block;}
+	.job_code{display: block;margin-top: 3.0rem}
+	.job_code .txt {margin: auto}
+	
+	.job_code .right{width: 450px;margin: auto}
+	.job_code .job_chart{width: 450px;height: 300px;margin: 4.0rem auto}
+	.job_code .right .btn_wrap {position: sticky;text-align: right;}
+	
+	/* 취업가능성 진단 서비스 시작 */
+	.emab_select{}
+	.emab_select span.ea_hope {background-size: 50px;width: 50px;height: 50px}
+	.emab_select span.ea_career {background-size: 50px;width: 50px;height: 44px}
+	.emab_select span.ea_age {background-size: 50px;width: 50px;height: 45px}
+	.emab_select span.ea_edu {background-size: 50px;width: 50px;height: 47px}
+	.emab_select p {font-size: 2.2rem;margin-top: 1.5rem;}
+	.emab_hope_cont .eh_tit{background-size: 15px;padding:10px 15px;background-position: right 15px center;}
+	.emab_hope_cont .eh_tit.active{background-size: 15px;background-position: right 15px center;}
+	.emab_hope_cont .eh_text {padding: 20px 15px;}
+	.emab_hope_cont .eh_text .bold01{margin-bottom: 1.0rem}
+	.emab_select_wrap  {}
+	.emab_select_wrap .em_select_inner > div{margin-right: 40px;}
+	.emab_select_wrap .em_select_inner > div:last-child{margin-right: 0;}
+	.emab_select_wrap .em_select_area{width: calc(50% - 20px);}
+	.emab_select_wrap label{width: 100%;padding-left: 0 !important;}
+	.emab_select_wrap .img{width:100%;;height: 250px}
+	
+	/* 취업가능성진단 결과보기 */
+	.optionalJob{display: block;}
+	.optionalJob .text{width: 100%;margin-top: 1.5rem;}
+	.optionalJob strong{width: 60px;}
+	.optionalJob p{width: calc(100% - 60px);}
+	.optionalJob .img{width: 80px;margin-bottom: 2.5rem;}
+	.optionalJob .img img{display: block;width: 100%;}
+	
+	.border_tabs03 ul{display: table;width: 100%;border-collapse: collapse}
+	.border_tabs03 ul li{display: table-cell;font-size: 1.8rem;min-width: auto;}
+	.border_tabs03 ul:after{bottom: 0}
+	
+	.oj_chart02 text{font-size: 1.4rem}
+	.oj_table_wrap  .bg_gray{border-top: 0}
+	
+	/* 직업역량진단서비스 시작 */
+	.ja_step > div{margin-right: 30px;padding-right: 30px;width: 33%;}
+	.ja_step .cont{width: calc(100% - 100px)}
+	.ja_step > div .ico{background-size: contain;width: 60px;height: 60px;margin-right: 30px;background-position: center;}
+	.ja_step .num{font-size: 3.0rem;}
+	.ja_step .arrow{background-size: 13px;width: 13px;height: 26px;}
+	
+	
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{margin-right: 20px;width: calc(33.333% - 13.333px);margin-top: 3.0rem}
+	.ja_select > .ja_select_area:nth-child(4n){margin-right: auto}
+	.ja_select > .ja_select_area:nth-child(3n){margin-right: 0}
+	.ja_select .img{height: 130px}
+	
+	
+	/* 직업역량진단 결과 */
+	.ja_chart .graph {width: calc(100% - 85px);margin-left: 30px;}
+	.ja_chart .legend {justify-content: flex-end}
+	
+		/*취업준비도진단 서비스 결과보기*/
+	.jr_result_top .tit {width: 120px;}
+	.jr_result_top .tit > p {font-size: 2.0rem;}
+	.jr_result_top .cont{width: calc(100% - 120px);padding: 2.0rem}
+	.job_recom_link > div{width: 100%;margin-bottom: 30px;margin-right: 0}
+	.job_recom_link > div:first-child{margin-top:10px}
+	
+	.jr_table_wrap .jr-row.line2 {height: 150px}
+	.jr_table_wrap .jr-row.line2 .jr-bg td{height: 150px}
+	.jr_table_wrap .jr-row.line1 {height: 60px}
+	.jr_table_wrap .jr-row.line1 .jr-bg td {height: 60px;}
+	.jr_table th ,.jr_table_wrap .jr_header{font-size: 1.5rem;}
+	.jr_table td{font-size: 1.45rem;}
+	
+}
+
+@media all and (max-width:640px){
+    /*서브 공통*/
+    .sub_wrap {padding: 4.0rem 0}
+    
+    .sub_search{padding: 2.0rem}
+    
+    .write_tit_wrap{display: block;}
+    .write_tit_wrap .write_tit{width: 100%;margin-bottom: 1.5rem}
+    .write_tit_wrap .write_tit_area{width: 100%;}
+    
+      /*  자소서 작성  */
+    .post_write_table.pw_item_four .pw_tit{margin-right: 0;}
+    .post_write_table,
+    .post_write_table tr,
+    .post_write_table tbody,
+    .post_write_table th,
+    .post_write_table. td {display: block;padding: 0 !important;}
+    
+    .post_write_table tr{display:block !important;margin-bottom: 10px;padding-bottom: 10px}
+    .post_write_table th {margin-bottom: 10px;}
+    .post_write_table td{width:100%  !important;padding-right: 0 !important;margin-bottom: 1.5rem}
+    .post_write .pw_txt:last-child{margin-bottom: 0}
+    
+    .post_write_table.pw_item_four td.colspan3{width: 100%  !important;}
+    .post_write_table.pw_item_four td.colspan3 {padding-right: 0  !important}
+    
+    .post_write_table.pw_item_two table,
+    .post_write_table.pw_item_two tbody,
+    .post_write_table.pw_item_two tr,
+    .post_write_table.pw_item_two th,
+    .post_write_table.pw_item_two td {display: block;}
+    .post_write_table.pw_item_two th{width: 100%;padding: 0;}
+    .post_write_table.pw_item_two td{padding:  0}
+    
+    /*컨설팅 별점*/
+    .consulting_score {padding: 3.0rem}
+    .score_select .selected_option{padding: 8px 15px}
+    .score_select {width: 100%}
+    
+    /* 자소서 완료*/
+    .post_write_table.pw_item_four.post_complete tr{display: flex !important}
+    .post_write_table.pw_item_four.post_complete .pw_tit{width: 100px !important;margin-right: 10px; word-break: keep-all}
+    .post_write_table.pw_item_four.post_complete .pw_txt {width: calc(100% - 110px) !important;}
+    
+    
+    .post_write_info .left {float: left;margin-right: 30px}
+    .post_write_info .pw_slt{float: none;margin-bottom: 10px;margin-right: 0}
+    .post_write_info .pw_slt .pw_txt{width: calc(100% - 100px) !important;float: right;}
+    .post_write_info .pw_slt select{width:100% !important}
+    
+ 
+    
+    
+    /* 온라인채용박람회_ 입사지원서 */
+    .filebox .upload-name{width: calc(100% - 150px)}
+    .pw_flex .datepicker-wrap{margin-bottom: 1.0rem}
+    .file_wrap_inbtn .file_wrap{width: calc(100% - 65px)}
+    .file_wrap_inbtn .filebox .upload-name {}
+    
+    /*radio btn*/
+    .check_style01 input[type=checkbox] + label:before{width: 22px;height: 22px;}
+    .check_style01 input[type=checkbox] + label{padding-left: 30px;font-size: 1.6rem;padding-top:2px}
+    .check_style01 input[type=checkbox]:checked + label:before{background-size: 15px}
+    .file_wrap_inbtn > .btn_wrap a{width: 55px;padding: 7px;text-align: center}
+    
+    .email_wrap {justify-content: space-between;flex-wrap: wrap}
+    .email_wrap > div:nth-child(1),
+    .email_wrap > div:nth-child(3){width: calc(50% - 15px);}
+    .email_wrap > div:nth-child(4){width: 100%;margin-top: 10px}
+    
+    .tel_wrap input[type="text"]{width: calc(33% - 10px)}
+    .tel_wrap select{width: calc(33% - 10px)}
+    
+    .inline_list li{margin-right: 10px;}
+    
+    .table_wrap02 table{width: auto;min-width: 640px}
+    
+    /* tabs */
+    .border_tabs li {padding: 10px 5px;font-size: 1.6rem}
+    .border_tabs02 li{font-size: 1.6rem;padding: 10px 5px}
+    
+    /* 전형절차 */
+    .hire_progress{zoom:0.5}
+    
+    .company_info .middle .right{padding: 3.0rem}
+    
+    .down_wrap .textCut1 {width: calc(100% - 120px);}
+    .m_mb0{margin-bottom: 0 !important}
+    
+    .datepicker-wrap img{width: 15px}
+    
+        /*온라인채용박람회 _ 관리자 공고관리*/
+    .mng_result{display: block;}
+    .mng_result:after{content: '';display: block;clear: both;}
+    
+    .mng_result .right{float: right;margin-top: 2.0rem}
+     .mng_result .scroll_wrap{width: 100%;overflow-x: auto}
+    .mng_result .mng_result_list {display: table;table-layout: fixed}
+    .mng_result .mng_result_list li{display: table-cell;text-align: center;padding-left: 10px}
+    .mng_result .mng_result_list li a{white-space: nowrap}
+    .mng_result .mng_result_list li:first-child{padding-left: 0}
+ 
+        /* 사전진단 start */
+    .diag_wrap .diag_top .tit h3,
+	.diag_result_wrap .diag_result_top .tit h3{font-size: 3.5rem}
+    .diag_wrap .diag_section01 .diag_flex{display: block;}
+    .diag_wrap .diag_section01 .diag_flex > div{margin-right: 0;margin-bottom: 20px;}
+    .diag_wrap .diag_section02 .select_wrap{display: block;}
+    .diag_wrap .diag_section02 .select_wrap li{margin-right: 0;width: 100%;margin-bottom: 1.5rem}
+    .diag_wrap .diag_section02 .select_wrap li:last-child{margin-bottom: 0}
+    
+    .diag_wrap .diag_list .diag_list_area .btn_wrap{width: 100px;}
+    .diag_wrap .diag_list .diag_list_area .txt{width: calc(100% - 120px)}
+    .diag_wrap .diag_list .btn_radio label{border-radius: 5px;height: 25px;font-size: 1.5rem}
+    .diag_wrap .diag_result .inner{display: block;}
+    .diag_wrap .diag_result .inner a{float: right;margin-top: 2.0rem}
+	.diag_wrap .diag_result a span{margin-left: 3.0rem}
+	.diag_result_wrap .dr_home span{margin-left: 3.0rem}
+	
+	/* 직업선호도 진단 _ 진단하기*/
+	.job_check_list{zoom:0.85}
+	
+	/* 취업가능성진단  */
+	.emab_select_wrap .em_select_inner > div{margin-right: 20px;}
+	.emab_select_wrap .em_select_area{width: calc(50% - 10px);}
+	.emab_select_wrap .img{height: 150px}
+	
+	.mb_br{display: block}
+	.radio_wrap > ul{display: flex;align-items:flex-start;justify-content: center;padding-top: 1.5rem;}
+	.radio_wrap > ul li{width:25%;margin-right: 0;margin-top: 20px;text-align: center;}
+	.radio_wrap .radio_style01 input[type="radio"] + label{padding-left: 0;text-align: center;font-size: 1.5rem;}
+	.radio_wrap .radio_style01 input[type="radio"] + label:before{top: -30px;left: 50%;transform: translateX(-50%)}
+	.radio_wrap .radio_style01 input[type="radio"]:checked + label:after{top: -25px;left: 50%;;transform: translateX(-50%)}
+	.em_diag_wrap .em_diag_tit {padding: 2.0rem;}
+	.em_diag_wrap .em_diag_aritcle{padding: 2.0rem 1.0rem;}
+  .em_diag_wrap .em_diag_aritcle .tit{font-size: 1.6rem;}
+	.em_diag_wrap .cont{margin-top: 1.5rem;}
+	.em_diag_wrap .cont .radio_style01 label{font-size: 1.4rem !important;margin-right: 0;}
+    
+	.border_tabs03{width: 100%;overflow-x: auto}
+	.border_tabs03 ul{table-layout: fixed;min-width: 100%;width:auto}
+	.border_tabs03 ul li{padding: 10px;font-size: 1.5rem;white-space: nowrap;}
+	.border_tabs03 ul:after{bottom: 0}
+	
+	.oj_table_wrap th:first-child{width: 75px;border-right: 1px solid #c7cee1}
+	.oj_table_wrap .oj-bg td:first-child{width: 75px}
+	.oj_table_wrap  .oj-bg td{border: 0}
+	.oj_table_wrap .oj-bg tr {border-bottom: 1px solid #c7cee1}
+	.oj_table_wrap .oj-bg td{height: 70px;}
+	.oj_table_wrap .oj-row{height: 70px;}
+	
+		.oj_chart02 text{font-size: 1.3rem;word-break: break-all}
+	
+	.oj_table_wrap .oj_chart .bar > div .num{right: -20px;font-size: 1.4rem;}
+	.radio_style01 input[type="radio"] + label{margin-right: 2.0rem;font-size: 1.4rem}
+	.radio_style01 input[type="radio"] + label:before{top: -2px}
+	.radio_style01 input[type="radio"]:checked + label:after{top: 3px}
+	
+	/* 직업역량진단서비스 시작 */
+	.ja_step > div{text-align: center;flex: 1;margin-right: 0;padding-right: 0;}
+	.ja_step .cont{width:100%;margin-right: 0}
+	.ja_step > div .ico{display: none}
+	.ja_step .num{font-size: 2.4rem;}
+	.ja_step .f20{font-size: 1.6rem}
+	.ja_step .arrow{background-size: 10px;width: 10px;height: 20px;}
+	
+		
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{width: calc(50% - 10px);margin-top: 2.0rem}
+	.ja_select > .ja_select_area:nth-child(2n){margin-right: 0}
+	.ja_select > .ja_select_area:nth-child(3n){margin-right: auto}
+	.ja_select .img{height: 130px;}
+	.ja_select02 ul .radio_style01 input[type="radio"] + label{margin-right: 0}
+	.ja_select02 ul {margin-top: 0rem;}
+	.ja_diag {position: relative;}
+	.ja_diag .tit .more{}
+	.ja_diag .tit .more.active{width: 100%;border-radius: 10px;right: 0;top: 75px;box-shadow:  0 1px 5px 1px rgba(0, 0, 0, 0.15)}
+	.ja_diag .tit .more.active .more_btn{background: url(../images/common/close_btn.png) no-repeat;background-size: 12px;}
+	.ja_diag .tit .more.active:before{border-top:0px solid transparent; 
+	 border-left: 10px solid transparent; 
+	 border-right: 10px solid transparent; 
+ 	border-bottom: 10px solid #fff; 
+ 	content:""; 
+ 	position:absolute;
+ 	top: -9px;left: 25px;;z-index: 999;}
+	.ja_diag .tit{font-size: 1.8rem}
+	.ja_diag .cont_wrap .cont_tit p {font-size: 1.6rem}
+	.ja_diag .cont_wrap{margin-top: 2.0rem;}
+	.ja_diag .cont_wrap .cont{margin-bottom: 3.0rem;padding-bottom: 3.0rem;}
+	
+	
+			/*취업준비도진단 서비스 결과보기*/
+	.jr_result_top .tit {width: 100px;}
+	.jr_result_top .tit p{}
+	.jr_result_top .cont{width: calc(100% - 100px)}
+	.jr_result_top .cont p {font-size: 1.6rem}
+	
+}
+
+
+
+@media all and (max-width:480px){
+    /* 서브 공통 */
+    .sub_wrap .sub_tit01 {font-size: 2.4rem}
+	.write_tit {font-size: 1.8rem;}
+	.write_tit span.ico{margin-right: 5px}
+    /*   서브 검색  */
+    .sub_search .select_list:not(.select_list_txt) {display: block;}
+    .sub_search .select_list:not(.select_list_txt) li{margin-right:0;padding-right:0;border-bottom:1px solid #c7cee1;padding-bottom:5px;margin-bottom:5px}
+    .sub_search .select_list:not(.select_list_txt) li:after {display: none}
+    .sub_search .select_list li select{width:100%;padding-left:0}
+    
+    /*자소서 작성*/
+    .post_write_info{}
+    .post_write_info .left{float: none;margin-bottom: 2.0rem}
+    .post_write_info .right{float: none;}
+    
+    /*컨설팅 별점*/
+    .consulting_score {padding: 2.0rem}
+   
+    
+    /*자소서 마이페이지*/
+    .sub_search .select_list.select_list_txt li{margin-right: 0;padding-right: 0;}
+    .sub_search .select_list.select_list_txt li p{font-size: 1.65rem}
+    
+    
+    /*온라인채용박람회_비대면온라인면접*/
+    .support_view {display: block;}
+    .support_view .sv_img{margin-bottom: 20px;}
+    .support_view .sv_txt{width: 100%;}
+    .support_view .lb_list{margin-top: 2.0rem;flex-wrap: wrap}
+    .lb_list li{font-size: 1.5rem;margin-right: 7px;padding-right: 7px;}
+    .lb_list li:after{height: 10px;}
+    
+      /* 온라인채용박람회_ 입사지원서 */
+    .select_inBtn{display: block;}
+    .select_inBtn select{width: 100%;margin-bottom: 10px}
+    .filebox .btn_line {padding: 7px;width: 120px;text-align: center}
+    .filebox .upload-name{width: calc(100% - 104px)}
+    
+    .certi_wrap > div:first-child{display: block;}
+    .certi_wrap input.tit{width: 100%;margin-bottom: 10px}
+    .certi_wrap select{width: 100%;}
+    
+    .filebox > div{float: none;}
+    .filebox .upload-name{width: 100%;margin-left: 0;margin-top: 10px}
+    .file_reset{top: 78%}
+    .file_wrap_inbtn{border-top: 1px dotted #c7cee1;padding-top: 5px;margin-top: 15px}
+.file_wrap_inbtn:first-child{border-top: 0;padding-top: 0;margin-top: 0}
+    
+    /*기업정보*/
+    .company_info .middle .left dl{display: block;}
+    .company_info .middle .left dt{width: 100%;}
+    .company_info .middle .left dd{width: 100%;margin-top: 1.0rem}
+    
+      /* 전형절차 */
+    .hire_progress{zoom:0.45}
+    
+    .support_view .sv_img{width: 100%;}
+    
+    /* 온라인채용박람회_기업정보*/
+    .company_info .middle .logo{max-width: 480px;width: 90%;}
+    .company_info .middle .logo img{width: 100%}
+    .info_list strong{min-width: 80px}
+    
+
+    
+ 
+    
+    /* 온라인채용박람회 공고관리등록 */
+    .address_wrap02 .aw_02 input[type="text"]:nth-child(1){width: 100%;margin-bottom: 1.0rem}
+    .address_wrap02 .aw_02 input[type="text"]:nth-child(2){width: 100%;}
+    .career_list02 li{display: block;margin-right: 0;margin-bottom: 1.5rem;}
+    .career_list02 li:last-child{margin-bottom: 0}
+    .age_list {display: block;}
+    .age_list li{margin-bottom: 2.5rem}
+    .age_list li:last-child{margin-bottom: 0}
+    .age_list .date_term input{width: calc(50% - 10px)}
+    
+    .wage_wrap{display: block} 
+    .wage_wrap div {margin-top: 1.0rem}
+    .inp_btn{display: block;}
+    .inp_btn .btn_wrap{margin-left: 0;text-align: center;margin-top: 10px}
+    
+    .down_wrap{display: block}
+    .down_wrap .textCut1{width: 100%;margin-bottom: 1.0rem;}
+	
+	/* 직업선호도 진단 진단하기*/
+
+	/* 직업선호도 진단 차트*/
+	.job_code .right{width: 100%;margin: auto}
+	.job_code .job_chart{width: 250px;height: 200px; margin: 4.0rem auto;}
+	.job_code .job_chart svg {width: 200px;height: 200px}
+	
+	
+	.oj_chart02{zoom:0.65;}
+	.oj_chart02 text{font-size: 1.6rem}
+	.optionalJob .text ul li{display: block;margin-bottom: 1.5rem;}
+	.optionalJob .text ul li:last-child{margin-bottom: 0}
+	.optionalJob .text ul li strong{display: block;margin-bottom: .5rem}
+	
+			
+	/* 직업역량진단서비스 시작*/
+	.ja_select > .ja_select_area{width: calc(50% - 5px);margin-right: 10px;}
+	.ja_select .img{height: 80px}
+	
+		/* 직업역량진단 결과 */
+	.ja_chart .graph {width: calc(100% - 50px);margin-left:0;transform: translateX(90px)}
+	.ja_chart .bars .bar-group .txt{width: 70px;left: -100px;word-break: keep-all}
+	.ja_chart .legend {justify-content: flex-end}
+	.sub_link_wrap .job_rd:after{width: 120px;background-size: 120px;height: 98px}
+	
+	
+	.sub_link_wrap{display: block;}
+	.sub_link_wrap > div{width: 100%;margin-bottom: 2.0rem;;margin-right: 0}
+	.sub_link_wrap > div:last-child{margin-bottom: 0;}
+	.sub_link_wrap .txt{margin-bottom: 80px;}
+	.job_code .bb-chart-radars .bb-axis text{font-size: 1.4rem}
+	
+	
+		/*취업준비도진단 서비스 결과보기*/
+	.jr_result_top{border-radius: 10px}
+	.jr_result_top .tit {width: 70px;}
+	.jr_result_top .tit > p {font-size: 1.5rem;}
+	.jr_result_top .cont{width: calc(100% - 70px);padding: 2.0rem}
+	.jr_result_top .cont p {font-size: 1.4rem}
+	.job_recom_link > div{width: 100%;margin-bottom: 30px;margin-right: 0}
+	.job_recom_link > div:first-child{margin-top:10px}
+	
+	.jr_table_wrap .jr-row.line2 {height: 150px}
+	.jr_table_wrap .jr-row.line2 .jr-bg td{height: 150px}
+	.jr_table_wrap .jr-row.line1 {height: 60px}
+	.jr_table_wrap .jr-row.line1 .jr-bg td {height: 60px;}
+	.jr_table th ,.jr_table_wrap .jr_header{font-size: 1.5rem;}
+	.jr_table_scr {position: relative;width: 100%;overflow-x: auto; overflow-y:hidden;}
+	.jr_table_scr table{width: 480px;}
+	.jr_table td{font-size: 1.45rem;}}
+
+}
+
