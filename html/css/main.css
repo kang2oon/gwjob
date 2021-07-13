@@ -392,12 +392,18 @@
 
 
 .job_read_main .main_section02{display: flex;align-items: center;justify-content: space-between} 
-.job_read_main .main_section02 .center{}
+.job_read_main .main_section02 .r_center{}
 .job_read_main .main_section02 .arrow{text-align: center;color: #666;font-weight: bold;position: relative;margin-top: -35px;}
 .job_read_main .main_section02 .arrow:after{content: '';display: block;background: url(../images/main/jr_arrow.png) no-repeat;width: 119px;height: 45px;position: absolute;bottom: -30px;left: 50%;transform: translateX(-42%)}
 .job_read_main .main_section02 .center p.f20 {;text-align: center;font-weight: bold;position: relative;}
 .job_read_main .main_section02 .right {text-align: center;}
 .job_read_main .main_section02 .right .ico{background: url(../images/main/jr_img02.png) no-repeat;display: block;width: 136px;height: 136px;margin: auto;}
+
+
+/*이전직준비도 진단 start */
+.tn_banner{background: #f1f0eb;background-size:480px ;padding: 9.5rem 4.0rem;border-radius: 20px;display: flex;position: relative;}
+.tn_banner .txt{width: calc(100% - 700px);word-break: keep-all}
+.tn_banner:after{content: '';display: block;background: url(../images/main/tn_banner_bg.png) no-repeat;width: 886px;height: 436px;position: absolute;right: 0;bottom: 0;}
 
 
 
@@ -486,12 +492,18 @@
 	.jr_banner .txt{width: calc(100% - 350px);word-break: keep-all}
 	.job_read_main .main_section02 .left{width: 300px}
 	.job_read_main .main_section02 .left img{width: 100%}
-	.job_read_main .main_section02 .center .f20{font-size: 1.6rem;}
+	.job_read_main .main_section02 .r_center .f20{font-size: 1.6rem;}
 	.job_read_main .main_section02 .arrow:after{background-size: 90px;width: 90px;height: 30px;bottom: -20px}
 	.job_read_main .main_section02 .arrow p {font-size: 1.3rem}
 	.job_read_main .main_section02 .right .ico{width: 120px;height: 120px;background-size: 120px;}
 	.job_read_main .main_section02 .right  p{font-size: 1.6rem;}
 	.job_read_main .main_section02 .right  strong{font-size: 1.8rem;}
+	
+	/*이전직준비도 진단 start */
+	.tn_banner {padding: 5.0rem 4.0rem;}
+	.tn_banner:after{background-size: 640px;width: 640px;height: 300px}
+	.tn_banner .txt{width: calc(100% - 500px);}
+	
 }
 
 @media all and (max-width:1024px){
@@ -616,6 +628,12 @@
 	.job_read_main .main_section02 .arrow:after{background-size: 80px;width: 80px;height: 30px;bottom: -20px}
 	.job_read_main .main_section02 .right .ico{width: 90px;height: 90px;background-size: 90px;}
 	
+		
+	/*이전직준비도 진단 start */
+	.tn_banner {padding: 3.0rem 3.0rem}
+	.tn_banner:after{background-size: 340px;width: 340px;height: 160px}
+	.tn_banner .txt{width: calc(100% - 250px);}
+	
     }
 
 @media all and (max-width:768px){
@@ -693,6 +711,13 @@
 	.jr_banner{padding: 3.0rem 3.0rem;background-size: 200px;}
 	.jr_banner .txt{width: calc(100% - 200px);word-break: keep-all}
 	.jr_banner .txt p {font-size: 1.6rem}
+	
+			
+	/*이전직준비도 진단 start */
+	.tn_banner {padding: 3.0rem 3.0rem}
+	.tn_banner:after{background-size: 250px;width: 250px;height: 125px}
+	.tn_banner .txt{width: calc(100% - 200px);}
+	.tn_banner .txt p{font-size: 1.6rem}	
 }
 
 @media all and (max-width:640px){
@@ -822,9 +847,16 @@
 	.job_read_main .main_section02 .left{width: 150px}
 	.job_read_main .main_section02 .arrow:after{background-size: 40px;width: 40px;height: 20px;left:50%;bottom: -40px;transform: translateX(-50%) rotate(90deg)  }
 	.job_read_main .main_section02 .right .ico{width: 55px;height: 55px;background-size: 55px;}
-	.job_read_main .main_section02 .center p.f20{margin: 30px 0}
+	.job_read_main .main_section02 .r_center p.f20{margin: 30px 0}
 	.job_read_main .main_section02 .right p{font-size: 1.4rem;}
 	.job_read_main .main_section02 .right strong{font-size: 1.6rem}
+	
+	
+		/*이전직준비도 진단 start */
+	.tn_banner {padding: 3.0rem 3.0rem}
+	.tn_banner:after{background-size: 200px;width: 200px;height: 100px}
+	.tn_banner .txt{width: calc(100% - 150px);}
+	.tn_banner .txt p{font-size: 1.6rem}	
 }
 
 @media all and (max-width:480px){
@@ -869,7 +901,14 @@
 	/* 취업가능성진단 start */
 	.em_banner{background-size: cover}
 	.em_banner .txt {width: 100%; padding: 4.0rem 3.0rem}
-	.em_banner .txt p {font-size: 1.8rem}
+	.em_banner .txt p {font-size: 1.6rem}
+	
+		
+		/*이전직준비도 진단 start */
+	.tn_banner {padding: 3.0rem 3.0rem}
+	.tn_banner:after{background-size: 200px;width: 200px;height: 100px}
+	.tn_banner .txt{width:100%;}
+	.tn_banner .txt p{font-size: 1.6rem;margin-bottom: 80px}	
     
 }
     

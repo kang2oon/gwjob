@@ -485,6 +485,14 @@ $(document).ready(function () {
 			movewrap03.removeClass("active");
 		}
 	});
+	
+		$(document).mouseup(function (e) {
+		var movewrapp = $(".ja_diag .jt_inner");
+		var moveinnerr = $(".ja_diag .more_btn");
+		if (moveinnerr.has(e.target).length === 0) {
+			movewrapp.removeClass("active");
+		}
+	});
 
 	//진단결과 차트 
 	$('.ja_chart  .lg_blue').click(function () {
@@ -576,9 +584,9 @@ $(document).ready(function () {
 			moveinner02.removeClass("active");
 		}
 	});
-
-
-
+	
+	$('.di_type02 .tit_02 .more_text').click(function(){
+	});
 
 
 

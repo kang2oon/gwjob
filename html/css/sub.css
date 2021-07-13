@@ -1161,10 +1161,37 @@ width: calc(100% - 170px);
 .job_recom_link .jr_09 {background: #1b87ae;}
 .job_recom_link .jr_09:after{content: '';display: block;background: url(../images/sub/jr_09_img.png) no-repeat;width: 355px;height: 131px;position: absolute;left: 40px;bottom: 0;}
 
-
-
-
 .job_recom_link  .btn_wrap .btn_style02{padding: 7px 15px;font-size: 1.4rem}
+
+
+/*이전직준비도진단 start */
+.ja_diag.di_type02{}
+.ja_diag.di_type02 .tit{background: #dbebff;border-radius: 0;border-top: 1px solid #c7cee1;border-bottom: 1px solid #c7cee1;color: #333;}
+.ja_diag.di_type02 .jt_inner {display: flex;align-items: center;}
+.ja_diag.di_type02 .tit  > .jt_inner > p{position: relative;}
+.ja_diag.di_type02 .tit  > .jt_inner > p:before{content: 'Q.'}
+.ja_diag.di_type02 .more_btn{background: url(../images/sub/more_btn02.png) no-repeat center #fff;width: 24px;height: 24px;border-radius: 50%;display: block;margin: 10px;}
+.ja_diag.di_type02 .more_text{background: #fff;color: #666;font-size: 1.4rem;width: 10px;position: absolute;right: -650px;width: 600px;padding: 10px;border: 1px solid #c7cee1;border-radius: 0px 5px 5px 5px;display: none;z-index: 99}
+.ja_diag.di_type02 .more_text:after{content: '';display: block;background: url(../images/sub/bubb.png) no-repeat;width: 9px;height: 10px;position: absolute;top: -1px;left: -9px;}
+.ja_diag.di_type02 .cont_wrap .cont {border-bottom: 1px solid #c7cee1}
+.ja_diag.di_type02 .jt_inner.active .more_text{display: inline-flex}
+.ja_diag .tit .active .more_btn{margin: 10px}
+
+
+/*이전직준비도 결과*/
+.tn_chart_wrap {padding-top: 30px;display: flex;justify-content: space-around}
+.tn_chart_wrap .chart_area{width: 630px;display: flex;flex-direction: column-reverse}
+.tn_chart_wrap .tnr_right {width:420px}
+.tn_chart_wrap .c3-axis-y .domain {stroke-width: 0px;}
+.tn_chart_wrap .chart_area text{font-family: 's-core_dream4_regular';font-size: 1.6rem;fill: #666;}
+.tn_chart_wrap .c3 path, .tn_chart_wrap .c3 line{stroke:#c7cee1}
+.tn_chart_wrap  .c3-axis-y line{stroke:#fff}
+.tn_chart_wrap .legend{display: flex;justify-content: center;}
+.tn_chart_wrap .legend span{display: flex;align-items: center;font-size: 1.6rem;color: #666;cursor: pointer;}
+.tn_chart_wrap .legend span:first-child {margin-right: 3.0rem;}
+.tn_chart_wrap .legend span:first-child:before{content: '';width: 10px;height: 10px;background: #9a9a9a;margin-right: 10px}
+.tn_chart_wrap .legend span:last-child:before{content: '';width: 10px;height: 10px;background: #f73718;margin-right: 10px}
+
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -1237,6 +1264,14 @@ width: calc(100% - 170px);
 	
 	/*취업준비도진단 서비스 결과보기*/
 	.job_recom_link .jr_09:after{background-size: 260px;width: 260px;height: 93px;left: 10px}
+	
+	/*이전직준비도진단_진단하기*/
+	.ja_diag.di_type02 .jt_inner .more_text{width: 400px;right: -450px;}
+	
+	
+	/*이전직준비도진단_진단결과*/
+	.tn_chart_wrap .chart_area{max-width: 630px;width: 60%}
+	.tn_chart_wrap .tnr_right{width:30%;max-width: 420px}
 	
 	
 }
@@ -1400,6 +1435,19 @@ width: calc(100% - 170px);
 	.job_recom_link > div:nth-child(2n){margin-right: 0}
 	.job_recom_link > div:last-child{margin-bottom: 0}
 	
+	
+	/*이전직준비도진단_진단하기*/
+	.ja_diag.di_type02 .jt_inner .more_text{width:calc(100% + 50px);left: 0;top: 40px;border-radius: 5px 0px 5px 5px}
+	.ja_diag.di_type02 .jt_inner{width: 100%;display: block;}
+	.ja_diag.di_type02 .jt_inner .more_btn{position: absolute;right: 10px;top: 50%;transform: translateY(-100%)}
+	.ja_diag.di_type02 .jt_inner .more_text:after{background: url(../images/sub/bubb2.png) no-repeat;width: 10px;height: 10px;right:-1px;top:-10px;left: auto;}
+	.ja_diag.di_type02 .tit > .jt_inner > p {width: calc(100% - 50px);word-break: keep-all}
+	
+		
+	/*이전직준비도진단_진단결과*/
+	.tn_chart_wrap {display: block}
+	.tn_chart_wrap .chart_area{margin: auto;margin-bottom: 4.0rem}
+	.tn_chart_wrap .tnr_right {width: 320px;margin: auto;}
     
 }
 
@@ -1574,7 +1622,6 @@ width: calc(100% - 170px);
 	.optionalJob{display: block;}
 	.optionalJob .text{width: 100%;margin-top: 1.5rem;}
 	.optionalJob strong{width: 60px;}
-	.optionalJob p{width: calc(100% - 60px);}
 	.optionalJob .img{width: 80px;margin-bottom: 2.5rem;}
 	.optionalJob .img img{display: block;width: 100%;}
 	
@@ -1617,6 +1664,9 @@ width: calc(100% - 170px);
 	.jr_table_wrap .jr-row.line1 .jr-bg td {height: 60px;}
 	.jr_table th ,.jr_table_wrap .jr_header{font-size: 1.5rem;}
 	.jr_table td{font-size: 1.45rem;}
+	
+	/* 이전직준비도 진단 결과보기 */
+	.tn_chart_wrap .chart_area{max-width: 630px;width: 100%}
 	
 }
 
@@ -1817,6 +1867,15 @@ width: calc(100% - 170px);
 	.jr_result_top .cont{width: calc(100% - 100px)}
 	.jr_result_top .cont p {font-size: 1.6rem}
 	
+			
+	/*이전직준비도진단_진단결과*/
+	.tn_chart_wrap {display: block}
+	.tn_chart_wrap .chart_area{width:100%}
+	.tn_chart_wrap .tnr_right {width: 320px;margin: auto;}
+	.tn_chart_wrap .chart_area text{font-size: 1.4rem}
+	.tn_chart_wrap .legend span{font-size: 1.4rem}
+	
+	
 }
 
 
@@ -1957,6 +2016,10 @@ width: calc(100% - 170px);
 	.jr_table_scr {position: relative;width: 100%;overflow-x: auto; overflow-y:hidden;}
 	.jr_table_scr table{width: 480px;}
 	.jr_table td{font-size: 1.45rem;}}
+
+	/*이전직준비도진단_진단결과*/
+	.tn_chart_wrap .tnr_right {width: 100%;max-width: 320px}
+	.tn_chart_wrap .tn_chrat {min-height: 250px}
 
 }
 

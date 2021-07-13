@@ -125,10 +125,13 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 
 
 /*bar_list*/
-.bar_list li{position: relative;font-size: 1.6rem;padding-left: 13px;margin-bottom: 5px}
+.bar_list li{position: relative;font-size: 1.6rem;padding-left: 13px;margin-bottom: 7px}
 .bar_list li:last-child{margin-bottom: 0}
 .bar_list li:before{content: '-';position: absolute;left: 0;top: 0}
 .bar_list.bar_bold li:before {font-weight: bold;}
+.circle_list li{position: relative;padding-left: 10px;margin-bottom: 5px;}
+.circle_list li:last-child{margin-bottom: 0}
+.circle_list li:before{content: '·';position: absolute;display: block;left: 0;top: 3px}
 
 /* img */
 .imgFill {object-fit: fill;}
@@ -175,6 +178,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .gray02{color: #666 !important}
 .gray03{color: #8c8c8c !important}
 .orange{color: #ff4e4a !important}
+.orange02{color: #ef5e47 !important}
 .red{color: #ff0000 !important}
 .white{color: #fff !important}
 .purple{color: #4f3c9f !important}
