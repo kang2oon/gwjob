@@ -1766,12 +1766,12 @@ width: calc(100% - 170px);
     .mng_result:after{content: '';display: block;clear: both;}
     
     .mng_result .right{float: right;margin-top: 2.0rem}
-     .mng_result .scroll_wrap{width: 100%;overflow-x: auto}
+    .mng_result .scroll_wrap{width: 100%;overflow-x: auto}
     .mng_result .mng_result_list {display: table;table-layout: fixed}
     .mng_result .mng_result_list li{display: table-cell;text-align: center;padding-left: 10px}
     .mng_result .mng_result_list li a{white-space: nowrap}
     .mng_result .mng_result_list li:first-child{padding-left: 0}
- 
+
         /* 사전진단 start */
     .diag_wrap .diag_top .tit h3,
 	.diag_result_wrap .diag_result_top .tit h3{font-size: 3.5rem}
@@ -1800,7 +1800,7 @@ width: calc(100% - 170px);
 	.mb_br{display: block}
 	.radio_wrap > ul{display: flex;align-items:flex-start;justify-content: center;padding-top: 1.5rem;}
 	.radio_wrap > ul li{width:25%;margin-right: 0;margin-top: 20px;text-align: center;}
-	.radio_wrap .radio_style01 input[type="radio"] + label{padding-left: 0;text-align: center;font-size: 1.5rem;}
+	.radio_wrap .radio_style01 input[type="radio"] + label{padding-left: 0;text-align: center;font-size: 1.5rem;margin-right: 0}
 	.radio_wrap .radio_style01 input[type="radio"] + label:before{top: -30px;left: 50%;transform: translateX(-50%)}
 	.radio_wrap .radio_style01 input[type="radio"]:checked + label:after{top: -25px;left: 50%;;transform: translateX(-50%)}
 	.em_diag_wrap .em_diag_tit {padding: 2.0rem;}
