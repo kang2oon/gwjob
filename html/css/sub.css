@@ -1667,6 +1667,7 @@ width: calc(100% - 170px);
 	
 	/* 이전직준비도 진단 결과보기 */
 	.tn_chart_wrap .chart_area{max-width: 630px;width: 100%}
+	.tn_star{font-size: 1.4rem}
 	
 }
 
