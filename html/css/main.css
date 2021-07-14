@@ -117,7 +117,7 @@
 .self_intro_main .main_section05  .job_select .bar_list li a:hover{font-weight: bold}
 .self_intro_main .main_section05  .job_select .bar_list li.active a {color: #333}
 .self_intro_main .main_section05  .job_select li.active:before{display: none;}
-.self_intro_main .main_section05 .js_wrap .scrollbar{height: 240px;}
+.self_intro_main .main_section05 .js_wrap .scrollbar{height: 240px}
 .job_aricle .blue_bg_text{margin-right: 10px}
 
 /* 메인 공통 하단*/
@@ -180,6 +180,8 @@
 
 
 /* AI 면접 대비 강의*/
+
+.ai_main .main_section05 .center{position: relative !important;left: auto;top: auto;transform: translate(0,0)}
 .ai_main .main_section05 {overflow: hidden;position: relative}
 .ai_main .main_section05 .inner{overflow: visible !important;display: flex}
 .ai_main .main_section05 .inner:after{content: '';display: block;clear: both}
@@ -218,7 +220,8 @@
 .ai_main .main_section06 .active .ico01{background: url(../images/main/ai_main_ico05.png) no-repeat #ff4e4a center;}
 .ai_main .main_section06 .active .ico02{background: url(../images/main/ai_main_ico06.png) no-repeat #ff4e4a center;}
 .ai_main .main_section06 .flex_four .job_aricle{display: flex;}
-.ai_main .main_section06 .flex_four .job_aricle > div{flex: 1;margin-right: 40px;min-height: 230px}
+.ai_main .main_section06 .flex_four .job_aricle > div{flex: 1;margin-right: 40px;min-height: 230px;cursor: pointer;}
+.ai_main .main_section06 .flex_four .job_aricle .bottom{color: #666}
 .ai_main .main_section06 .flex_four .job_aricle > div:last-child{margin-right: 0}
 
 
@@ -405,6 +408,10 @@
 .tn_banner .txt{width: calc(100% - 700px);word-break: keep-all}
 .tn_banner:after{content: '';display: block;background: url(../images/main/tn_banner_bg.png) no-repeat;width: 886px;height: 436px;position: absolute;right: 0;bottom: 0;}
 
+/*창업적성검사 start */
+.foa_banner{background: #4458cb;background-size:480px ;padding: 16rem 4.0rem;border-radius: 20px;display: flex;position: relative;}
+.foa_banner .txt{width: calc(100% - 720px);word-break: keep-all}
+.foa_banner:after{content: '';display: block;background: url(../images/main/toa_banner_bg.png) no-repeat;width: 797px;height: 440px;position: absolute;right: 0;bottom: 0;}
 
 
 /* -------------------------- 반응형 start ------------------------*/
@@ -503,6 +510,12 @@
 	.tn_banner {padding: 5.0rem 4.0rem;}
 	.tn_banner:after{background-size: 640px;width: 640px;height: 300px}
 	.tn_banner .txt{width: calc(100% - 500px);}
+	
+	
+	/*창업적성 검사 start */
+	.foa_banner {padding:9.0rem 4.0rem;}
+	.foa_banner:after{background-size: 540px;width: 540px;height: 300px}
+	.foa_banner .txt{width: calc(100% - 500px);}
 	
 }
 
@@ -634,6 +647,12 @@
 	.tn_banner:after{background-size: 340px;width: 340px;height: 160px}
 	.tn_banner .txt{width: calc(100% - 250px);}
 	
+	
+	/*창업적성 검사 start */
+	.foa_banner {padding:4.0rem 3.0rem;}
+	.foa_banner:after{background-size: 340px;width: 340px;height: 170px}
+	.foa_banner .txt{width: calc(100% - 300px);}
+	
     }
 
 @media all and (max-width:768px){
@@ -718,6 +737,12 @@
 	.tn_banner:after{background-size: 250px;width: 250px;height: 125px}
 	.tn_banner .txt{width: calc(100% - 200px);}
 	.tn_banner .txt p{font-size: 1.6rem}	
+	
+	/*창업적성 검사 start */
+	.foa_banner {padding:4.0rem 3.0rem;}
+	.foa_banner:after{background-size: 250px;width: 250px;height: 130px}
+	.foa_banner .txt{width: calc(100% - 240px);}
+	.foa_banner .txt p{font-size: 1.6rem}	
 }
 
 @media all and (max-width:640px){
@@ -857,6 +882,12 @@
 	.tn_banner:after{background-size: 200px;width: 200px;height: 100px}
 	.tn_banner .txt{width: calc(100% - 150px);}
 	.tn_banner .txt p{font-size: 1.6rem}	
+	
+	/*창업적성 검사 start */
+	.foa_banner {padding:4.0rem 3.0rem;}
+	.foa_banner:after{background-size: 200px;width: 200px;height: 100px}
+	.foa_banner .txt{width: calc(100% - 150px);}
+	.foa_banner .txt p{font-size: 1.6rem}	
 }
 
 @media all and (max-width:480px){
@@ -904,11 +935,17 @@
 	.em_banner .txt p {font-size: 1.6rem}
 	
 		
-		/*이전직준비도 진단 start */
+	/*이전직준비도 진단 start */
 	.tn_banner {padding: 3.0rem 3.0rem}
 	.tn_banner:after{background-size: 200px;width: 200px;height: 100px}
 	.tn_banner .txt{width:100%;}
 	.tn_banner .txt p{font-size: 1.6rem;margin-bottom: 80px}	
+	
+	/*창업적성 검사 start */
+	.foa_banner {padding:3.0rem 3.0rem;}
+	.foa_banner:after{background-size: 200px;width: 200px;height: 100px}
+	.foa_banner .txt{width:100%;}
+	.foa_banner .txt p{font-size: 1.6rem;margin-bottom: 85px}	
     
 }
     

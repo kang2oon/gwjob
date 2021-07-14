@@ -588,6 +588,75 @@ $(document).ready(function () {
 	$('.di_type02 .tit_02 .more_text').click(function(){
 	});
 
+	
+	$(".popup.fixed").each(function(){
+		$(this).addClass('menu_rh');
+	});
+	
+	// 스크롤
+		$(window).scroll(function () {
+		if ($(window).scrollTop() < 100) {
+			var position = $(window).scrollTop();
+			$(".popup.fixed").addClass('menu_rh');
+		} else {
+			var position = $(window).scrollTop();
+			$(".popup.fixed").removeClass('menu_rh');
+		
+
+		}
+
+
+	});
+	
+	
+	//자소서 컨설팅 하단 height 맞추기
+         changeDivHeight();
+	
+        $(window).resize(function(){
+            changeDivHeight();
+        });
+        /*here we place our logic
+          we take each sizes, compares which one is largest and then
+          set other's height.*/
+        function changeDivHeight() {
+            // .innerHeight() returns height of an element
+            var a = $(".self_intro_main .main_section05 #tab1 .js_wrap .scrollbar").innerHeight();
+            var b = $(".self_intro_main .main_section05 #tab1 .job_aricle > div").innerHeight();
+            //alert(a + " " + b);
+            // .height() sets height of an element
+            // we can pass an integer value, which will be converted into px
+            // otherwise we can pass a string, mentioning the unit such as px or in or cm or dp
+            if( a > b ) {
+                $(".self_intro_main .main_section05 #tab1 .job_aricle > div").height( a );
+            } else {
+                $(".self_intro_main .main_section05 #tab1 .js_wrap .scrollbar").height( b );
+            }
+        }
+	
+	
+	  changeDivHeight2();
+	
+        $(window).resize(function(){
+            changeDivHeight2();
+        });
+        /*here we place our logic
+          we take each sizes, compares which one is largest and then
+          set other's height.*/
+        function changeDivHeight2() {
+            // .innerHeight() returns height of an element
+            var c = $(".self_intro_main .main_section05 #tab2 .js_wrap .scrollbar").innerHeight();
+            var d = $(".self_intro_main .main_section05 #tab2 .job_aricle > div").innerHeight();
+            //alert(a + " " + b);
+            // .height() sets height of an element
+            // we can pass an integer value, which will be converted into px
+            // otherwise we can pass a string, mentioning the unit such as px or in or cm or dp
+            if( c > d ) {
+                $(".self_intro_main .main_section05 #tab2 .js_wrap .scrollbar").height( c );
+            } else {
+                $(".self_intro_main .main_section05 #tab2 .job_aricle > div").height( d );
+            }
+        }
+	
 
 
 });
