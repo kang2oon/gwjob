@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/scroll_slider.css">
+
+
+    <link href=" https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.7/c3.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap bg03">
+        <div class="inner">
+            <h3 class="f40 tct bold02">
+                <span class="blue02">창업역량진단</span> 결과
+            </h3>
+
+            <div class="white_round section02">
+
+                <!--선택 직업-->
+                <div class="optionalJob">
+                    <div class="img">
+                        <img src="./images/sub/tn_result.png" alt="이전직 결과">
+                    </div>
+                    <div class="text">
+                        <p class="f26">
+                            <strong class="blue02">윤주환</strong> 님은 <strong class="blue02">제조업 분야</strong>의 <strong class="blue02">창업준비단계</strong>에서<br />
+                            <strong class="pink">전문가수준 Level 6</strong>의 역량을 보유하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <!--//선택 직업-->
+            </div>
+
+
+            <!--한줄평-->
+            <div class="white_round section02">
+                <ul class="foa_result">
+                    <li>
+                        <strong>한줄평</strong>
+                        <p>이 역량수준은 해당 역량에 대한 지식과 스킬을 상당수준 보유하고 있으며, 스스로 해당 역량을 사업 수행 시 능숙하게 적용하고 응용하는 수준을 의미합니다.</p>
+                    </li>
+                    <li>
+                        <strong>시급히 개발해야 할 역량은?</strong>
+                        <p>윤주환 님은 판단력 열정 윤리의식 역량 순서로 개발이 시급히 이루어져야 합니다.
+                        </p>
+                    </li>
+                    <li>
+                        <strong>조금 더 강화해야 할 역량은?</strong>
+                        <p>윤주환 님은 진단 대상 평균보다 낮게 나타난 역량은 판단력, 윤리의식, 열정, 책임감, 문제해결력, 고객지향, 신뢰관계형성으로 나타났습니다.
+                            시급히 개발해야 할 역량에 해당하는 과정을 우선적으로 경력개발계획을 수립하시기 바라며, 기타 좀 더 강화해야 할 역량 순으로 개발계획을 수립하시기 바랍니다.
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <!--//한줄평-->
+
+            <!--진단요인별 결과-->
+            <div class="white_round section02">
+                <div class="foa_chart_wrap">
+                   <div class="foa_chart_area">
+                    <div class="foa_chrat">
+
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!--//진단요인별 결과-->
+
+
+        </div>
+    </div>
+    <!-- //콘텐츠 영역 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.7/c3.min.js"></script>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/sly.js"></script>
+    <script src="./js/printThis.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+    <script>
+        var chart = c3.generate({
+            bindto: '.foa_chrat',
+            data: {
+                columns: [
+                    ['이용자 평균점수', 3, 4, 2, 3, 3.5, 3, 4, 2, 3, 3.5, 1, 3, 3, 4, 2, 3, 3.5],
+                    ['진단결과', 2, 5, 4, 2, 1.5, 1, 3, 3, 4, 2, 3, 3.5, 4, 2, 3, 3.5, 3]
+                ],
+                type: 'bar',
+                colors: {
+                    '이용자 평균점수': '#9a9a9a',
+                    '진단결과': '#004897   '
+                }
+            },
+            grid: {
+                y: {
+                    show: true
+                },
+            },
+            bar: {
+                width: {
+                    ratio: 0.3,
+
+                }
+            },
+            axis: {
+                x: {
+                    type: 'category',
+                    x: {
+                        tick: {
+                            multiline: true,
+                        }
+                    },
+                    categories: ['역량', '판단력', '열정', '윤리의식', '책임감', '자기개발', '문제해결력', '고객지향', '신뢰관계 형성', '추진력', '사업타당성 분석', '비전제시', '도전정신', '창의성', '긍정적 사고', '의사소통', '경영 마인드'],
+
+                },
+                y: {
+                    max: 5,
+                    min: 0,
+                    padding: {
+                        top: 0,
+                        bottom: 0
+                    },
+                    tick: {
+                        count: 6
+                    }
+                },
+
+            },
+            tooltip: {
+                show: false
+            },
+            legend: {
+                show: false
+            },
+            padding: {
+                bottom: 20,
+                top: 20
+            },
+
+
+        });
+
+        function toggle(id) {
+            chart.toggle(id);
+        }
+
+
+        //how we can create a custom legend.
+        d3.select('.foa_chart_wrap').insert('div', '.foa_chart_area').attr('class', 'legend').selectAll('span').data(['이용자 평균점수', '진단결과']).enter().append('span').attr('data-id', function(id) {
+            return id;
+        }).html(function(id) {
+            return id;
+        }).each(function(id) {
+            d3.select(this).style('background-color');
+        }).on('mouseover', function(id) {
+            chart.focus(id);
+        }).on('mouseout', function(id) {
+            chart.revert();
+        }).on('click', function(id) {
+            chart.data(id)[0].values.map(function(obj) {
+                return console.log(obj.value);
+            });
+            d3.selectAll('.legend_values').remove();
+            d3.select('#values').selectAll("p").data(chart.data(id)[0].values).enter().append('p').text(function(d) {
+                return d.value;
+            }).classed('legend_values', true);
+        });
+
+        // 줄바꿈
+        var insertLinebreaks = function(d) {
+            var el = d3.select(this);
+            var words = d.split(' ');
+            el.text('');
+
+            for (var i = 0; i < words.length; i++) {
+                var tspan = el.append('tspan').text(words[i]);
+                if (i > 0)
+                    tspan.attr('x', 0).attr('dy', '15');
+            }
+        };
+        svg.selectAll('.c3-axis-x  text').each(insertLinebreaks);
+    </script>
+
+</body></html>
+

@@ -1175,8 +1175,7 @@ width: calc(100% - 170px);
 .ja_diag.di_type02 .more_text{background: #fff;color: #666;font-size: 1.4rem;width: 10px;position: absolute;right: -650px;width: 600px;padding: 10px;border: 1px solid #c7cee1;border-radius: 0px 5px 5px 5px;display: none;z-index: 99}
 .ja_diag.di_type02 .more_text:after{content: '';display: block;background: url(../images/sub/bubb.png) no-repeat;width: 9px;height: 10px;position: absolute;top: -1px;left: -9px;}
 .ja_diag.di_type02 .cont_wrap .cont {border-bottom: 1px solid #c7cee1}
-.ja_diag.di_type02 .jt_inner.active .more_text{display: inline-flex}
-.ja_diag .tit .active .more_btn{margin: 10px}
+.ja_diag.di_type02 .jt_inner.active .more_text{display: inline-flex}}
 
 
 /*이전직준비도 결과*/
@@ -1214,6 +1213,28 @@ width: calc(100% - 170px);
 .fa_link{display: flex;align-items: center;justify-content: center;}
 .fa_link p {margin-right: 3.0rem;}
 .fa_link .btn{padding: 15px 35px}
+
+
+/*창업역량진단*/
+.ja_diag .tit .more02{}
+.ja_diag .tit .more02 .more_btn{background: url(../images/sub/ja_more.png) no-repeat center;width: 16px;height: 16px;text-indent: -9999px;border-radius: 0;margin: auto;}
+
+.foa_result{}
+.foa_result li{margin-bottom: 2.0rem}
+.foa_result li:last-child{margin-bottom: 0}
+.foa_result li strong{display: block;font-size: 2.2rem;margin-bottom: 1.0rem}
+.foa_result li  p{font-size: 1.6rem;color: #666}
+.foa_chart_wrap .foa_chart_area{display: flex;flex-direction:column-reverse}
+.foa_chart_wrap .c3-axis-y path{stroke:#fff !important}
+.foa_chart_wrap text{font-family: 's-core_dream4_regular';font-size: 1.2rem;fill: #666;}
+.foa_chart_wrap .c3 path, .foa_chart_wrap .c3 line{stroke:#c7cee1}
+.foa_chart_wrap  .c3-axis-y line{stroke:#fff}
+.foa_chart_wrap .legend{display: flex;justify-content: center;}
+.foa_chart_wrap .legend span{display: flex;align-items: center;font-size: 1.6rem;color: #666;cursor: pointer;}
+.foa_chart_wrap .legend span:first-child {margin-right: 3.0rem;}
+.foa_chart_wrap .legend span:first-child:before{content: '';width: 10px;height: 10px;background: #9a9a9a;margin-right: 10px}
+.foa_chart_wrap .legend span:last-child:before{content: '';width: 10px;height: 10px;background: #004897;margin-right: 10px}
+.c3-axis-x .tick line {stroke:#fff}
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -1300,7 +1321,13 @@ width: calc(100% - 170px);
 	.foa_result_wrap .text{margin: auto;width: 800px;padding-bottom: 5.0rem}
 	.fa_chart_wrap{width: 800px;margin: auto}
 	
+    /*창업역량진단 _ 3단계*/
+    .ja_diag.di_type02 .jt_inner .more02 .more_btn{position: relative;right: auto;transform: none;top: auto}
 	
+    /*창업역량진단 결과보기*/
+    .foa_chart_wrap text{font-size: 1.1rem;}
+    
+    
 	
 }
 
@@ -1482,6 +1509,16 @@ width: calc(100% - 170px);
 	.foa_result_wrap{display: block;}
 	.foa_result_wrap .text{margin: auto;width: 100%;max-width: 800px}
 	.fa_chart_wrap{max-width: 700px;width: 100%;}
+    
+    /*창업역량진단 3단계*/
+    .ja_diag.di_type02 .jt_inner .more02{background-position: center}
+    
+    
+    /*창업역량진단 결과*/
+    .foa_result li strong{font-size: 1.8rem}
+    .foa_chart_wrap .foa_chart_area{width: 100%;overflow-x: auto}
+    .foa_chart_wrap .foa_chrat {width: 1024px}
+    
 	
     
 }
@@ -1571,7 +1608,7 @@ width: calc(100% - 170px);
     .job_post_sch{display: block;padding: 2.0rem}
     .job_post_sch select{width: 100%;margin: 1.0rem 0;}
 	
-	   .table_wrap02{width: 100%;overflow-X: auto;}
+	.table_wrap02{width: 100%;overflow-X: auto;}
     .table_wrap02 table{width: auto;min-width: 768px}
     
      /* 사전진단 start */
@@ -1707,6 +1744,10 @@ width: calc(100% - 170px);
 	.fa_link{display: block;text-align: center;}
 	.fa_link p {margin-bottom: 2.0rem}
 	.fa_link .btn{padding: 10px 20px}
+    
+    /*창업역량진단 결과보기*/
+    .foa_chart_wrap .foa_chrat{min-height: 250px}
+    .foa_chart_wrap .legend span{font-size: 1.4rem}
 	
 }
 

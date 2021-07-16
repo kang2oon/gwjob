@@ -114,7 +114,8 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 /*bg*/
 .white_round{background: #fff;border-radius: 15px;overflow: hidden;padding: 4.0rem 5.0rem;}
 .blue_round{background: #004897;border-radius: 15px;overflow: hidden;padding: 4.0rem 5.0rem;}
-.blue_round02{background: #e8f6ff;border-radius: 15px;overflow: hidden;padding: 4.0rem 5.0rem;}
+.blue_round02{background: #e8f6ff;border-radius: 10px;overflow: hidden;padding: 4.0rem 5.0rem;}
+.blue_round03{background: #f6f8ff;border-radius: 15px;overflow: hidden;padding: 2.0rem 3.0rem;}
 .border_round{padding: 4.0rem 5.0rem;border-radius: 15px;border:2px solid #000 }
 .gray_round{padding: 4.0rem 5.0rem;border-radius: 15px;background: #f6f8ff }
 
@@ -343,6 +344,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .table_style07 tbody tr:nth-child(even){background: #f1f4fd}
 
 .table_style08{width: 100%;border-collapse: collapse;table-layout: fixed}
+.table_style08 table{width: 100%;border-collapse: collapse;table-layout: fixed}
 .table_style08 th,
 .table_style08 td {padding: 10px;text-align: center;color: #666;border: 1px solid #c7cee1;}
 .table_style08 td{background: #fff}
@@ -570,6 +572,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .pr_50{padding-right:50px}
 .pr_100{padding-right:100px}
 
+.pd10 {padding: 10px}
 .pd20 {padding: 20px}
 .pd25 {padding: 25px;}
 
@@ -656,6 +659,8 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
     html {font-size: 8px}
     .pt_50{padding-top:3.0rem}
 	.f24{font-size: 2.0rem}
+    .f26{font-size: 2.0rem;}
+    .f20{font-size: 1.8rem}
     
     .pt_40{margin-top:3.5rem}
     .mt_50{margin-top:3.0rem}
