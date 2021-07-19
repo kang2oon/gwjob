@@ -1218,7 +1218,7 @@ width: calc(100% - 170px);
 /*창업역량진단*/
 .ja_diag .tit .more02{}
 .ja_diag .tit .more02 .more_btn{background: url(../images/sub/ja_more.png) no-repeat center;width: 16px;height: 16px;text-indent: -9999px;border-radius: 0;margin: auto;}
-
+.ja_diag .tit .more02.active {padding: 5px 7px;}
 .foa_result{}
 .foa_result li{margin-bottom: 2.0rem}
 .foa_result li:last-child{margin-bottom: 0}

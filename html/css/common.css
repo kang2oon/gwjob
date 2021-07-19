@@ -5,7 +5,7 @@ html{font-family: 's-core_dream4_regular',sans-serif !important;font-size:10px}
 body {font-size: 1.6rem;color: #222}
 #sub.ty2 > #sub_container > .inner{max-width:100% !important;padding:0 !important}
 input,select {font-family:'s-core_dream4_regular',sans-serif !important;}
-.pageTab{over-flow:hidden}
+#sub.ty2 .pageTab{overflow:hidden;position:absolute;left:-9999px}
 #sub.ty2 #content {padding-bottom:0 !important]}
 
 /* css reset */
