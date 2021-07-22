@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/scroll_slider.css">
+
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="sub_wrap white_bg">
+        <div class="inner">
+            <h3 class="esub_tit"><span>나의 강의실</span>
+            <p>나의 강의실에서 학습중인 과정을 확인해보세요.</p>
+
+            </h3>
+
+            <div class="tab_container">
+                <div class="tabs mt_30">
+                    <ul class="border_tabs04">
+                        <li class="active">
+                            <a href="javascript:vold" data-tab="tab1">
+                                학습중인 과정
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:vold" data-tab="tab2">
+                                관심과정
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <!--//tabs-->
+
+                <!--tab1-->
+                <div class="tab_content section02" id="tab1">
+                    <div class="lp_top">
+                        <p class="f18 gray02">현재 **건의 학습중인 과정이 있습니다</p>
+                        <select>
+                            <option>모두보기</option>
+                        </select>
+                    </div>
+                    <div class="mt_30 lp_table">
+                        <table class="table_style05 table_style table_fixed">
+                            <caption>학습과정</caption>
+                            <colgroup>
+                                <col style="width:6%">
+                                <col style="width:8%">
+                                <col />
+                                <col style="width:8%">
+                                <col style="width:8%">
+                                <col style="width:16%">
+                                <col style="width:12%">
+                                <col style="width:12%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>카테고리</th>
+                                    <th>과정명</th>
+                                    <th>상태</th>
+                                    <th>진도율</th>
+                                    <th>학습기간</th>
+                                    <th>학습하기</th>
+                                    <th>수료증 출력</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="num">1</td>
+                                    <td class="category">인문</td>
+                                    <td class="tit tlt">
+                                        <p class="textCut1"> 창조적 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다</p>
+                                    </td>
+                                    <td class="state">수강완료</td>
+                                    <td class="rate">100%</td>
+                                    <td class="date">2021.00.00~2021.00.00</td>
+                                    <td class="btn1">
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn_style05 btn_blue_line btn">강의실 입장</a>
+                                        </div>
+                                    </td>
+                                    <td class="btn2">
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn_style05 btn_blue_line btn">미수료</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="num">1</td>
+                                    <td class="category">인문</td>
+                                    <td class="tit tlt">
+                                        <p class="textCut1"> 창조적 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다</p>
+                                    </td>
+                                    <td class="state">수강완료</td>
+                                    <td class="rate">100%</td>
+                                    <td class="date">2021.00.00~2021.00.00</td>
+                                    <td class="btn1">
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn_style05 btn_blue_line btn">강의실 입장</a>
+                                        </div>
+                                    </td>
+                                    <td class="btn2">
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn_style05 btn_blue_line btn">출력하기</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                                 <tr>
+                                    <td class="num">1</td>
+                                    <td class="category">인문</td>
+                                    <td class="tit tlt">
+                                        <p class="textCut1"> 창조적 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다</p>
+                                    </td>
+                                    <td class="state">수강완료</td>
+                                    <td class="rate">100%</td>
+                                    <td class="date">2021.00.00~2021.00.00</td>
+                                    <td class="btn1">
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn_style05 btn_blue_line btn">강의실 입장</a>
+                                        </div>
+                                    </td>
+                                    <td class="btn2">
+                                        <div class="btn_wrap">
+                                            <a href="#" class="btn_style05 btn_blue_line btn">출력하기</a>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- 페이징 -->
+                    <div class="paginate mt_50">
+                        <div class="paginate_list">
+                            <a href="#" class="pager-link pager-link-data-first">맨 처음 페이지 목록 보기</a>
+                            <a href="#" class="pager-link pager-link-data-prev">이전 페이지 목록 보기</a>
+                            <a href="#" class="pager-link active">1</a>
+                            <a href="#" class="pager-link">2</a>
+                            <a href="#" class="pager-link">3</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">4</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">5</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">6</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">7</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">8</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">9</a>
+                            <a href="#" class="pager-link">10</a>
+                            <a href="#" class="pager-link pager-link-data-next">다음 페이지 목록 보기</a>
+                            <a href="#" class="pager-link pager-link-data-last">마지막 페이지 목록 보기</a>
+                        </div>
+                    </div> <!-- //페이징 -->
+                </div>
+                <!--//tab1-->
+
+                <!--tab2-->
+                <div class="tab_content section02" id="tab2">
+                    <div class="lp_top">
+                        <p class="f18 gray02">현재 **건의 학습중인 과정이 있습니다</p>
+                    </div>
+                    <div class="mt_30 lp_table">
+                        <table class="table_style05 table_style table_fixed">
+                            <caption>학습과정</caption>
+                            <colgroup>
+                                <col style="width:6%">
+                                <col style="width:8%">
+                                <col />
+                                <col style="width:20%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th>번호</th>
+                                    <th>카테고리</th>
+                                    <th>과정명</th>
+                                    <th>관심일자</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="num">1</td>
+                                    <td class="category">인문</td>
+                                    <td class="tit tlt">
+                                        <p class="textCut1"> 창조적 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다 협업, 인문에서 답을 얻다</p>
+                                    </td>
+                                    <td class="date2">2021-05-13</td>
+                                </tr>
+                                
+                            </tbody>
+                        </table>
+
+                    </div>
+                    <!-- 페이징 -->
+                    <div class="paginate mt_50">
+                        <div class="paginate_list">
+                            <a href="#" class="pager-link pager-link-data-first">맨 처음 페이지 목록 보기</a>
+                            <a href="#" class="pager-link pager-link-data-prev">이전 페이지 목록 보기</a>
+                            <a href="#" class="pager-link active">1</a>
+                            <a href="#" class="pager-link">2</a>
+                            <a href="#" class="pager-link">3</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">4</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">5</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">6</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">7</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">8</a>
+                            <a href="#" class="pager-link pager-link-data-ellipsis">9</a>
+                            <a href="#" class="pager-link">10</a>
+                            <a href="#" class="pager-link pager-link-data-next">다음 페이지 목록 보기</a>
+                            <a href="#" class="pager-link pager-link-data-last">마지막 페이지 목록 보기</a>
+                        </div>
+                    </div> <!-- //페이징 -->
+                    <!--//tab2-->
+                </div>
+                <!--//tab_container-->
+            </div>
+        </div>
+
+    </div>
+    <!-- //콘텐츠 영역 -->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/sly.js"></script>
+    <script src="./js/printThis.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+
+</body></html>

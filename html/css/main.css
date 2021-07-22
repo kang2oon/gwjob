@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 /* 전체 메인 공통*/
-.main_tit{font-size: 2.4rem;font-family: 's-core_dream5_medium';}
+.main_wrap .main_tit{font-size: 2.4rem;font-family: 's-core_dream5_medium';}
 
 /*자소서 메인 공통*/
 
@@ -486,6 +486,81 @@
 }
 
 
+/* 이러닝 메인 */
+.elearn_main .en_banner{background: url(../images/main/en_main_banner.png) no-repeat #5296fc right 50px bottom;padding: 9rem 10.0rem;border-radius: 20px;overflow: hidden;}
+.elearn_main .en_banner .txt{width: calc(100% - 720px);word-break: keep-all;position: relative;z-index: 5}
+.elearn_main .main_section02{display: flex;justify-content: center}
+.elearn_main .main_section02 > div{background: #004897;color: #fff;text-align: center;width:470px;margin-right: 60px}
+.elearn_main .main_section02 > div:last-child{margin-right: 0}
+.elearn_main .main_section02 > div > a{display: block;width: 100%;height: 100%;}
+.elearn_main .main_section02 > div .top {border-bottom: 1px solid rgba(255, 255, 255, 0.2);position: relative;}
+.elearn_main .main_section02 > div .top p{font-size: 2.4rem;font-weight: bold;padding: 2.0rem 1.5rem;}
+.elearn_main .main_section02 > div .bottom{padding: 2.0rem 1.5rem;}
+.elearn_main .main_section02  .ico{background: url(../images/main/sch_bt.png) no-repeat;width: 24px;height: 24px;position: absolute;right: 45px;top: 50%;transform: translateY(-50%);display: block;}
+
+
+.elearn_main .main_section03{}
+.elearn_main .main_section03 .img{border: 1px solid #c7cee1;position: relative;overflow: hidden;border-radius: 20px;width: 100%;height: 244px;}
+.elearn_main .main_section03 .img img{display: block;width: 100%;height: 100%}
+.elearn_main .main_section03 .img .hover{background: rgba(0, 0, 0, 0.65);color: #fff;position: absolute;left: 0;top: 0;width: 100%;height: 100%;text-align: center;z-index: 2;display:none; }
+.elearn_main .main_section03 .img:hover .hover,
+.elearn_main .main_section03 .img:active .hover,
+.elearn_main .main_section03 .img:focus .hover{display: block;}
+.elearn_main .main_section03 .img .hover .inner{position: absolute;width: 100%;padding: 0 3.0rem;top: 50%;transform: translateY(-50%)}
+.elearn_main .main_section03 .img .hover strong{font-size: 2.0rem;}
+.elearn_main .main_section03 .img .hover .btn{border: 1px solid #fff;padding: 5px 15px;width: auto !important;height: auto !important;display: inline-block !important;}
+.elearn_main .main_section03 .img .hover .btn:hover,
+.elearn_main .main_section03 .img .hover .btn:active,
+.elearn_main .main_section03 .img .hover .btn:focus{background: #fff;color: #333;font-weight: bold}
+.elearn_main .main_section03 .text{margin-top: 3.0rem;text-align: center}
+.elearn_main .main_section03 .text .bold01{margin-bottom: 0.5rem}
+.elearn_main .main_section03 .item{margin: 0 50px 0 0}
+
+.elearn_main .main_section04 {background: #f3f3f3}
+.elearn_main .main_section04 .inner{display: flex;}
+.elearn_main .main_section04 .inner .left{width: 200px}
+.elearn_main .main_section04 .inner .right{width: calc(100% - 200px)}
+
+.tab_slider_wrap {display: flex;justify-content: space-between;align-items: center;}
+.tab_slider ul{list-style: none;margin: 0;padding: 0;height: 100%;position: relative;display: flex;max-width: 1000px}
+.tab_slider li { height: 100%;cursor: pointer;flex: 0 0 auto;margin: 0 10px 0 0}
+.tab_slider li button{min-width: 115px;border: 1px solid #c7cee1;background: #fff;border-radius: 20px;padding: 5px}
+.tab_slider li button.active{border: 1px solid #004897;color: #004897}
+.tab_slider_wrap  button.disabled{opacity: 0.5}
+.tab_slider_wrap > button{display: block;text-indent: -9999px;width: 23px;height: 32px;}
+.tab_slider_wrap > button.prev{background: url(../images/main/tab_slider_prev.png) no-repeat;}
+.tab_slider_wrap > button.next{background: url(../images/main/tab_slider_next.png) no-repeat;}
+
+.imgPost_list:not(.en_slider02,.en_slider03){display: flex;flex-wrap: wrap;}
+.imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width: calc(25% - 22.5px);margin-right: 30px;margin-top: 3.0rem;}
+.imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 0}
+.imgPost_list.imgPost_style01 .imgPost .img{position: relative;border: 1px solid #c7cee1;border-radius: 20px;overflow: hidden;width: 100%; height: 208px;}
+.imgPost_list.imgPost_style01 .imgPost .img .state_tct{position: absolute;right: 10px;top: 10px}
+.imgPost_list.imgPost_style01 .img p{background: rgba(0, 0, 0, 0.65);color: #fff;position: absolute;width: 100%;padding:5px 30px;font-size: 1.3rem;bottom: 0;left: 0;}
+.imgPost_list .imgPost .img a {display: block;width: 100%;height: 100%;}
+.imgPost_list.imgPost_style01 .txt{padding: 15px 10px;}
+.imgPost_list.imgPost_style01 .txt .top{display: flex;color: #555;justify-content: space-between;margin-bottom: 1.0rem;}
+.imgPost_list .imgPost .txt  .tit {font-size: 1.8rem;font-weight: bold;}
+
+.imgPost_list.imgPost_style01.slick-slider .imgPost{padding: 15px}
+.imgPost_list.imgPost_style01.slick-slider .slick-dots{text-align: center}
+.imgPost_list.imgPost_style01.slick-slider .slick-dots li{display: inline-block;width: 20px;height: 20px;border-radius: 50%;background: rgba(186, 194, 215, 0.4);text-indent: -9999px;margin-right: 10px;cursor: pointer}
+.imgPost_list.imgPost_style01.slick-slider .slick-dots li:last-child{margin-right: 0}
+.imgPost_list.imgPost_style01.slick-slider .slick-dots .slick-active{background: rgba(186, 194, 215, 1)}
+
+.imgPost_list.imgPost_style02 .imgPost{border: 1px solid #c7cee1;border-radius: 20px;overflow: hidden}
+.imgPost_list.imgPost_style02 .img{height: 208px;width: 100%;position: relative;}
+.imgPost_list.imgPost_style02 .img p{background: rgba(0, 0, 0, 0.65);color: #fff;position: absolute;padding:5px 30px;right: 0;bottom: 0}
+.imgPost_list.imgPost_style02  .txt{padding:2.0rem 3.0rem}
+
+.imgPost_list.imgPost_style02.slick-slider{width: 95%;margin: auto}
+.imgPost_list.imgPost_style02.slick-slider .slick-arrow{display: block;text-indent: -9999px;position: absolute;width: 23px;height: 32px;}
+.imgPost_list.imgPost_style02.slick-slider .slick-prev{background: url(../images/main/tab_slider_prev.png) no-repeat;left: -2.5%;top: 50%;transform: translateY(-50%)}
+.imgPost_list.imgPost_style02.slick-slider .slick-next{background: url(../images/main/tab_slider_next.png) no-repeat;right: -2.5%;top: 50%;transform: translateY(-50%)}
+
+.imgPost_list.imgPost_style02.slick-slider .imgPost {margin: 15px }
+
+.imgPost_list.imgPost_style02.slick-slider .slick-disabled{opacity: 0.5}
 
 
 /* -------------------------- 반응형 start ------------------------*/
@@ -598,6 +673,15 @@
     .fab_step > div{margin-right: 30px;padding-right: 30px;width: calc(33.333% - 30px)}
 	.fab_step .cont{width: calc(100% - 130px)}
 	.fab_step > div .ico{background-size: contain;width: 100px;height: 100px;margin-right: 30px;background-position: center;}
+    
+    /*이러닝 start */
+    .elearn_main .en_banner{padding:10.0rem 4.0rem;}
+    .elearn_main .en_banner .txt  {width: calc(100% - 400px)}
+    
+    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width: calc(33.333% - 20px)}
+    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 30px}
+    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(3n){margin-right: 0}
+
 }
 
 @media all and (max-width:1024px){
@@ -742,7 +826,29 @@
     .fab_select_wrap .fab_select_inner > div{margin-right: 30px;width: calc(33.333% - 20px)}
     .fab_select_wrap .img{width: 100%;height: 200px}
     .fab_select_area input[type="radio"] + label{width: 100%;}
+    
+    
+     /*이러닝 start */
+    .elearn_main .en_banner{padding:9.0rem 4.0rem;background-size: 450px;background-position: right 20px bottom}
+    .elearn_main .en_banner .txt  {width: calc(100% - 400px)}
+    
+    .elearn_main .main_section02 > div{margin-right: 30px;width: calc(50% - 15px);word-break: keep-all}
+    
+    .elearn_main .main_section03 .item{margin: 0 30px 0 0 !important}
+    
+    .tab_slider{width: 90%;margin: auto}
+    
+    .elearn_main .main_section04 .inner {display: block;}
+    .elearn_main .main_section04 .inner .left{width: 100%;margin-bottom: 5.0rem;display: flex;align-items: flex-end;}
+    .tab_slider li button{min-width: 85px}
+    .elearn_main .main_section04 .inner .left .btn_wrap {margin-left: auto}
+    .elearn_main .main_section04 .inner .left > div p br{display: none}
+    .elearn_main .main_section04 .inner .right{width: 100%;}
+    
+    .tab_slider_wrap > button.prev,.imgPost_list.imgPost_style02.slick-slider .slick-next,  .tab_slider_wrap > button.next,.imgPost_list.imgPost_style02.slick-slider .slick-prev{background-size: 18px;width: 18px;height: 25px}
 	
+    .imgPost_list.imgPost_style02 .img{height: 180px}
+ 
     }
 
 @media all and (max-width:768px){
@@ -775,7 +881,7 @@
     .ai_main .main_section05 .controls button{width: 32px;height: 32px;font-size: 2.0rem}
     .ai_main .main_section05 .right{width:100%}
     .ai_main ul.main-news__items-wrapp li{width:300px;}
-    .frame ul.main-news__items-wrapp li {margin: 0 5px !important}
+    .ai_main .frame ul.main-news__items-wrapp li {margin: 0 5px !important}
     .ai_main .main_section05 .controls_inner{position: absolute;right: 0;top: 10px;}
     .ai_main .main_section05 .controls{padding: 0}
     
@@ -853,6 +959,16 @@
 	.fab_select_wrap .fab_select_inner > div{margin-right: 20px;}
 	.fab_select_wrap .fab_select_area{width: calc(50% - 10px);}
 	.fab_select_wrap .img{height: 150px}
+    
+    
+      /*이러닝 start */
+    .elearn_main .en_banner{padding:8.0rem 4.0rem;background-size: 350px;}
+    .elearn_main .en_banner .txt  {width: calc(100% - 200px)}
+    
+    .imgPost_list.imgPost_style01.slick-slider .slick-dots li{width: 15px;height: 15px}
+    
+    
+    
 }
 
 @media all and (max-width:640px){
@@ -1008,6 +1124,29 @@
     .fab_select_wrap .fab_select_inner {display: block;}
     .fab_select_wrap .fab_select_inner > div{width: 100%;margin-right: 0;margin-bottom: 5.0rem;}
     .fab_select_wrap .fab_select_inner > div:last-child{margin-bottom: 0}
+    
+    
+     /*이러닝 start */
+    .elearn_main .en_banner{padding:5.0rem 3.0rem;background-size: 250px;}
+    .elearn_main .en_banner .txt  {width: calc(100% - 200px)}
+    
+    
+    
+    .elearn_main .main_section02 > div{margin-right: 30px;width: calc(50% - 15px);word-break: keep-all}
+    .elearn_main .main_section02 > div .top p{font-size: 1.8rem;}
+    .elearn_main .main_section02 .ico{right: 1.5rem;background-size: 13px;width: 13px;height: 13px}
+    .elearn_main .main_section02 > div .bottom{font-size: 1.5rem}
+    .imgPost_list.imgPost_style01 .txt .top{display: block;}
+    .imgPost_list.imgPost_style01 .txt .top p:first-child{margin-bottom: 5px}
+    .imgPost_list.imgPost_style01 .imgPost .img{height: 180px}
+    
+    
+     .imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width: calc(50% - 10px);margin-right: 20px;}
+    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 20px}
+    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(3n){margin-right: 20px}
+      .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(2n){margin-right: 0 }
+    
+    
 }
 
 @media all and (max-width:480px){
@@ -1071,6 +1210,19 @@
     .fab_banner {padding:6.0rem 4.0rem;background-size: 200px}
     .fab_banner .txt {width: 100%;margin-bottom: 6.0rem}
     
+    
+    /*이러닝 start */
+    .elearn_main .en_banner{padding:5.0rem 3.0rem;background-size: 200px;background-position: right 10px bottom}
+    .elearn_main .en_banner .txt  {width: 100%;margin-bottom: 40px}
+    
+    .tab_slider{width: calc(100% - 60px)}
+    .tab_slider li button{min-width: auto;padding: 5px 15px}
+    .tab_slider li {margin: 0 5px 0 0}
+    .tab_slider_wrap > button.prev, .imgPost_list.imgPost_style02.slick-slider .slick-next, .tab_slider_wrap > button.next, .imgPost_list.imgPost_style02.slick-slider .slick-prev{background-size: 15px;width: 15px;height: 20px}
+    .imgPost_list.imgPost_style01.slick-slider .imgPost {padding: 0 15px}
+    
+      .imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width:100%;margin-right:0}
+    
 }
     
     
@@ -1082,6 +1234,13 @@
 		
 		/*직업선호도 진단 메인*/
 		.job_diag_main .main_section03 .job_selct_wrap .img_border{height: 100px}
+        
+        
+        .elearn_main .main_section02{display: block;}
+        .elearn_main .main_section02 > div {margin-right: 0;width: 100%;}
+        .elearn_main .main_section02 > div:first-child{margin-bottom: 2.0rem}
+        
+        .elearn_main .frame ul.main-news__items-wrapp li{width: 280px}
         
     }
     

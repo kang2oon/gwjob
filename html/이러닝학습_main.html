@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/sub.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/scroll_slider.css">
+</head>
+
+<body>
+    <!-- 콘텐츠 영역 -->
+    <div id="contents" class="elearn_main main_wrap">
+        <div class="inner">
+            <!--main_section01-->
+            <div class="main_section01 section">
+                <div class="en_banner mt_30">
+                    <div class="txt white">
+                        <p class="f18">
+                            무료교육도 듣고~ 수료증도 받고~
+                        </p>
+                        <p class="bold02 f40 mt_10">이러닝 학습</p>
+                    </div>
+                </div>
+            </div>
+            <!--//main_section01-->
+
+            <!--main_section02-->
+            <div class="main_section02 section">
+                <div>
+                    <a href="#" onClick="javascript:openModal('modal1');">
+                        <div class="top">
+                            <p>교육과정 검색</p>
+                            <span class="ico"></span>
+                        </div>
+                        <p class="bottom">
+                            관심있는 분야의 교육을 검색해 보세요.
+                        </p>
+                    </a>
+                </div>
+                <div>
+                    <a href="#">
+                        <div class="top">
+                            <p>나의 강의실</p>
+                        </div>
+                        <p class="bottom">
+                            나의 강의실에서 수강현황을 확인하실 수 있습니다
+                        </p>
+                    </a>
+                </div>
+            </div>
+            <!--//main_section02-->
+
+            <div class="popup_area modal1">
+                <div class="shadow"></div>
+                <div class="popup fixed wd450">
+                    <div class="popup_top clear s_popup_top">
+                        <div class="txt fl">카테고리 선택</div>
+                        <a href="#" class="close fr" onclick="close_pop()">닫기</a>
+                    </div>
+                    <div class="popup_inner">
+                        <ul class="harf_list">
+                            <li class="check_style01">
+                                <input type="checkbox" id="c1"><label for="c1">카테고리</label>
+                            </li>
+                            <li class="check_style01">
+                                <input type="checkbox" id="c2"><label for="c2">카테고리</label>
+                            </li>
+                            <li class="check_style01">
+                                <input type="checkbox" id="c3"><label for="c3">카테고리</label>
+                            </li>
+                            <li class="check_style01">
+                                <input type="checkbox" id="c4"><label for="c4">카테고리</label>
+                            </li>
+                            <li class="check_style01">
+                                <input type="checkbox" id="c5"><label for="c5">카테고리</label>
+                            </li>
+                            <li class="check_style01">
+                                <input type="checkbox" id="c6"><label for="c6">카테고리</label>
+                            </li>
+                        </ul>
+                        <div class="btn_wrap mt_60 tct">
+                            <a href="#" class="btn_style01 btn_blue btn">검색</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!--main_section03-->
+            <div class="main_section03 section">
+                <h3 class="main_tit tct">
+                    <span class="blue02"> 신규</span>과정
+                </h3>
+                <p class="f18 tct mt_10 gray02">새롭게 올라온 과정을 확인해보세요
+                </p>
+
+                <div class="en_slider_wrap">
+
+                    <div class="controls_inner">
+                        <div class="controls">
+                            <button class="btn prev">←</button>
+                            <button class="btn next">→
+                            </button>
+                        </div>
+                    </div>
+                    <div class="en_slider frame" id="basic">
+                        <ul class="main-news__items-wrapp">
+                            <li class="item">
+                                <!--img-->
+                                <div class="img imgFill">
+                                    <img src="./images/main/ai_main_slider_img01.png" alt="">
+                                    <div class="hover">
+                                        <div class="inner">
+                                            <strong>직무/경영기획</strong>
+                                            <div class="btn_wrap mt_20">
+                                                <a href="#" class="btn ">과정상세보기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//img-->
+                                <div class="text">
+                                    <p class="bold01 f18 textCut1">신영일의 마음을 사로잡는는</p>
+                                    <p class="f14 gray02 textCut2">원할한 커뮤니케이션은 성화하고,
+                                        성과를 낼 수 있는 가장 중요한가장 중요한가장 중요한가장 중요한요한가장 중요한요한가장 중요한</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <!--img-->
+                                <div class="img imgFill">
+                                    <img src="./images/main/ai_main_slider_img04.png" alt="">
+                                    <div class="hover">
+                                        <div class="inner">
+                                            <strong>직무/경영기획</strong>
+                                            <div class="btn_wrap mt_20">
+                                                <a href="#" class="btn ">과정상세보기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//img-->
+                                <div class="text">
+                                    <p class="bold01 f18 textCut1">신영일의 마음을 사로잡는는</p>
+                                    <p class="f14 gray02 textCut2">원할한 커뮤니케이션은 성화하고,
+                                        성과를 낼 수 있는 가장 중요한가장 중요한가장 중요한가장 중요한요한가장 중요한요한가장 중요한</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <!--img-->
+                                <div class="img imgFill">
+                                    <img src="./images/main/ai_main_slider_img02.png" alt="">
+                                    <div class="hover">
+                                        <div class="inner">
+                                            <strong>직무/경영기획</strong>
+                                            <div class="btn_wrap mt_20">
+                                                <a href="#" class="btn ">과정상세보기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//img-->
+                                <div class="text">
+                                    <p class="bold01 f18 textCut1">신영일의 마음을 사로잡는는</p>
+                                    <p class="f14 gray02 textCut2">원할한 커뮤니케이션은 성화하고,
+                                        성과를 낼 수 있는 가장 중요한가장 중요한가장 중요한가장 중요한요한가장 중요한요한가장 중요한</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <!--img-->
+                                <div class="img imgFill">
+                                    <img src="./images/main/ai_main_slider_img03.png" alt="">
+                                    <div class="hover">
+                                        <div class="inner">
+                                            <strong>직무/경영기획</strong>
+                                            <div class="btn_wrap mt_20">
+                                                <a href="#" class="btn ">과정상세보기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//img-->
+                                <div class="text">
+                                    <p class="bold01 f18 textCut1">레고 스토리, 전통과 혁신을 조립하다</p>
+                                    <p class="f14 gray02 textCut2">원할한 커뮤니케이션은 성화하고,
+                                        성과를 낼 수 있는 가장 중요한가장 중요한가장 중요한가장 중요한요한가장 중요한요한가장 중요한</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <!--img-->
+                                <div class="img imgFill">
+                                    <img src="./images/main/ai_main_slider_img04.png" alt="">
+                                    <div class="hover">
+                                        <div class="inner">
+                                            <strong>직무/경영기획</strong>
+                                            <div class="btn_wrap mt_20">
+                                                <a href="#" class="btn ">과정상세보기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//img-->
+                                <div class="text">
+                                    <p class="bold01 f18 textCut1">신영일의 마음을 사로잡는는</p>
+                                    <p class="f14 gray02 textCut2">원할한 커뮤니케이션은 성화하고,
+                                        성과를 낼 수 있는 가장 중요한가장 중요한가장 중요한가장 중요한요한가장 중요한요한가장 중요한</p>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <!--img-->
+                                <div class="img imgFill">
+                                    <img src="./images/main/ai_main_slider_img01.png" alt="">
+                                    <div class="hover">
+                                        <div class="inner">
+                                            <strong>직무/경영기획</strong>
+                                            <div class="btn_wrap mt_20">
+                                                <a href="#" class="btn ">과정상세보기</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//img-->
+                                <div class="text">
+                                    <p class="bold01 f18 textCut1">신영일의 마음을 사로잡는는</p>
+                                    <p class="f14 gray02 textCut2">원할한 커뮤니케이션은 성화하고,
+                                        성과를 낼 수 있는 가장 중요한가장 중요한가장 중요한가장 중요한요한가장 중요한요한가장 중요한</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                        <!--//en_slider_article-->
+                    </div>
+                </div>
+            </div>
+            <!--//main_section03-->
+        </div>
+        <!--//inner-->
+
+
+        <!--main_section04-->
+        <div class="main_section04 section_pd">
+            <div class="inner">
+                <div class="left">
+                    <div>
+                        <h3 class="main_tit">
+                            <span class="blue02"> 온라인 </span>교육
+                        </h3>
+                        <p class="f18 mt_15 gray02">교육듣고 <br />
+                            수료증도받고
+                        </p>
+                    </div>
+                    <div class="btn_wrap mt_30">
+                        <a href="#" class="btn_style05 btn_blue btn">교육 더보기 +</a>
+                    </div>
+                </div>
+
+                <div class="right">
+                    <!--tab_slider-->
+                    <div class="tab_slider_wrap  mb_40">
+                        <button type="button" class="prev">이전</button>
+                        <div class="tab_slider">
+                            <ul>
+                                <li class='item'>
+                                    <button type="button">사회과학</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">인문</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">교육일반</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">창업</button>
+                                </li>
+                                <li>
+                                    <button type="button">경영</button>
+                                </li>
+                                <li>
+                                    <button type="button">의료</button>
+                                </li>
+                                <li>
+                                    <button type="button">음악</button>
+                                </li>
+                                <li>
+                                    <button type="button">기타</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">사회과학</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">인문</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">교육일반</button>
+                                </li>
+                                <li class='item'>
+                                    <button type="button">창업</button>
+                                </li>
+                                <li>
+                                    <button type="button">경영</button>
+                                </li>
+                                <li>
+                                    <button type="button">의료</button>
+                                </li>
+                                <li>
+                                    <button type="button">음악</button>
+                                </li>
+                            </ul>
+                        </div>
+                        <button type="button" class="next">다음</button>
+                    </div>
+                    <!--//tab_slider-->
+
+
+                    <div class="imgPost_list imgPost_style01 en_slider02">
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_blue">수강중</span>
+                                    <img src="./images/main/en_img01.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    소셜벤처 투어 - 창업실무
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <img src="./images/main/en_img02.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <img src="./images/main/en_img03.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_pink">수강완료</span>
+                                    <img src="./images/main/en_img04.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_blue">수강중</span>
+                                    <img src="./images/main/en_img01.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    소셜벤처 투어 - 창업실무
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <img src="./images/main/en_img02.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <img src="./images/main/en_img03.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_pink">수강완료</span>
+                                    <img src="./images/main/en_img04.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_blue">수강중</span>
+                                    <img src="./images/main/en_img01.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    소셜벤처 투어 - 창업실무
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_pink">수강완료</span>
+                                    <img src="./images/main/en_img04.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_blue">수강중</span>
+                                    <img src="./images/main/en_img01.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    소셜벤처 투어 - 창업실무
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_pink">수강완료</span>
+                                    <img src="./images/main/en_img04.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_blue">수강중</span>
+                                    <img src="./images/main/en_img01.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    소셜벤처 투어 - 창업실무
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_pink">수강완료</span>
+                                    <img src="./images/main/en_img04.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    KOICA와 함께하는 국제개발
+                                    협력 첫걸음
+
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+                        <div class="imgPost">
+                            <div class="img imgFill">
+                                <a href="#">
+                                    <span class="state_tct st_blue">수강중</span>
+                                    <img src="./images/main/en_img01.png" alt="">
+                                    <p>영상시간</p>
+                                </a>
+                            </div>
+                            <!--//img-->
+                            <div class="txt">
+                                <div class="top">
+                                    <p>사회과학</p>
+                                    <p>조회수:2,314</p>
+                                </div>
+                                <a href="#" class="tit textCut2">
+                                    소셜벤처 투어 - 창업실무
+                                </a>
+                            </div>
+                            <!--//txt-->
+                        </div>
+
+
+                    </div>
+                    <!--//imgPost-->
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+            <!--//main_section04-->
+        </div>
+        <!--//main_section04-->
+
+
+
+        <!--main_section05-->
+        <div class="main_section05 section">
+            <div class="inner">
+                <h3 class="main_tit tct">
+                    <span class="blue02">무료</span> 교육
+                </h3>
+                <p class="f18 tct mt_10 gray02">본 과정은 K-MOOC과 연계하여 제공하는 과정입니다. <br />
+                    해당 강의는 K-MOOC (홈페이지)에서 이용하실 수 있습니다.
+                </p>
+
+                <div class="btn_wrap trt mt_40 mb_40">
+                    <a href="#" class="btn_style05 btn_blue btn">교육 더보기 +</a>
+                </div>
+                <div class="imgPost_list en_slider03 imgPost_style02">
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img05.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                소셜벤처 투어 - 창업실무소셜벤처소셜벤처 투어 - 창업실무소셜벤처 소셜벤처 투어 - 창업실무소셜벤처 소셜벤처 투어 - 창업실무소셜벤처
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img06.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                잡아라~ JOB 청년취업
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img07.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                스타트업 공모전
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img08.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                포트폴리오 만들기
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img05.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                소셜벤처 투어 - 창업실무소셜벤처
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img06.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                잡아라~ JOB 청년취업
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img07.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                스타트업 공모전
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                    <div class="imgPost">
+                        <div class="img imgFill">
+                            <a href="#">
+                                <img src="./images/main/en_img08.png" alt="">
+                                <p>영상시간</p>
+                            </a>
+                        </div>
+                        <!--//img-->
+                        <div class="txt">
+                            <a href="#" class="tit textCut3">
+                                포트폴리오 만들기
+                            </a>
+                        </div>
+                        <!--//txt-->
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+        <!--//main_section05-->
+
+
+
+
+
+
+
+    </div>
+    <!-- //콘텐츠 영역 -->
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+    <script src="./js/sly.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+</body></html>
