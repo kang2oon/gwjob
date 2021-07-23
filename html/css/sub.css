@@ -3,7 +3,7 @@
 
 /* 서브 공통 */
 .sub_wrap{background: #d0e5ff;padding: 6.0rem 0;position: relative;}
-.sub_wrap  .section:first-child{margin-top:0}
+.sub_wrap >  .section:first-child{margin-top:0}
 .sub_wrap.full_sw{background-color: transparent;padding: 0;margin-top:-40px}
 .sub_wrap.bg02{background: #e5ecff}
 .sub_wrap.bg03{background: #daeeff}
@@ -1237,6 +1237,7 @@ width: calc(100% - 170px);
 .foa_chart_wrap .legend span:last-child:before{content: '';width: 10px;height: 10px;background: #004897;margin-right: 10px}
 .c3-axis-x .tick line {stroke:#fff}
 
+
 /* 이러닝학습 start */
 .en_wrap{display: flex;align-items: flex-start;margin-top: 5.0rem}
 .en_wrap .en_menu{width: 200px;margin-right: 60px;background: #004897;color: #fff;}
@@ -1331,6 +1332,7 @@ width: calc(100% - 170px);
 .comp_print .ico{display: block;background: url(../images/sub/comp_print.png);width: 130px;height: 114px;}
 
 
+
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
     
@@ -1423,21 +1425,20 @@ width: calc(100% - 170px);
     .foa_chart_wrap text{font-size: 1.1rem;}
     
     
-	/*이러닝학습*/
+    /*이러닝학습*/
     .en_list_top .left p {width: 80px;}
     .en_list_top .left ul{width: calc(100% - 100px)}
     .en_list_top .left{width: calc(100% - 140px)}
-
+    
     .lp_table {width: 100%;overflow-x: auto;}
     .lp_table table{width: 1400px;}
-
+    
     .ctof_study .w20 {width: 25%}
-
-
+    
+    
     .learning_status_wrap .left .txt{margin-right: 0;width: 130px;font-size: 2.2rem;}
     .learning_status_wrap .left {width: 290px;margin-right: 30px;}
     .learning_status_wrap .right{width: calc(100% - 290px)}
-}
 }
 
 
@@ -1628,12 +1629,13 @@ width: calc(100% - 170px);
     .foa_chart_wrap .foa_chart_area{width: 100%;overflow-x: auto}
     .foa_chart_wrap .foa_chrat {width: 1024px}
     
-	/*이러닝학습 start */
+    
+    /*이러닝학습 start */
     .en_wrap{display: block;}
     .en_wrap .en_menu{display: none}
     .en_wrap .en_cont{width: 100%;}
-
-
+	
+    
       /*이러닝학습*/
     .en_list_top {display: block;}
     .en_list_top .left{width: 100%;margin-bottom: 10px;display: block;}
@@ -1641,8 +1643,8 @@ width: calc(100% - 170px);
     .en_list_top .left ul{width:100%}
     .en_list_top .select_wrap:after{content: '';display: block;clear:both}
     .en_list_top .select_wrap  select{float: right} 
-
-
+    
+    
     .border_tabs04 li {width: auto;flex:1}
     .lp_table table,
     .lp_table table tr,
@@ -1666,26 +1668,26 @@ width: calc(100% - 170px);
     .lp_table table td.date2:before{content: '관심일자 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.btn1:before{content: '학습하기';display: inline-block;margin-bottom: 1.0rem;font-weight: bold;color: #000}
      .lp_table table td.btn2:before{content: '수료증 출력';display: inline-block;margin-bottom: 1.0rem;font-weight: bold;color: #000}
-
+    
     .lp_table table td.count:before{content: '학습횟수 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.time:before{content: '학습시간 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.count:before{content: '학습횟수 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.whether:before{content: '학습여부 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.state2:before{content: '상태 ';display: inline-block;font-weight: bold;color: #000;margin-bottom: 1.0rem}
-
-
+    
+    
     .lp_table table .btn_wrap a{font-size: 1.4rem;padding: 7px 12px}
     .ern_view_wrap .top {display: block;}
     .ern_view_wrap .top .left{width: 100%;margin-right: 0;}
     .ern_view_wrap .top .right{width: 100%;margin-top: 3.0rem;}
     .ern_view_wrap .top .right:after{content: '';display: block;clear: both;}
-
+    
     .ern_view_wrap .like{position: static;float: right;margin-top: -10px}
     .ern_view_wrap .top .right .btn_wrap{position: static;text-align: center;}
-
+    
      .ctof_study .w5 {width: 10%}    
      .ctof_study .w20 {width: 30%}    
-
+    
     .learning_status_wrap{display: block;}
     .learning_status_wrap .left {width: 100%;margin-bottom: 4.0rem;flex-direction: column}
     .learning_status_wrap .left .txt{width: 100%;margin-bottom: 2.0rem;text-align: center}
@@ -1693,7 +1695,8 @@ width: calc(100% - 170px);
     .progress_wrap{width: 160px;}
     .learning_status_wrap .right{width: calc(100% - 290px)}
     .learning_status_wrap .right{width: 100%;}
-
+    
+    
     
 }
 
@@ -1922,27 +1925,26 @@ width: calc(100% - 170px);
     /*창업역량진단 결과보기*/
     .foa_chart_wrap .foa_chrat{min-height: 250px}
     .foa_chart_wrap .legend span{font-size: 1.4rem}
-	
-	/*이러닝학습*/
+    
+    /*이러닝학습*/
     .en_scr{}
     .en_scr label{width:60px}
     .en_scr label input{width: calc(100% - 180px)}
     .en_scr .btn{width: 100px;}
-
+    
     .esub_tit{display: block;}
     .esub_tit > span{width: auto;margin-bottom: 2.0rem;display: inline-block;padding: .7rem 1.5rem;font-size: 1.5rem}
     .esub_tit p{width: 100% !important;font-size: 2.0rem}
-
+    
     .ctof_study .w5 {width: 10%}    
     .ctof_study .w20 {width: 30%} 
     .ctof_study .btn_wrap .btn{padding: 7px 10px}
-
+    
     .learning_status_wrap{padding: 3.0rem}
     .learning_status_wrap .right{display: block;}
     .learning_status_wrap .learning_status{width: 100%;margin-bottom: 4.0rem;}
     .comp_print{margin: auto;}
     .comp_print .ico{background-size: 80px;background-repeat: no-repeat;;width: 80px;height: 80px;margin: auto;}
-
 	
 }
 
@@ -2160,8 +2162,18 @@ width: calc(100% - 170px);
 	.fa_chart_wrap .legend {margin-top: 2.0rem}
 	.fa_chart_wrap .legend span{font-size: 1.4rem}
 	
+    .border_tabs04 li{padding: 1.0rem;}
+    .border_tabs04 li a{font-size: 1.6rem;}
+    .lp_top{display: block;}
+    .lp_top:after{content: '';display: block;clear: both;}
+    .lp_top select{float: right;margin-top: 1.0rem}	
+    
+      
+    .ctof_study .w20 {width: 30%} 
+    .ctof_study .btn_wrap .btn{padding: 7px 10px;display: block;margin-right: 0;margin-bottom: 1.0rem}
+    .ctof_study .btn_wrap .btn:last-child{margin-bottom: 0}
 	
-	
+    .learning_status_wrap .learning_status p.f18{font-size: 1.6rem}
 }
 
 
@@ -2311,13 +2323,14 @@ width: calc(100% - 170px);
 	.foa_result_wrap .text .top ul {text-align: left !important}
 	.tn_chart_wrap .tnr_right {width: 100%;max-width: 320px}
 	.tn_chart_wrap .tn_chrat {min-height: 250px}
-	
-	   /*이러닝학습*/
+    
+    
+      /*이러닝학습*/
     .en_scr{flex-wrap: wrap;}
     .en_scr label{width:100%;display: block;margin-bottom: 1.0rem}
     .en_scr input{width: calc(100% - 90px);margin-left: 0;}
     .en_scr .btn{width: 80px;}
-
+    
     .ern_view_wrap .top .right li{display: block;}
     .info_list strong{display: block;margin-bottom: 1.5rem}
     .info_list span {display: block;width: 100%;}
@@ -2328,10 +2341,9 @@ width: calc(100% - 170px);
     .ern_view_wrap .ctof_study .time{display: inline-block;margin-top: 1.0rem;}
     .ctof_study .btn_wrap .btn{padding: 7px 5px;display: block;margin-right: 0;margin-bottom: 1.0rem;font-size: 1.5rem}
     .ctof_study .btn_wrap .btn:last-child{margin-bottom: 0}
-
+    
     .learning_status_wrap .learning_status {display: block;}
     .learning_status_wrap .learning_status  > div {margin-right: 0;margin-bottom: 2.0rem}
     .learning_status_wrap .learning_status  > div:last-child{margin-bottom: 0}
 
 }
-
