@@ -65,7 +65,12 @@
                     </div>
                     <!--//진도율, 학습시간 -->
                     <div class="comp_print">
-                        <span class="ico"></span>
+                        <div class="ico_item">
+									<div class="ico_bg">
+										<span class="ico" style="height: 80%">
+										</span>
+									</div>
+								</div>
                         <div class="btn_wrap tct mt_20">
                             <button type="button" class="btn_style05 btn_blue btn">수료증 출력</button>
                         </div>
@@ -157,25 +162,23 @@
             <div class="btn_wrap tct">
                 <a href="#" class="btn_style05 btn_gray02 btn">목록으로</a>
             </div>
-
+            
+        <!--팝업-->
+        <div class="popup_area" style="display: none">
+        	<div class="shadow"></div>
+        	<div class="popup wd400">
+        		<div class="popup_inner">
+        			<p class="f18 mt_5 tct">수료 조건이 충족되지 않았습니다.<br />
+        				강의 수료 후 다시 클릭해주세요.</p>
+        			<hr class="dotted_line mt_15 mb_15">
+        			<div class="btn_wrap mt_20 tct">
+        				<a href="#" class="btn_style01 btn_blue btn" onclick="close_pop();">확인</a>
+        			</div>
+        		</div>
+        	</div>
         </div>
-        
-        
-         <!--팝업-->
-                <div class="popup_area" style="display: none">
-                    <div class="shadow"></div>
-                    <div class="popup wd400">
-                        <div class="popup_inner">
-                            <p class="f18 mt_5 tct">수료 조건이 충족되지 않았습니다.<br />
-강의 수료 후 다시 클릭해주세요.</p>
-                            <hr class="dotted_line mt_15 mb_15">
-                            <div class="btn_wrap mt_20 tct">
-                                <a href="#" class="btn_style01 btn_blue btn" onclick="close_pop();">확인</a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--//팝업-->
+        <!--//팝업-->
+        </div>
         
     </div>
     <!-- //콘텐츠 영역 -->
