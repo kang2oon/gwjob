@@ -797,11 +797,11 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .btn_wrap .btn_one .btn,
 .btn_wrap .btn_one .btn,
 .btn_wrap .btn_one .btn{font-size: 1.5rem !important}
-    .btn_wrap .btn_three .btn.wd180{min-width: inherit}
-    .btn_wrap .btn_one .btn_prev span:before{left: -15px}
+.btn_wrap .btn_three .btn.wd180{min-width: inherit}
+.btn_wrap .btn_one .btn_prev span:before{left: -15px}
 	
 	
-	/* 직업선호도 진단서비스 진단결과 */
-	.job_type_wrap .job_type_area{display: block;}
-	.job_type_wrap .job_type_area .cont{width: 100%;margin-left: 0;margin-top: 10px;}
+/* 직업선호도 진단서비스 진단결과 */
+.job_type_wrap .job_type_area{display: block;}
+.job_type_wrap .job_type_area .cont{width: 100%;margin-left: 0;margin-top: 10px;}
 }

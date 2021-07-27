@@ -1253,7 +1253,7 @@ width: calc(100% - 170px);
 .en_wrap .en_cont{width: calc(100% - 260px)}
 .esub_tit{font-size: 2.4rem;border-bottom: 1px dotted #c7cee1;padding-bottom: 2.0rem;margin-bottom: 2.0rem;display: flex;align-items: center;}
 .esub_tit > span{background: #004897;color: #fff;font-size: 1.7rem;padding: 10px 20px;border-radius: 20px;margin-right: 2.0rem;text-align: center;width: 140px}
-.esub_tit .right{font-size: 1.8rem;margin-left: auto;font-style: normal}
+.esub_tit .right{font-size: 1.8rem;margin-left: auto;font-style: normal;font-weight: 300}
 
 .esub_tit:not(.in_right) p{width: calc(100% - 140px);}
 .esub_tit.in_right p{width: calc(100% - 470px);}
@@ -1288,6 +1288,18 @@ width: calc(100% - 170px);
 .border_tabs04 li:first-child{border-left: 1px solid #cbcbcb}
 .border_tabs04 li a{font-size: 1.8rem;display: block;width: 100%;height: 100%;}
 .border_tabs04 li.active{color: #004897;border: 1px solid #004897;font-weight: bold;}
+.border_tabs04 li:hover,
+.border_tabs04 li:active,
+.border_tabs04 li:focus {color: #004897;border: 1px solid #004897;font-weight: bold;}
+
+.border_tabs05{display: flex;}
+.border_tabs05 li{border: 1px solid #cbcbcb;text-align: center;padding: 1.5rem;border-left: 0;width: 25%}
+.border_tabs05 li:first-child{border-left: 1px solid #cbcbcb}
+.border_tabs05 li a{font-size: 1.8rem;display: block;width: 100%;height: 100%;}
+.border_tabs05 li.active{color: #fff;border: 1px solid #3750f3;font-weight: bold;background: #3750f3}
+.border_tabs05 li:hover,
+.border_tabs05 li:active,
+.border_tabs05 li:focus {color: #fff;border: 1px solid #3750f3;font-weight: bold;background: #3750f3}
 
 .ern_view_wrap .ev_cont{}
 .ern_view_wrap .ev_cont h3{font-size: 1.8rem;margin-bottom: 1.0rem}
@@ -1424,6 +1436,12 @@ width: calc(100% - 170px);
 .my_sintro ul input[type="text"]{border-radius: 0; width: 100%;}
 .my_sintro ul textarea{width: 100%;resize: none;border-radius: 0;padding: 10px}
 
+/*개인 마이페이지 시작*/
+.mypage_diag{display: flex;justify-content: space-between;align-items:flex-start;}
+.mypage_diag .btn_wrap{display: inline-block;margin-left: 1.5rem;}
+.mypage_diag table{width: calc(100% - 200px);}
+.mypage_diag .diagnose_btn{background: #ff982a;color: #fff;text-align: center;padding: 30px 40px;font-size: 2.0rem;}
+.mypage_diag .diagnose_btn span {}
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -1747,6 +1765,7 @@ width: calc(100% - 170px);
     
     
     .border_tabs04 li {width: auto;flex:1}
+    .border_tabs05 li {width: auto;flex:1}
     .lp_table table,
     .lp_table table tr,
     .lp_table table th,
@@ -2095,6 +2114,9 @@ width: calc(100% - 170px);
 	.job_post_sch02 > div label.w_auto{margin-right: 0;}
 	
 	.notify1.new_notify1 article {padding: 30px}
+	
+	.mypage_diag table {width: calc(100% - 150px)}
+	.mypage_diag .diagnose_btn{font-size: 1.8rem;padding: 2.0rem 3.0rem}
 }
 
 @media all and (max-width:640px){
@@ -2288,7 +2310,7 @@ width: calc(100% - 170px);
 	.ja_diag .cont_wrap .cont{margin-bottom: 3.0rem;padding-bottom: 3.0rem;}
 	
 	
-			/*취업준비도진단 서비스 결과보기*/
+	/*취업준비도진단 서비스 결과보기*/
 	.jr_result_top .tit {width: 100px;}
 	.jr_result_top .tit p{}
 	.jr_result_top .cont{width: calc(100% - 100px)}
@@ -2313,6 +2335,8 @@ width: calc(100% - 170px);
 	
     .border_tabs04 li{padding: 1.0rem;}
     .border_tabs04 li a{font-size: 1.6rem;}
+	  .border_tabs05 li{padding: 1.0rem;}
+    .border_tabs05 li a{font-size: 1.6rem;}
     .lp_top{display: block;}
     .lp_top:after{content: '';display: block;clear: both;}
     .lp_top select{float: right;margin-top: 1.0rem}	
@@ -2336,6 +2360,12 @@ width: calc(100% - 170px);
 	.job_post_sch02 > div ul li input{width: 100%}
 	
 	.sub_navi{display: none}
+	
+	.mypage_diag {flex-direction: column;margin-bottom: 4.0rem;}
+	.mypage_diag table {width:100%;;margin-bottom: 2.0rem;}
+	.mypage_diag .diagnose_btn{font-size: 1.6rem;padding: 1.0rem 3.0rem;margin: auto;}
+	.mypage_diag .btn_wrap{display: block;margin-top: 1.0rem;margin-left: 0}
+	.mypage_diag .btn_wrap a {font-size: 1.4rem}
 }
 
 
