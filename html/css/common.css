@@ -201,7 +201,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 
 
 /* btn style*/
-.btn_wrap{}
+.btn_wrap > *{vertical-align: middle;}
 .btn_wrap .btn_style01{font-size: 1.6rem;border-radius: 20px;padding: 4px 40px;font-family: 's-core_dream5_medium',sans-serif;display: inline-block}
 .btn_wrap .btn_style02{font-size: 1.7rem;border-radius: 20px;padding: 7px 40px;text-align: center;min-width: 140px;font-family: 's-core_dream5_medium',sans-serif;display: inline-block}
 .btn_wrap .btn_style03{font-size: 1.4rem;border-radius: 3px;padding: 2px 10px;display: inline-block}
