@@ -1341,7 +1341,7 @@ width: calc(100% - 170px);
 .notify1.new_notify1 article:nth-child(1){background: url(../images/common/cp_mypage_img01.png) no-repeat center !important;background-size: cover !important}
 .notify1.new_notify1 article:nth-child(2){background: url(../images/common/cp_mypage_img02.png) no-repeat center !important;background-size: cover !important}
 .notify1.new_notify1 article:nth-child(3){background: url(../images/common/cp_mypage_img03.png) no-repeat center !important;background-size: cover !important}
-.notify1.new_notify1 article > a {position: static;}
+.notify1.new_notify1 article > a {position: static;transform: none;}
 .notify1.new_notify1 article  .arrow{position: absolute;right: 30px;top: 50%;transform: translateY(-50%);}
 .notify1.new_notify1 article > a:hover p{text-decoration: underline}
 
