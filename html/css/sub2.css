@@ -257,9 +257,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .btn_wrap .btn_pink{background: #ff1b66;color: #fff;}
 .btn_wrap .btn_pink02{background: #ff00e4;color: #fff;}
 .btn_wrap .btn_gray{background: #949494;color: #fff;}
-.btn_wrap .btn_gray02{background: #333;color: #fff}
-.btn_wrap .btn_gray03{background: #f9f9f9;color:#666;border: 1px solid #dcdcdc}
-.btn_wrap .btn_gray04{background: #636363;color:#fff;}
+.btn_wrap .btn_gray02{background: #333;color: #fff;}
 .btn_wrap .btn_orange{background: #ff4e4a;color: #fff;}
 .btn_wrap .wd180 {width: 180px;text-align: center;padding-left: 10px;padding-right: 10px;}
 
@@ -363,17 +361,6 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
 .table_style08 td:first-child{border-left: 0}
 .table_style08 td:last-child{border-right: 0}
 .table_style08 th {font-size: 1.6rem;color: #666;background: #f1f4fd;} 
-
-.table_style09{width: 100%;border-collapse: collapse;table-layout: fixed}
-.table_style09 th{background: #f7f7f7;color:#466395;font-size: 1.4rem;padding: 10px;text-align: center;border:  0 !important;}
-.table_style09 tr{border-bottom: 3px solid #fff !important}
-.table_style09 td {padding: 10px;border: 0 !important;font-size: 1.4rem;}
-
-.table_style10 {border-top: 3px solid #000; background: #fff;width: 100%;border-collapse: collapse;}
-.table_style10 th {background: #f7f7f7; padding: 15px 0; border: 1px solid #e0e0e0; border-left: 0; font-weight: 500;}
-.table_style10 td {padding: 15px; border: 1px solid #e0e0e0; border-right: 0; position: relative;font-size: 1.5rem}
-
-.table_style10{}
 
 /*말줄임*/
 .textCut1{display: block;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
@@ -768,8 +755,7 @@ input[type="text"].border_input{border: 1px solid #c7cee1;padding: 7px 15px;bord
     .btn_wrap02 > div:first-child{margin-bottom: 20px}
     .btn_wrap .wd180{width: 125px;padding: 7px 5px}
     .btn_wrap02 .btn_one {float: none;width: 100%;display: flex;}
-    .btn_wrap .btn_style02 {min-width: 80px;padding: 7px 15px;font-size: 1.5rem;width:auto;}
-	.btn_wrap .more_btn span:before{position: static;display: inline-block;transform: none;margin-right: 10px}
+    .btn_wrap .btn_style02:not(.more_btn) {min-width: 80px;padding: 7px 15px;font-size: 1.5rem;width:auto;}
     .btn_wrap02 .btn_one .btn{width: calc(33.333% - 5px)}
     .btn_wrap .btn_three {display: flex;width: 100%; }
     .btn_wrap .btn_three .btn{flex: 1}

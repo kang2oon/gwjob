@@ -469,8 +469,7 @@ $(document).ready(function () {
 
     //직업역량진단 더보기
     $('.ja_diag .more_btn').click(function () {
-        $(this).parent().toggleClass('active');
-        $(this).parent().parent().parent().parent().parent().siblings().find('.more').removeClass('active')
+        $(this).parent().toggleClass('active'); $(this).parent().parent().parent().parent().parent().siblings().find('.more').removeClass('active')
     });
 
     //진단 결과 더보기
@@ -822,6 +821,18 @@ $(document).ready(function () {
             })(j);
         }
     })();
+	
+	
+	    // 사전질문 추가
+    $('.qusetion_cont02_wrap .q_add').on('click', function () {
+        $('.qusetion_cont02_wrap').children('.qusetion_cont02').children().append('<li><input type="text" placeholder="사전질문을 입력해주세요." class="w100 br_none"></li>')
+    });
+
+    // 사전질문 삭제
+    $('.qusetion_cont02_wrap .q_remove').on('click', function () {
+        $(this).parent().parent().parent().find('.qusetion_cont02').find('ul li:last-child').remove();
+    });
+	
 })
 
 

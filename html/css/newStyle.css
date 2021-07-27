@@ -2,7 +2,6 @@
 
 /* 레이아웃 공통 */
 html, body{position:relative; width:100%;}
-body{color:#111; font-size:16px; line-height:1.6; font-family:'S-CoreDream', sans-serif; word-break:break-all;letter-spacing:-1px;}
 main{display:block;}
 .confirmIframe body{overflow:hidden;}
 #progressScroll{display:none;}

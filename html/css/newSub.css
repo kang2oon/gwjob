@@ -3,7 +3,6 @@
 #sub{overflow:hidden;padding-top:166px;position:relative;}
 #sub:before{content:'';display:block;position:absolute;left:0;right:0;top:0;height:166px;background:#f5f7fc;z-index:-1;}
 
-#sub .contsArea{font-family:'S-CoreDream', sans-serif;}
 #sub #content{padding-bottom:60px;}
 #sub .inner{max-width:1440px;padding:0 20px;}
 #sub .inner .inner{padding:0 !important}

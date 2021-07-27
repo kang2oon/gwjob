@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=yes" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>강원일자리정보망</title>
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+	
+	<link rel="stylesheet" href="./css/newStyle.css">
+	<link rel="stylesheet" href="./css/newSub.css">
+	<link rel="stylesheet" href="./css/newCommon.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/sub.css">
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/scroll_slider.css">
+</head>
+
+<body>
+	<div id="sub">
+		<div id="sub_container">
+			<div class="inner clearfix">
+				<!--콘텐츠 영역-->
+				<div id="content">
+					<a href="#A-Contents-focus" id="A-Contents-focus" class="hidden_txt">본문 바로가기 초점을 받기위한 요소</a>
+					<div class="contsArea skinContainer">
+						<ul class="pageTab" style="height: 51px;">
+							<li class="active" style="height: 51px;">
+								<a href="#" class="pageTab-tab">
+									박람회 공고 관리
+								</a>
+							</li>
+							<li class="last" style="height: 51px;">
+								<a href="#" class="pageTab-tab">박람회 입사지원 관리</a>
+							</li>
+						</ul>
+						<h4 class="hidden_txt">내채용정보</h4>
+						<div class="boSrchArea">
+							<div class="boMeta">
+								<span class="boMeta-pt"> 총 </span> 0건
+							</div>
+							<form name="mForm" method="post" class="boSrch ">
+								<input type="hidden" name="pageIndex" value="1">
+								<input type="hidden" name="mode">
+								<input type="hidden" name="firstYN" value="N">
+								<fieldset>
+									<legend class="hidden_txt">게시물 검색</legend>
+
+									<div class="txSrch">
+										<select id="registFSelect" class="boSrch-selectBox skinSelectBox" name="registF" style="width:200px; float:right;">
+											<option value="">상태별구분 </option>
+											<option value="1">공개</option>
+											<option value="0">비공개</option>
+										</select>
+									</div>
+								</fieldset>
+							</form>
+						</div>
+
+						<div style="float:left;">
+							<a href="#" class="skinBtnBo skinBtnBo-data-pos" onclick="javascript:changeState('1');">공개요청</a>
+							<a href="#" class="skinBtnBo skinBtnBo-data-pos" onclick="javascript:changeState('0');">비공개</a>
+						</div>&nbsp;&nbsp;<a href="#" class="skinBtnBo skinBtnBo-data-pos" style="float:right;margin-left:5px;" onclick="#">박람회 공고 등록</a>
+
+						<br><br><br>
+
+						<section class="list3 style1 company_mypage job_opening list cp_mypage01 cp_mypage">
+							<div class="list">
+								<ul class="hide-on-medium hide-on-small">
+									<li>선택</li>
+									<li>공고제목</li>
+									<li>근무조건(형태)</li>
+									<li>모집인원</li>
+									<li>채용 마감일</li>
+								</ul>
+								<section class="list-wrap cp_list_wrap cp_list01_wrap">
+									<article>
+									<div>
+										<label>
+											<input type="checkbox" name="listCheck" value="431861"><span class="sr-only">게시물 선택</span>
+											<input type="hidden" name="listJobsType" value="4">
+										</label>
+										</div>
+										<div>
+											<a href="#" class="textCut1">공고제목</a>
+										</div>
+										<div>
+											<p>정규직</p>
+										</div>
+										<div>
+											<p>1명</p>
+										</div>
+										<div>
+											<p>2021.05.17</p>
+										</div>
+									</article>
+									
+									<article>
+									<div>
+										<label>
+											<input type="checkbox" name="listCheck" value="431861"><span class="sr-only">게시물 선택</span>
+											<input type="hidden" name="listJobsType" value="4">
+										</label>
+										</div>
+										<div>
+											<span class="cp_private">비공개</span>
+											<a href="#" class="textCut1">공고제목</a>
+										</div>
+										<div>
+											<p>정규직</p>
+										</div>
+										<div>
+											<p>1명</p>
+										</div>
+										<div>
+											<p>2021.05.17</p>
+										</div>
+									</article>
+									
+								</section>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/imgLiquid-min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Sly/1.6.1/sly.min.js"></script>
+	<script src="./js/sly.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/run.js"></script>
+</body></html>
