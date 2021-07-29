@@ -1452,7 +1452,8 @@ width: calc(100% - 170px);
 .seal_wrap  .text{font-size: 3.0rem;margin-right: 20px;vertical-align: middle}
 .seal_wrap  img {width: 10rem;vertical-align: middle}
 
-.video_wrap video {max-width: 640px;width: 100%;height:360px }
+.video_wrap {text-align: center;}
+.video_wrap video {max-width: 640px;width: 100%;height: 360px;}
 
 
 /* -------------------------- 반응형 start ------------------------*/
@@ -2135,6 +2136,8 @@ width: calc(100% - 170px);
 	.mypage_diag .diagnose_btn{font-size: 1.8rem;padding: 2.0rem 3.0rem}
 	
 	.enrolment{padding: 2.0rem 0}
+	
+.video_wrap video {width: 100%;height: auto}
 }
 
 @media all and (max-width:640px){
