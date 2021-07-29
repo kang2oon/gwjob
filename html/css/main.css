@@ -328,6 +328,8 @@
 .cert_print .top > div {}
 .cert_print .top  .left p{line-height: 40px}
 .cert_print  .print_inner{background: url(../images/common/print_bg.png) no-repeat bottom 130px center;}
+.cert_print.cert_print02 .print_inner{background: #fff !important;}
+.cert_print.cert_print02 .print_inner table td{background: #fff}
 .cert_print .middle {margin-bottom: 4.0rem}
 .cert_print .middle .f40{margin: 3.0rem 0}
 .cert_print .txt{text-align: center;background: rgba(228, 241, 255, 0.5);margin-top: 3.0rem;border-radius: 10px;padding: 30px;line-height: 1.8;font-size: 1.6rem}
