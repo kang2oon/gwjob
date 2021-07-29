@@ -1330,6 +1330,9 @@ width: calc(100% - 170px);
 .learning_status_wrap .left {display: flex;align-items: center;margin-right: 50px;width: 360px}
 .learning_status_wrap .left .txt {margin-right: 8.0rem}
 .learning_status_wrap .right{display: flex;align-items: center;width: calc(100% - 410px);}
+.tag_wrap {display: flex;flex-wrap: wrap;word-break: keep-all}
+.tag_wrap a {margin-right: 10px}
+.tag_wrap a:last-child{margin-right: 0}
 
 /*진도율 프로그레스바*/
 .progress_wrap p {font-weight: bold;text-align: center;margin-top: 2.0rem;font-size: 1.4rem}
