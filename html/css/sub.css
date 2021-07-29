@@ -1244,12 +1244,12 @@ width: calc(100% - 170px);
 .en_wrap .en_menu{width: 200px;margin-right: 60px;background: #004897;color: #fff;}
 .en_wrap .en_menu  > p {padding: 20px 30px 0px 30px}
 .en_wrap .en_menu ul{margin-top: 1.5rem;margin-bottom: 3.0rem;border-bottom: 1px solid #336dac;padding: 0px 30px 20px 30px}
-.en_wrap .en_menu ul > li a{display: block;font-size: 1.8rem;}
+.en_wrap .en_menu ul > li a{display: block;font-size: 1.8rem;color:#fff}
 .en_wrap .en_menu ul > li:hover,
 .en_wrap .en_menu ul > li:active,
 .en_wrap .en_menu ul > li:focus{color: #62b7ff}
 .en_wrap .en_menu ul > li.active{color: #62b7ff}
-.en_wrap .en_menu > a{padding: 0px 30px 20px 30px;display: block;}
+.en_wrap .en_menu > a{padding: 0px 30px 20px 30px;display: block;color:#fff}
 .en_wrap .en_cont{width: calc(100% - 260px)}
 .esub_tit{font-size: 2.4rem;border-bottom: 1px dotted #c7cee1;padding-bottom: 2.0rem;margin-bottom: 2.0rem;display: flex;align-items: center;}
 .esub_tit > span{background: #004897;color: #fff;font-size: 1.7rem;padding: 10px 20px;border-radius: 20px;margin-right: 2.0rem;text-align: center;width: 140px}
@@ -1330,9 +1330,6 @@ width: calc(100% - 170px);
 .learning_status_wrap .left {display: flex;align-items: center;margin-right: 50px;width: 360px}
 .learning_status_wrap .left .txt {margin-right: 8.0rem}
 .learning_status_wrap .right{display: flex;align-items: center;width: calc(100% - 410px);}
-.tag_wrap {display: flex;flex-wrap: wrap;word-break: keep-all}
-.tag_wrap a {margin-right: 10px}
-.tag_wrap a:last-child{margin-right: 0}
 
 /*진도율 프로그레스바*/
 .progress_wrap p {font-weight: bold;text-align: center;margin-top: 2.0rem;font-size: 1.4rem}
@@ -1434,6 +1431,7 @@ width: calc(100% - 170px);
 .ex_btn.btn_wrap > button:last-child{margin-right: 0}
 .ex_btn1{background: #565c72 !important;color: #fff}
 .ex_btn2{background: #466cb7 !important;color: #fff}
+
 
 /* 기업 마이페이지 박람회입사지원현황 */
 .my_sintro{border-top: 3px solid #000;}
@@ -1796,7 +1794,7 @@ width: calc(100% - 170px);
     .lp_table table td.category:before{content: '카테고리 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.tit:before{content: '과정명 : ';display: inline-block;margin-bottom: 1.0rem;font-weight: bold;color: #000}
     .lp_table table td.tit2:before{content: '차시명 : ';display: inline-block;margin-bottom: 1.0rem;font-weight: bold;color: #000}
-    .lp_table table td.state:before{content: '상태 : ';display: inline-block;font-weight: bold;color: #000}
+    .lp_table table td.state01:before{content: '상태 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.rate:before{content: '진도율 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.date:before{content: '학습시간 : ';display: inline-block;font-weight: bold;color: #000}
     .lp_table table td.date2:before{content: '관심일자 : ';display: inline-block;font-weight: bold;color: #000}

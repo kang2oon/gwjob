@@ -492,9 +492,9 @@
 .elearn_main .en_banner{background: url(../images/main/en_main_banner.png) no-repeat #5296fc right 50px bottom;padding: 9rem 10.0rem;border-radius: 20px;overflow: hidden;}
 .elearn_main .en_banner .txt{width: calc(100% - 720px);word-break: keep-all;position: relative;z-index: 5}
 .elearn_main .main_section02{display: flex;justify-content: center}
-.elearn_main .main_section02 > div{background: #004897;color: #fff;text-align: center;width:470px;margin-right: 60px}
+.elearn_main .main_section02 > div{background: #004897;text-align: center;width:470px;margin-right: 60px}
 .elearn_main .main_section02 > div:last-child{margin-right: 0}
-.elearn_main .main_section02 > div > a{display: block;width: 100%;height: 100%;}
+.elearn_main .main_section02 > div > a{display: block;width: 100%;height: 100%;color: #fff;}
 .elearn_main .main_section02 > div .top {border-bottom: 1px solid rgba(255, 255, 255, 0.2);position: relative;}
 .elearn_main .main_section02 > div .top p{font-size: 2.4rem;font-weight: bold;padding: 2.0rem 1.5rem;}
 .elearn_main .main_section02 > div .bottom{padding: 2.0rem 1.5rem;}
@@ -510,7 +510,7 @@
 .elearn_main .main_section03 .img:focus .hover{display: block;}
 .elearn_main .main_section03 .img .hover .inner{position: absolute;width: 100%;padding: 0 3.0rem;top: 50%;transform: translateY(-50%)}
 .elearn_main .main_section03 .img .hover strong{font-size: 2.0rem;}
-.elearn_main .main_section03 .img .hover .btn{border: 1px solid #fff;padding: 5px 15px;width: auto !important;height: auto !important;display: inline-block !important;}
+.elearn_main .main_section03 .img .hover .btn{border: 1px solid #fff;padding: 5px 15px;width: auto !important;height: auto !important;display: inline-block !important;color:#fff}
 .elearn_main .main_section03 .img .hover .btn:hover,
 .elearn_main .main_section03 .img .hover .btn:active,
 .elearn_main .main_section03 .img .hover .btn:focus{background: #fff;color: #333;font-weight: bold}
