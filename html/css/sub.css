@@ -1315,7 +1315,9 @@ width: calc(100% - 170px);
 .ern_view_wrap .ctof_study .ct_tlt div p {width: calc(100% - 100px);}
 .ern_view_wrap .ctof_study .time{background: #f4f5f9;border: 1px solid #c7cee1;color: #666;padding: 5px 10px;font-size: 1.4rem;margin-left: auto}
 
-.enrolment{background: #f4f5f9;border-top: 2px solid #004897;padding: 3.0rem 0}
+.enrolment{background: #f4f5f9;border-top: 2px solid #004897;padding: 3.0rem 0;position: fixed;bottom: -90px;left: 0;width: 100%;opacity: 0;transition:all 1s ease 0.01ms;-webkit-transition:all 1s ease 0.01ms}
+.enrolment.active{opacity: 1;bottom: 0;}
+
 .en_like{padding: 10px !important;}
 .en_like span{text-indent: -9999px;display: block;background: url(../images/sub/like_btn02.png) no-repeat;width: 19px;height: 19px;}
 .en_like.active span{background:  url(../images/sub/like_btn_active02.png) no-repeat}
@@ -1444,6 +1446,10 @@ width: calc(100% - 170px);
 .mypage_diag table{width: calc(100% - 200px);}
 .mypage_diag .diagnose_btn{background: #ff982a;color: #fff;text-align: center;padding: 30px 40px;font-size: 2.0rem;}
 .mypage_diag .diagnose_btn span {}
+
+.seal_wrap {text-align: center;;margin:0 auto;}
+.seal_wrap  .text{font-size: 3.0rem;margin-right: 20px;vertical-align: middle}
+.seal_wrap  img {width: 10rem;vertical-align: middle}
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -1803,6 +1809,7 @@ width: calc(100% - 170px);
     .ern_view_wrap .top .left{width: 100%;margin-right: 0;}
     .ern_view_wrap .top .right{width: 100%;margin-top: 3.0rem;}
     .ern_view_wrap .top .right:after{content: '';display: block;clear: both;}
+	.en_like {padding: 8px !important}
     
     .ern_view_wrap .like{position: static;float: right;margin-top: -10px}
     .ern_view_wrap .top .right .btn_wrap{position: static;text-align: center;}
@@ -2122,6 +2129,8 @@ width: calc(100% - 170px);
 	
 	.mypage_diag table {width: calc(100% - 150px)}
 	.mypage_diag .diagnose_btn{font-size: 1.8rem;padding: 2.0rem 3.0rem}
+	
+	.enrolment{padding: 2.0rem 0}
 }
 
 @media all and (max-width:640px){

@@ -2,249 +2,275 @@
 <html lang="ko">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,user-scalable=yes" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>강원일자리정보망</title>
-    <link rel="stylesheet" href="./css/font.css">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/sub.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/scroll_slider.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=yes" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>강원일자리정보망</title>
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/main.css">
+	<link rel="stylesheet" href="./css/sub.css">
+	<link rel="stylesheet" href="./css/slick.css">
+	<link rel="stylesheet" href="./css/scroll_slider.css">
 
 </head>
 
 <body>
-    <!-- 콘텐츠 영역 -->
-    <div id="contents" class="sub_wrap white_bg pb_0">
-        <div class="inner">
-            <h3 class="esub_tit"><span>온라인 교육</span>
-            <p>창조적 협업, 인문에서 답을 얻다</p>
-            </h3>
-            <!--view-->
-            <div class="ern_view_wrap">
-                <!--top-->
-                <div class="top">
-                    <div class="left">
-                        <div class="img_border">
-                            <img src="./images/sub/ern_img01.png" alt="">
-                        </div>
-                        <div class="btn_wrap mt_20">
-                            <a href="#" class="btn_style05 btn_blue btn">강의 미리보기</a>
-                            <a href="#" class="btn_style05 btn_gray btn play_btn"><span class="play_ico"></span>시청수 <strong class="blue05">26</strong></a>
-                        </div>
-                    </div>
-                    <div class="right">
-                        <button type="button" class="like">찜</button>
-                        <ul class="info_list">
-                            <li>
-                                <strong class="bold01">교육분류</strong> <span>직무 > 프로그래밍</span>
-                            </li>
-                            <li>
-                                <strong class="bold01">학습기간</strong> <span>신청일로부터 1개월</span>
-                            </li>
-                            <li>
-                                <strong class="bold01">학습시간 </strong> <span>20강(8시간 27분)</span>
-                            </li>
-                            <li>
-                                <strong class="bold01">강사</strong> <span>강원도</span>
-                            </li>
-                        </ul>
-                        <div class="btn_wrap mt_50">
-                            <a href="#" class="btn_style05 btn_gray02 btn">수강신청</a>
-                            <a href="#" class="btn_style05 btn_gray02 btn">목록으로</a>
-                        </div>
-                    </div>
-                </div>
-                <!--//top-->
+	<!-- 콘텐츠 영역 -->
+	<div id="contents" class="sub_wrap white_bg pb_0">
+		<div class="inner">
+			<h3 class="esub_tit"><span>온라인 교육</span>
+				<p>창조적 협업, 인문에서 답을 얻다</p>
+			</h3>
+			<!--view-->
+			<div class="ern_view_wrap">
+				<!--top-->
+				<div class="top">
+					<div class="left">
+						<div class="img_border">
+							<img src="./images/sub/ern_img01.png" alt="">
+						</div>
+						<div class="btn_wrap mt_20">
+							<a href="#" class="btn_style05 btn_blue btn">강의 미리보기</a>
+							<a href="#" class="btn_style05 btn_gray btn play_btn"><span class="play_ico"></span>시청수 <strong class="blue05">26</strong></a>
+						</div>
+					</div>
+					<div class="right">
+						<button type="button" class="like">찜</button>
+						<ul class="info_list">
+							<li>
+								<strong class="bold01">교육분류</strong> <span>직무 > 프로그래밍</span>
+							</li>
+							<li>
+								<strong class="bold01">학습기간</strong> <span>신청일로부터 1개월</span>
+							</li>
+							<li>
+								<strong class="bold01">학습시간 </strong> <span>20강(8시간 27분)</span>
+							</li>
+							<li>
+								<strong class="bold01">강사</strong> <span>강원도</span>
+							</li>
+						</ul>
+						<div class="btn_wrap mt_50">
+							<a href="#" class="btn_style05 btn_gray02 btn" onClick="javascript:openModal('modal1')">수강신청</a>
+							<a href="#" class="btn_style05 btn_gray02 btn">목록으로</a>
+						</div>
+					</div>
+				</div>
+				<!--//top-->
 
 
-                <div class="tabs mt_30">
-                    <ul class="border_tabs04 view-menus">
-                        <li class="active">
-                            <a href="#target01">
-                                강좌소개
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#target02">
-                                강사소개
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#target03">
-                                학습목차
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#target04">
-                                수료기준
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <!--//tabs-->
+				<div class="tabs mt_30">
+					<ul class="border_tabs04 view-menus">
+						<li class="active">
+							<a href="#target01">
+								강좌소개
+							</a>
+						</li>
+						<li>
+							<a href="#target02">
+								강사소개
+							</a>
+						</li>
+						<li>
+							<a href="#target03">
+								학습목차
+							</a>
+						</li>
+						<li>
+							<a href="#target04">
+								수료기준
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!--//tabs-->
 
-                <div class="ev_cont">
-                    <div class="section02" id="target01">
-                        <h3>강좌소개</h3>
-                        <p class="gray02">본 과정은 창조적 협업, 인문에서 답을 얻다 라는 과정으로 인문학에 대해 창조적인 접근을 모색하고 활용하고자 합니다.
-                            본 과정은 창조적 협업, 인문에서 답을 얻다 라는 과정으로 인문학에 대해 창조적인 접근을 모색하고 활용하고자 합니다.
-                        </p>
-                    </div>
-                    <div class="section02" id="target02">
-                        <h3>강사소개</h3>
-                        <div class="teacher_wrap">
-                            <div class="img imgFill">
-                                <img src="./images/sub/ern_img02.png" alt="">
-                            </div>
-                            <div class="text">
-                                <p class="name">강사명</p>
-                                <p class="gray02">
-                                    강사소개글이 들어갑니다<br />
-                                    강사소개글이 들어갑니다<br />
-                                    강사소개글이 들어갑니다
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+				<div class="ev_cont">
+					<div class="section02" id="target01">
+						<h3>강좌소개</h3>
+						<p class="gray02">본 과정은 창조적 협업, 인문에서 답을 얻다 라는 과정으로 인문학에 대해 창조적인 접근을 모색하고 활용하고자 합니다.
+							본 과정은 창조적 협업, 인문에서 답을 얻다 라는 과정으로 인문학에 대해 창조적인 접근을 모색하고 활용하고자 합니다.
+						</p>
+					</div>
+					<div class="section02" id="target02">
+						<h3>강사소개</h3>
+						<div class="teacher_wrap">
+							<div class="img imgFill">
+								<img src="./images/sub/ern_img02.png" alt="">
+							</div>
+							<div class="text">
+								<p class="name">강사명</p>
+								<p class="gray02">
+									강사소개글이 들어갑니다<br />
+									강사소개글이 들어갑니다<br />
+									강사소개글이 들어갑니다
+								</p>
+							</div>
+						</div>
+					</div>
 
-                    <div class="section02" id="target03">
-                        <h3>학습목차</h3>
-                        <div class="ctof_study">
-                            <table class="table_style05 table_style">
-                                <caption>학습목차</caption>
-                                <colgroup>
-                                    <col class="w5">
-                                    <col>
-                                    <col class="w20">
-                                </colgroup>
-                                <tbody>
-                                    <tr>
-                                        <td class="num">1</td>
-                                        <td class="ct_tlt tlt">
-                                            <div>
-                                                <p>창조적 협업, 인문에서 답을 얻다 1차시</p>
-                                                <span class="time">
-                                                    [05:00]
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td class="btn_area">
-                                            <div class="btn_wrap">
-                                                <a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
-                                                <a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="num">1</td>
-                                        <td class="ct_tlt tlt">
-                                            <div>
-                                                <p>창조적 협업, 인문에서 답을 얻다 1차시</p>
-                                                <span class="time">
-                                                    [05:00]
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td class="btn_area">
-                                            <div class="btn_wrap">
-                                                <a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
-                                                <a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="num">1</td>
-                                        <td class="ct_tlt tlt">
-                                            <div>
-                                                <p>창조적 협업, 인문에서 답을 얻다 1차시</p>
-                                                <span class="time">
-                                                    [05:00]
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td class="btn_area">
-                                            <div class="btn_wrap">
-                                                <a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
-                                                <a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="num">1</td>
-                                        <td class="ct_tlt tlt">
-                                            <div>
-                                                <p>창조적 협업, 인문에서 답을 얻다 1차시</p>
-                                                <span class="time">
-                                                    [05:00]
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td class="btn_area">
-                                            <div class="btn_wrap">
-                                                <a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
-                                                <a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="num">1</td>
-                                        <td class="ct_tlt tlt">
-                                            <div>
-                                                <p>창조적 협업, 인문에서 답을 얻다 1차시</p>
-                                                <span class="time">
-                                                    [05:00]
-                                                </span>
-                                            </div>
-                                        </td>
-                                        <td class="btn_area">
-                                            <div class="btn_wrap">
-                                                <a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
-                                                <a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    
-                     <div class="section02" id="target04">
-                        <h3>수료기준</h3>
-                        <p class="gray02">과정 내 모든 차시 80% 이상 수료시 전체 학습과정 100% 수료 달성<br>
-(강의별 수료율 마이페이지에서 확인 가능)  
-</p>
-                    </div>
+					<div class="section02" id="target03">
+						<h3>학습목차</h3>
+						<div class="ctof_study">
+							<table class="table_style05 table_style">
+								<caption>학습목차</caption>
+								<colgroup>
+									<col class="w5">
+									<col>
+									<col class="w20">
+								</colgroup>
+								<tbody>
+									<tr>
+										<td class="num">1</td>
+										<td class="ct_tlt tlt">
+											<div>
+												<p>창조적 협업, 인문에서 답을 얻다 1차시</p>
+												<span class="time">
+													[05:00]
+												</span>
+											</div>
+										</td>
+										<td class="btn_area">
+											<div class="btn_wrap">
+												<a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
+												<a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="num">1</td>
+										<td class="ct_tlt tlt">
+											<div>
+												<p>창조적 협업, 인문에서 답을 얻다 1차시</p>
+												<span class="time">
+													[05:00]
+												</span>
+											</div>
+										</td>
+										<td class="btn_area">
+											<div class="btn_wrap">
+												<a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
+												<a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="num">1</td>
+										<td class="ct_tlt tlt">
+											<div>
+												<p>창조적 협업, 인문에서 답을 얻다 1차시</p>
+												<span class="time">
+													[05:00]
+												</span>
+											</div>
+										</td>
+										<td class="btn_area">
+											<div class="btn_wrap">
+												<a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
+												<a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="num">1</td>
+										<td class="ct_tlt tlt">
+											<div>
+												<p>창조적 협업, 인문에서 답을 얻다 1차시</p>
+												<span class="time">
+													[05:00]
+												</span>
+											</div>
+										</td>
+										<td class="btn_area">
+											<div class="btn_wrap">
+												<a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
+												<a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
+											</div>
+										</td>
+									</tr>
+									<tr>
+										<td class="num">1</td>
+										<td class="ct_tlt tlt">
+											<div>
+												<p>창조적 협업, 인문에서 답을 얻다 1차시</p>
+												<span class="time">
+													[05:00]
+												</span>
+											</div>
+										</td>
+										<td class="btn_area">
+											<div class="btn_wrap">
+												<a href="#" class="btn_style05 btn_blue_line btn">학습자료</a>
+												<a href="#" class="btn_style05 btn_blue_line btn">강의보기</a>
+											</div>
+										</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
 
-                </div>
-            </div>
-            <!--//view-->
-        </div>
-        
-        <div class="enrolment">
-            <div class="inner">
-                <div class="btn_wrap trt">
-                    <a href="#" class="btn_style05 btn_gray02 btn en_like"><span>찜하기</span></a>
-                    <a href="#" class="btn_style05 btn_gray02 btn">수강신청</a>
-                </div>
-            </div>
-        </div>
-        
-    </div>
-    <!-- //콘텐츠 영역 -->
+					<div class="section02" id="target04">
+						<h3>수료기준</h3>
+						<p class="gray02">과정 내 모든 차시 80% 이상 수료시 전체 학습과정 100% 수료 달성<br>
 
-    <script src="./js/jquery-3.2.1.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/imgLiquid-min.js"></script>
-    <script src="./js/jquery.mCustomScrollbar.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script src="./js/sly.js"></script>
-    <script src="./js/printThis.js"></script>
-    <script src="./js/jquery-ui.min.js"></script>
-    <script src="./js/run.js"></script>
+
+						</p>
+
+						<div style="height: 1500px;background: #ddd;text-align: center;">
+							2500px이상시 하단 영역 노출 test
+						</div>
+					</div>
+
+				</div>
+			</div>
+			<!--//view-->
+		</div>
+
+		<div class="enrolment">
+			<div class="inner">
+				<div class="btn_wrap trt">
+					<a href="#" class="btn_style05 btn_gray02 btn en_like"><span>찜하기</span></a>
+					<a href="#" class="btn_style05 btn_gray02 btn" onClick="javascript:openModal('modal1')">수강신청</a>
+				</div>
+			</div>
+		</div>
+
+		<!--팝업-->
+		<div class="popup_area modal1">
+		<div class="shadow"></div>
+			<div class="popup popup_style02 wd450" style="display: block">
+				<div class="popup_head">
+					<p class="tit f20 bold01">수강신청</p>
+					<a href="#" class="close" onclick="close_pop()">닫기</a>
+				</div>
+				<div class="popup_inner">
+					<p class="f17 tct bold01">수강신청 하시겠습니까?<br />
+						수강이력은 마이페이지에서 확인가능합니다.
+					</p>
+					<hr class="dotted_line mt_15 mb_15">
+					<div class="btn_wrap mt_20 tct">
+						<a href="#" onclick="close_pop()" class="btn_style01 btn_blue btn">확인</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--//팝업-->
+
+	</div>
+	<!-- //콘텐츠 영역 -->
+
+	<script src="./js/jquery-3.2.1.min.js"></script>
+	<script src="./js/slick.min.js"></script>
+	<script src="./js/imgLiquid-min.js"></script>
+	<script src="./js/jquery.mCustomScrollbar.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="./js/sly.js"></script>
+	<script src="./js/printThis.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+	<script src="./js/run.js"></script>
 
 </body></html>
