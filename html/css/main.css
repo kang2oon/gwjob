@@ -232,7 +232,7 @@
 /* 온라인 잡페어 참가방법*/
 .online_main .main_section02 .tabs{display: flex;}
 .online_main .main_section02 .tabs .main_tit{margin-right: 5.0rem}
-.online_main .icon_tab_container .ico_tab li.active {color: #ff00e4}
+.online_main .icon_tab_container .ico_tab li.active a{color: #ff00e4}
 .online_main .main_section02 .tabs .ico01{background: url(../images/main/online_ico.png) no-repeat center #b3b3b3; }
 .online_main .ico_tab li.active .ico01{background: url(../images/main/online_ico.png) no-repeat center #ff00e4; }
 .online_main .main_section02 .tabs .ico02{background: url(../images/main/online_ico02.png) no-repeat center #b3b3b3; }
@@ -252,7 +252,7 @@
 /* 참여기업 */
 .online_main .main_section03 {background: #f3f3f3;position: relative;}
 .online_main .main_section03 ul{}
-.online_main .main_section03 .handle {text-indent: -9999px;display: inline-block;width: auto}
+.online_main .main_section03 .handle {text-indent: -9999px;display: inline-block;width: auto;height:10px}
 .online_main .main_section03 li {padding-right: 2.0rem;text-align: center;margin-top: 2.0rem}
 .online_main .main_section03 li:nth-child(4n){padding-right: 0}
 .online_main .main_section03 .logo {background: #fff;text-align: center;margin-bottom: 1.5rem;height: 122px;position: relative;border: 1px solid #c7cee1;border-radius: 15px;overflow: hidden}
@@ -267,7 +267,7 @@
 .filter_wrap_pink02 .ft_tit span{background: #ff00e4}
 .filter_wrap_pink02 .ft_tit p{color: #ff00e4}
 .filter_wrap_pink02.filter_wrap ul li a.on{border: 1px solid #ff00e4;color: #ff00e4}
-
+.filter_wrap_pink02.filter_wrap ul li:hover a{border: 1px solid #ff00e4;color: #ff00e4}
 .online_main .main_section04 .hire_list{display: flex;flex-wrap: wrap}
 .online_main .main_section04 .hire_list > div{width: calc(33% - 15px);margin-right: 20px;position: relative;margin-top: 20px}
 .online_main .main_section04 .hire_list > div:nth-child(3n){margin-right: 0}
