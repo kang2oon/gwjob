@@ -1382,12 +1382,18 @@ width: calc(100% - 170px);
 .job_post_sch02{background: #f7f7f7;border: 1px solid #c7cee1}
 .job_post_sch02 > div {border-bottom: 1px solid #c7cee1;padding: 10px 30px;display: flex;align-items: center;} 
 .job_post_sch02 > div ul{display: flex;}
-.job_post_sch02 > div ul li{margin-right: 3.0rem;}
+.job_post_sch02 > div ul li{margin-right: 3.0rem;display: flex;align-items: center;flex-wrap: wrap}
 .job_post_sch02 > div ul li:last-child{margin-right: 0}
 .job_post_sch02 > div:last-child{border-bottom: 0}
-.job_post_sch02 > div label{width: 120px;margin-right: 2.0rem;}
-.job_post_sch02 > div label.w_auto{width: auto;margin-right: 3.0rem}
+.job_post_sch02 > div .bold01{margin-right: 2.0rem;}
+.job_post_sch02 > div .bold01.w_auto{width: auto;margin-right: 3.0rem}
 .job_post_sch02 > div.jp_list02{}
+.job_post_sch02 > div.jp_list02 .jp_itv li div{display: flex;align-items: center;}
+.job_post_sch02 > div.jp_list02 .jp_itv li div > * {margin-right: 1.5rem;}
+.job_post_sch02 > div.jp_list02 .jp_itv li div > *:last-child{margin-right: 0}
+.job_post_sch02 > div.jp_list02 .jp_itv li {display: flex;align-items: center;}
+.job_post_sch02 > div.jp_list02 .jp_itv .bold01{width: 70px;margin-right: 20px}
+.job_post_sch02 > div.jp_list02 .jp_itv .btn_wrap{margin-top: 0}
 .job_post_sch02 > div .btn_wrap{margin-left: auto}
 
 
@@ -1859,8 +1865,10 @@ width: calc(100% - 170px);
 	
 	/*박람회 입사지원관리*/
 	.job_post_sch02 > div{align-items: flex-end}
-	.job_post_sch02 > div label.w_auto{width: 100%;}
-	.job_post_sch02 > div label{width: 100%;margin-bottom: 10px;margin-right: 0}
+	.job_post_sch02 > div .bold01.w_auto{width: 100%;}
+	.job_post_sch02 > div .bold01,.job_post_sch02 > div.jp_list02 .jp_itv .bold01{width: 100%;margin-bottom: 10px;margin-right: 0}
+    .job_post_sch02 > div.jp_list02 .jp_itv li div{display: block;margin-right: 0;}
+    .job_post_sch02 > div.jp_list02 .jp_itv li div > *{margin-bottom: 0.5rem}
 }
 
 @media all and (max-width:768px){
