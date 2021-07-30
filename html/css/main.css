@@ -273,6 +273,15 @@
 .online_main .main_section04 .hire_list > div:nth-child(3n){margin-right: 0}
 .online_main .main_section04 .hire_list .img{border: 1px solid #c7cee1;overflow: hidden;border-radius: 8px;width: 100%;height: 220px;margin: 2.0rem 0 1.5rem 0} 
 .online_main .main_section04 .hire_list .top p{font-size: 1.6rem }
+.online_main .main_section04 .hire_list  .top{display: flex;align-items: center;}
+.online_main .main_section04 .hire_list  .top .interview_type strong{font-size: 1.4rem;}
+.online_main .main_section04 .hire_list  .top .interview_type p{font-size: 1.4rem;}
+.online_main .main_section04 .hire_list  .top .interview_type span{width: 20px;height: 20px;margin-right: 0.5rem;margin-left: 2.0rem;}
+.online_main .main_section04 .hire_list  .top .interview_type .real_time_ico{background-size: 8px} 
+.online_main .main_section04 .hire_list  .top .interview_type .recording_ico{background-size: 10px}
+.online_main .main_section04 .hire_list  .top .interview_type .meet_ico{background-size: 15px}
+
+
 .online_main .main_section04 .hire_list .bottom {padding-bottom: 50px}
 .online_main .main_section04 .hire_list .bottom .tit {font-size: 1.8rem;font-weight: bold;margin-bottom: 1.5rem;padding-bottom: 1.5rem;border-bottom: 1px dotted #c7cee1}
 .online_main .main_section04 .hire_list .bottom .txt{color: #666;font-size: 1.4rem}
@@ -309,7 +318,9 @@
 /* 나의 지원현황 */
 .online_main .real_time_ico{display: inline-block;border-radius: 50%;width: 32px;height: 32px;background: url(../images/main/play_ico.png) no-repeat #f21c1c center;margin-right: 1.0rem}
 .online_main .recording_ico{display: inline-block;border-radius: 50%;width: 32px;height: 32px;background: url(../images/main/video_ico.png) no-repeat #004897 center;margin-right: 1.0rem}
+.online_main .meet_ico{display: inline-block;border-radius: 50%;width: 32px;height: 32px;background: url(../images/main/interview_ico.png) no-repeat #999 center;margin-right: 1.0rem}
 .interview_type > .ico_area{display: flex;align-items: center}
+.interview_type > .ico_area strong{margin-right: 0.5rem}
 .print_wrap{display: flex;align-items: center;color: #f505dc;font-weight: bold;font-size: 1.8rem}
 .online_main .print_ico{display: inline-block;width: 32px;height: 32px;background: url(../images/main/print_ico.png) no-repeat center #f505dc;border-radius: 50%;margin-right: 1.0rem}
 
@@ -565,6 +576,14 @@
 .imgPost_list.imgPost_style02.slick-slider .slick-disabled{opacity: 0.5}
 
 
+
+/*온라인 채용박람회 수정사항 -> 메인 지역별 태그*/
+.local_tag{display: flex;flex-wrap: wrap;margin-top:2.0rem;}
+.local_tag li{margin-right: 10px;margin-top: 1.0rem}
+.local_tag li:last-child{margin-right: 0}
+.local_tag li a {border-radius: 20px;;font-size: 1.4rem;color: #777}
+
+
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
 
@@ -684,7 +703,10 @@
     .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 30px}
     .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(3n){margin-right: 0}
 	
-
+    
+    .online_main .main_section04 .hire_list  .top{display: block;}
+    .online_main .main_section04 .hire_list .top .interview_type{margin-top: 1.5rem}
+    .online_main .main_section04 .hire_list .top .interview_type span{margin-left: 0;}
 	
 
 }
@@ -972,6 +994,9 @@
     .elearn_main .en_banner .txt  {width: calc(100% - 200px)}
     
     .imgPost_list.imgPost_style01.slick-slider .slick-dots li{width: 15px;height: 15px}
+    
+    
+    
     
     
     
