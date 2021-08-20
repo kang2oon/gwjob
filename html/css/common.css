@@ -15,7 +15,7 @@ input,select {font-family:'s-core_dream4_regular',sans-serif !important;}
 
 
 /*레프트윙*/
-.ai_main {position: relative}
+.main_wrap {position: relative}
 .left_wing {background: #e3f5ff;width: 130px;padding: 3.0rem 2.0rem;text-align: center;border-radius: 20px;position: absolute;z-index: 20;top: 20px;left: 30px;}
 .left_wing.fixed {position: fixed}
 .left_wing  ul{margin-top: 1.5rem;}
