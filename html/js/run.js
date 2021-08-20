@@ -843,7 +843,16 @@ $(document).ready(function () {
 
 	});
 
-})
+
+			//left_wing
+			$(window).on('scroll', function () {
+				if ($(window).scrollTop() > 226) {
+					$('.left_wing').addClass("fixed");
+				} else {
+					$('.left_wing').removeClass("fixed");
+				}
+			})
+});
 
 
 function openModal(modalname) {
