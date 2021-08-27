@@ -36,8 +36,7 @@
 .self_ev_section02 {margin-top: 5.0rem}
 .self_ev_section02 #gameContainer{width:682px; height:682px; text-align: center;margin: auto;position: relative;}
 .self_ev_wrap #gameContainer .cursor{position: absolute;background: url(../images/event/self_ev_obj.png) no-repeat;width: 60px;height: 99px;top: -25px;left: 50%;transform: translateX(-50%);z-index: 999;}
-.self_ev_wrap #gameContainer .board_start{width: 170px;height: 170px;background: #ff3f87; cursor: pointer;border-radius: 50%;position: absolute;top: 50%;left: 50%;z-index: 55;transform: translate(-50%,-50%);color: #fff}
-.self_ev_wrap #gameContainer .board_start p{font-size: 4.5rem;position: absolute;left: 50%;top: 50%;transform:translate(-50%,-50%);font-weight: bold}
+.self_ev_wrap #gameContainer .board_start{width: 170px;height: 170px;background:url(../images/event/start_btn.png) center no-repeat #ff3f87; cursor: pointer;border-radius: 50%;position: absolute;top: 50%;left: 50%;z-index: 55;transform: translate(-50%,-50%);color: #fff;text-indent: -9999px}
 
 .self_ev_wrap #gameContainer .board_bg img{width:100%;}
 .self_ev_wrap #gameContainer .board_on{width:682px; height:682px;;left:0px; z-index: 3; background: url('../images/event/self_ev_roulette.png') no-repeat center;}
@@ -100,6 +99,7 @@
 
 @media screen and (max-width : 1400px){
 	.self_ev_wrap .self_ev_header .img_tit01{width: 650px}
+
 }
 
 @media screen and (max-width : 1024px){
@@ -110,6 +110,7 @@
 	.self_ev_section01 .eft p:nth-child(2):after{background-size: 55px;width: 55px;height: 44px;top: -20px;right: -30px}
 	
 	.self_ev_section03{margin-top: 120px}
+	
 	}
 
 @media screen and (max-width : 768px){
@@ -125,6 +126,8 @@
 	.self_ev_section02 .ev_ticket strong{font-size: 4.5rem}
 	.self_ev_section02 .go_self a{font-size: 1.6rem}
 	.self_ev_section02 .go_self a:after{background-size: 34px;width: 34px;height: 34px;left: -17px;top: -20px}
+	
+	
 	
 	
 	
