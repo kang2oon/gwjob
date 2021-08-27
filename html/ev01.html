@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,user-scalable=no" />
+	<title>강원도일자리정보망 자기소개서컨설팅 서비스 신규 오픈 이벤트
+	</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/common.css">
+	<link rel="stylesheet" href="./css/sub.css">
+	<link rel="stylesheet" href="./css/font.css">
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" href="./css/ev01.css">
+</head>
+
+<body>
+	<div class="self_ev_wrap">
+		<!--self_ev_header-->
+		<div class="self_ev_header section_pd">
+			<div class="inner">
+				<div class="at_ef">
+					<img src="./images/event/ev01_tit.png" alt="#자소서컨설팅무료첨삭이벤트 자소서 컨설팅 서비스 오픈 100% 경품당첨 EVENT!" class="img_tit01">
+				</div>
+
+
+				<div class="header_cont">
+					<h2 class="ev_tit01">합격! 자기소개서 컨설팅 무료로 첨삭 받고 경품 받자</h2>
+					<p class="bg_pink">자기소개서 무료첨삭 서비스 오픈!</p>
+					<p class="f20 tct mt_10 blue">그동안 작성한 자기소개서만 수십개,<br>
+						서류전형에서 자꾸만 떨어지는 나,<br>
+						<span class="t_under">분야별 전문 컨설턴트가 48시간안에 <strong>무료로 첨삭</strong>해준다고?!</span>
+					</p>
+				</div>
+				<ul>
+					<li class="f20 blue"><em class="bg_yellow">이벤트 기간 : 2021.08.30 (월) ~ 09.17 (금)</em></li>
+					<li class="f20 blue">당첨자 발표일 : 2021.09.20 (월)</li>
+					<li class="f20 blue">이벤트 대상 : 강원일자리정보망 회원</li>
+					<li class="f20 blue">이벤트 관련 문의 : 033-249-2019</li>
+				</ul>
+
+			</div>
+		</div>
+
+		<!-- //self_ev_header -->
+
+		<!--self_ev_section01-->
+		<div class="self_ev_section01">
+			<div class="inner">
+				<div class="at_ef">
+					<div>
+						<img src="./images/event/ev01_img01.png" alt="강원도일자리정보망 자기소개서 컨설팅 페이지">
+					</div>
+				</div>
+				<h2 class="ev_tit01">EVENT 참여방법</h2>
+				<div class="ev_step mt_50">
+					<div>
+						<p class="blue f20 bold01">STEP1</p>
+						<p class="blue f20 mt_10">강원일자리정보망<br />
+							회원가입
+						</p>
+					</div>
+					<div class="arrow"><span>다음</span></div>
+					<div>
+						<p class="blue f20 bold01">STEP2</p>
+						<p class="blue f20 mt_10">자기소개서<br />
+							컨설팅 신청하기
+
+						</p>
+					</div>
+					<div class="arrow"><span>다음</span></div>
+					<div class="eft">
+						<p class="blue f20 bold01">STEP3</p>
+						<p class="blue f20 mt_10">컨설팅 완료 후<br />
+							별점 및 후기 남기면<br />
+							룰렛 이용권 획득!
+
+						</p>
+					</div>
+					<div class="arrow"><span>다음</span></div>
+					<div>
+						<p class="blue f20 bold01">STEP4</p>
+						<p class="blue f20 mt_10">이벤트 페이지에서<br />
+							룰렛 이벤트 참여!
+						</p>
+					</div>
+					<div class="arrow"><span>다음</span></div>
+					<div>
+						<p class="blue f20 bold01">STEP5</p>
+						<p class="blue f20 mt_10">당첨 결과<br />
+							즉시 확인
+
+						</p>
+					</div>
+				</div>
+
+				<ul class="mt_50 list">
+					<li class="bg_pink02 f20"> <span>※ 자기소개서 컨설팅 이후 별점 및 후기를 남기셔야만 룰렛 이용권이 생성됩니다.</span></li>
+					<li class="f20 blue">※ 룰렛 이용권은 중복해서 획득 가능합니다.</li>
+					<li class="f20 blue"> ※ 항목별 최소 400자 이상/2개 항목 이상 작성하셔야하고, 그렇지 않을 경우, 해당 컨설팅 내용은 반려될 수 있습니다.</li>
+				</ul>
+
+			</div>
+		</div>
+		<!--//self_ev_section01-->
+
+
+		<!--self_ev_section02-->
+		<div class="self_ev_section02">
+			<div class="fade"></div>
+			<div class="inner">
+				<div id="gameContainer">
+					<div class="board_start join">
+						<p>START</p>
+					</div>
+					<div class="cursor"></div>
+					<div class="board_on obj"></div>
+
+
+				</div>
+				<!-- //gameContainer -->
+
+
+				<!-- 팝업창 -->
+
+				<div id="popup_gift" class="popup pop_style02 wd450 fixed" style="display: none">
+					<div class="popup_top02 clear">
+						<div class="txt fl">강원도 일자리정보망</div>
+						<a href="#" class="close fr" onclick="closePopup()">닫기</a>
+					</div>
+					<div class="popup_inner">
+						<div class="lottery_present">
+							<p class="gift_end1"></p>
+							<p class="gift_end2"></p>
+						</div>
+						<div class="btn_wrap tct mt_20">
+							<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기</a>
+						</div>
+					</div>
+				</div>
+
+
+				<!-- 응모권 없을 때 출력 -->
+				<div id="popup_no_ticket" class="popup pop_style02 wd550 fixed wd450" style="display: none">
+					<div class="popup_top02 clear">
+						<div class="txt fl">강원도 일자리정보망</div>
+						<a href="javascript:void(0)" class="close fr" onclick="closePopup()">닫기</a>
+					</div>
+					<div class="popup_inner">
+						<div class="f18 tct">응모권이 없습니다.<br />
+							자기소개서 컨설팅 서비스 이용 이후<br />
+							후기를 남기시면 응모할 수 있습니다.
+						</div>
+						<div class="btn_wrap tct mt_20">
+							<a href="https://www.gwjob.kr/gwjob/empymn_sprt/coverletter_consulting" class="btn_style04 btn_blue btn" target="_blank">자소서 컨설팅 바로가기</a>
+							<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+						</div>
+					</div>
+				</div>
+				<!-- //응모권 없을 때 출력 -->
+
+				<!-- 이벤트 마감 출력 -->
+				<div id="popup_deadline" class="popup pop_style02 wd550 fixed wd550" style="display: none">
+					<div class="popup_top02 clear">
+						<div class="txt fl">강원도 일자리정보망</div>
+						<a href="javascript:void(0)" class="close fr" onclick="closePopup()">닫기</a>
+					</div>
+					<div class="popup_inner">
+						<div class="f18 tct">경품이 모두 소진되어 이벤트가 조기 종료되었습니다.<br />
+							다음 이벤트에 참여해주시기 바랍니다.<br />
+							감사합니다.
+						</div>
+						<div class="btn_wrap tct mt_20">
+							<a href="javascript:void(0)" class="btn_style04 btn_gray btn" onclick="closePopup()">닫기 </a>
+						</div>
+					</div>
+
+				</div>
+				<!-- //이벤트 마감 출력 -->
+
+
+
+				<!-- //팝업창-->
+
+				<div class="tct">
+					<div class="ev_ticket f30 blue bold01">
+						나의 응모권: <strong class="f60">1</strong>개
+					</div>
+				</div>
+			</div>
+			<div class="go_self">
+				<a href="https://www.gwjob.kr/gwjob/empymn_sprt/coverletter_consulting" class="f30 bold" target="_blank">
+					자기소개서 첨삭 받고 응모권 얻기
+				</a>
+			</div>
+
+		</div>
+		<!--//self_ev_section02-->
+
+
+
+		<!--self_ev_section03-->
+		<div class="self_ev_section03">
+			<div class="inner">
+				<h2 class="ev_tit01">EVENT 경품</h2>
+
+				<div class="flex_wrap mt_30">
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift1.png" alt="BHC 반반치킨">
+						</div>
+						<p class="f24 bold txt">BHC<br />반반치킨</p>
+						<span>10명</span>
+					</div>
+
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift2.png" alt="베스킨라빈스 파인트">
+						</div>
+						<p class="f24 bold txt">베스킨라빈스<br />파인트</p>
+						<span>20명</span>
+					</div>
+
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift3.png" alt="롯데리아 불고기버거 세트">
+						</div>
+						<p class="f24 bold txt">롯데리아<br />
+							불고기버거 세트
+						</p>
+						<span>20명</span>
+					</div>
+
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift4.png" alt="스타벅스 아메리카노">
+						</div>
+						<p class="f24 bold txt">스타벅스<br>
+							아메리카노
+						</p>
+						<span>30명</span>
+					</div>
+
+
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift5.png" alt="이디야 흑당라떼">
+						</div>
+						<p class="f24 bold txt">이디야<br />
+							흑당라떼
+						</p>
+						<span>30명</span>
+					</div>
+
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift6.png" alt="베스킨라빈스 싱글레귤러">
+						</div>
+						<p class="f24 bold txt">베스킨라빈스<br />
+							싱글레귤러
+
+						</p>
+						<span>40명</span>
+					</div>
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift7.png" alt="빙그레 바나나맛우유">
+						</div>
+						<p class="f24 bold txt">빙그레<br />
+							바나나맛우유
+
+						</p>
+						<span>50명</span>
+					</div>
+					<div>
+						<div class="img">
+							<img src="./images/event/ev01_gift8.png" alt="광동 비타500">
+						</div>
+						<p class="f24 bold txt">광동 <br />
+							비타500
+						</p>
+						<span>100명</span>
+					</div>
+
+
+				</div>
+				<!-- //flex_wrap -->
+				<!--//border_box-->
+			</div>
+		</div>
+		<!-- //self_ev_section03-->
+
+		<div class="self_ev_section04 section_pd">
+			<div class="inner">
+				<ul class="mt50 list">
+					<li class="f20 white">※ 당첨자 선정은 내부 프로그램에 의하여 무작위로 추첨됩니다.</li>
+					<li class="f20 white">
+						※ 경품은 사전공지 없이 유사품목·가격대의 경품으로 대체될 수 있습니다.</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="footer section_pd">
+			<div class="inner">
+				<h3 class="f26">이벤트 참여 기타사항</h3>
+				<ul class="mt_20 mb_20 list">
+					<li class="f20 yellow">※ 자기소개서 컨설팅 이후 별점 및 후기를 남기셔야만 룰렛 이용권이 생성됩니다.</li>
+					<li class="f20 yellow">※ 룰렛 이용권은 중복해서 획득 가능합니다.</li>
+					<li class="f20 yellow">※ 항목별 최소 400자 이상/2개 항목 이상 작성하셔야하고, 그렇지 않을 경우, 해당 컨설팅 내용은 반려될 수 있습니다</li>
+				</ul>
+				<ul class="list">
+					<li class="f20 white f20">경품은 사전공지 없이 유사품목·가격대의 경품으로 대체될 수 있습니다.</li>
+					<li class="f20 white f20">경품은 이벤트 종료 후 일괄 배송될 예정입니다.</li>
+					<li class="f20 white f20">사은품 배송을 위해 당사 경품 대행사에 배송 정보가 제공되며 행사 종료 후 파기됩니다.</li>
+					<li class="f20 white f20">부정응모 시 통보없이 당첨이 취소되며, 경품은 중복으로 당첨되지 않습니다.</li>
+					<li class="f20 white f20">이벤트 참여시 개인정보 수집 및 활용에 동의한것으로 간주되오며, 수집된 개인정보는 이벤트 종료 후 파기됩니다.</li>
+					<li class="f20 white f20">개인정보 오기입으로 인한 경품 미수령은 재발송되지 않습니다.</li>
+					<li class="f20 white f20">이벤트에 응모하는 경우 상기 내용에 모두 동의하는 것으로 간주합니다.</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/easing/EasePack.min.js">
+	</script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenLite.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/plugins/CSSPlugin.min.js"></script>
+
+	<script>
+		$(document).ready(function() {
+
+			var gift;
+			var present = ['BHC 반반치킨', '광동 비타500', '빙그레 바나나맛우유', '베스킨라빈스 싱글레귤러', '이디야 흑당라떼',
+				'스타벅스 아메리카노', '롯데리아 불고기버거 세트', '베스킨라빈스 파인트'
+			]
+
+			iniGame = function(num) {
+				gift = num;
+				TweenLite.killTweensOf($(".board_on"));
+				TweenLite.to($(".board_on"), 0, {
+					css: {
+						rotation: rotationPos[gift]
+					}
+				});
+				TweenLite.from($(".board_on"), 8, {
+					css: {
+						rotation: -3000
+					},
+					onComplete: endGame,
+					ease: Sine.easeOut
+				});
+				console.log("gift 숫자 : " + (gift + 1) + "rotationPos" + rotationPos);
+			}
+
+			var rotationPos = new Array(45, 90, 135, 180, 225, 270, 315, 360);
+
+			function endGame() {
+				var copImg = "./images/event/gift" + (gift + 1) + ".png";
+				console.log("이미지 : " + copImg);
+
+
+				$("#popup_gift .lottery_present .gift_end1").text(function() {
+					return "축하드립니다."
+				});
+
+				$("#popup_gift .lottery_present .gift_end2").text(function() {
+					return present[gift] + " 당첨 되셨습니다.";
+				});
+
+				$('<img  src="' + copImg + '" />').prependTo("#popup_gift .lottery_present");
+				setTimeout(function() {
+					openPopup("popup_gift");
+				}, 1000);
+			}
+
+
+		});
+
+
+		function openPopup(id) {
+			$('.popup').slideUp(0);
+			var popupid = id
+			$('body').addClass('not_scr');
+			$(".fade").show();
+			$('#' + popupid).show(0);
+		}
+
+		function closePopup(flag) {
+			$('.popup').hide();
+			$('body').removeClass('not_scroll');
+			$('.shadow').hide();
+		};
+
+
+
+
+
+
+		$(function() {
+			var clicked = 0;
+			for (i = 1; i < 9; i++) {
+				// 상품쪽 이미지는 신경 안쓰셔도 됩니다!! 책임님!!!
+				var pictures = "./images/event/gift" + i + ".png";
+				$(".board_on").append('<img  src="' + pictures + '" />');
+			}
+
+			$(".join").on("mousedown", function() {
+				if (clicked <= 0) {
+					iniGame(Math.floor(Math.random() * 8));
+				} else if (clicked >= 1) {
+					event.preventDefault();
+					$('#popup_gift_end').show();
+					$('body').addClass('not_scr');
+					$('.fade').show();
+				}
+				clicked++
+			});
+		})
+	</script>
+</body></html>
