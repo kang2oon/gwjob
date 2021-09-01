@@ -794,6 +794,9 @@
 }
 
 @media all and (max-width:1024px){
+
+    /*온라인채용박람회 검색*/
+    .fair_search button {height: 42px;width:42px}
     
     /*  자소서 start  */
     .self_intro_main .main_section01 .review{display: block;}
@@ -963,6 +966,9 @@
     }
 
 @media all and (max-width:768px){
+    /*온라인채용박람회 검색*/
+    .fair_search button {height: 40px;width:40px}
+
     /*  자소서 start  */
     .self_intro_main .main_section02 .consult_pass .inner:before {width:130px;height: 170px;background-size: 130px;bottom:0}
     .self_intro_main .main_section02 .consult_result{width: 100%}
@@ -1105,6 +1111,11 @@
 }
 
 @media all and (max-width:640px){
+    /*온라인채용박람회 검색*/
+    .fair_search {width: 100%;}
+    .fair_search button {height: 40px;width:40px}
+    .fair_search input {width: calc(100% - 45px);}
+
     .self_intro_main .main_section01{word-break: keep-all}
     .self_intro_main .main_section01 .main_banner{padding: 50px 30px;background-size:contain;background-position: right bottom 0}
     .self_intro_main .main_section01 .main_banner .f30{margin-bottom: 20px}
