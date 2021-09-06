@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/statistics.css">
+</head>
+
+<body>
+	<div class="conts_main">
+<div class="board_top">
+					<div class="srch_form_wrap">
+						<form id="boardArticle" name="boardArticle" method="post" class="srch_form" onsubmit="return false;">
+							<fieldset class="srch_form_inner">
+								<legend class="hidden_txt">검색</legend>
+								
+								<div class="opt">
+									<label for="searchFromDate">시작일</label>
+									<input type="text" style="width:95px;" class="datepicker hasDatepicker" id="searchFromDate" name="searchFromDate" title="시작일" value="" size="12" maxlength="10" readonly="readonly"><img class="ui-datepicker-trigger" src="/jobadm/images/gcms/common/btn-calendar.png" alt="..." title="..." style="cursor: pointer; vertical-align: middle; margin-left: 5px;">
+								</div>
+								<div class="opt">
+									<label for="searchToDate" class="">종료일</label>
+									<input type="text" style="width:95px;" class="datepicker hasDatepicker" id="searchToDate" name="searchToDate" title="종료일" value="" size="12" maxlength="10" readonly="readonly"><img class="ui-datepicker-trigger" src="/jobadm/images/gcms/common/btn-calendar.png" alt="..." title="..." style="cursor: pointer; vertical-align: middle; margin-left: 5px;">
+								</div>
+								<div class="btn_smit_wrap">
+									<input type="button" onclick="fncSearchForm()" value="조회" class="btn_smit">
+									
+									<input type="button" onclick="fncExcel()" value="엑셀다운로드" class="btn_smit">
+								</div>
+							</fieldset>
+							
+							<input type="hidden" name="pageIndex" value="1">
+							<input type="hidden" name="boardCode" value="BDAAAA04">
+							<input type="hidden" name="articleSeq" value="0">
+							<input type="hidden" name="mode" value="">
+							<input type="hidden" name="type" value="">
+							<input type="hidden" name="typeFlag" value="">
+							<input type="hidden" name="resetCondition" value="N">
+							<input type="hidden" name="priInfCltF" value="N">
+							
+						</form>
+						
+					</div>
+				</div>
+				
+		<div class="statis_wrap">
+			<div class="statis_cont">
+				<div class="statis_date">
+					<div class="left">
+						<p class="tit">강원도일자리박람회</p>
+						<p class="date">2021.08.23~2021.09.17</p>
+					</div>
+					<div class="right">
+						<p class="ing">진행중</p>
+					</div>
+				</div>
+				<div class="statis_area">
+					<div>
+						<div class="tit">참여현황</div>
+						<ul>
+							<li>
+								<p>참여기업</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>채용공고</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>기업별 평균 공고 수</p>
+								<strong>63</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">면접방식</div>
+						<ul>
+							<li>
+								<p>비대면(Live)</p>
+								<strong>42(31.8%)</strong>
+							</li>
+							<li>
+								<p>비대면(녹화)</p>
+								<strong>20(15.2%)</strong>
+							</li>
+							<li>
+								<p>대면
+								</p>
+								<strong>70(53.0%)</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">입사지원 현황</div>
+						<ul>
+							<li>
+								<p>지원자 수</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>지원공고 수</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>지원자당 평균지원 수
+								</p>
+								<strong>63</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">진행 결과
+						</div>
+						<ul>
+							<li>
+								<p>서류전형합격</p>
+								<strong>374(58.3%)</strong>
+							</li>
+							<li>
+								<p>최종합격</p>
+								<strong>128(19.9%)</strong>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="statis_cont">
+				<div class="statis_date">
+					<div class="left">
+						<p class="tit">강원도 장애인 온라인 박람회
+						</p>
+						<p class="date">2021.08.23~2021.09.17</p>
+					</div>
+					<div class="right">
+						<p class="end">종료</p>
+					</div>
+				</div>
+				<div class="statis_area">
+					<div>
+						<div class="tit">참여현황</div>
+						<ul>
+							<li>
+								<p>참여기업</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>채용공고</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>기업별 평균 공고 수</p>
+								<strong>63</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">면접방식</div>
+						<ul>
+							<li>
+								<p>비대면(Live)</p>
+								<strong>42(31.8%)</strong>
+							</li>
+							<li>
+								<p>비대면(녹화)</p>
+								<strong>20(15.2%)</strong>
+							</li>
+							<li>
+								<p>대면
+								</p>
+								<strong>70(53.0%)</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">입사지원 현황</div>
+						<ul>
+							<li>
+								<p>지원자 수</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>지원공고 수</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>지원자당 평균지원 수
+								</p>
+								<strong>63</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">진행 결과
+						</div>
+						<ul>
+							<li>
+								<p>서류전형합격</p>
+								<strong>374(58.3%)</strong>
+							</li>
+							<li>
+								<p>최종합격</p>
+								<strong>128(19.9%)</strong>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+			<div class="statis_cont">
+				<div class="statis_date">
+					<div class="left">
+						<p class="tit">강원도일자리박람회</p>
+						<p class="date">2021.08.23~2021.09.17</p>
+					</div>
+					<div class="right">
+						<p class="ing">진행중</p>
+					</div>
+				</div>
+				<div class="statis_area">
+					<div>
+						<div class="tit">참여현황</div>
+						<ul>
+							<li>
+								<p>참여기업</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>채용공고</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>기업별 평균 공고 수</p>
+								<strong>63</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">면접방식</div>
+						<ul>
+							<li>
+								<p>비대면(Live)</p>
+								<strong>42(31.8%)</strong>
+							</li>
+							<li>
+								<p>비대면(녹화)</p>
+								<strong>20(15.2%)</strong>
+							</li>
+							<li>
+								<p>대면
+								</p>
+								<strong>70(53.0%)</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">입사지원 현황</div>
+						<ul>
+							<li>
+								<p>지원자 수</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>지원공고 수</p>
+								<strong>63</strong>
+							</li>
+							<li>
+								<p>지원자당 평균지원 수
+								</p>
+								<strong>63</strong>
+							</li>
+						</ul>
+					</div>
+
+					<div>
+						<div class="tit">진행 결과
+						</div>
+						<ul>
+							<li>
+								<p>서류전형합격</p>
+								<strong>374(58.3%)</strong>
+							</li>
+							<li>
+								<p>최종합격</p>
+								<strong>128(19.9%)</strong>
+							</li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	<div class="bo_page_wrap">
+		<ul class="bo_page">
+			<a href="?pageIndex=1" class="btn_link cmpe-link " onclick="linkPage(1);return false; ">1</a><a onclick="return false;" title="2 페이지로 이동" class="btn_link cmpe-link active ">2</a><a href="?pageIndex=3" class="btn_link cmpe-link " onclick="linkPage(3);return false; ">3</a><a href="?pageIndex=4" class="btn_link cmpe-link " onclick="linkPage(4);return false; ">4</a>
+		</ul>
+	</div>
+	</div>
+</body></html>
