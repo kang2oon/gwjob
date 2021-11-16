@@ -660,6 +660,18 @@
 .jp_new  > div.green > div ul li:nth-child(3) p{right: 10px;top: 40px;}
 
 
+/* 원스톱 메인 */
+.oneStop_main .oneStop_banner{background: url(../images/main/oneStop_bg.png) #5964f6 no-repeat left bottom;}
+.oneStop_main .oneStop_banner .f20{border-bottom: 1px solid #fff;font-weight: 500;display: inline-block;margin-bottom: 0.5rem}
+.oneStop_main .oneStop_banner .txt{position: relative;z-index: 2}
+.oneStop_main .oneStop_banner .inner{padding: 8rem 0}
+.oneStop_main .oneStop_banner .inner:after{content: '';display: block;background: url(../images/main/oneStop_img.png) no-repeat;width: 748px;height: 347px;position: absolute;right: 0;bottom: 0;z-index: 1}
+.oneStop_main .oneStop_wrap {margin-top: 3rem;display: flex;flex-wrap: wrap;}
+.oneStop_main .oneStop_wrap > div {border: 1px solid #dcdcdc;padding: 2rem;margin-right: 30px;width: calc(50% - 15px);border-radius: 15px;margin-top: 2rem}
+.oneStop_main .oneStop_wrap > div:nth-child(2n) {margin-right: 0}
+.oneStop_main .oneStop_wrap > div .img{height: 200px;border: 1px solid #dcdcdc;border-radius: 15px;margin: 2rem 0}
+.oneStop_main .oneStop_wrap .txt .tit{font-size: 2.0rem;font-weight: bold;margin-bottom: 1rem}
+.oneStop_main .oneStop_wrap .txt .date{color: #666;font-size: 1.6rem}
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -790,6 +802,9 @@
 	.jp_new > div{width: 100%;margin-right: 0;}
 	.jp_new > div:first-child{margin-bottom: 3.0rem;}
 	
+	/* 원스톱 메인 */
+	.oneStop_main .oneStop_banner .inner{padding: 8rem 20px}
+	.oneStop_main .oneStop_banner .inner:after{background-size: 500px;width: 500px;height: 200px;z-index: 1}
 
 }
 
@@ -962,7 +977,11 @@
 	.tab_slider_wrap{margin-top: 0;width: 100%;}
 	.elearn_main .main_section04 .inner .left {display: flex;align-items: flex-end;text-align: left}
 	
- 
+	.oneStop_main .oneStop_banner {background-position: bottom -40px left}
+	.oneStop_main .oneStop_banner img{max-width: 500px;width: 100%}
+	.oneStop_main .oneStop_banner .inner{padding: 6rem 20px;}
+	.oneStop_main .oneStop_banner .inner:after{display: none}
+	.oneStop_main .oneStop_banner .txt{word-break: keep-all}
     }
 
 @media all and (max-width:768px){
@@ -1297,7 +1316,9 @@
 	.jp_new > div > div ul li:after{top:-33px;left: 50%;transform: translateX(-50%)}
 	.jp_new > div > div ul li:last-child{margin-right: auto}
 	
-    
+	/* 원스톱 메인 */
+	.oneStop_main .oneStop_wrap > div{width: 100%;margin-right: 0 !important}
+	.oneStop_main .oneStop_wrap > div .img{height: 180px}
 }
 
 @media all and (max-width:480px){
@@ -1324,11 +1345,9 @@
     .online_main .main_section03 .logo{height: 100px}
     .online_main .main_section03 .logo img{max-width: calc(100% - 20px)}
     
-    
     .online_main .ico_area p {display: none}
     .interview_type > .ico_area{justify-content:flex-end}
 	
-		
 	/*직업선호도 시작 section02 */
 	.job_diag_main .main_section02 {}
 	.job_diag_main .main_section02 .img{width: 200px;}
@@ -1337,7 +1356,6 @@
 	.job_diag_main .main_section02 .txt ul li p{width: 100%;}
 	.job_diag_main .main_section02 .txt ul li strong{margin-bottom: 5px;display: block;width: 100%;}
 	.job_diag_main .main_section02 .txt ul li strong:after{display: none}
-	
 	
 	/* 취업가능성진단 start */
 	.em_banner{background-size: cover}
@@ -1360,7 +1378,6 @@
      /* 창업역량 검사 start */
     .fab_banner {padding:6.0rem 4.0rem;background-size: 200px}
     .fab_banner .txt {width: 100%;margin-bottom: 6.0rem}
-    
     
     /*이러닝 start */
     .elearn_main .en_banner{padding:5.0rem 3.0rem;background-size: 200px;background-position: right 10px bottom}
