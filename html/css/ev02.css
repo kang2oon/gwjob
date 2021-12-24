@@ -21,7 +21,7 @@
 .ev02_wrap .ev02_header{}
 .ev02_wrap .inner{max-width: 1024px;}
 .ev02_wrap .ev02_header h2{text-align: center;}
-.ev02_wrap .ev02_header ul{width: 580px;margin: 3rem auto 0 auto}
+.ev02_wrap .ev02_header ul{width: 630px;margin: 3rem auto 0 auto}
 .ev02_wrap .ev02_header ul li{display: flex;margin-top: 15px;color: #fff;align-items: center}
 .ev02_wrap .ev02_header ul li strong{background: #121212;color: #fff;width: 160px;text-align: center;padding: 0.5rem;border-radius: 10px;margin-right: 20px}
 .ev02_wrap .ev02_header ul li .teft{font-size: 2.8rem;font-weight: bold;text-shadow:   -1px -1px 0 #000, 1px -1px 0 #000,-1px 1px 0 #000,1px 1px 0 #000,  1px 1px #000,2px 2px 0px  #000,3px 3px 0px  #000,4px 4px 0px  #000;}
