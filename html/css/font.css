@@ -58,16 +58,16 @@
 }
 @font-face {
     font-family: 's-core_dream8_heavy';
-    src: url('scdream8.woff2') format('woff2'),
-         url('scdream8.woff') format('woff');
+    src: url('../fonts/scdream8.woff2') format('woff2'),
+         url('../fonts/scdream8.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 's-core_dream9_black';
-    src: url('scdream9.woff2') format('woff2'),
-         url('scdream9.woff') format('woff');
+    src: url('../fonts/scdream9.woff2') format('woff2'),
+         url('../fonts/scdream9.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
