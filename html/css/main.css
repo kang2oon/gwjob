@@ -305,7 +305,7 @@
 .online_main .main_section04 .hire_list > div.close a:focus {text-decoration:none}
 .online_main .main_section04 .hire_list > div.close .img{position: relative}
 .online_main .main_section04 .hire_list > div.close .img:before{content: ''; display: block;width: 100%;height: 100%;background: rgba(54, 54, 54, 0.6);position: absolute;left: 0;top: 0}
-.online_main .main_section04 .hire_list > div.close .img:after {content: '채용이 마감된 공고입니다.';display: block;color: #fff;font-size: 2.0rem;position: absolute;text-align: center;width: 100%;top: 50%;transform: translateY(-50%);}
+.online_main .main_section04 .hire_list > div.close .img:after {content: '지원이 마감된 공고입니다.';display: block;color: #fff;font-size: 2.0rem;position: absolute;text-align: center;width: 100%;top: 50%;transform: translateY(-50%);}
 
 .online_main .main_section04 .hire_list .bottom {padding-bottom: 7.0rem}
 .online_main .main_section04 .hire_list .bottom .tit {font-size: 1.8rem;font-weight: bold;margin-bottom: 1.5rem;padding-bottom: 1.5rem;border-bottom: 1px dotted #c7cee1}
@@ -570,9 +570,9 @@
 .tab_slider_wrap > button.prev{background: url(../images/main/tab_slider_prev.png) no-repeat;}
 .tab_slider_wrap > button.next{background: url(../images/main/tab_slider_next.png) no-repeat;}
 
-.imgPost_list:not(.en_slider02,.en_slider03){display: flex;flex-wrap: wrap;}
-.imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width: calc(25% - 22.5px);margin-right: 30px;margin-bottom: 3.0rem;}
-.imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 0}
+.imgPost_list:not(.en_slider02):not(.en_slider03){display: flex;flex-wrap: wrap;}
+.imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost{width: calc(25% - 22.5px);margin-right: 30px;margin-bottom: 3.0rem;}
+.imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(4n){margin-right: 0}
 .imgPost_list.imgPost_style01 .imgPost .img{position: relative;border: 1px solid #c7cee1;border-radius: 20px;overflow: hidden;width: 100%; height: 251px;}
 .imgPost_list.imgPost_style01 .imgPost .img .state_tct{position: absolute;right: 10px;top: 10px}
 .imgPost_list.imgPost_style02 .imgPost .img .state_tct{position: absolute;right: 10px;top: 10px}
@@ -660,6 +660,19 @@
 .jp_new  > div.green > div ul li:nth-child(3) p{right: 10px;top: 40px;}
 
 
+/* 원스톱 메인 */
+.oneStop_main .oneStop_banner{background: url(../images/main/oneStop_bg.png) #5964f6 no-repeat left bottom;}
+.oneStop_main .oneStop_banner .f20{border-bottom: 1px solid #fff;font-weight: 500;display: inline-block;margin-bottom: 0.5rem}
+.oneStop_main .oneStop_banner .txt{position: relative;z-index: 2}
+.oneStop_main .oneStop_banner .inner02{padding: 8rem 0 !important}
+.oneStop_main .oneStop_banner .inner02:after{content: '';display: block;background: url(../images/main/oneStop_img.png) no-repeat;width: 748px;height: 347px;position: absolute;right: 0;bottom: 0;z-index: 1}
+.oneStop_main .oneStop_wrap {margin-top: 3rem;display: flex;flex-wrap: wrap;}
+.oneStop_main .oneStop_wrap > div {border: 1px solid #dcdcdc;padding: 2rem;margin-right: 30px;width: calc(50% - 15px);border-radius: 15px;margin-top: 2rem}
+.oneStop_main .oneStop_wrap > div:nth-child(2n) {margin-right: 0}
+.oneStop_main .oneStop_wrap > div .img{height: 350px;border: 1px solid #dcdcdc;border-radius: 15px;margin: 2rem 0;overflow:hidden}
+.oneStop_main .oneStop_wrap > div .img img{display:block;width:100%;height:100%}
+.oneStop_main .oneStop_wrap .txt .tit{font-size: 2.0rem;font-weight: bold;margin-bottom: 1rem}
+.oneStop_main .oneStop_wrap .txt .date{color: #666;font-size: 1.6rem}
 
 /* -------------------------- 반응형 start ------------------------*/
 @media all and (max-width:1400px){
@@ -776,9 +789,9 @@
     .elearn_main .en_banner{padding:10.0rem 4.0rem;}
     .elearn_main .en_banner .txt  {width: calc(100% - 400px)}
     
-    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width: calc(33.333% - 20px)}
-    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 30px}
-    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(3n){margin-right: 0}
+    .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost{width: calc(33.333% - 20px)}
+    .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(4n){margin-right: 30px}
+    .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(3n){margin-right: 0}
 	
     
     .online_main .main_section04 .hire_list  .top{display: block;}
@@ -790,6 +803,9 @@
 	.jp_new > div{width: 100%;margin-right: 0;}
 	.jp_new > div:first-child{margin-bottom: 3.0rem;}
 	
+	/* 원스톱 메인 */
+	.oneStop_main .oneStop_banner .inner02{padding: 8rem 20px !important}
+	.oneStop_main .oneStop_banner .inner02:after{background-size: 500px;width: 500px;height: 200px;z-index: 1}
 
 }
 
@@ -962,7 +978,11 @@
 	.tab_slider_wrap{margin-top: 0;width: 100%;}
 	.elearn_main .main_section04 .inner .left {display: flex;align-items: flex-end;text-align: left}
 	
- 
+	.oneStop_main .oneStop_banner {background-position: bottom -40px left}
+	.oneStop_main .oneStop_banner img{max-width: 500px;width: 100%}
+	.oneStop_main .oneStop_banner .inner02{padding: 6rem 20px !important;}
+	.oneStop_main .oneStop_banner .inner02:after{display: none}
+	.oneStop_main .oneStop_banner .txt{word-break: keep-all}
     }
 
 @media all and (max-width:768px){
@@ -1285,10 +1305,10 @@
     .imgPost_list.imgPost_style01 .imgPost .img{height: 244px}
     
     
-     .imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width: calc(50% - 10px);margin-right: 20px;}
-    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(4n){margin-right: 20px}
-    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(3n){margin-right: 20px}
-      .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(2n){margin-right: 0 }
+ .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost{width: calc(50% - 10px);margin-right: 20px;}
+    .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(4n){margin-right: 20px}
+    .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(3n){margin-right: 20px}
+      .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(2n){margin-right: 0 }
     
 	
 	.jp_new > div > div ul{flex-direction:column;justify-items: center}
@@ -1297,7 +1317,9 @@
 	.jp_new > div > div ul li:after{top:-33px;left: 50%;transform: translateX(-50%)}
 	.jp_new > div > div ul li:last-child{margin-right: auto}
 	
-    
+	/* 원스톱 메인 */
+	.oneStop_main .oneStop_wrap > div{width: 100%;margin-right: 0 !important}
+	.oneStop_main .oneStop_wrap > div .img{height: 180px}
 }
 
 @media all and (max-width:480px){
@@ -1324,11 +1346,9 @@
     .online_main .main_section03 .logo{height: 100px}
     .online_main .main_section03 .logo img{max-width: calc(100% - 20px)}
     
-    
     .online_main .ico_area p {display: none}
     .interview_type > .ico_area{justify-content:flex-end}
 	
-		
 	/*직업선호도 시작 section02 */
 	.job_diag_main .main_section02 {}
 	.job_diag_main .main_section02 .img{width: 200px;}
@@ -1337,7 +1357,6 @@
 	.job_diag_main .main_section02 .txt ul li p{width: 100%;}
 	.job_diag_main .main_section02 .txt ul li strong{margin-bottom: 5px;display: block;width: 100%;}
 	.job_diag_main .main_section02 .txt ul li strong:after{display: none}
-	
 	
 	/* 취업가능성진단 start */
 	.em_banner{background-size: cover}
@@ -1361,7 +1380,6 @@
     .fab_banner {padding:6.0rem 4.0rem;background-size: 200px}
     .fab_banner .txt {width: 100%;margin-bottom: 6.0rem}
     
-    
     /*이러닝 start */
     .elearn_main .en_banner{padding:5.0rem 3.0rem;background-size: 200px;background-position: right 10px bottom}
     .elearn_main .en_banner .txt  {width: 100%;margin-bottom: 40px}
@@ -1372,8 +1390,8 @@
     .tab_slider_wrap > button.prev, .imgPost_list.imgPost_style02.slick-slider .slick-next, .tab_slider_wrap > button.next, .imgPost_list.imgPost_style02.slick-slider .slick-prev{background-size: 15px;width: 15px;height: 20px}
     .imgPost_list.imgPost_style01.slick-slider .imgPost {padding: 0 15px}
     
-      .imgPost_list:not(.en_slider02,.en_slider03) .imgPost{width:100%;margin-right:0}
-    .imgPost_list:not(.en_slider02,.en_slider03) .imgPost:nth-child(3n) {margin-right:0}
+      .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost{width:100%;margin-right:0}
+    .imgPost_list:not(.en_slider02):not(.en_slider03) .imgPost:nth-child(3n) {margin-right:0}
 }
     
     
@@ -1391,6 +1409,7 @@
         .elearn_main .main_section02 > div {margin-right: 0;width: 100%;}
         .elearn_main .main_section02 > div:first-child{margin-bottom: 2.0rem}
         
+    
         .elearn_main .frame ul.main-news__items-wrapp li{width: 280px}
         
     }
