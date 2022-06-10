@@ -57,3 +57,41 @@ img{max-width:100%;}
     .footer_wrap li + li{margin-top:6px;}
 .spaceA{height:16px;}
 .spaceB{height:48px;}
+
+@media screen and (max-width:1060px) {
+    .container{width:calc(100% - 60px);}
+}
+
+@media screen and (max-width:820px){
+    .header_wrap .preiod_wrap{flex-direction:column;margin-top:-20px;}
+    .header_wrap .preiod_wrap > div{text-align:center;margin:4px 0;}
+    .header_wrap .tit{font-size:24px;margin-top:32px;}
+    .contents_wrap{margin-top:-540px;}
+    .contents_wrap .box_wrap .box.desc::before, .contents_wrap .box_wrap .box.desc::after{display:none;}
+    .contents_wrap .box_wrap .box.detail > div{width:100%;margin:8px 0;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap{flex-wrap:wrap;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap > div{width:50%;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap > div:nth-child(1), .contents_wrap .box_wrap .box.detail > div .gift_wrap > div:nth-child(2){margin-bottom:24px;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap > div .thumb{margin-left:auto;margin-right:auto;}
+}
+
+@media screen and (max-width:540px){
+    .header_wrap{padding:50px 0;}
+    .header_wrap::before, .header_wrap::after{display:none;}
+    .container{width:calc(100% - 30px);}
+    .header_wrap .preiod_wrap{margin-top:0;}
+    .header_wrap .preiod_wrap > div{font-size:16px;}
+    .header_wrap .tit{font-size:21px;margin-top:28px;}
+    .contents_wrap{margin-top:-600px;}
+    .contents_wrap .box_wrap .box{padding:20px;font-size:15px;letter-spacing:-1px;}
+    .contents_wrap .box_wrap .box.desc > div{width:100%;}
+    .contents_wrap .box_wrap .box.detail > div em{font-size:14px;margin-left:70px;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap{flex-direction:column;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap > div{width:100%;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap > div:nth-child(1), .contents_wrap .box_wrap .box.detail > div .gift_wrap > div:nth-child(2){margin-bottom:0;}
+    .contents_wrap .box_wrap .box.detail > div .gift_wrap > div + div{margin-top:24px;}
+    .contents_wrap .box_wrap .box.application .tit{font-size:21px;/*left:auto;transform: none;*/padding:4px 32px;width:calc(100% - 30%);text-align:center;}
+    .footer_wrap .tit{font-size:21px;}
+    .footer_wrap ul{padding-left:20px;}
+    .footer_wrap li{font-size:14px;letter-spacing:-1px;}
+}
