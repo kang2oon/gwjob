@@ -152,4 +152,5 @@ img{max-width:100%;}
     .contents_wrap .cont_d .method_wrap>a+a{margin-top:48px;}
     .footer_wrap .container span{display:block;}
     .footer_wrap .container img+img{margin:16px 0 0;}
+    .contents_wrap .cont_d a.auth{padding:16px 24px;margin:32px 16px 0;}
 }
