@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=yes" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>강원일자리정보망</title>
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <!--<link rel="stylesheet" href="./css/jquery.mCustomScrollbar.min.css">-->
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/slick.css">
+    <!--<link rel="stylesheet" href="./css/scroll_slider.css">-->
+    <link rel="stylesheet" href="./css/main.css">
+
+
+    <!-- add -->
+    <link rel="stylesheet" href="./css/newSub.css">
+
+</head>
+<body>
+<style>
+    .cus-show {
+        display: block !important;
+    }
+    .hidden_txt, .blind {
+        overflow: hidden;
+        position: absolute;
+        width: 0;
+        height: 0;
+        font-size: 0;
+        line-height: 0;
+    }
+</style>
+<div id="contents" class="sub_wrap">
+    <article class="companyPromotion">
+        <!-- banner -->
+        <div class="bannerWarp">
+            <div class="inner">
+                <div class="textWrap">
+                    <p class="f22 bold01 green01">강원도에만 있는 강한 기업</p>
+                    <strong class="f40 blue02">강소기업<span class="blue05">체험홍보관</span></strong>
+                    <b class="f20 black">“강원도내 우수기업은 어디?”</b>
+                    <p class="f18 gray02">
+                        <span class="bold01 red">강원도 우수기업이 모였다!</span> <br>
+                        우수기업의 주요사업, 기업현황, 기업문화, 복지 등 <br>
+                        강원일자리정보망 에서만 볼 수 있는 다양한 정보를 제공해 드립니다.
+                    </p>
+                </div>
+                <div class="slideWrap">
+                    <div class="bannerSlide">
+                        <div class="benefitsWrap">
+                            <div class="titleWrap">
+                                <strong class="type01">미리보는 복지 혜택</strong>
+                                <div class="btnWrap">
+                                    <a title="이전 슬라이드 이동" href="javascript:;" onclick="movePrev();" class="btnPrev">이전 슬라이드 이동</a>
+                                    <a title="다음 슬라이드 이동" href="javascript:;" onclick="moveNext();" class="btnNext">다음 슬라이드 이동</a>
+                                </div>
+                            </div>
+                            <div class="benefitsSlide">
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <div class="companyWrap">
+                                            <div class="imageWrap">
+                                                <img src="https://gwjob.kr/upload/popupzone/PPGWJB00/popupzone_PPGWJB00_20220723171546.jpg" alt="원스톱채용 박람회">
+                                            </div>
+                                            <div class="infoWrap">
+                                                <strong>㈜인키움</strong>
+                                                <p>-복지혜택 복지혜택 복지혜택 복지혜택</p>
+                                                <p>-복지혜택</p>
+                                                <p>-복지혜택</p>
+                                                <p>-복지혜택</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <div class="companyWrap">
+                                            <div class="imageWrap">
+                                                <img src="https://gwjob.kr/upload/popupzone/PPGWJB00/popupzone_PPGWJB00_20220723171546.jpg" alt="원스톱채용 박람회">
+                                            </div>
+                                            <div class="infoWrap">
+                                                <strong>강원도일자리재단</strong>
+                                                <p>-복지혜택 복지혜택 복지혜택 복지혜택</p>
+                                                <p>-복지혜택</p>
+                                                <p>-복지혜택</p>
+                                                <p>-복지혜택</p>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>                            
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bannerSlide"> 
+                        <div class="jobFairWrap">
+                            <div class="titleWrap">
+                                <strong class="type02">원스톱채용&amp;박람회</strong>
+                                <div class="btnWrap">
+                                    <a title="이전 슬라이드 이동" href="javascript:;" onclick="movePrev();" class="btnPrev">이전 슬라이드 이동</a>
+                                    <a title="다음 슬라이드 이동" href="javascript:;" onclick="moveNext();" class="btnNext">다음 슬라이드 이동</a>
+                                </div>
+                            </div>
+                            <div class="jobFairSlide">
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <div class="imageWrap">
+                                            <img src="https://gwjob.kr/upload/popupzone/PPGWJB00/popupzone_PPGWJB00_20220723171546.jpg" alt="원스톱채용 박람회">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <div class="imageWrap">
+                                            <img src="https://gwjob.kr/upload/popupzone/PPGWJB00/popupzone_PPGWJB00_20220729171338.jpg" alt="원스톱채용 박람회">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div>
+                                    <a href="#" target="_blank">
+                                        <div class="imageWrap">
+                                            <img src="https://gwjob.kr/upload/popupzone/PPGWJB00/popupzone_PPGWJB00_20220726092211.jpg" alt="원스톱채용 박람회">
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- // banner -->
+        <div class="inner">
+            <!-- 검색 -->
+            <div class="content">
+                <div class="form3 companySearch">
+                    <div class="form-wrap">
+                        <form id="" name="" method="GET">
+                            <div class="wrap cus-show keyword">
+                                <h3 class="title">키워드</h3>
+                                <div class="formField btnType">
+                                    <label for="keyword" class="hidden_txt">키워드</label>
+                                    <input type="text" id="keyword" name="keyword" value="" placeholder="검색어를 입력하세요." onkeydown="if(event.keyCode==13){return fnSearch('1');}">
+                                    <div class="btnWrap">
+                                        <button title="검색" type="button" class="colorDarkBlue" onclick="fnSearch('1');">검색</button>
+                                        <button title="검색조건" type="button" class="detailSearch colorGray">검색조건</ㅠ>
+                                    </div>
+                                </div>
+                                <div class="checkbox-wrap">
+                                    <label><input name="" type="checkbox" value="" title="전체" onclick="" checked>전체</label>
+                                    <label><input name="" type="checkbox" value="" title="기업명" onclick="">기업명</label>
+                                    <label><input name="" type="checkbox" value="" title="내용" onclick="">내용</label>
+                                </div>
+                            </div>
+                            <div class="detailLayer" style="display: block;">
+                                <div class="line wrap cus-show">
+                                    <h3 class="title">인증내용</h3>
+                                    <div class="formField btnType">
+                                        <div class="checkbox-wrap">
+                                            <label><input class="" name="" type="checkbox" value="" title="전체" onclick="" checked>전체</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="백년기업" onclick="">백년기업</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="유망중소기업" onclick="">유망중소기업</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="일자리대상" onclick="">일자리대상</label>
+                                        </div>
+                                        <div class="btnWrap">
+                                            <button title="검색" type="button" class="colorGray" onclick="">선택 초기화</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap cus-show">
+                                    <h3 class="title">업종</h3>
+                                    <div class="formField btnType">
+                                        <div class="checkbox-wrap">
+                                            <label><input class="" name="" type="checkbox" value="" title="전체" onclick="" checked>전체</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="식품" onclick="">식품</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="기계금속" onclick="">기계금속</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="기타" onclick="">기타</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="전기전자" onclick="">전기전자</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="화학" onclick="">화학</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="건설" onclick="">건설</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="바이오" onclick="">바이오</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="S/W" onclick="">S/W</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="정보통신" onclick="">정보통신</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="환경" onclick="">환경</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="제조업" onclick="">제조업</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="의약품" onclick="">의약품</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="섬유" onclick="">섬유</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="서비스" onclick="">서비스</label>
+                                            <label><input class="" name="" type="checkbox" value="" title="농산물" onclick="">농산물</label>
+                                        </div>
+                                        <div class="btnWrap">
+                                            <button title="검색" type="button" class="colorDarkGray" onclick="">검색</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="wrap cus-show">
+                                    <h3 class="title">지역</h3>
+                                    <div class="checkbox-wrap">
+                                        <label><input name="regionCd" type="checkbox" value="42000" title="무관" onclick="allRegionCd()" checked>무관</label>
+                                        <label><input name="regionCd" type="checkbox" value="42110" title="춘천" onclick="releaseRegionCd()">춘천</label>
+                                        <label><input name="regionCd" type="checkbox" value="42130" title="원주" onclick="releaseRegionCd()">원주</label>
+                                        <label><input name="regionCd" type="checkbox" value="42150" title="강릉" onclick="releaseRegionCd()">강릉</label>
+                                        <label><input name="regionCd" type="checkbox" value="42170" title="동해" onclick="releaseRegionCd()">동해</label>
+                                        <label><input name="regionCd" type="checkbox" value="42190" title="태백" onclick="releaseRegionCd()">태백</label>
+                                        <label><input name="regionCd" type="checkbox" value="42210" title="속초" onclick="releaseRegionCd()">속초</label>
+                                        <label><input name="regionCd" type="checkbox" value="42230" title="삼척" onclick="releaseRegionCd()">삼척</label>
+                                        <label><input name="regionCd" type="checkbox" value="42720" title="홍천" onclick="releaseRegionCd()">홍천</label>
+                                        <label><input name="regionCd" type="checkbox" value="42730" title="횡성" onclick="releaseRegionCd()">횡성</label>
+                                        <label><input name="regionCd" type="checkbox" value="42750" title="영월" onclick="releaseRegionCd()">영월</label>
+                                        <label><input name="regionCd" type="checkbox" value="42760" title="평창" onclick="releaseRegionCd()">평창</label>
+                                        <label><input name="regionCd" type="checkbox" value="42770" title="정선" onclick="releaseRegionCd()">정선</label>
+                                        <label><input name="regionCd" type="checkbox" value="42780" title="철원" onclick="releaseRegionCd()">철원</label>
+                                        <label><input name="regionCd" type="checkbox" value="42790" title="화천" onclick="releaseRegionCd()">화천</label>
+                                        <label><input name="regionCd" type="checkbox" value="42800" title="양구" onclick="releaseRegionCd()">양구</label>
+                                        <label><input name="regionCd" type="checkbox" value="42810" title="인제" onclick="releaseRegionCd()">인제</label>
+                                        <label><input name="regionCd" type="checkbox" value="42820" title="고성" onclick="releaseRegionCd()">고성</label>
+                                        <label><input name="regionCd" type="checkbox" value="42830" title="양양" onclick="releaseRegionCd()">양양</label>
+                                    </div>
+                                </div>
+                                <div class="wrap cus-show">
+                                    <h3 class="title">채용상태</h3>
+                                    <div class="checkbox-wrap">
+                                        <label><input class="" name="" type="checkbox" value="" title="전체" onclick="" checked>전체</label>
+                                        <label><input class="" name="" type="checkbox" value="" title="채용중" onclick="">채용중</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- // 검색 -->
+
+            <!-- 강소기업 리스트 -->
+            <div class="companyWarp">
+                <ul class="companyList">
+                    <!-- 리스트 6개 노출 -->
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="label hiring">채용중</i>
+                            <div class="companyLogo">
+                                <div class="logoWrap">
+                                    <img src="./images/main/online_logo01.png" alt="회사 로고">
+                                </div>
+                                <span class="location">서울시</span>
+                            </div>
+                            <div class="companyInfo">
+                                <span class="type">
+                                    <em>유망중소기업</em>
+                                    <p>전문, 과학 및 기술 서비스업</p>
+                                </span>
+                                <strong class="name">㈜인키움</strong>
+                                <p class="detail">
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의  Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="label hiring">채용중</i>
+                            <div class="companyLogo">
+                                <div class="logoWrap">
+                                    <img src="./images/main/online_logo02.png" alt="회사 로고">
+                                </div>
+                                <span class="location">서울시</span>
+                            </div>
+                            <div class="companyInfo">
+                                <span class="type">
+                                    <em>유망중소기업</em>
+                                    <p>전문, 과학 및 기술 서비스업</p>
+                                </span>
+                                <strong class="name">㈜인키움</strong>
+                                <p class="detail">
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의  Value을 위한, 최고의 HRD Partner
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <div class="companyLogo">
+                                <div class="logoWrap">
+                                    <img src="./images/main/online_logo01.png" alt="회사 로고">
+                                </div>
+                                <span class="location">서울시</span>
+                            </div>
+                            <div class="companyInfo">
+                                <span class="type">
+                                    <em>유망중소기업</em>
+                                    <p>전문, 과학 및 기술 서비스업</p>
+                                </span>
+                                <strong class="name">㈜인키움</strong>
+                                <p class="detail">
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <div class="companyLogo">
+                                <div class="logoWrap">
+                                    <img src="./images/main/online_logo02.png" alt="회사 로고">
+                                </div>
+                                <span class="location">서울시</span>
+                            </div>
+                            <div class="companyInfo">
+                                <span class="type">
+                                    <em>유망중소기업</em>
+                                    <p>전문, 과학 및 기술 서비스업</p>
+                                </span>
+                                <strong class="name">㈜인키움</strong>
+                                <p class="detail">
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의  Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="label hiring">채용중</i>
+                            <div class="companyLogo">
+                                <div class="logoWrap">
+                                    <img src="./images/main/online_logo01.png" alt="회사 로고">
+                                </div>
+                                <span class="location">서울시</span>
+                            </div>
+                            <div class="companyInfo">
+                                <span class="type">
+                                    <em>유망중소기업</em>
+                                    <p>전문, 과학 및 기술 서비스업</p>
+                                </span>
+                                <strong class="name">㈜인키움</strong>
+                                <p class="detail">
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의  Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의 Value을 위한, 최고의 HRD Partner
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank">
+                            <i class="label hiring">채용중</i>
+                            <div class="companyLogo">
+                                <div class="logoWrap">
+                                    <img src="./images/main/online_logo01.png" alt="회사 로고">
+                                </div>
+                                <span class="location">서울시</span>
+                            </div>
+                            <div class="companyInfo">
+                                <span class="type">
+                                    <em>유망중소기업</em>
+                                    <p>전문, 과학 및 기술 서비스업</p>
+                                </span>
+                                <strong class="name">㈜인키움</strong>
+                                <p class="detail">
+                                    고객의 Value을 위한, 최고의 HRD Partner, 고객의  Value을 위한, 최고의 HRD Partner
+                                </p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="pager">
+                    paging
+                </div>
+            </div>
+            <!-- // 강소기업 리스트 -->
+        </div>
+    </article>
+</div>
+
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/imgLiquid-min.js"></script>
+    <script src="./js/jquery.mCustomScrollbar.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="./js/sly.js"></script>
+    <script src="./js/printThis.js"></script>
+    <script src="./js/jquery-ui.min.js"></script>
+    <script src="./js/run.js"></script>
+    <script>
+$(document).ready(function(){
+
+    // 검색 드롭다운
+    const detailSearch = $(".detailSearch");
+    const detailCondition = $(".detailLayer");
+
+    detailSearch.click(function(e){
+        detailCondition.slideToggle();
+        e.preventDefault();
+    });
+
+    // 미리보는 복지 혜택 슬라이드
+    $(".benefitsSlide").slick({
+        autoplay: true,
+        arrows: true,
+        dots: false,
+        accessibility: false,
+        draggable: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        speed: 1000,
+        autoplaySpeed: 3500,
+        prevArrow: $(".benefitsWrap .btnPrev"),
+        nextArrow: $(".benefitsWrap .btnNext")
+    });
+
+    // 원스톱 채용 박람회 슬라이드
+    $(".jobFairSlide").slick({
+        autoplay: true,
+        arrows: true,
+        dots: false,
+        accessibility: false,
+        draggable: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        speed: 1000,
+        autoplaySpeed: 3500,
+        prevArrow: $(".jobFairWrap .btnPrev"),
+        nextArrow: $(".jobFairWrap .btnNext")
+    });
+
+    // 슬라이드 버튼
+    function movePrev(){
+        $(".jobFairSlide").slick("btnPrev");
+    }
+    function moveNext(){
+        $(".jobFairSlide").slick("btnNext");
+    }
+});
+
+
+    </script>
+
+</body></html>

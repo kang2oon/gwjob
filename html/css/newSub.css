@@ -5484,3 +5484,116 @@ ul.area li a{display: block; text-align: center; font-size: 18px; font-weight: 3
 @media (max-width:767px) {
    #sub .clearfix .btn-group{float:none !important;clear:both;}
 }
+
+/* 
+** 강소기업체험홍보관 
+*/
+.green01 {color: #009c7c;}
+.companyPromotion {letter-spacing: -1px;}
+/* 강소기업체험홍보 배너 */
+.companyPromotion .bannerWarp {background: url(../images/sub/bg_promotion.png) center no-repeat;width: 100%;height: 385px;}
+.companyPromotion .bannerWarp .inner {display: flex;align-items: center;height: 100%;}
+.companyPromotion .bannerWarp .textWrap {max-width: 500px;}
+.companyPromotion .bannerWarp .textWrap strong {display: block;margin: 10px 0 30px;font-weight: 700;}
+.companyPromotion .bannerWarp .textWrap b {display: block;margin: 0 0 10px;font-weight: 700;}
+.companyPromotion .bannerWarp .textWrap p {line-height: 30px;}
+.companyPromotion .bannerWarp .slideWrap {margin-left: auto;display: flex;gap: 0 20px;}
+.companyPromotion .bannerWarp .bannerSlide {padding: 20px;max-width: 360px;background: #fff;border-radius: 10px;}
+.companyPromotion .bannerWarp .bannerSlide .btnWrap {display: flex;align-items: center;gap: 0 5px;}
+.companyPromotion .bannerWarp .bannerSlide .btnWrap > a {display: flex;align-items: center;justify-content: center;            width: 23px;height: 27px;font-size: 0;text-indent: -9999px;background: #f5f5f5;border: 1px solid #e0e0e0;border-radius: 3px;}
+.companyPromotion .bannerWarp .bannerSlide .btnWrap > a::before {content: "";width: 10px;height: 10px;}
+.companyPromotion .bannerWarp .bannerSlide .btnWrap > a.btnPrev::before {background: #f0f0f0 url(https://gwjob.kr/page/common/images/btn-page-prev.gif) center no-repeat;}
+.companyPromotion .bannerWarp .bannerSlide .btnWrap > a.btnNext::before {background: #f0f0f0 url(https://gwjob.kr/page/common/images/btn-page-next.gif) center no-repeat;}
+.companyPromotion .bannerWarp .bannerSlide .titleWrap {padding: 0 0 10px;position: relative;display: flex;align-items: center;justify-content: space-between;}
+.companyPromotion .bannerWarp .bannerSlide .titleWrap strong {display: flex;align-items: center;color: #000;font-size: 16px;font-weight: 600;}
+.companyPromotion .bannerWarp .bannerSlide .titleWrap strong::before {content: "";margin-right: 8px;height: 32px;width: 32px;border-radius: 100%;}
+.companyPromotion .bannerWarp .bannerSlide .titleWrap .type01::before {background: #677ef1 url(../images/sub/icon_promotion01.png) center no-repeat;}
+.companyPromotion .bannerWarp .bannerSlide .titleWrap .type02::before {background: #ff61a0 url(../images/sub/icon_promotion02.png) center no-repeat;}
+.companyPromotion .bannerWarp .bannerSlide .imageWrap img {width: 100%;height: 100%;object-fit: cover;}
+/* 미리보는 복지 혜택 */
+.companyPromotion .benefitsWrap .titleWrap {border-bottom: 1px dashed #c7cee1;}
+.companyPromotion .benefitsSlide .companyWrap {padding: 20px 0 0;display: flex;gap: 0 10px;}
+.companyPromotion .benefitsSlide .imageWrap {max-width: 120px;max-height: 62px;border-radius: 10px;overflow: hidden;border: 1px solid #c7cee1;text-align: center;}
+.companyPromotion .benefitsSlide .infoWrap {width: calc(100% - 130px);}
+.companyPromotion .benefitsSlide .infoWrap strong {margin: 0 0 10px;display: block;color: #000;font-size: 18px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.companyPromotion .benefitsSlide .infoWrap p {margin: 5px 0 0;color: #777;font-size: 14px;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+/* 원스톱채용 박람회 */
+.companyPromotion .jobFairSlide .imageWrap {width: 100%;max-height: 140px;border-radius: 10px;overflow: hidden;border: 1px solid #c7cee1;}
+/* 검색 */
+.companyPromotion .companySearch {margin: 40px 0 0;}
+.companyPromotion .companySearch .line {border-top: 1px solid #ddd;}
+.companyPromotion .companySearch .title {font-size: 1.6rem;font-weight: 500;}
+.companyPromotion .companySearch .formField + .checkbox-wrap {margin-top: 5px;}
+.companyPromotion .companySearch .checkbox-wrap {display: flex;flex-wrap: wrap;}
+.formField {position: relative;display: flex;align-items: center;gap: 0 5px;width: 100%;}
+.formField > input[type="text"] {padding: 0 10px;width: 100%;height: 40px !important;}
+.formField .btnWrap {margin-left: auto;display: flex;align-items: center;justify-content: flex-end;gap: 0 5px;width: auto;}
+.formField .btnWrap > button {padding: 8px 10px;    display: flex;align-items: center;justify-content: center;font-size: 1.6rem;min-width: 100px;border-radius: 3px;}
+/* button color */
+button.colorDarkBlue {color: #fff !important;background: #3e5e9d !important;border: 1px solid #3e5e9d;}
+button.colorGray {color: #fff !important;background: #888 !important;border: 1px solid #888;}
+button.colorDarkGray {color: #fff !important;background: #636363 !important;border: 1px solid #636363;}
+/* 강소기업 리스트 */
+.companyPromotion .companyWarp {padding: 40px 0 110px;}
+.companyPromotion .companyWarp ul.companyList {display: flex;flex-wrap: wrap;gap: 20px;}
+.companyPromotion .companyWarp ul.companyList li {width: calc((100% - 20px) / 2);border: 1px solid #dedede;border-radius: 10px;overflow: hidden;}
+.companyPromotion .companyWarp ul.companyList li > a {position: relative;padding: 20px;display: flex;width: 100%;height: 100%;}
+.companyPromotion .companyWarp ul.companyList .label {position: absolute;top: 0;left: 0;display: flex;align-items: center;justify-content: center;padding: 8px 10px;width: auto;min-width: 80px;height: 35px;color: inherit;font-size: 14px;font-weight: bold;font-style: normal;border-radius: 10px 0 10px 0;}
+.companyPromotion .companyWarp ul.companyList .label.hiring {color: #fff !important;background: #ff4848 !important;}
+.companyPromotion .companyWarp ul.companyList .companyLogo {display: flex;flex-direction: column;align-items: center;justify-content: space-between;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .logoWrap {display: flex;align-items: center;justify-content: center;width: 250px;height: 100%;text-align: center;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .logoWrap > img {max-width: 100%;object-fit: cover;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .location {display: flex;align-items: center;gap: 0 5px;color: #000;font-size: 14px;font-weight: bold;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .location::before {content: "";background: url(../images/sub/icon_location.png) center no-repeat;width: 15px;height: 18px;}
+.companyPromotion .companyWarp ul.companyList .companyInfo {border-left: 1px dashed #d2d2d2;padding: 0 35px;display: flex;flex-direction: column;max-width: 100%;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .type {margin: 0 0 15px;display: flex;flex-direction: column;gap: 5px 0;color: #777;font-size: 14px;max-width: 100%;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .type > em {font-style: normal;font-weight: bold;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .type > p {overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .name {margin: 0px 0px 15px;width: 100%;min-height: 50px;max-height: 56px;color: #000;font-size: 20px;text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .detail {width: 100%;max-height: 42px;color: #1b1b1b;font-size: 15px;text-overflow: ellipsis;overflow: hidden;display: -webkit-box;-webkit-line-clamp: 2;-webkit-box-orient: vertical;}
+@media (max-width: 1199px){
+.companyPromotion .bannerWarp {background-position: left center;}
+.companyPromotion .bannerWarp .slideWrap {display: none;}
+.companyPromotion .bannerWarp .textWrap {padding-left: 5%;max-width: 100%;}
+.companyPromotion .companySearch {margin: 0;}
+.companyPromotion .companySearch.form3 .form-wrap {margin-top: 0;}
+.companyPromotion .companyWarp {padding: 0 0 110px;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+.companyPromotion .companyWarp ul.companyList .companyLogo .logoWrap {width: 200px;}
+}
+@media (min-width: 768px) and (max-width: 991px){
+.companyPromotion .bannerWarp {background-position: 20% center;height: 350px;}
+.companyPromotion .bannerWarp .textWrap {padding-left: 0;}
+.companyPromotion .bannerWarp .textWrap strong {margin: 10px 0 20px;}
+.companyPromotion .bannerWarp .textWrap p {line-height: 24px;}
+.companyPromotion .companySearch {padding: 20px 0;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .logoWrap {width: 150px;}
+.companyPromotion .companyWarp ul.companyList .companyInfo {padding: 0 20px;}
+}
+@media (max-width: 760px){
+.companyPromotion .bannerWarp {height: 350px;}
+.companyPromotion .bannerWarp .textWrap {padding-left: 0;}
+.companyPromotion .bannerWarp .textWrap strong {margin: 10px 0 20px;}
+.companyPromotion .bannerWarp .textWrap p {line-height: 24px;}
+.companyPromotion .companySearch {margin: 20px 0;}
+.companyPromotion .companyWarp {padding: 20px 0 60px;}
+.companyPromotion .companyWarp ul.companyList {gap: 10px;}
+.companyPromotion .companyWarp ul.companyList li {width: 100%;}
+.companyPromotion .companyWarp ul.companyList li > a {padding: 35px 15px 15px;    flex-direction: column;gap: 10px 0;}
+.companyPromotion .companyWarp ul.companyList .label {height: 35px;}
+.companyPromotion .companyWarp ul.companyList .companyLogo {gap: 10px 0;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .location {margin-right: auto;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .logoWrap {width: 100%;}
+.companyPromotion .companyWarp ul.companyList .companyInfo {padding: 0;border-left: none;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .type {margin: 0 0 5px;gap: 2px 0;}
+.companyPromotion .companyWarp ul.companyList .companyInfo .name {margin: 0px 0px 10px;min-height: auto;max-height: 50px;font-size: 18px;}
+}
+@media (max-width: 640px){
+.companyPromotion .bannerWarp {background-position: 30%;height: 350px;background-size: cover;}
+.companyPromotion .companyWarp {padding: 0 0 60px;}
+.companyPromotion .companySearch .keyword .formField {margin-top: 15px;}
+.companyPromotion .companySearch .formField.btnType {align-items: flex-start;flex-direction: column;gap: 10px 0;}
+.companyPromotion .companyWarp ul.companyList .companyLogo .logoWrap {min-height: 100px;max-height: 100px;}
+}
+/* // 강소기업체험홍보관 */
