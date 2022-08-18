@@ -6,7 +6,9 @@
 	<title>강원도일자리정보망 기업콘텐츠 프로토타입</title>
 	<link rel="stylesheet" type="text/css" href="./inc/fonts.css">
 	<link rel="stylesheet" type="text/css" href="./inc/prism.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="./inc/proto.css" />
+    <link rel="stylesheet" type="text/css" href="./inc/pt-common.css" />
 </head>
 <body>
     <div class="container-fluid header">
@@ -19,8 +21,8 @@
             <h2><span>STEP.1</span> 기초파일 생성</h2>
             <div class="desc">
                 <ol>
-                    <li>기업콘텐츠에 사용될 기본 프레임용 HTML을 다운로드 받아서 작업을 시작한다.<br/><a href="frame.html" download>프레임 파일다운로드</a></li>
-                    <li>파일명은 기업의 사업자등록번호로 변경한다. (ex:2208171637.html)</li>
+                    <li>기업콘텐츠에 사용될 기본 프레임용 HTML을 다운로드 받아서 작업을 시작한다.<br/><a href="frame.html" download><i class="fa-solid fa-download"></i> 프레임 파일다운로드</a></li>
+                    <li>파일명은 기업의 영문명으로 변경한다. (ex:inkium.html - 영문명은 제공)</li>
                 </ol>
                 <div class="preview">소스 미리보기</div>
                 <pre class="line-numbers" data-src="frame.html"></pre>
@@ -51,14 +53,40 @@
         <div class="module_wrap">
             <div class="container">
                 <div class="tab_wrap clearfix">
-                    <div data-tab="header" class="active">헤더</div>
-                    <div data-tab="info">기업정보</div>
+                    <div data-tab="history" class="active">연혁</div>
+                    <!-- <div data-tab="info">기업정보</div> -->
                 </div>
             </div>
             <div class="tcont_wrap">
-                <div data-tab="header">
-                    ss
+                <div data-tab="history" class="active">
+                    <div class="container mod_nm"><span>.mod_history01</span>연혁 모듈 1</div>
+                    <div class="mod_history01">
+                        <h3><span>HISTORY</span>연혁</h3>
+                        <div class="history">연혁</div>
+                    </div>
+                    <div class="container">
+                        <div class="preview">HTML 미리보기</div>
+                        <pre class="line-numbers" data-src="./module/mod_history01.html"></pre>
+                        <div class="preview">CSS의 모듈 공통코드 사용 - 색상 등 필요 영역만 재정의</div>
+                    </div>
+                    <!-- -->
+                    <div class="container mod_nm gap"><span>.mod_history02</span>연혁 모듈 2</div>
+                    <div class="mod_history02">
+                        <h3><span>HISTORY</span>연혁</h3>
+                        <div class="history">연혁</div>
+                    </div>
+                    <div class="container">
+                        <div class="preview">HTML 미리보기</div>
+                        <pre class="line-numbers" data-src="./module/mod_history02.html"></pre>
+                        <div class="preview">CSS의 모듈 공통코드 사용 - 색상 등 필요 영역만 재정의</div>
+                        <div class="preview">JS 미리보기</div>
+                        <pre class="line-numbers" data-src="./module/mod_history02.js"></pre>
+                    </div>
+                    <!-- -->
                 </div>
+                <!-- <div data-tab="info">
+                    info
+                </div> -->
             </div>
         </div>
     </div>
@@ -91,11 +119,14 @@
     
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
+<script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="./inc/prism.js"></script>
+<script src="./inc/jsontohtml.js"></script>
 <script>
-	$(document).ready(function(){
-
-	});
+    xmlhttp.open("GET", "./inc/sample.json");
+    xmlhttp.send();
 </script>
+<script src="./inc/script.js"></script>
 </body>
 </html>

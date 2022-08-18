@@ -1,0 +1,55 @@
+*{font-family:'S-CoreDream-4Regular', sans-serif;font-size:16px;box-sizing:border-box;}
+html,body{position:relative;width:100%;height:100%;margin:0;padding:0;}
+.clearfix:before,.clearfix:after{content:"";display:block}.clearfix:after{clear:both;visibility:hidden;line-height:0;height:0}.clearfix{*zoom:1}
+img{max-width:100%;line-height:0;}
+ul,ol,li{list-style:none;margin:0;padding:0;}
+a{text-decoration:none;color:inherit;}
+
+.container-fluid{position:relative;width:100%;}
+.container{position:relative;width:1440px;margin:0 auto;}
+
+.mod_history01 h3{font-family:'S-CoreDream-6Bold';font-size:40px;text-align:center;}
+    .mod_history01 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-family:'S-CoreDream-4Regular';margin-bottom:8px;}
+    .mod_history01 .history{position:relative;width:1440px;margin:0 auto;}
+    .mod_history01 .history > div::after{content:"";display:block;width:24px;height:100%;background-color:#e4e4e4;position:absolute;left:50%;transform:translateX(-50%);top:0;}
+    .mod_history01 .history > div:last-child::after{border-radius:0 0 20px 20px;}
+    .mod_history01 .history > div > span{
+        background: linear-gradient(90deg, rgba(56,168,255,1) 0%, rgba(55,165,255,1) 100%);color:#fff;
+        border-radius:24px;padding:8px 48px 8px 24px;
+        position:absolute;left:50%;transform:translateX(-50%);
+        font-size:24px;display:block;z-index:1;
+    }
+    .mod_history01 .history > div > span::after{
+        content:"";display:block;width:24px;height:24px;background-color:#fff;border-radius:50%;position:absolute;right:10px;top:50%;transform:translateY(-50%);
+        box-shadow:0 0 10px rgba(0,0,0,.1);
+    }
+    .mod_history01 .history > div:nth-child(even) > span{padding:8px 24px 8px 48px;}
+    .mod_history01 .history > div:nth-child(even) > span::after{right:auto;left:10px;}
+    .mod_history01 .history > div > ul{width:calc(50% - 100px);margin-left:auto;}
+    .mod_history01 .history > div:nth-child(even) > ul{margin-left:0;}
+    .mod_history01 .history > div > ul > li{display:flex;margin-bottom:8px;}
+    .mod_history01 .history > div:nth-child(even) > ul li{flex-direction:row-reverse;text-align:right;}
+    .mod_history01 .history > div > ul > li .month{color:#3c7df2;margin-right:16px;font-family:'S-CoreDream-5Medium';}
+    .mod_history01 .history > div:nth-child(even) > ul > li .month{margin-right:0;margin-left:16px;}
+    .mod_history01 .history > div ul > li .event span{display:block;margin-bottom:4px;}
+
+.mod_history02 h3{font-family:'S-CoreDream-6Bold';font-size:40px;text-align:center;}
+    .mod_history02 h3 span{display:block;color:#ccc;font-size:21px;letter-spacing:12px;font-family:'S-CoreDream-4Regular';margin-bottom:8px;}
+    .mod_history02 .history{position:relative;width:1440px;margin:0 auto;}
+    .mod_history02 .history .slick-slide > span{
+        display:block;position:relative;border-top:1px solid #96052e;margin-top:16px;padding:24px 24px 16px 0;
+        font-size:24px;color:#666;font-family:'S-CoreDream-7ExtraBold';letter-spacing:-1px;
+    }
+    .mod_history02 .history .slick-slide > span::before{
+        content:"";position:absolute;width:16px;height:16px;border-radius:50%;background-color:#96052e;left:0;top:-8px;
+    }
+    .mod_history02 .history .slick-slide > ul{width:calc(100% - 32px);}
+    .mod_history02 .history .slick-slide > ul li{display:flex;margin-bottom:8px;}
+    .mod_history02 .history .slick-slide > ul li .month{color:#96052e;margin-right:16px;font-family:'S-CoreDream-5Medium';}
+    .mod_history02 .history .slick-slide > ul li .month::after{content:"월";display:inline-block;}
+    .mod_history02 .history > div ul > li .event span{display:block;margin-bottom:4px;}
+    .mod_history02 .history .slick-arrow{position:absolute;top:50%;transform:translateY(-50%);background:transparent;border:none;font-size:0;}
+    .mod_history02 .history .slick-arrow.slick-prev{left:-64px;}
+    .mod_history02 .history .slick-arrow.slick-prev::after{content:"<";font-size:32px;}
+    .mod_history02 .history .slick-arrow.slick-next{right:-64px;}
+    .mod_history02 .history .slick-arrow.slick-next::after{content:">";font-size:32px;}
