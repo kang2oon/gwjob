@@ -45,11 +45,31 @@ a{text-decoration:none;color:inherit;}
     }
     .mod_history02 .history .slick-slide > ul{width:calc(100% - 32px);}
     .mod_history02 .history .slick-slide > ul li{display:flex;margin-bottom:8px;}
-    .mod_history02 .history .slick-slide > ul li .month{color:#96052e;margin-right:16px;font-family:'S-CoreDream-5Medium';}
+    .mod_history02 .history .slick-slide > ul li .month{color:#96052e;margin-right:16px;font-family:'S-CoreDream-5Medium';min-width:40px;}
     .mod_history02 .history .slick-slide > ul li .month::after{content:"월";display:inline-block;}
     .mod_history02 .history > div ul > li .event span{display:block;margin-bottom:4px;}
-    .mod_history02 .history .slick-arrow{position:absolute;top:50%;transform:translateY(-50%);background:transparent;border:none;font-size:0;}
-    .mod_history02 .history .slick-arrow.slick-prev{left:-64px;}
-    .mod_history02 .history .slick-arrow.slick-prev::after{content:"<";font-size:32px;}
-    .mod_history02 .history .slick-arrow.slick-next{right:-64px;}
-    .mod_history02 .history .slick-arrow.slick-next::after{content:">";font-size:32px;}
+    .mod_history02 .history .slick-arrow{
+        position:absolute;top:50%;transform:translateY(-50%);border:none;font-size:0;width:29px;height:54px;
+        background:transparent url(./images/slider_arrow.png) no-repeat;opacity:.7;
+    }
+    .mod_history02 .history .slick-arrow.slick-disabled{opacity:.1;}
+    .mod_history02 .history .slick-arrow.slick-prev{left:-72px;background-position:0 0;}
+    .mod_history02 .history .slick-arrow.slick-next{right:-72px;background-position:-29px 0;}
+
+@media all and (max-width:1024px) {
+    .container, .mod_history01 .history, .mod_history02 .history{width:calc(100% - 56px);}
+}
+
+@media all and (max-width:768px) { }
+
+@media all and (max-width:640px) { }
+
+@media all and (max-width:480px) {
+    .mod_history01 .history > div::after{position:absolute;left:51px;transform:none;}
+    .mod_history01 .history > div > span{left:0;transform:none;}
+    .mod_history01 .history > div > ul, .mod_history01 .history > div:nth-child(even) > ul{width:calc(100% - 100px);margin-left:100px;padding:64px 0 24px;}
+    .mod_history01 .history > div:nth-child(even) > ul li{flex-direction:row;text-align:left;}
+    .mod_history01 .history > div:nth-child(even) > ul > li .month {margin-right:16px;margin-left:0;}
+    .mod_history01 .history > div:nth-child(even) > span{padding: 8px 48px 8px 24px;}
+    .mod_history01 .history > div:nth-child(even) > span::after{right:10px;left:auto;}
+}

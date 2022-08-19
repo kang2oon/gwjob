@@ -29,3 +29,13 @@ h2{font-size:24px;font-family:'S-CoreDream-5Medium';}
     .mod_nm{margin:8px auto;}
     .mod_nm.gap{margin-top:40px;}
     .mod_nm span{display:inline-block;padding:4px 8px;margin-right:8px;background-color:#fabe0f;font-size:14px;border-radius:4px;}
+
+@media all and (max-width:1024px) {
+    .container{width:calc(100% - 56px);}
+}
+
+@media all and (max-width:768px) { }
+
+@media all and (max-width:640px) { }
+
+@media all and (max-width:480px) { }
