@@ -29,13 +29,18 @@ h2{font-size:24px;font-family:'S-CoreDream-5Medium';}
     .mod_nm{margin:8px auto;}
     .mod_nm.gap{margin-top:40px;}
     .mod_nm span{display:inline-block;padding:4px 8px;margin-right:8px;background-color:#fabe0f;font-size:14px;border-radius:4px;}
+#mod_select.fixed{position:sticky;top:0;background-color:#fff;z-index:1000;width:100%;}
+    #mod_select.fixed .tab_wrap{width:calc(1440px + 1%);margin:0 auto;}
 
 @media all and (max-width:1024px) {
-    .container{width:calc(100% - 56px);}
+    .container, #mod_select.fixed .tab_wrap{width:calc(100% - 56px);}
+    .tab_wrap > div{width:32.333333%;}
 }
 
 @media all and (max-width:768px) { }
 
 @media all and (max-width:640px) { }
 
-@media all and (max-width:480px) { }
+@media all and (max-width:480px) { 
+    .tab_wrap > div{width:49%;}
+}
