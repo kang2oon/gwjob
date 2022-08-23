@@ -85,6 +85,14 @@ a{text-decoration:none;color:inherit;}
     .mod_history04 .history > div > ul > li .month{margin-right:16px;font-family:'S-CoreDream-5Medium';}
     .mod_history04 .history > div ul > li .event span{display:block;margin-bottom:4px;}
 
+.mod_info01{display:flex;justify-content:space-around;background-image:url(https://picsum.photos/1000);background-size:cover;background-position:50% 50%;}
+    .mod_info01 > div{flex:1;text-align:center;padding:300px 0;background-color:rgba(80, 80, 80, 0.75);}
+    .mod_info01 > div+div{border-left:1px solid rgba(255,255,255,.5);}
+    .mod_info01 > div .num{color:#58fffd;font-size:20px;}
+    .mod_info01 > div .tit{color:#fff;font-size:40px;font-family:'S-CoreDream-6Bold';}
+    .mod_info01 > div hr{border-width:1px;border-style:solid none;border-color:#fff;width:32px;margin:64px auto;}
+    .mod_info01 > div .vision, .mod_info01 > div .mission, .mod_info01 > div .slogan{color:#fff;font-size:24px;max-width:60%;margin:0 auto;}
+
 @media all and (max-width:1024px) {
     .container, .mod_history01 .history, .mod_history02 .history, .mod_history03 .history, .mod_history04 .history_wrap{width:calc(100% - 56px);}
 }
