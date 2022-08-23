@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 's-core_dream1_thin';
+    src: url('../fonts/scdream1.woff2') format('woff2'),
+         url('../fonts/scdream1.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 's-core_dream2_extralight';
+    src: url('../fonts/scdream2.woff2') format('woff2'),
+         url('../fonts/scdream2.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 's-core_dream3_light';
+    src: url('../fonts/scdream3.woff2') format('woff2'),
+         url('../fonts/scdream3.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 's-core_dream4_regular';
+    src: url('../fonts/scdream4.woff2') format('woff2'),
+         url('../fonts/scdream4.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 's-core_dream5_medium';
+    src:url('../fonts/scdream5.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 's-core_dream6_bold';
+    src: url('../fonts/scdream6.woff2') format('woff2'),
+         url('../fonts/scdream6.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core_dream7_extrabold';
+    src: url('../fonts/scdream7.woff2') format('woff2'),
+         url('../fonts/scdream7.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 's-core_dream8_heavy';
+    src: url('../fonts/scdream8.woff2') format('woff2'),
+         url('../fonts/scdream8.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 's-core_dream9_black';
+    src: url('../fonts/scdream9.woff2') format('woff2'),
+         url('../fonts/scdream9.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
