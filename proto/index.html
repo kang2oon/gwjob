@@ -62,6 +62,9 @@
             </div>
             <div class="tcont_wrap">
                 <div data-tab="history" class="active">
+                    <div class="container desc">
+                        연혁 모듈은 <span class="class">.history</span>Class를 변수명으로 하위에 데이터를 호출하는 구조입니다.
+                    </div>
                     <div class="container mod_nm"><span>.mod_history01</span>연혁 모듈 1</div>
                     <div class="mod_history01">
                         <h3><span>HISTORY</span>연혁</h3>
@@ -115,6 +118,10 @@
                     </div>
                 </div>
                 <div data-tab="info">
+                    <div class="container desc">
+                        기업정보 모듈은 3가지 데이터를 호출하는 구조입니다.<br/>
+                        비전 : <span class="class">.vision</span> / 미션 : <span class="class">.mission</span> / 슬로건 : <span class="class">.slogan</span>
+                    </div>
                     <div class="container mod_nm"><span>.mod_info01</span>기업정보 모듈 1</div>
                     <div class="mod_info01">
                         <div>
@@ -321,8 +328,10 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
 <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=9d95bcfbfb814230ec2f047987e8f8c6&libraries=services,clusterer"></script>
 <script src="./inc/prism.js"></script>
 <script src="./inc/jsontohtml.js"></script>
+<script src="./inc/map.js"></script>
 <script>
     xmlhttp.open("GET", "./inc/sample.json");
     xmlhttp.send();
