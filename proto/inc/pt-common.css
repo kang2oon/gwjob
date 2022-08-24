@@ -93,6 +93,34 @@ a{text-decoration:none;color:inherit;}
     .mod_info01 > div hr{border-width:1px;border-style:solid none;border-color:#fff;width:32px;margin:64px auto;}
     .mod_info01 > div .vision, .mod_info01 > div .mission, .mod_info01 > div .slogan{color:#fff;font-size:24px;max-width:60%;margin:0 auto;}
 
+    .bizPositionWrap{background: #f6f4f4;}
+    .bizPositionWrap.a_mod_finance01 {display: flex;justify-content: space-between;}
+    .bizPositionWrap .tit_wrap {width: 230px;}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap {width: calc(100% - 250px);border: 10px solid #e4e3e3;border-radius: 5px;padding: 4rem;}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap > div.on{display: block}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap > div{display: none}
+    .bizPositionWrap .a_mod_finance01 .tab_tit{text-align: center;font-size: 2.5rem;margin-bottom: 4rem;font-weight: 400}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap .summary > div{background: #fff;margin-bottom: 1.5rem;padding: 4rem;border-radius: 5px;display: flex;justify-content: space-between;align-items: center;}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap .summary > div:last-child{margin-bottom: 0}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap .summary > div h4{font-size: 1.8rem;width: 140px;text-align: center;}
+    .bizPositionWrap .a_mod_finance01 .conts_wrap .summary > div > div{width: calc(100% - 140px - 2rem);text-align: center;padding-left: 2rem;border-left: 1px solid #e7e7e7}
+    .bizPositionWrap .a_mod_finance01 .arrow_wrap {display: flex;}
+    .bizPositionWrap .a_mod_finance01 .arrow_wrap button{background: #2b2b2b;border-radius: 5px;display: flex;align-items: center;justify-content: center;color: #fff;width: 35px;height: 35px;}
+    .bizPositionWrap .a_mod_finance01 .arrow_wrap button span{font-size: 1.6rem}
+    .bizPositionWrap .a_mod_finance01 .arrow_wrap button + button {margin-left: .5rem}
+    
+    .bizPositionWrap .percent_wrap{display: flex;justify-content: space-between}
+    .bizPositionWrap .percent_wrap > div{width:calc( 25% - 16.666px);background: #fff;background: #fff;display: flex;padding: 2rem;border-radius: 10px;box-shadow: 0 1px 10px rgba(0, 0, 0, 0.07);align-items: center;justify-content:space-between;}
+    .bizPositionWrap .percent_wrap > div .ico{display: flex;flex-direction: column;align-items: center;justify-content: center;height:50px}
+    .bizPositionWrap .percent_wrap > div .ico img{height:100%;}
+    .bizPositionWrap .percent_wrap > div .txt{width: calc(100% - 80px);}
+    .bizPositionWrap .percent_wrap > div .txt .tit{font-size: 1.8rem;color: #999}
+    .bizPositionWrap .percent_wrap > div .txt .num span{font-size: 3rem;}
+    .bizPositionWrap .percent_wrap > div .txt .num{font-size: 2.2rem;word-break: break-all}
+    .bizPositionWrap > div  + div{margin-top: 50px}
+
+
+
 @media all and (max-width:1024px) {
     .container, .mod_history01 .history, .mod_history02 .history, .mod_history03 .history, .mod_history04 .history_wrap{width:calc(100% - 56px);}
 }
