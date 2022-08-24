@@ -1,6 +1,6 @@
 $(document).ready(function(){
     var navOffset = $('#mod_select').offset();
-    console.log(navOffset);
+    //console.log(navOffset);
     $(window).scroll(function(){
         if( $(document).scrollTop() > navOffset.top ){	
             $('#mod_select').addClass('fixed');
@@ -49,5 +49,4 @@ $(document).ready(function(){
             });
         }
     });
-    
 });

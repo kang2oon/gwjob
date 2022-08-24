@@ -26,6 +26,8 @@ h2{font-size:24px;font-weight:500;}
     .tab_wrap > div.active{background-color:#ccc;}
     .tcont_wrap > div{display:none;}
     .tcont_wrap > div.active{display:block;}
+    .tcont_wrap .desc{padding:24px;margin:16px auto;background-color:#f9f9f9;border:1px solid #d4d4d4;border-radius:8px;}
+    .tcont_wrap .desc .class{display:inline-block;padding:2px 6px;margin-right:8px;background-color:#009c7c;font-size:14px;border-radius:4px;color:#fff;}
     .mod_nm{margin:8px auto;}
     .mod_nm.gap{margin-top:40px;}
     .mod_nm span{display:inline-block;padding:4px 8px;margin-right:8px;background-color:#fabe0f;font-size:14px;border-radius:4px;}
