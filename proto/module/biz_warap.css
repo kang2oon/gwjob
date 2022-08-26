@@ -1,3 +1,2491 @@
+
+        .d-flex{
+            display: flex;
+        }
+        .w-33{
+            width: 33.33% !important;
+        }
+        .W-50{
+            width: 50% !important;
+        }
+        .w-25{
+            width: 25% !important;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .t_b_section{
+            background: url('');
+            background-repeat: no-repeat;
+            text-align: center;
+            padding-top: 134px;
+            padding-bottom: 427px;
+            background-position: center;
+            background-size: cover;
+        }
+        .t_b_section .t-title h1{
+            color: #3f5586;
+            margin-top: 37px;
+            font-size: 40px;
+        }
+        /* 모듈 백분위정보 */
+        .mag_mod_percent.sty05{
+            background: #3f5586;
+            padding: 162px 0 !important;
+        }
+        .mag_mod_percent.sty05 .percent_wrap > div > div span{
+            color: #fff;
+            font-size: 18px !important;
+        }
+        .mag_mod_percent.sty05 .percent_wrap > div > div p{
+            font-size: 21px;
+            color: #ccc !important;
+        }
+        /* 모듈 백분위정보 끝 */
+        /* 모듈 연혁 */
+        .bro_mod_history.sty02 .history > div > span{
+            background: #3f5586 !important;
+        }
+        .bro_mod_history.sty02 .history > div ul > li .month{
+            color: #95b44c !important;
+        }
+        .history_title{
+            text-align: center;
+            margin-bottom: 63px;
+        }
+       .history_title h3{
+            color: #ccc;
+            font-size: 21px !important;
+            font-weight: 300;
+            letter-spacing: 10px !important;
+            margin-bottom: 0 !important;
+        }
+       .history_title h2{
+            color: #333;
+            font-size: 40px;
+        }
+        /* 모듈 연혁 끝 */
+        /* 미션,비젼,슬로건 영역 */
+        
+        .l_out_section_3_1{
+            background: url('');
+        }
+        .l_out_section_3_2{
+            background: url('i');
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            box-sizing: border-box;
+        }
+        .l_out_section_3_3{
+            background: url('');
+        }
+        .background-common{
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 348px 0 323px 0;
+            background-size: cover;
+        }
+        .l_out_section_3 .l_out_sub_title{
+            color: #95b44c;
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 300;
+        }
+        .l_out_section_3 .l_out_main_title{
+            color: #fff;
+            font-size: 40px;
+            text-transform: uppercase;
+            line-height: 40px;
+        }
+        .l_out_section_3 .l_out_text{
+            margin-top: 100px;
+            color: #fff;
+            font-size: 21px;
+            font-weight: 300;
+        }
+        @media(max-width:768px){
+            .l_out_section_3 .background-common{ 
+                padding: 150px 0  150px 0 !important;
+            }
+            .l_out_section_3 .d-flex{
+                flex-direction: column;
+            }
+            .l_out_section_3_2{
+            border-left: 0 solid #fff;
+            border-right: 0 solid #fff;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            box-sizing: border-box;
+            }
+            .l_out_section_3 .w-33{
+                width: 100% !important;
+            }
+        }
+        /* 미션,비젼,슬로건 영역 끝 */
+        /* 인재상 */
+        .l_out_section_4{
+            background: #95b44c;
+            padding: 100px 0;
+        }
+        .l_out_section_4 .l_c_main_title{
+            width: 35%;
+        }
+        .l_out_section_4 .l_c_text{
+            width: 65%;
+        }
+        .l_out_section_4 .l_out_title{
+            align-items: center;
+            color: #fff;
+        }
+        .l_out_section_4 .l_out_title h2{
+            font-size: 40px;
+            margin-right: 40px;
+            margin-left: 23px;
+            line-height: 40px;
+        }
+        .l_out_section_4 .l_out_title h2::after{
+            content: "";
+            display: block;
+            width: 3px;
+            height: 88px;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            background: #fff;
+        }
+        .l_out_section_4 .l_out_title span{
+            margin-top: 20px;
+            display: block;
+        }
+        .l_out_section_4 .l_out_content{
+            text-align: center;
+        }
+        .l_out_section_4 .l_out_content+.l_out_content{
+            margin-left: 24px;
+        }
+        .l_out_section_4 .l_out_title p{
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 300;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 100px;
+        }
+        .l_out_content{
+            text-align: center;
+            background: #fff;
+            border-radius: 100%;
+            padding: 80px 100px;
+        }
+        @media(max-width:1280px){
+            .l_out_section_4 .l_out_content+.l_out_content{
+            margin-left:5% !important;
+            }
+            .l_out_section_4 .l_c_main_title{
+            width: 30%;
+             }
+        }
+        @media(max-width:1024px){
+            .l_out_section_4 .l_out_content+.l_out_content{
+            margin-left:5% !important;
+            }
+            .l_out_section_4 .l_c_main_title{
+            width: 100%;
+             }
+             .l_out_content_section{
+                flex-direction: column;
+             }
+             .l_out_content_section .w-33{
+                width: 100%;
+             }
+             .l_out_section_4 .l_c_text{
+                width: 100%;
+                margin-top: 40px;
+            }
+            .l_out_section_4 .l_out_title h2::after{
+                top: 10px;
+            }
+            .l_out_section_4 .l_out_content+.l_out_content{
+                margin-left:6% !important;
+            }
+            .l_out_content{
+                padding: 50px 65px;
+            }
+        }
+        @media(max-width:540px){
+            .l_out_content {
+                padding: 17px 24px;
+            }
+        }
+        @media(max-width:374px){
+            .l_out_content {
+                padding: 7px 14px;
+            }
+        }
+        /* 인재상 */
+        /* 핵심가치 */
+        .l_out_section_5{
+            background-color: #f4f4f4;
+            
+        }
+        .l_out_section_5 .cnt-container{
+            padding: 100px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .l_out_section_5 .cnt-container::after{
+          content: '';
+          background: url(images/2258122349_content_1-1.png)no-repeat;
+          width: 451px;
+          height: 468px;
+          position: absolute;
+          left: 26px;
+    bottom: -40px;
+        }
+        .l_out_section_5 .l_c_main_title{
+            width: 100%;
+        }
+        .l_out_section_5 .l_out_title{
+            width: 30%;
+        }
+        .l_out_section_5 .l_c_m_title{
+            width: 80%;
+        }
+        .l_c_m_title .l_t_content{
+            width: 231px;
+            height: 231px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 100%;
+            text-align: center;
+        }
+        .l_c_m_title .l_t_content+.l_t_content{
+            margin-left: 24px;
+        }
+        .flex-wrap{
+            flex-wrap:wrap;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .align-center{
+            align-items: center;
+        }
+        .l_out_section_5 .l_out_title{
+            padding-left: 40px;
+            display: flex;
+
+        }
+        .l_out_section_5 .l_out_title h2::after {
+            content: "";
+            display: block;
+            width: 3px;
+            height: 90px;
+            position: absolute;
+            top: 19px;
+            left: -40px;
+            background: #333;
+        }
+        .l_out_section_5 .l_out_title h2{
+            font-size: 40px;
+            position: relative;
+        }
+        .l_out_section_5 .l_out_title p{
+            font-size: 21px;
+            margin-top: 80px;
+            margin-left: 40px;
+        }
+        .l_out_section_5 .l_out_icon{
+            margin-top: 26px;
+        }
+        @media(max-width:1800px){
+          .l_out_section_5 .cnt-container::after{
+            display: none;
+          }
+        }
+        @media(max-width:1024px){
+            .l_c_m_title .l_t_content{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        @media(max-width:768px){
+            .l_c_m_title .l_t_content{
+                width: 200px;
+                height: 200px;
+            }
+            .l_out_section_5 .l_c_main_title{
+                flex-direction: column;
+            }
+            .l_out_section_5 .l_out_title{
+                width: 100%;
+            }
+            .l_out_section_5 .l_c_m_title{
+                width: 100%;
+                margin-top: 40px;
+            }
+            .l_out_section_5 .l_out_title h2::after{
+                top: 20px;
+            }
+            .l_c_m_title .l_t_content{
+                margin: 10px;
+            }
+            .l_c_m_title .l_t_content+.l_t_content{
+                margin-left: 0;
+            }
+        }
+        /* 핵심가치 끝 */
+        /* 전략과제 */
+        .l_out_section_6{
+            padding: 89px 0;
+            background-color: #f4f4f4;
+        }
+        .l_out_section_6 .l_out_title{
+            padding-left: 40px;
+            width: 100%;
+        }
+        .l_out_section_6 .l_out_title h2{
+            font-size: 40px;
+            line-height: 40px;
+            position: relative;
+        } 
+        .l_out_section_6 .l_out_title span{
+            display: block;
+            margin-top: 20px;
+        }
+        .l_out_section_6 .l_out_title p{
+            font-size: 21px;
+            margin-top: 74px;
+            margin-left: 40px;
+        }
+        .l_out_section_6 .l_out_title h2::after {
+            content: "";
+            display: block;
+            width: 3px;
+            height: 90px;
+            position: absolute;
+            top: 10px;
+            left: -40px;
+            background: #333;
+        }
+        .l_out_section_6 .l_c_text{
+            position: relative;
+            clear: both;
+            margin-top: 60px;
+        }
+        .l_out_section_6 .main-blue-color{
+            background-color: #3f5586;
+      
+            float: left;
+        }
+        .l_out_section_6 .main-green-color{
+            background-color: #5da8a1;
+            position: absolute;
+            right: 0;
+        }
+        .l_out_section_6 .content_title{
+            color: #fff;
+            width: 53%;
+            padding: 89px 0;
+            border-radius: 100px;
+            font-size: 21px;
+        }
+        .clear-fix{
+            clear: both;
+        }
+        @media(max-width:500px){
+            .l_out_section_6 .content_title{
+            color: #fff;
+            width: 53%;
+            padding:26px 0;
+            border-radius: 100px;
+            }
+            .l_out_section_6 .content_title p{
+            font-size: 5px;
+            }
+            .l_out_section_6 .l_out_title{
+                flex-direction: column;
+            }
+            .l_out_section_6 .l_out_title p{
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+        }
+
+        /* SWOT */
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotS{
+            background-color: #3f5586;   
+        }
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotW{
+            background-color:#5da8a1;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotO{
+            background-color: #95b44c;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotT{
+            background-color: #607123;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .desc{
+            font-size: 1.8rem;
+            color: #fff;
+        }
+        .s-color{
+            color: #3f5586;
+        }
+        .w-color{
+            color: #5da8a1;
+        }
+        .o-color{
+            color: #95b44c;
+        }
+        .t-color{
+            color:#607123;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .tit{
+            font-size: 3.0rem;
+        }
+        .rec_mod_swot.sty03{
+            background: url('images/2258122349_conent_bg_2.jpg');
+        }
+
+        /* 재무정보 */
+
+        /* 사업영역 */
+        .mag_mod_biz.sty04{
+          margin: 0;
+          padding: 8rem 0;
+          background-color: #f4f4f4;
+        }
+        .mag_mod_biz.sty04 .biz_wrap img{
+          width: 100%;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt:before{
+          width: 200px;
+          background-color: #999999;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt .msgAdd{
+          font-size: 1.8rem;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt h3{
+          font-size: 5rem;
+          color: #3f5586;
+          font-weight: bold;
+          line-height: 5rem;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt h3 span{
+          color: #666666;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt .msgAdd{
+          margin: 2rem 0;
+        }
+        .mag_mod_biz.sty04 .swiper-button-next, .mag_mod_biz.sty04 .swiper-button-prev{
+          border-radius: 0;
+        }
+        .mag_mod_biz.sty04 .swiper-slide{
+          max-width: 100%;
+        }
+        /* 사업영역 끝 */
+
+               /* 주요상품  */
+               .l_c_product .cnt-container{
+              padding: 100px 0;
+            }
+            .history_title h3{
+              text-transform: uppercase;
+            }
+            .ml-20{
+              margin-left: 20px;
+            }
+            .product_content_img{
+              margin-bottom: 40px;
+            }
+            .product_text h3{
+              font-weight: 300;
+              color: #3f5586;
+              font-size: 2.1rem;
+              line-height: 2.1rem;
+              margin-bottom: 17px;
+            }
+            .product_text h1{
+              color: #333;
+              font-size:3.0rem;
+              margin-bottom: 5.4rem;
+              position: relative;
+            }
+            .product_text h1::after{
+              content: "";
+              display: block;
+              width: 26px;
+              height: 1px;
+              background: #333;
+              position: absolute;
+              margin-top: 20px;
+            }
+            .product_text p{
+              font-size: 1.8rem;
+            }
+            @media(max-width:540px){
+              .product_text h1{
+                font-size: 2.4rem;
+              }
+              .l_c_product .cnt-container{
+                padding: 8rem 0;
+              }
+              .l_c_product .d-flex{
+                flex-direction: column;
+              }
+              .product_content_img{
+                margin-bottom: 20px;
+              }
+              .l_c_product .d-flex .w-50{
+                margin-bottom: 3rem;
+              }
+              .l_c_product .d-flex .ml-20{
+                margin-left: 0;
+              }
+            }
+        /* 주요상품 끝 */
+
+        /* 조직문화 */
+        .mag_mod_culture.sty03{
+          background-color: #f4f4f4;
+          padding: 8rem 0;
+        }
+        .mag_mod_culture.sty03 .history_title{
+          margin-bottom:30px
+        }
+        .mag_mod_culture.sty03 .masony .item:hover{
+          background: #95b44c;
+        }
+        @media (max-width: 1024px){
+          .mag_mod_culture.sty03 .masony{
+            flex-direction: column;
+            display: flex !important;
+            width: 100% !important;
+          }
+          .mag_mod_culture.sty03 .masony .item{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+          }
+        }
+
+
+        /* 조직문화 끝 */
+
+        /* 인터뷰 */
+        .mag_mod_interview.sty03{
+          background: #5da8a1;
+        }
+        .mag_mod_interview.sty03 .photo img{
+          width: 100%;
+        }
+        .mag_mod_interview.sty03 .photo{
+          height: 300px;
+        }
+        .mag_mod_interview.sty03 .swiper-pagination-bullet-active{
+          background: #3f5586;
+        }
+        .mag_mod_interview.sty03 .cnt-container{
+          padding: 40px;
+          border-radius: 30px;
+          background: #549791;
+        }
+        .mag_mod_interview.sty03 .iv_wrap{
+          box-shadow: none;
+        }
+        @media (max-width: 768px){
+          .mag_mod_interview.sty03 .photo{
+            height: 200px;
+            background: none;
+          }
+          .mag_mod_interview.sty03 .photo img{
+            width: inherit;
+          }
+        }
+        /* 인터뷰 끝 */
+
+        /* 미디어 */
+      .media-wrap {
+        padding: 8rem 0;
+      }
+      .media-wrap .media-area {
+        display: flex;
+        margin: 50px 0;
+        padding-bottom: 50px;
+        position: relative;
+      }
+      .media-wrap .media-area::after {
+        content: "";
+        background: #ccc;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+      }
+      .media-wrap .media-area .media-img:first-child {
+        margin-right: 15px;
+      }
+      @media (max-width: 640px){
+        .media_con iframe {
+          height: 300px;
+          }
+      }
+
+      /* 미디어 끝 */
+
+      /* 채용정보 */
+      .rec_mod_strategy.sty03{
+        background: #f4f4f4;
+        margin: 0;
+        padding: 8rem 0 0 0;
+      }
+      .rec_mod_strategy.sty03 .guide h3{
+        background: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .guide_wrap > div:nth-child(1) .q:before{
+        color: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .guide_wrap > div{
+        display: flex;
+        align-items: center;
+      }
+      .rec_mod_strategy.sty03 .q{
+        width: 30%;
+      }
+      .rec_mod_strategy.sty03 .a{
+        margin-left: 200px;
+      }
+      .rec_mod_strategy.sty03 .rq_cont{
+        border-radius: 0;
+        padding: 80px;
+        border: 1px solid #262d7e;
+      }
+      .rec_mod_strategy.sty03 .rq_cont:after{
+        background:url() no-repeat; 
+        background-size: cover;
+        width: 50%;
+      }
+      .rec_mod_strategy.sty03 .bg{
+        background: none;
+      }
+      .rec_mod_strategy.sty03 .cont_box{
+        border-radius: 0;
+      }
+      .rec_mod_strategy.sty03 .add_point{
+        background: #95b44c;
+      }
+      .rec_mod_strategy.sty03 .cont_box{
+        border:2px solid #95b44c
+      }
+      .rec_mod_strategy.sty03 .spec h3{
+        background: #95b44c;
+      }
+      .rec_mod_strategy.sty03 .spec li{
+        justify-content: left;
+      }
+      .rec_mod_strategy.sty03 .bg{
+        position: relative;
+        z-index: 1;
+      }
+      .rec_mod_strategy.sty03 .bg::after{
+        content: '';
+        background: #e1e7d2;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+      .rec_mod_strategy.sty03 .a{
+        margin-left: 0;
+      }
+      .rec_mod_strategy.sty03 .interview_tip_wrap > div{
+        border-bottom: 0;
+      }
+      .rec_mod_strategy.sty03 .interview_tip{
+        position: relative;
+        margin: 0;
+        padding: 8rem 0;
+      }
+      .rec_mod_strategy.sty03 .interview_tip::after{
+        content: '';
+        background: url() no-repeat;
+        width: 550px;
+        height: 682px;
+        position: absolute;
+        left: 58%;
+        bottom: 0;
+        z-index: 99;
+      }
+      .rec_mod_strategy.sty03 h3{
+        font-size: 4rem;
+        color: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(1) .q:before{
+        font-size: 4rem;
+        color: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .interview_tip .q{
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .rec_mod_strategy.sty03 .interview_tip .a{
+        font-size: 2.4rem;
+      }
+      .rec_mod_strategy.sty03 .interview_tip .qm_btn{
+        background: #3f5586;
+        border-radius: 0;
+      }
+      .mag_mod_interview.sty03 .qa_ceo:before,
+      .mag_mod_interview.sty03 .qa_mng:before,
+      .mag_mod_interview.sty03 .qa_emp:before{
+        color: #3f5586;
+      }
+      @media (max-width: 1500px){
+        .rec_mod_strategy.sty03 .interview_tip::after{
+          display: none;
+        }
+      }
+      @media (max-width: 768px){
+
+        .rec_mod_strategy.sty03 .q{
+          width: 80%;
+        }
+      }
+      @media (max-width: 480px){
+        .rec_mod_strategy.sty03 .guide_wrap > div{
+          flex-direction: column;
+          align-items: start;
+        }
+        .rec_mod_strategy.sty03 .bg{
+          padding: 3rem 0;
+        }
+        .rec_mod_strategy.sty03 .rq_cont{
+          padding: 40px;
+        }
+      }
+      /* 채용정보 끝 */
+      /* 채용절차 */
+      .procedure_wrap{
+        padding: 7rem 0;
+      }
+      .procedure_wrap .proceure_area{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .procedure_wrap .proceure_area .proceure_con{
+        border: 1px solid #5da8a1;
+        border-radius: 30px;
+        width: 25%;
+        padding: 65px 45px;
+        position: relative;
+      }
+      .procedure_wrap .proceure_area .proceure_con img{
+        display: block;
+        margin: 0 auto;
+      }
+      .procedure_wrap .proceure_area .proceure_con span{
+        font-size: 1.8rem;
+        color: #5da8a1;
+        display: inline-block;
+        margin: 2rem 0;
+      }
+      .procedure_wrap .proceure_area .proceure_con h3{
+        font-size: 3rem;
+        color: #5da8a1;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 1px solid #5da8a1;
+        border-radius: 100px;
+      }
+      .procedure_wrap .proceure_area .proceure_con p{
+        font-size: 1.6rem;
+        color: #666666;
+        margin-top: 2rem;
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk{
+        background: #5da8a1;
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk h3{
+        color: #fff;
+        border: 1px solid #fff;
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk p{
+        color: #fff;
+      }
+      .procedure_wrap .proceure_area .proceure_con::after{
+        content: '';
+        background: url()no-repeat;
+        width: 61px;
+        height: 25px;
+        position: absolute;
+        right: -110px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk::after{
+        display: none;
+      }
+      @media (max-width: 1300px){
+        .procedure_wrap .proceure_area{
+          flex-direction: column;
+        }
+        .procedure_wrap .proceure_area .proceure_con{
+          width: 90%;
+          margin:0 auto;
+          margin-bottom: 2rem;
+        }
+        .procedure_wrap .proceure_area .proceure_con h3{
+          width: 30%;
+          margin: 0 auto;
+        }
+        .procedure_wrap .proceure_area .proceure_con::after{
+          display: none;
+        }
+      }
+      @media (max-width: 480px){
+        .procedure_wrap .proceure_area .proceure_con h3{
+          width: 100%;
+        }
+
+      }
+      /* 채용절차 끝 */
+				.bro_mod_finance {
+					margin: 0px !important;
+					background-color: #fff !important; 
+				}
+				.finance_con .comName {
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					font-weight: bold !important;
+					color: #cccccc !important;
+				}
+				.finance_con h3 {
+					padding-bottom: 40px;
+					color: #333 !important;
+				}
+				.finance_con .tab_conatainer {
+					background-color: #fff;
+					padding: 70px 0;
+					border-radius: 15px;
+                    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17); 
+                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17);
+				}
+				.tab_wrap .tab {
+					border-radius: 0px !important;
+					width: 80%;
+					margin: 0 auto;
+					gap: 20px;
+					border: none !important;
+				}
+				.tab_wrap .tab div {
+					padding: 10px 0px !important;
+				}
+				.tab_wrap div.on {
+					background-color: #3f5586 !important;
+				}
+				.finance_tab-box {
+					border: none !important;
+					color: #fff !important;
+					background-color: #ccc;
+					border-radius: 15px;
+				}
+				.tab_wrap .cont {
+					width: 80%;
+					margin: 0 auto;
+				}
+                .finance_con{
+                    background-color: #f4f4f4;
+                    padding: 80px;
+                    border-radius: 20px;
+                }
+				.cont .capital {
+					text-align: right;
+					padding: 60px 0 !important;
+				}
+				.cont .chart_box {
+					display: flex ;
+					flex-direction: row;
+					gap: 20px;
+					align-items: center;
+					justify-content: space-between;
+					padding-bottom: 50px;
+				}
+
+				.cont .chart_box:last-child {
+					padding-bottom: 30px !important;
+				}
+
+				.chart_box .chart {
+					width: 100%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #eee;
+					position: relative;
+				}
+
+				.chart_box .select_chart01 {
+					width: 30%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #71b9bd;
+				}
+				.select_chart01 p{
+					position: absolute;
+					top: -50px;
+					left: 26%;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: #fff;
+					font-weight: 100;
+					background-color: #71b9bd;
+					border-radius: 5px;
+				}
+				.select_chart01 p::before {
+					content: "";
+					background-color: #71b9bd;
+					position: absolute;
+					bottom: -4px;
+					width: 10px;
+					height: 10px;
+					left: 45%;
+					transform: rotate(45deg);
+					border-radius: 3px;
+				}
+				.chart_box .select_chart02 {
+					width: 55%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #2a7094;
+				}
+				.select_chart02 p{
+					position: absolute;
+					top: -50px;
+					left: 51%;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: #fff;
+					font-weight: 100;
+					background-color: #2a7094;
+					border-radius: 5px;
+				}
+				.select_chart02 p::before {
+					content: "";
+					background-color: #2a7094;
+					position: absolute;
+					bottom: -4px;
+					width: 10px;
+					height: 10px;
+					left: 45%;
+					transform: rotate(45deg);
+					border-radius: 3px;
+				}
+				.chart_box .select_chart03 {
+					width: 90%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #224e8d;
+				}
+				.select_chart03 p{
+					position: absolute;
+					top: -50px;
+					left: 86%;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: #fff;
+					font-weight: 100;
+					background-color: #224e8d;
+					border-radius: 5px;
+				}
+				.select_chart03 p::before {
+					content: "";
+					background-color: #224e8d;
+					position: absolute;
+					bottom: -4px;
+					width: 10px;
+					height: 10px;
+					left: 45%;
+					transform: rotate(45deg);
+					border-radius: 3px;
+				}
+				.mag_mod_percent.sty03 {
+					padding: 0rem 0 8rem 0 !important;
+					background-color: #b85a41 ;
+				}
+				.finance_graf {
+					position: relative;
+				}
+				.finance_img {
+					position: relative;
+				}
+				.percent_wrap {
+					z-index: 9;
+				}
+				.profit {
+					z-index: 9;
+				}
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+					border-left: 140px solid transparent;
+					border-right: 140px solid transparent;
+				}
+
+				.finance_img .img01 {
+					position: absolute;
+					bottom: -140px;
+					z-index: 1;
+				}
+
+				.finance_img .img02 {
+
+					position: absolute;
+					bottom: -40px;
+					right: 0px;
+					z-index: 1;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:after {
+					background-color: #381f1b;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(1) {
+					background: #199b57;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(1) p{
+					color: #199b57;
+				}
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(2) {
+				background-color: #9bcc56;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(2) p{
+					color: #9bcc56;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(3) {
+					background-color: #ffb600;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(3) p{
+					color: #ffb600;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4) {
+					background-color: #e55133;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4) p{
+					color: #e55133;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+					border-bottom: 180px solid  #e55133;
+					border-left: 180px solid transparent;
+					border-right: 180px solid transparent;
+				}
+
+				.growth .percent_wrap-textbox:last-child {
+					top: 200px !important;
+				} 
+
+				.percent_wrap-textbox p {
+					padding: 10px;
+					background-color: #fff;
+					border-radius: 30px;
+					max-width: 120px;
+					color: #000;
+					font-size: 18px !important;
+					margin: 0 auto;
+					font-weight: bold;
+				}
+
+				.bpProfitability01 {
+					font-size: 24px !important;
+				}
+
+				.bpProfitability02 {
+					font-size: 36px !important;
+				}
+
+				@media(max-width:1500px) {
+
+					.finance_img {
+						display: none;
+					}
+				}
+
+				@media(max-width:1000px) {
+
+					.select_chart02 p{
+						left: 51%;
+					}
+
+				}
+
+				@media (max-width:1024px) {
+					.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+						border-bottom: 120px solid #e55133;
+						border-left: 120px solid transparent;
+						border-right: 120px solid transparent;
+					}
+					
+				}
+
+				@media(max-width:768px) {
+
+					.select_chart01 p{
+						left: 26%;
+					}
+
+					.select_chart02 p{
+						left: 46%;
+					}
+
+					.select_chart03 p{
+						left: 80%;
+					}
+                    .finance_con{
+                        padding: 20px;
+                    }
+					.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+				}
+
+				@media(max-width:640px) {
+					.growth .percent_wrap-textbox:last-child {
+						top: 50% !important;
+					} 
+					
+				}
+
+				@media(max-width:500px) {
+					
+					.select_chart01 p{
+						left: 20%;
+					}
+
+					.select_chart02 p{
+						left: 40%;
+					}
+
+					.select_chart03 p{
+						left: 70%;
+					}
+				}
+
+
+				.mag_mod_biz.sty02{
+					z-index: 9;
+					margin: 0px !important;
+					padding: 8rem 0 !important;
+					background-color: #fff;
+				}
+                .mag_mod_percent.sty03{
+                    background-color: #fff;
+                }
+                .finance_graf{
+                    top: -40px;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before{
+                    border-bottom: 180px solid #305488;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(4){
+                    background-color: #305488;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(4) p {
+                    color: #fff;
+                }
+                .percent_wrap-textbox p{
+                    background-color: none;
+                }
+                .graph_b_title{
+                    font-size: 1.6rem !important;
+                    font-weight: 300 !important;
+                    position: relative !important;
+                }
+                .graph_b_title::before{
+                    content: "";
+                    width: 30px;
+
+                    height: 1px;
+                    top: 28px;
+                    width: 45px;
+                    background: #fff;
+                    position: absolute;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(3){
+                    background-color: #00a9a1;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(2){
+                    background-color: #86b441;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(1){
+                    background-color: #587212;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:after{
+                    background-color: #333333;
+                }
+				/* 재무정보 end */
+
+    </style>
+ 
+        
+
+
+.d-flex{
+            display: flex;
+        }
+        .w-33{
+            width: 33.33% !important;
+        }
+        .W-50{
+            width: 50% !important;
+        }
+        .w-25{
+            width: 25% !important;
+        }
+        .text-center{
+            text-align: center;
+        }
+        .text-right{
+            text-align: right;
+        }
+        .t_b_section{
+            background: url('file:///C|/Users/user/Downloads/gwjob-main (5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_top_bg.jpg');
+            background-repeat: no-repeat;
+            text-align: center;
+            padding-top: 134px;
+            padding-bottom: 427px;
+            background-position: center;
+            background-size: cover;
+        }
+        .t_b_section .t-title h1{
+            color: #3f5586;
+            margin-top: 37px;
+            font-size: 40px;
+        }
+        /* 모듈 백분위정보 */
+        .mag_mod_percent.sty05{
+            background: #3f5586;
+            padding: 162px 0 !important;
+        }
+        .mag_mod_percent.sty05 .percent_wrap > div > div span{
+            color: #fff;
+            font-size: 18px !important;
+        }
+        .mag_mod_percent.sty05 .percent_wrap > div > div p{
+            font-size: 21px;
+            color: #ccc !important;
+        }
+        /* 모듈 백분위정보 끝 */
+        /* 모듈 연혁 */
+        .bro_mod_history.sty02 .history > div > span{
+            background: #3f5586 !important;
+        }
+        .bro_mod_history.sty02 .history > div ul > li .month{
+            color: #95b44c !important;
+        }
+        .history_title{
+            text-align: center;
+            margin-bottom: 63px;
+        }
+       .history_title h3{
+            color: #ccc;
+            font-size: 21px !important;
+            font-weight: 300;
+            letter-spacing: 10px !important;
+            margin-bottom: 0 !important;
+        }
+       .history_title h2{
+            color: #333;
+            font-size: 40px;
+        }
+        /* 모듈 연혁 끝 */
+        /* 미션,비젼,슬로건 영역 */
+        
+        .l_out_section_3_1{
+            background: url('file:///C|/Users/user/Downloads/gwjob-main (5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_content_1.jpg');
+        }
+        .l_out_section_3_2{
+            background: url('file:///C|/Users/user/Downloads/gwjob-main (5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_content_2.jpg');
+            border-left: 1px solid #fff;
+            border-right: 1px solid #fff;
+            box-sizing: border-box;
+        }
+        .l_out_section_3_3{
+            background: url('file:///C|/Users/user/Downloads/gwjob-main (5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_content_3.jpg');
+        }
+        .background-common{
+            background-repeat: no-repeat;
+            background-position: center;
+            padding: 348px 0 323px 0;
+            background-size: cover;
+        }
+        .l_out_section_3 .l_out_sub_title{
+            color: #95b44c;
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 300;
+        }
+        .l_out_section_3 .l_out_main_title{
+            color: #fff;
+            font-size: 40px;
+            text-transform: uppercase;
+            line-height: 40px;
+        }
+        .l_out_section_3 .l_out_text{
+            margin-top: 100px;
+            color: #fff;
+            font-size: 21px;
+            font-weight: 300;
+        }
+        @media(max-width:768px){
+            .l_out_section_3 .background-common{ 
+                padding: 150px 0  150px 0 !important;
+            }
+            .l_out_section_3 .d-flex{
+                flex-direction: column;
+            }
+            .l_out_section_3_2{
+            border-left: 0 solid #fff;
+            border-right: 0 solid #fff;
+            border-top: 1px solid #fff;
+            border-bottom: 1px solid #fff;
+            box-sizing: border-box;
+            }
+            .l_out_section_3 .w-33{
+                width: 100% !important;
+            }
+        }
+        /* 미션,비젼,슬로건 영역 끝 */
+        /* 인재상 */
+        .l_out_section_4{
+            background: #95b44c;
+            padding: 100px 0;
+        }
+        .l_out_section_4 .l_c_main_title{
+            width: 35%;
+        }
+        .l_out_section_4 .l_c_text{
+            width: 65%;
+        }
+        .l_out_section_4 .l_out_title{
+            align-items: center;
+            color: #fff;
+        }
+        .l_out_section_4 .l_out_title h2{
+            font-size: 40px;
+            margin-right: 40px;
+            margin-left: 23px;
+            line-height: 40px;
+        }
+        .l_out_section_4 .l_out_title h2::after{
+            content: "";
+            display: block;
+            width: 3px;
+            height: 88px;
+            position: absolute;
+            top: 90px;
+            left: 0;
+            background: #fff;
+        }
+        .l_out_section_4 .l_out_title span{
+            margin-top: 20px;
+            display: block;
+        }
+        .l_out_section_4 .l_out_content{
+            text-align: center;
+        }
+        .l_out_section_4 .l_out_content+.l_out_content{
+            margin-left: 24px;
+        }
+        .l_out_section_4 .l_out_title p{
+            font-size: 21px;
+            line-height: 21px;
+            font-weight: 300;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            height: 100px;
+        }
+        .l_out_content{
+            text-align: center;
+            background: #fff;
+            border-radius: 100%;
+            padding: 80px 100px;
+        }
+        @media(max-width:1280px){
+            .l_out_section_4 .l_out_content+.l_out_content{
+            margin-left:5% !important;
+            }
+            .l_out_section_4 .l_c_main_title{
+            width: 30%;
+             }
+        }
+        @media(max-width:1024px){
+            .l_out_section_4 .l_out_content+.l_out_content{
+            margin-left:5% !important;
+            }
+            .l_out_section_4 .l_c_main_title{
+            width: 100%;
+             }
+             .l_out_content_section{
+                flex-direction: column;
+             }
+             .l_out_content_section .w-33{
+                width: 100%;
+             }
+             .l_out_section_4 .l_c_text{
+                width: 100%;
+                margin-top: 40px;
+            }
+            .l_out_section_4 .l_out_title h2::after{
+                top: 10px;
+            }
+            .l_out_section_4 .l_out_content+.l_out_content{
+                margin-left:6% !important;
+            }
+            .l_out_content{
+                padding: 50px 65px;
+            }
+        }
+        @media(max-width:540px){
+            .l_out_content {
+                padding: 17px 24px;
+            }
+        }
+        @media(max-width:374px){
+            .l_out_content {
+                padding: 7px 14px;
+            }
+        }
+        /* 인재상 */
+        /* 핵심가치 */
+        .l_out_section_5{
+            background-color: #f4f4f4;
+            
+        }
+        .l_out_section_5 .cnt-container{
+            padding: 100px 0;
+            border-bottom: 1px solid #ccc;
+        }
+        .l_out_section_5 .cnt-container::after{
+          content: '';
+          background: url(file:///C|/Users/user/Downloads/gwjob-main%20(5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_content_1-1.png) no-repeat;
+          width: 451px;
+          height: 468px;
+          position: absolute;
+          left: 26px;
+    bottom: -40px;
+        }
+        .l_out_section_5 .l_c_main_title{
+            width: 100%;
+        }
+        .l_out_section_5 .l_out_title{
+            width: 30%;
+        }
+        .l_out_section_5 .l_c_m_title{
+            width: 80%;
+        }
+        .l_c_m_title .l_t_content{
+            width: 231px;
+            height: 231px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            border-radius: 100%;
+            text-align: center;
+        }
+        .l_c_m_title .l_t_content+.l_t_content{
+            margin-left: 24px;
+        }
+        .flex-wrap{
+            flex-wrap:wrap;
+        }
+        .justify-center{
+            justify-content: center;
+        }
+        .align-center{
+            align-items: center;
+        }
+        .l_out_section_5 .l_out_title{
+            padding-left: 40px;
+            display: flex;
+
+        }
+        .l_out_section_5 .l_out_title h2::after {
+            content: "";
+            display: block;
+            width: 3px;
+            height: 90px;
+            position: absolute;
+            top: 19px;
+            left: -40px;
+            background: #333;
+        }
+        .l_out_section_5 .l_out_title h2{
+            font-size: 40px;
+            position: relative;
+        }
+        .l_out_section_5 .l_out_title p{
+            font-size: 21px;
+            margin-top: 80px;
+            margin-left: 40px;
+        }
+        .l_out_section_5 .l_out_icon{
+            margin-top: 26px;
+        }
+        @media(max-width:1800px){
+          .l_out_section_5 .cnt-container::after{
+            display: none;
+          }
+        }
+        @media(max-width:1024px){
+            .l_c_m_title .l_t_content{
+                width: 200px;
+                height: 200px;
+            }
+        }
+        @media(max-width:768px){
+            .l_c_m_title .l_t_content{
+                width: 200px;
+                height: 200px;
+            }
+            .l_out_section_5 .l_c_main_title{
+                flex-direction: column;
+            }
+            .l_out_section_5 .l_out_title{
+                width: 100%;
+            }
+            .l_out_section_5 .l_c_m_title{
+                width: 100%;
+                margin-top: 40px;
+            }
+            .l_out_section_5 .l_out_title h2::after{
+                top: 20px;
+            }
+            .l_c_m_title .l_t_content{
+                margin: 10px;
+            }
+            .l_c_m_title .l_t_content+.l_t_content{
+                margin-left: 0;
+            }
+        }
+        /* 핵심가치 끝 */
+        /* 전략과제 */
+        .l_out_section_6{
+            padding: 89px 0;
+            background-color: #f4f4f4;
+        }
+        .l_out_section_6 .l_out_title{
+            padding-left: 40px;
+            width: 100%;
+        }
+        .l_out_section_6 .l_out_title h2{
+            font-size: 40px;
+            line-height: 40px;
+            position: relative;
+        } 
+        .l_out_section_6 .l_out_title span{
+            display: block;
+            margin-top: 20px;
+        }
+        .l_out_section_6 .l_out_title p{
+            font-size: 21px;
+            margin-top: 74px;
+            margin-left: 40px;
+        }
+        .l_out_section_6 .l_out_title h2::after {
+            content: "";
+            display: block;
+            width: 3px;
+            height: 90px;
+            position: absolute;
+            top: 10px;
+            left: -40px;
+            background: #333;
+        }
+        .l_out_section_6 .l_c_text{
+            position: relative;
+            clear: both;
+            margin-top: 60px;
+        }
+        .l_out_section_6 .main-blue-color{
+            background-color: #3f5586;
+      
+            float: left;
+        }
+        .l_out_section_6 .main-green-color{
+            background-color: #5da8a1;
+            position: absolute;
+            right: 0;
+        }
+        .l_out_section_6 .content_title{
+            color: #fff;
+            width: 53%;
+            padding: 89px 0;
+            border-radius: 100px;
+            font-size: 21px;
+        }
+        .clear-fix{
+            clear: both;
+        }
+        @media(max-width:500px){
+            .l_out_section_6 .content_title{
+            color: #fff;
+            width: 53%;
+            padding:26px 0;
+            border-radius: 100px;
+            }
+            .l_out_section_6 .content_title p{
+            font-size: 5px;
+            }
+            .l_out_section_6 .l_out_title{
+                flex-direction: column;
+            }
+            .l_out_section_6 .l_out_title p{
+                margin-top: 20px;
+                margin-left: 0px;
+            }
+        }
+
+        /* SWOT */
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotS{
+            background-color: #3f5586;   
+        }
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotW{
+            background-color:#5da8a1;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotO{
+            background-color: #95b44c;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .diagram_area .swotT{
+            background-color: #607123;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .desc{
+            font-size: 1.8rem;
+            color: #fff;
+        }
+        .s-color{
+            color: #3f5586;
+        }
+        .w-color{
+            color: #5da8a1;
+        }
+        .o-color{
+            color: #95b44c;
+        }
+        .t-color{
+            color:#607123;
+        }
+        .rec_mod_swot.sty03 .swot_wrap .tit{
+            font-size: 3.0rem;
+        }
+        .rec_mod_swot.sty03{
+            background: url('file:///C|/Users/user/Downloads/gwjob-main (5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_conent_bg_2.jpg');
+        }
+
+        /* 재무정보 */
+
+        /* 사업영역 */
+        .mag_mod_biz.sty04{
+          margin: 0;
+          padding: 8rem 0;
+          background-color: #f4f4f4;
+        }
+        .mag_mod_biz.sty04 .biz_wrap img{
+          width: 100%;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt:before{
+          width: 200px;
+          background-color: #999999;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt .msgAdd{
+          font-size: 1.8rem;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt h3{
+          font-size: 5rem;
+          color: #3f5586;
+          font-weight: bold;
+          line-height: 5rem;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt h3 span{
+          color: #666666;
+        }
+        .mag_mod_biz.sty04 .biz_wrap .txt .msgAdd{
+          margin: 2rem 0;
+        }
+        .mag_mod_biz.sty04 .swiper-button-next, .mag_mod_biz.sty04 .swiper-button-prev{
+          border-radius: 0;
+        }
+        .mag_mod_biz.sty04 .swiper-slide{
+          max-width: 100%;
+        }
+        /* 사업영역 끝 */
+
+               /* 주요상품  */
+               .l_c_product .cnt-container{
+              padding: 100px 0;
+            }
+            .history_title h3{
+              text-transform: uppercase;
+            }
+            .ml-20{
+              margin-left: 20px;
+            }
+            .product_content_img{
+              margin-bottom: 40px;
+            }
+            .product_text h3{
+              font-weight: 300;
+              color: #3f5586;
+              font-size: 2.1rem;
+              line-height: 2.1rem;
+              margin-bottom: 17px;
+            }
+            .product_text h1{
+              color: #333;
+              font-size:3.0rem;
+              margin-bottom: 5.4rem;
+              position: relative;
+            }
+            .product_text h1::after{
+              content: "";
+              display: block;
+              width: 26px;
+              height: 1px;
+              background: #333;
+              position: absolute;
+              margin-top: 20px;
+            }
+            .product_text p{
+              font-size: 1.8rem;
+            }
+            @media(max-width:540px){
+              .product_text h1{
+                font-size: 2.4rem;
+              }
+              .l_c_product .cnt-container{
+                padding: 8rem 0;
+              }
+              .l_c_product .d-flex{
+                flex-direction: column;
+              }
+              .product_content_img{
+                margin-bottom: 20px;
+              }
+              .l_c_product .d-flex .w-50{
+                margin-bottom: 3rem;
+              }
+              .l_c_product .d-flex .ml-20{
+                margin-left: 0;
+              }
+            }
+        /* 주요상품 끝 */
+
+        /* 조직문화 */
+        .mag_mod_culture.sty03{
+          background-color: #f4f4f4;
+          padding: 8rem 0;
+        }
+        .mag_mod_culture.sty03 .history_title{
+          margin-bottom:30px
+        }
+        .mag_mod_culture.sty03 .masony .item:hover{
+          background: #95b44c;
+        }
+        @media (max-width: 1024px){
+          .mag_mod_culture.sty03 .masony{
+            flex-direction: column;
+            display: flex !important;
+            width: 100% !important;
+          }
+          .mag_mod_culture.sty03 .masony .item{
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 20px;
+          }
+        }
+
+
+        /* 조직문화 끝 */
+
+        /* 인터뷰 */
+        .mag_mod_interview.sty03{
+          background: #5da8a1;
+        }
+        .mag_mod_interview.sty03 .photo img{
+          width: 100%;
+        }
+        .mag_mod_interview.sty03 .photo{
+          height: 300px;
+        }
+        .mag_mod_interview.sty03 .swiper-pagination-bullet-active{
+          background: #3f5586;
+        }
+        .mag_mod_interview.sty03 .cnt-container{
+          padding: 40px;
+          border-radius: 30px;
+          background: #549791;
+        }
+        .mag_mod_interview.sty03 .iv_wrap{
+          box-shadow: none;
+        }
+        @media (max-width: 768px){
+          .mag_mod_interview.sty03 .photo{
+            height: 200px;
+            background: none;
+          }
+          .mag_mod_interview.sty03 .photo img{
+            width: inherit;
+          }
+        }
+        /* 인터뷰 끝 */
+
+        /* 미디어 */
+      .media-wrap {
+        padding: 8rem 0;
+      }
+      .media-wrap .media-area {
+        display: flex;
+        margin: 50px 0;
+        padding-bottom: 50px;
+        position: relative;
+      }
+      .media-wrap .media-area::after {
+        content: "";
+        background: #ccc;
+        width: 100%;
+        height: 1px;
+        position: absolute;
+        bottom: 0;
+      }
+      .media-wrap .media-area .media-img:first-child {
+        margin-right: 15px;
+      }
+      @media (max-width: 640px){
+        .media_con iframe {
+          height: 300px;
+          }
+      }
+
+      /* 미디어 끝 */
+
+      /* 채용정보 */
+      .rec_mod_strategy.sty03{
+        background: #f4f4f4;
+        margin: 0;
+        padding: 8rem 0 0 0;
+      }
+      .rec_mod_strategy.sty03 .guide h3{
+        background: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .guide_wrap > div:nth-child(1) .q:before{
+        color: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .guide_wrap > div{
+        display: flex;
+        align-items: center;
+      }
+      .rec_mod_strategy.sty03 .q{
+        width: 30%;
+      }
+      .rec_mod_strategy.sty03 .a{
+        margin-left: 200px;
+      }
+      .rec_mod_strategy.sty03 .rq_cont{
+        border-radius: 0;
+        padding: 80px;
+        border: 1px solid #262d7e;
+      }
+      .rec_mod_strategy.sty03 .rq_cont:after{
+        background:url(file:///C|/Users/user/Downloads/gwjob-main%20(5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_content_1-2.png) no-repeat; 
+        background-size: cover;
+        width: 50%;
+      }
+      .rec_mod_strategy.sty03 .bg{
+        background: none;
+      }
+      .rec_mod_strategy.sty03 .cont_box{
+        border-radius: 0;
+      }
+      .rec_mod_strategy.sty03 .add_point{
+        background: #95b44c;
+      }
+      .rec_mod_strategy.sty03 .cont_box{
+        border:2px solid #95b44c
+      }
+      .rec_mod_strategy.sty03 .spec h3{
+        background: #95b44c;
+      }
+      .rec_mod_strategy.sty03 .spec li{
+        justify-content: left;
+      }
+      .rec_mod_strategy.sty03 .bg{
+        position: relative;
+        z-index: 1;
+      }
+      .rec_mod_strategy.sty03 .bg::after{
+        content: '';
+        background: #e1e7d2;
+        width: 100%;
+        height: 600px;
+        position: absolute;
+        bottom: 0;
+        z-index: -1;
+      }
+      .rec_mod_strategy.sty03 .a{
+        margin-left: 0;
+      }
+      .rec_mod_strategy.sty03 .interview_tip_wrap > div{
+        border-bottom: 0;
+      }
+      .rec_mod_strategy.sty03 .interview_tip{
+        position: relative;
+        margin: 0;
+        padding: 8rem 0;
+      }
+      .rec_mod_strategy.sty03 .interview_tip::after{
+        content: '';
+        background: url(file:///C|/Users/user/Downloads/gwjob-main%20(5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_content_1-4.png) no-repeat;
+        width: 550px;
+        height: 682px;
+        position: absolute;
+        left: 58%;
+        bottom: 0;
+        z-index: 99;
+      }
+      .rec_mod_strategy.sty03 h3{
+        font-size: 4rem;
+        color: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .interview_tip_wrap > div:nth-child(1) .q:before{
+        font-size: 4rem;
+        color: #3f5586;
+      }
+      .rec_mod_strategy.sty03 .interview_tip .q{
+        font-size: 3rem;
+        font-weight: bold;
+      }
+
+      .rec_mod_strategy.sty03 .interview_tip .a{
+        font-size: 2.4rem;
+      }
+      .rec_mod_strategy.sty03 .interview_tip .qm_btn{
+        background: #3f5586;
+        border-radius: 0;
+      }
+      .mag_mod_interview.sty03 .qa_ceo:before,
+      .mag_mod_interview.sty03 .qa_mng:before,
+      .mag_mod_interview.sty03 .qa_emp:before{
+        color: #3f5586;
+      }
+      @media (max-width: 1500px){
+        .rec_mod_strategy.sty03 .interview_tip::after{
+          display: none;
+        }
+      }
+      @media (max-width: 768px){
+
+        .rec_mod_strategy.sty03 .q{
+          width: 80%;
+        }
+      }
+      @media (max-width: 480px){
+        .rec_mod_strategy.sty03 .guide_wrap > div{
+          flex-direction: column;
+          align-items: start;
+        }
+        .rec_mod_strategy.sty03 .bg{
+          padding: 3rem 0;
+        }
+        .rec_mod_strategy.sty03 .rq_cont{
+          padding: 40px;
+        }
+      }
+      /* 채용정보 끝 */
+      /* 채용절차 */
+      .procedure_wrap{
+        padding: 7rem 0;
+      }
+      .procedure_wrap .proceure_area{
+        display: flex;
+        justify-content: space-between;
+        text-align: center;
+      }
+      .procedure_wrap .proceure_area .proceure_con{
+        border: 1px solid #5da8a1;
+        border-radius: 30px;
+        width: 25%;
+        padding: 65px 45px;
+        position: relative;
+      }
+      .procedure_wrap .proceure_area .proceure_con img{
+        display: block;
+        margin: 0 auto;
+      }
+      .procedure_wrap .proceure_area .proceure_con span{
+        font-size: 1.8rem;
+        color: #5da8a1;
+        display: inline-block;
+        margin: 2rem 0;
+      }
+      .procedure_wrap .proceure_area .proceure_con h3{
+        font-size: 3rem;
+        color: #5da8a1;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 1px solid #5da8a1;
+        border-radius: 100px;
+      }
+      .procedure_wrap .proceure_area .proceure_con p{
+        font-size: 1.6rem;
+        color: #666666;
+        margin-top: 2rem;
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk{
+        background: #5da8a1;
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk h3{
+        color: #fff;
+        border: 1px solid #fff;
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk p{
+        color: #fff;
+      }
+      .procedure_wrap .proceure_area .proceure_con::after{
+        content: '';
+        background: url(file:///C|/Users/user/Downloads/gwjob-main%20(5)/gwjob-main/gwjob/gwjob/proto/module/images/2258122349_next_icon.png) no-repeat;
+        width: 61px;
+        height: 25px;
+        position: absolute;
+        right: -110px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .procedure_wrap .proceure_area .proceure_con.full-bk::after{
+        display: none;
+      }
+      @media (max-width: 1300px){
+        .procedure_wrap .proceure_area{
+          flex-direction: column;
+        }
+        .procedure_wrap .proceure_area .proceure_con{
+          width: 90%;
+          margin:0 auto;
+          margin-bottom: 2rem;
+        }
+        .procedure_wrap .proceure_area .proceure_con h3{
+          width: 30%;
+          margin: 0 auto;
+        }
+        .procedure_wrap .proceure_area .proceure_con::after{
+          display: none;
+        }
+      }
+      @media (max-width: 480px){
+        .procedure_wrap .proceure_area .proceure_con h3{
+          width: 100%;
+        }
+
+      }
+      /* 채용절차 끝 */
+				.bro_mod_finance {
+					margin: 0px !important;
+					background-color: #fff !important; 
+				}
+				.finance_con .comName {
+					letter-spacing: 5px;
+					text-transform: uppercase;
+					font-weight: bold !important;
+					color: #cccccc !important;
+				}
+				.finance_con h3 {
+					padding-bottom: 40px;
+					color: #333 !important;
+				}
+				.finance_con .tab_conatainer {
+					background-color: #fff;
+					padding: 70px 0;
+					border-radius: 15px;
+                    -webkit-box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17); 
+                    box-shadow: 5px 5px 15px 5px rgba(0,0,0,0.17);
+				}
+				.tab_wrap .tab {
+					border-radius: 0px !important;
+					width: 80%;
+					margin: 0 auto;
+					gap: 20px;
+					border: none !important;
+				}
+				.tab_wrap .tab div {
+					padding: 10px 0px !important;
+				}
+				.tab_wrap div.on {
+					background-color: #3f5586 !important;
+				}
+				.finance_tab-box {
+					border: none !important;
+					color: #fff !important;
+					background-color: #ccc;
+					border-radius: 15px;
+				}
+				.tab_wrap .cont {
+					width: 80%;
+					margin: 0 auto;
+				}
+                .finance_con{
+                    background-color: #f4f4f4;
+                    padding: 80px;
+                    border-radius: 20px;
+                }
+				.cont .capital {
+					text-align: right;
+					padding: 60px 0 !important;
+				}
+				.cont .chart_box {
+					display: flex ;
+					flex-direction: row;
+					gap: 20px;
+					align-items: center;
+					justify-content: space-between;
+					padding-bottom: 50px;
+				}
+
+				.cont .chart_box:last-child {
+					padding-bottom: 30px !important;
+				}
+
+				.chart_box .chart {
+					width: 100%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #eee;
+					position: relative;
+				}
+
+				.chart_box .select_chart01 {
+					width: 30%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #71b9bd;
+				}
+				.select_chart01 p{
+					position: absolute;
+					top: -50px;
+					left: 26%;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: #fff;
+					font-weight: 100;
+					background-color: #71b9bd;
+					border-radius: 5px;
+				}
+				.select_chart01 p::before {
+					content: "";
+					background-color: #71b9bd;
+					position: absolute;
+					bottom: -4px;
+					width: 10px;
+					height: 10px;
+					left: 45%;
+					transform: rotate(45deg);
+					border-radius: 3px;
+				}
+				.chart_box .select_chart02 {
+					width: 55%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #2a7094;
+				}
+				.select_chart02 p{
+					position: absolute;
+					top: -50px;
+					left: 51%;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: #fff;
+					font-weight: 100;
+					background-color: #2a7094;
+					border-radius: 5px;
+				}
+				.select_chart02 p::before {
+					content: "";
+					background-color: #2a7094;
+					position: absolute;
+					bottom: -4px;
+					width: 10px;
+					height: 10px;
+					left: 45%;
+					transform: rotate(45deg);
+					border-radius: 3px;
+				}
+				.chart_box .select_chart03 {
+					width: 90%;
+					height: 20px;
+					border-radius: 5px;
+					background-color: #224e8d;
+				}
+				.select_chart03 p{
+					position: absolute;
+					top: -50px;
+					left: 86%;
+					padding: 5px 15px;
+					font-size: 18px;
+					color: #fff;
+					font-weight: 100;
+					background-color: #224e8d;
+					border-radius: 5px;
+				}
+				.select_chart03 p::before {
+					content: "";
+					background-color: #224e8d;
+					position: absolute;
+					bottom: -4px;
+					width: 10px;
+					height: 10px;
+					left: 45%;
+					transform: rotate(45deg);
+					border-radius: 3px;
+				}
+				.mag_mod_percent.sty03 {
+					padding: 0rem 0 8rem 0 !important;
+					background-color: #b85a41 ;
+				}
+				.finance_graf {
+					position: relative;
+				}
+				.finance_img {
+					position: relative;
+				}
+				.percent_wrap {
+					z-index: 9;
+				}
+				.profit {
+					z-index: 9;
+				}
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+					border-left: 140px solid transparent;
+					border-right: 140px solid transparent;
+				}
+
+				.finance_img .img01 {
+					position: absolute;
+					bottom: -140px;
+					z-index: 1;
+				}
+
+				.finance_img .img02 {
+
+					position: absolute;
+					bottom: -40px;
+					right: 0px;
+					z-index: 1;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:after {
+					background-color: #381f1b;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(1) {
+					background: #199b57;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(1) p{
+					color: #199b57;
+				}
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(2) {
+				background-color: #9bcc56;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(2) p{
+					color: #9bcc56;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(3) {
+					background-color: #ffb600;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(3) p{
+					color: #ffb600;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4) {
+					background-color: #e55133;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4) p{
+					color: #e55133;
+				}
+
+				.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+					border-bottom: 180px solid  #e55133;
+					border-left: 180px solid transparent;
+					border-right: 180px solid transparent;
+				}
+
+				.growth .percent_wrap-textbox:last-child {
+					top: 200px !important;
+				} 
+
+				.percent_wrap-textbox p {
+					padding: 10px;
+					background-color: #fff;
+					border-radius: 30px;
+					max-width: 120px;
+					color: #000;
+					font-size: 18px !important;
+					margin: 0 auto;
+					font-weight: bold;
+				}
+
+				.bpProfitability01 {
+					font-size: 24px !important;
+				}
+
+				.bpProfitability02 {
+					font-size: 36px !important;
+				}
+
+				@media(max-width:1500px) {
+
+					.finance_img {
+						display: none;
+					}
+				}
+
+				@media(max-width:1000px) {
+
+					.select_chart02 p{
+						left: 51%;
+					}
+
+				}
+
+				@media (max-width:1024px) {
+					.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+						border-bottom: 120px solid #e55133;
+						border-left: 120px solid transparent;
+						border-right: 120px solid transparent;
+					}
+					
+				}
+
+				@media(max-width:768px) {
+
+					.select_chart01 p{
+						left: 26%;
+					}
+
+					.select_chart02 p{
+						left: 46%;
+					}
+
+					.select_chart03 p{
+						left: 80%;
+					}
+                    .finance_con{
+                        padding: 20px;
+                    }
+					.mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before {
+						border-left: 90px solid transparent;
+						border-right: 90px solid transparent;
+					}
+				}
+
+				@media(max-width:640px) {
+					.growth .percent_wrap-textbox:last-child {
+						top: 50% !important;
+					} 
+					
+				}
+
+				@media(max-width:500px) {
+					
+					.select_chart01 p{
+						left: 20%;
+					}
+
+					.select_chart02 p{
+						left: 40%;
+					}
+
+					.select_chart03 p{
+						left: 70%;
+					}
+				}
+
+
+				.mag_mod_biz.sty02{
+					z-index: 9;
+					margin: 0px !important;
+					padding: 8rem 0 !important;
+					background-color: #fff;
+				}
+                .mag_mod_percent.sty03{
+                    background-color: #fff;
+                }
+                .finance_graf{
+                    top: -40px;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(4):before{
+                    border-bottom: 180px solid #305488;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(4){
+                    background-color: #305488;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(4) p {
+                    color: #fff;
+                }
+                .percent_wrap-textbox p{
+                    background-color: none;
+                }
+                .graph_b_title{
+                    font-size: 1.6rem !important;
+                    font-weight: 300 !important;
+                    position: relative !important;
+                }
+                .graph_b_title::before{
+                    content: "";
+                    width: 30px;
+
+                    height: 1px;
+                    top: 28px;
+                    width: 45px;
+                    background: #fff;
+                    position: absolute;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(3){
+                    background-color: #00a9a1;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(2){
+                    background-color: #86b441;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:nth-child(1){
+                    background-color: #587212;
+                }
+                .mag_mod_percent.sty03 .percent_wrap > div:after{
+                    background-color: #333333;
+                }
+				/* 재무정보 end */
+
+    </style>
+
+
+
 .biz_wrap .business-box01 {
     background: url("#");
     background-repeat: no-repeat;
