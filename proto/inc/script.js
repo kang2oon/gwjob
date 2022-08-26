@@ -16,6 +16,8 @@ $(document).ready(function(){
         $('.tcont_wrap > div[data-tab="'+tab+'"]').addClass('active');
     });
 
+    
+
     $.ajax({
         complete : function(){
             $('.mod_history02 .history').slick({
@@ -46,6 +48,29 @@ $(document).ready(function(){
                         }
                     }
                 ]
+            });
+
+            interview01 = $('.mod_interview01 .interview');
+            function interview01_slide(){
+                interview01.slick({
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: false,
+                    dots: true,
+                    arrows: true,
+                    infinite: false,
+                    adaptiveHeight: false,
+                });
+            }
+            interview01_slide();
+
+            $('.mod_interview01 .iv_tab > div').click(function(){
+                var tab = $(this).attr('data-tab');
+                $('.mod_interview01 .iv_tab > div, .mod_interview01 .iv_cont > div').removeClass('active');
+                $(this).addClass('active');
+                $('.mod_interview01 .iv_cont > div[data-tab="'+tab+'"]').addClass('active');
+                interview01.slick('unslick');
+                interview01_slide();
             });
         }
     });

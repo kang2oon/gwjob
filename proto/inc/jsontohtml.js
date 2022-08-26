@@ -308,14 +308,15 @@ xmlhttp.onload = function() {
     var ivCeoCnt = myObj.ivCeo.length;
     var ivCeoWrap = myObj.ivCeo;
     var ivCeoPhoto = "<img src='"+baseUrl+imgCeo+"' alt='대표이사'>";
-    var ivCeo = "<div class='swiper-wrapper'>";
+    //var ivCeo = "<div class='swiper-wrapper'>";
+    var ivCeo = "";
     for(var i=0; i<ivCeoCnt; i++){
-        ivCeo += "<div class='swiper-slide'>";
+        ivCeo += "<div>";
         ivCeo += "<div class='q'>"+ivCeoWrap[i].q+"</div>";
         ivCeo += "<div class='a'>"+ivCeoWrap[i].a+"</div>";
         ivCeo += "</div>";
     }
-    ivCeo += "</div>";
+    //ivCeo += "</div>";
     $(".ivCeoPhoto").html(ivCeoPhoto);
     $(".ivCeo").html(ivCeo);
     // 인사담당자 인터뷰
@@ -323,14 +324,13 @@ xmlhttp.onload = function() {
     var ivMngCnt = myObj.ivMng.length;
     var ivMngWrap = myObj.ivMng;
     var ivMngPhoto = "<img src='"+baseUrl+imgMng+"' alt='인사담당자'>";
-    var ivMng = "<div class='swiper-wrapper'>";
+    var ivMng = "";
     for(var i=0; i<ivMngCnt; i++){
-        ivMng += "<div class='swiper-slide'>";
+        ivMng += "<div>";
         ivMng += "<div class='q'>"+ivMngWrap[i].q+"</div>";
         ivMng += "<div class='a'>"+ivMngWrap[i].a+"</div>";
         ivMng += "</div>";
     }
-    ivMng += "</div>"; 
     $(".ivMngPhoto").html(ivMngPhoto);
     $(".ivMng").html(ivMng);
     // 재직자 인터뷰
@@ -338,14 +338,13 @@ xmlhttp.onload = function() {
     var ivEmpCnt = myObj.ivEmp.length;
     var ivEmpWrap = myObj.ivEmp;
     var ivEmpPhoto = "<img src='"+baseUrl+imgEmp+"' alt='재직자'>";
-    var ivEmp = "<div class='swiper-wrapper'>";
+    var ivEmp = "";
     for(var i=0; i<ivEmpCnt; i++){
-        ivEmp += "<div class='swiper-slide'>";
+        ivEmp += "<div>";
         ivEmp += "<div class='q'>"+ivEmpWrap[i].q+"</div>";
         ivEmp += "<div class='a'>"+ivEmpWrap[i].a+"</div>";
         ivEmp += "</div>";
     }
-    ivEmp += "</div>"; 
     $(".ivEmpPhoto").html(ivEmpPhoto);
     $(".ivEmp").html(ivEmp);
     // 직원정보

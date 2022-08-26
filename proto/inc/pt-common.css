@@ -112,6 +112,37 @@ a{text-decoration:none;color:inherit;}
     .mod_info02.type2 > div .tit{margin-bottom:8px;}
     .mod_info02.type2 > div .vision, .mod_info02.type2 > div .mission{max-width:100%;}
 
+.mod_interview01{background-color:#215350;padding:64px 0;}
+    .mod_interview01 h3{font-weight:600;font-size:40px;text-align:center;color:#fff;}
+    .mod_interview01 h3 span{display:block;color:rgba(255,255,255,.75);font-size:21px;letter-spacing:12px;font-weight:400;margin-bottom:8px;}
+    .mod_interview01 .interview_wrap{position:relative;width:1200px;margin:0 auto;}
+    .mod_interview01 .interview_wrap .iv_tab{display:flex;flex-direction:row;}
+    .mod_interview01 .interview_wrap .iv_tab > div{
+        flex:1 1 30%;background-color:#ccc;color:#fff;font-weight:500;font-size:20px;text-align:center;
+        border-radius:16px 16px 0 0;padding:24px 0;cursor:pointer;
+    }
+    .mod_interview01 .interview_wrap .iv_tab > div.active{background-color:#fff;color:#161616;}
+    .mod_interview01 .interview_wrap .iv_cont > div{display:none;background-color:#fff;border-radius:0 0 16px 16px;position:relative;overflow:hidden;}
+    .mod_interview01 .interview_wrap .iv_cont > div.active{display:block;}
+    .mod_interview01 .interview_wrap .iv_cont > div .photo{line-height:0;float:right;border-radius:75% 0 0 0;overflow:hidden;max-width:38%;}
+    .mod_interview01 .interview_wrap .iv_cont > div .interview{float:left;max-width:60%;padding:48px 32px 48px 92px;position:static;}
+    .mod_interview01 .interview_wrap .iv_cont > div .interview .q{color:#4aa1a0;font-weight:500;font-size:20px;}
+    .mod_interview01 .interview_wrap .iv_cont > div .interview .q::before{content:"Q. ";}
+    .mod_interview01 .interview_wrap .iv_cont > div .interview .a{margin-top:24px;}
+    .mod_interview01 .interview_wrap .slick-arrow{
+        position:absolute;top:50%;transform:translateY(-50%);border:none;font-size:0;width:70px;height:100px;
+        background-color:rgba(0,0,0,.5);
+        background-image:url(./images/slider_arrow2.png);background-repeat:no-repeat;opacity:.7;z-index:1;
+    }
+    .mod_interview01 .interview_wrap .slick-arrow.slick-disabled{opacity:.1;}
+    .mod_interview01 .interview_wrap .slick-arrow.slick-prev{left:0;background-position:0 0;}
+    .mod_interview01 .interview_wrap .slick-arrow.slick-next{right:0;background-position:-70px 0;}
+    .mod_interview01 .interview_wrap .slick-dots{display:flex;justify-content:center;margin-top:32px;position:absolute;bottom:48px;}
+    .mod_interview01 .interview_wrap .slick-dots li{margin:0 4px;background-color:#9b9b9b;width:16px;height:16px;border-radius:8px;cursor:pointer;}
+    .mod_interview01 .interview_wrap .slick-dots li.slick-active{background-color:#3abab7;width:40px;}
+    .mod_interview01 .interview_wrap .slick-dots li button{display:none;}
+    
+
 @media all and (max-width:1024px) {
     .container, .mod_history01 .history, .mod_history02 .history, .mod_history03 .history, .mod_history04 .history_wrap{width:calc(100% - 56px);}
     .mod_info01 > div{padding:240px 0;}
