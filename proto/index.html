@@ -54,14 +54,15 @@
         <div class="module_wrap">
             <div class="container" id="mod_select">
                 <div class="tab_wrap clearfix">
-                    <div data-tab="history" class="active">연혁</div>
+                    <div data-tab="history" class="">연혁</div>
                     <div data-tab="info">기업정보</div>
-                    <div data-tab="visual">기업 대표이미지</div>
-                    <div data-tab="bizPositionWrap">산업내위치</div>
+                    <div data-tab="interview" class="active">인터뷰</div>
+                    <!-- <div data-tab="visual">기업 대표이미지</div>
+                    <div data-tab="bizPositionWrap">산업내위치</div> -->
                 </div>
             </div>
             <div class="tcont_wrap">
-                <div data-tab="history" class="active">
+                <div data-tab="history" class="">
                     <div class="container desc">
                         연혁 모듈은 <span class="class">.history</span>Class를 변수명으로 하위에 데이터를 호출하는 구조입니다.
                     </div>
@@ -209,22 +210,43 @@
                     </div>
                     <!-- -->
                 </div>
-                <div data-tab="visual">
-                    <div class="container mod_nm"><span>.visual</span>대표이미지</div>
-                    <div class="imgCom">기업대표이미지</div>
+                <div data-tab="interview" class="active">
+                    <div class="container desc">
+                        인터뷰 모듈은 
+                    </div>
+                    <div class="container mod_nm"><span>.mod_interview01</span>인터뷰 모듈 1</div>
+                    <div class="mod_interview01">
+                        <h3><span>INTERVIEW</span>인터뷰</h3>
+                        <div class="interview_wrap">
+                            <div class="iv_tab">
+                                <div data-tab="ceo" class="active">CEO</div>
+                                <div data-tab="mng">인사담당자</div>
+                                <div data-tab="emp">재직자</div>
+                            </div>
+                            <div class="iv_cont">
+                                <div data-tab="ceo" class="clearfix active">
+                                    <div class="ivCeo interview">CEO</div>
+                                    <div class="ivCeoPhoto photo"></div>
+                                </div>
+                                <div data-tab="mng" class="clearfix">
+                                    <div class="ivMng interview">MNG</div>
+                                    <div class="ivMngPhoto photo"></div>
+                                </div>
+                                <div data-tab="emp" class="clearfix">
+                                    <div class="ivEmp interview">EMP</div>
+                                    <div class="ivEmpPhoto photo"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="container">
                         <div class="preview">HTML 미리보기</div>
-                        <pre class="line-numbers" data-src="./module/main_banner.html"></pre>
+                        <pre class="line-numbers" data-src="./module/mod_interview01.html"></pre>
                         <div class="preview">CSS의 모듈 공통코드 사용 - 색상 등 필요 영역만 재정의</div>
+                        <div class="preview">JS 미리보기</div>
+                        <pre class="line-numbers" data-src="./module/mod_interview01.js"></pre>
                     </div>
                 </div>
-                <div data-tab="bizPositionWrap" class="active">
-                    <div class="container mod_nm"><span>.bizPositionWrap</span>산업내위치</div>
-                    <div class="bizPositionWrap">
-                        <h3><span></span></h3>
-                    </div>    
-                       
-                                
             </div>
         </div>
     </div>
@@ -250,11 +272,9 @@
             </div>
         </div>
     </div>
-    <!-- <div class="container">
-        <pre class="line-numbers"><code class="lang-css">p { color: red }</code></pre>
-        <pre class="line-numbers" data-src="frame.html"></pre>
-    </div> -->
-    
+    <div class="container-fluid footer">
+        COPYRIGHT &copy; INKIUM. ALL RIGHTS RESERVED.
+    </div>   
 	
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js" ></script>
 <script src="https://kit.fontawesome.com/68ace2d14b.js" crossorigin="anonymous"></script>
